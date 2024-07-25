@@ -25,7 +25,7 @@ SCO structured vocabulary Spreadsheets are available in both Excel and CSV forma
 An extended version of SCO formalized in OWL and covering an initial stable set of terms and relations will come soon.
 
 
-##  Authors of the SCO structured vocabulary
+##  SCO structured vocabulary Authors  
 
 [Giorgio A.Ubbiali](https://orcid.org/0000-0001-7872-1770)
 

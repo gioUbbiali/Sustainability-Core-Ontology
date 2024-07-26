@@ -24,7 +24,7 @@ The SV guidelines spreadsheet details the methodology followed for constructing 
 SCO structured vocabulary Spreadsheets are available in both Excel and CSV formats. The SCO SV spreadsheet also contains the graphical representation (named Supplementary Fig. S1 The structured vocabulary of SCO) of SCO SV in JPG format.
 
 
-An extended version of SCO formalized in OWL and covering an complete stable set of terms and relations will come soon.
+An extended version of SCO formalized in OWL and covering a complete stable set of terms and relations will come soon.
 
 
 ##  SCO Structured Vocabulary Authors  

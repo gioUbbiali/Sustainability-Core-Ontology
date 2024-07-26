@@ -12,7 +12,7 @@ Currently, this repository hosts the Structured Vocabulary (SV) of SCO. The SCO 
 
 The SCO SV includes two spreadsheets: 
 
-1) The SCO SV guidelines.
+1) [The SCO SV guidelines.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO%20SV%20guidelines)
 2) The SCO SV. 
 
 The SV guidelines spreadsheet details the methodology followed for constructing the list.

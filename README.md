@@ -3,26 +3,24 @@
 ## Description
 
 This repository maintains the Sustainability Core Ontology (SCO). SCO is a middle-level ontology, covering the terminology related to the theoretical challenges of sustainability …..
-SCO is designed to be the pivotal resource on which to harmonize and integrate top-level and domain ontologies in terms of sustainability, with the ultimate goal of establishing a family of interoperable sustainability ontologies….. Currently, SCO employs Basic Formal Ontology (BFO) as the upper-level ontology. SCO envisions also aligning with other top-level ontologies in the near future.
+SCO is designed to be the pivotal resource on which to harmonize and integrate top-level and domain ontologies regarding sustainability. The ultimate goal is to establish a family of interoperable sustainability ontologies….. Currently, SCO employs [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020) as the upper-level ontology. SCO envisions also aligning with other top-level ontologies in the near future.
 
 
 ## Material
 
-Currently, this repository hosts the structured vocabulary of SCO. The SCO structured vocabulary is a non-exhaustive resource standing as an initial base from which to start to develop SCO. It provides essential terms and relations to include in SCO.
+Currently, this repository hosts the Structured Vocabulary (SV) of SCO. The SCO SV is an ontological resource standing as an initial (non-exhaustive) basis from which to start to develop SCO. It provides some essential terms and relations to include in SCO. This resource has been developed as part of the ….. (Annex 2 of this publication).
 
-This resource has been developed as part of the ….. (Annex 2 of this publication).
+The SCO SV includes two spreadsheets: 
 
-The SCO structured vocabulary includes two spreadsheets: 
+1) The SCO SV guidelines.
+2) The SCO SV. 
 
-1) The SCO structured vocabulary guidelines.
-2) The SCO structured vocabulary. 
+The SV guidelines spreadsheet details the methodology followed for constructing the list.
 
-The methodology for the construction of this structured vocabulary is documented in the ….. and the guidelines spreadsheet.
-
-SCO structured vocabulary Spreadsheets are available in both Excel and CSV formats.
+SCO structured vocabulary Spreadsheets are available in both Excel and CSV formats. The SCO SV spreadsheet also contains the graphical representation (named Supplementary Fig. S1 The structured vocabulary of SCO) of SCO SV in JPG format.
 
 
-An extended version of SCO formalized in OWL and covering an initial stable set of terms and relations will come soon.
+An extended version of SCO formalized in OWL and covering an complete stable set of terms and relations will come soon.
 
 
 ##  SCO structured vocabulary Authors  

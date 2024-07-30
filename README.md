@@ -2,17 +2,17 @@
 
 ## Description
 
-This repository maintains the Sustainability Core Ontology (SCO). SCO is a middle-level ontology, covering the terminology related to the three major theoretical challenges of sustainability ….:
+This repository maintains the Sustainability Core Ontology (SCO). SCO is a middle-level ontology, covering the terminology related to the three major theoretical challenges of sustainability:
 1) The polysemy of the term sustainability.
 2) The relationship between sustainability and sustainable development.
 3) The complexity underlying sustainability.
    
-SCO is designed to be the pivotal resource on which harmonizing and integrating top-level and domain ontologies regarding sustainability. The ultimate goal is to establish a family of interoperable sustainability ontologies….. Currently, SCO employs [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020) as the upper-level ontology. SCO envisions also aligning with other top-level ontologies in the near future.
+SCO is designed to be the pivotal resource on which harmonizing and integrating top-level and domain ontologies regarding sustainability. The ultimate goal is to establish a family of interoperable sustainability ontologies. Currently, SCO employs [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020) as the upper-level ontology. SCO envisions also aligning with other top-level ontologies in the near future.
 
 
 ## Material
 
-Currently, this repository hosts the Structured Vocabulary (SV) of SCO. The SCO SV is an ontological resource standing as an initial (non-exhaustive) basis from which to develop SCO. It provides some essential terms and relations to include in SCO. This resource has been developed as part of the ….. (Annex 2 of this publication).
+Currently, this repository hosts the Structured Vocabulary (SV) of SCO. The SCO SV is an ontological resource standing as an initial (non-exhaustive) basis from which to develop SCO. It provides some essential terms and relations to include in SCO. This resource has been developed as the Annex 2 of the article referred in the "publication and documentation" section of this repository.
 
 The SCO SV includes two spreadsheets: 
 

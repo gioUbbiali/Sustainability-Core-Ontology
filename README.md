@@ -50,7 +50,7 @@ Giorgio.Ubbiali@unimi.it
 
 ## Publications and documentation
 
-Coming soon.
+Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). *Ontologies for Sustainability: Theoretical Challenges*. https://doi.org/10.31219/osf.io/z8uqr 
 
 
 ## License

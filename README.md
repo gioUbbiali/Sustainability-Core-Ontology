@@ -12,7 +12,7 @@ SCO is designed to be the pivotal resource on which harmonizing and integrating 
 
 ## Material
 
-Currently, this repository hosts the Structured Vocabulary (SV) of SCO. The SCO SV is an ontological resource standing as an initial (non-exhaustive) basis from which to develop SCO. It provides some essential terms and relations to include in SCO. This resource has been developed as Annex 2 of the article referred to in the "publications and documentation" section of this repository.
+Currently, this repository hosts the Structured Vocabulary (SV) of SCO. The SCO SV is an ontological resource standing as an initial (non-exhaustive) basis from which to develop SCO. It provides some essential terms and relations to include in SCO. This resource has been developed as Annex 2 of [Ubbiali et al. (2024)](https://doi.org/10.31219/osf.io/z8uqr ).
 
 The SCO SV includes two spreadsheets: 
 

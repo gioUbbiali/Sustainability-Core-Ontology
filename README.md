@@ -59,7 +59,7 @@ The most recent version of SCO can be always found [here](https://github.com/gio
 
 ## Contact
 
-[Giorgio A. Ubbiali] (mailto:Giorgio.Ubbiali@unimi.it)
+Giorgio A. Ubbiali - Giorgio.Ubbiali@unimi.it
 
 
 ## Publications and Documentation

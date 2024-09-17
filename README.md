@@ -27,9 +27,8 @@ SCO structured vocabulary Spreadsheets are available in both Excel and CSV forma
 
 SCO V1.0.0 is the first stable version and the current release of SCO. SCO V1.0.0 extends and deepens the SCO SV. It is formalized in [Web Ontology Language (OWL)](https://www.w3.org/TR/owl2-overview/) and covers three natural languages, English, French, and Italian. SCO encompasses 80 classes, 84 object properties, 65 annotation properties, and 2 individuals. SCO V1.0.0 conforms to [OBO-Foundry principles](https://obofoundry.org/principles/fp-000-summary.html).
 
-SCO materials, including a protocol detailing the process followed to develop this ontology, can be found here:
+(https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO, including a protocol detailing the process followed to develop this ontology, can be found here:
 
-- [SCO materials - total.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO)
 - [SCO V1.0.0 current release. ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO)
 - [SCO V1.0.0 final draft version prior to release. ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO/src/ontology)
 - [SCO V1.0.0 imports from other ontologies. ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO/src/ontology/imports)

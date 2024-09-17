@@ -29,15 +29,15 @@ SCO V1.0.0 is the first stable version and the current release of SCO. SCO V1.0.
 
 SCO materials, including a protocol detailing the process followed to develop this ontology, can be found here:
 
-- SCO materials - total.
-- SCO V1.0.0 current release. 
-- SCO V1.0.0 final draft version prior to release. 
-- SCO V1.0.0 imports from other ontologies. 
-- SCO development protocol. 
+- [SCO materials - total.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO)
+- [SCO V1.0.0 current release. ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO)
+- [SCO V1.0.0 final draft version prior to release. ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO/src/ontology)
+- [SCO V1.0.0 imports from other ontologies. ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO/src/ontology/imports)
+- [SCO development protocol. ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO/sco%20development%20protocol)
 
-SCO V1.0.0 is rendered in [OWL/XML] (https://www.w3.org/TR/owl2-overview/), [RDF/XML] (https://www.w3.org/TR/rdf-syntax-grammar/), and [Terse RDF Triple Language] (https://www.w3.org/TR/turtle/). The SCO protocol is available in both Word and PDF formats. SCO materials have been organized in folders considering a possible future migration of this repo to the [Ontology Development Kit (ODK)] (https://github.com/INCATools/ontology-development-kit).
+[SCO V1.0.0](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO) is rendered in [OWL/XML](https://www.w3.org/TR/owl2-overview/), [RDF/XML](https://www.w3.org/TR/rdf-syntax-grammar/), and [Terse RDF Triple Language](https://www.w3.org/TR/turtle/). The SCO protocol is available in both Word and PDF formats. [SCO materials](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO) have been organized considering a possible future migration of this repo to the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
 
-The most recent version of SCO can be always found [here] (https://github.com/gioUbbiali/Sustainability-Core-Ontology)
+The most recent version of SCO can be always found [here](https://github.com/gioUbbiali/Sustainability-Core-Ontology).
 
 ##  SCO developer   
 

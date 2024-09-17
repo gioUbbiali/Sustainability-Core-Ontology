@@ -1,0 +1,989 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://gioUbbiali.github.io/sco/iof&amp;cco.general.imports.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://gioUbbiali.github.io/sco/iof&amp;cco.general.imports.owl"
+     versionIRI="http://gioUbbiali.github.io/sco/24-09-13/iof&amp;cco.general.imports.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/gaubb/ontologies/2024/8/untitled-ontology-72/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.obolibrary.org/obo/bfo/2020/bfo-core.owl</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal xml:lang="en">This file contains SCO imports from the Indutrial Ontology Foundry (IOF) and  the Common Core Ontology suite (CCO), extending the Basic formal Ontology (BFO).</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal xml:lang="en">SCO imports from IOF and CCO.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Currently, these imports have been manually collected and included in SCO. In SCO implementations, imports from IOF and CCO ontologies will be performed using tools such as ROBOT.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">We equally included the following annotation properties from the OBO Format metamodel (http://www.geneontology.org/formats/oboInOwl). Although different OBO-foundry ontologies reuse these annotation properties, we were not able to fetch them using OntoFox (https://ontofox.hegroup.org/). 
+
+http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym 
+http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym 
+http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal xml:lang="en">https://github.com/iofoundry 
+https://github.com/CommonCoreOntology/CommonCoreOntologies/tree/develop</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>24-09-13</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represented_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/alternative_label"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/definition_source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/elucidation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/example_of_usage"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/directSource"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/excerptedFrom"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/isPrimitive"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageDefinition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/subjectMatterExpertExplanation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+                <Class IRI="http://purl.obolibrary.org/obo/BFO_0000001"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represents"/>
+                <Class IRI="http://purl.obolibrary.org/obo/BFO_0000001"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel"/>
+        <NamedIndividual IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel"/>
+        <NamedIndividual IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represented_by"/>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represents"/>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represented_by"/>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represents"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represents"/>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of"/>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represented_by"/>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000118</IRI>
+        <Literal xml:lang="en">alternative label</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000118</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000118</IRI>
+        <Literal xml:lang="en">A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000118</IRI>
+        <Literal>OBO Operations committee</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000118</IRI>
+        <Literal xml:lang="en">PERSON:Daniel Schober</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000118</IRI>
+        <Literal xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000118</IRI>
+        <Literal>Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000118</IRI>
+        <Literal xml:lang="en">alternative label</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/contributor</IRI>
+        <IRI>http://purl.org/dc/terms/contributor</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/contributor</IRI>
+        <Literal xml:lang="en-us">contributor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://purl.org/dc/terms/contributor</IRI>
+        <Literal xml:lang="en-us">entity responsible for making contributions to the resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/creator</IRI>
+        <IRI>http://purl.org/dc/terms/creator</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/creator</IRI>
+        <Literal xml:lang="en-us">creator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://purl.org/dc/terms/creator</IRI>
+        <Literal xml:lang="en-us">entity responsible for making the resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://purl.org/dc/terms/source</IRI>
+        <IRI>http://purl.org/dc/terms/source</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/source</IRI>
+        <Literal xml:lang="en-us">source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://purl.org/dc/terms/source</IRI>
+        <Literal xml:lang="en-us">related resource from which the described resource is derived</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote"/>
+        <IRI>http://purl.org/dc/terms/source</IRI>
+        <Literal xml:lang="en-us">The intent is to provide a user with a reference as to how the thing being annotated was derived or arrived at. 
+ - The source can be a URL to a standard, common dictionary (e.g. Oxford), or similar reference. Or it can be a short description of where the entity being annotated was derived from.
+ - The &apos;Source&apos; annotation would most likely be used as an annotation on an annotation. For instance annotating a Natural Language definition annotation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym</IRI>
+        <Literal>An alternative label for a class or property which has a more general meaning than the preferred name/primary label.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym</IRI>
+        <IRI>http://orcid.org/0000-0001-5208-3432</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000233"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym</IRI>
+        <Literal>https://github.com/information-artifact-ontology/ontology-metadata/issues/18</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym</IRI>
+        <Literal xml:lang="en">has broad synonym</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym</IRI>
+        <Literal>https://github.com/information-artifact-ontology/ontology-metadata/issues/18</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasExactSynonym</IRI>
+        <Literal>An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasExactSynonym</IRI>
+        <IRI>http://orcid.org/0000-0001-5208-3432</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000233"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasExactSynonym</IRI>
+        <Literal>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasExactSynonym</IRI>
+        <Literal xml:lang="en">has exact synonym</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasExactSynonym</IRI>
+        <Literal>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym</IRI>
+        <Literal>An alternative label for a class or property which has a more specific meaning than the preferred name/primary label.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym</IRI>
+        <IRI>http://orcid.org/0000-0001-5208-3432</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000233"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym</IRI>
+        <Literal>https://github.com/information-artifact-ontology/ontology-metadata/issues/19</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym</IRI>
+        <Literal xml:lang="en">has narrow synonym</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym</IRI>
+        <Literal>https://github.com/information-artifact-ontology/ontology-metadata/issues/19</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym</IRI>
+        <Literal>An alternative label for a class or property that has been used synonymously with the primary term name, but the usage is not strictly correct.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym</IRI>
+        <IRI>http://orcid.org/0000-0001-5208-3432</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000233"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym</IRI>
+        <Literal>https://github.com/information-artifact-ontology/ontology-metadata/issues/21</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym</IRI>
+        <Literal xml:lang="en">has related synonym</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym</IRI>
+        <Literal>https://github.com/information-artifact-ontology/ontology-metadata/issues/21</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/alternative_label"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity</IRI>
+        <Literal xml:lang="en">ICE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity</IRI>
+        <Literal xml:lang="en">A Generically Dependent Continuant that generically depends on some Information Bearing Entity and stands in relation of aboutness to some Entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/definition_source"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity</IRI>
+        <Literal>http://purl.obolibrary.org/obo/IAO_0000030</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/elucidation"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity</IRI>
+        <Literal xml:lang="en">Information Content Entity is here intended to be a class of Entities whose instances are the informational content of Information Bearing Entities. For example, three instances of information bearers -- such as a bar chart, color-coded map, and a written report -- each of which lists the GDP of Countries for the year 2010 are each different carriers of the same information content. It is this content that is generically dependent upon its carrier. This treatment of Informational Content Entity (cf. the Information Artifact Ontology) leads to a principle of subtyping based upon the relationship that ICE&apos;s have with the Entity they are about rather than characteristics such as format, language, measurement scale, or media. The latter are treated here as being Qualities of bearers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity</IRI>
+        <Literal xml:lang="en">Information Content Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity</IRI>
+        <Literal xml:lang="en">An Information Content Entity that represents some Entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/example_of_usage"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity</IRI>
+        <Literal>the content of a court transcript represents a courtroom proceeding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/example_of_usage"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity</IRI>
+        <Literal>the content of a photograph of the Statue of Liberty represents the Statue of Liberty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/example_of_usage"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity</IRI>
+        <Literal>the content of a video of a sporting event represents that sporting event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity</IRI>
+        <Literal xml:lang="en">Representational Information Content Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/is_about</IRI>
+        <Literal xml:lang="en">A primitive relationship between an Information Content Entity and some Entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/definition_source"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/is_about</IRI>
+        <Literal>http://purl.obolibrary.org/obo/IAO_0000136</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/is_about</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/is_about</IRI>
+        <Literal xml:lang="en">is about</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of</IRI>
+        <Literal xml:lang="en">A primitive relationship between an instance of an Entity and an instance of an Information Content Entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of</IRI>
+        <Literal xml:lang="en">is subject of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represented_by</IRI>
+        <Literal xml:lang="en">y represented_by x iff x is an instance of Information Content Entity, and y is an instance of Entity, and z is carrier of x, such that x is about y in virtue of there existing an isomorphism between characteristics of z and y.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represented_by</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represented_by</IRI>
+        <Literal>See notes for inverse property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represented_by</IRI>
+        <Literal xml:lang="en">represented by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represents</IRI>
+        <Literal xml:lang="en">x represents y iff x is an instance of Information Content Entity, y is an instance of Entity, and z is carrier of x, such that x is about y in virtue of there existing an isomorphism between characteristics of z and y.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/elucidation"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represents</IRI>
+        <Literal xml:lang="en">The relationship that is being defined here is that between the content of a photographic image and its object, between the content of a video and its objects and events, between the content of an audio recording and the sounds or events generating those sounds, or between the content of a written transcript and the verbal event that it transcribes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represents</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represents</IRI>
+        <Literal xml:lang="en">Isomorphism between the carrier of x and the represented entity can be via a direct similarity relation, e.g., grooves in a vinyl record corresponding to sound waves, or linguistic convention, e.g., a court stenographer&apos;s transcription of spoken words, as well as others, such as encoding processes for images.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represents</IRI>
+        <Literal xml:lang="en">represents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represents</IRI>
+        <Literal xml:lang="en">Given a stronger temporal interpretation, this property may be functional. For more info please refer to https://github.com/BFO-ontology/BFO-2020/tree/master/src/owl/temporal%20extensions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel</IRI>
+        <Literal xml:lang="en-us">maturity level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel</IRI>
+        <Literal xml:lang="en-us">classifier used to specify the state of a resource in its development process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
+        <Literal xml:lang="en-us">provisional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
+        <Literal xml:lang="en-us">construct or ontology development state in which content is subject to change and may change considerably</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
+        <Literal xml:lang="en-us">IOF users should be aware that the resource is not dependable, but can be used for reference and for further work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released</IRI>
+        <Literal xml:lang="en-us">released</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released</IRI>
+        <Literal xml:lang="en-us">construct or ontology development state in which the resource is stable, usable, and has been made available to external users</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released</IRI>
+        <Literal xml:lang="en-us">Release notes will be provided for any changes concerning released content, and any revisions will be backward compatible with the prior version to the degree possible.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom</IRI>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom</IRI>
+        <Literal xml:lang="en-us">adapted from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom</IRI>
+        <Literal xml:lang="en-us">source for the resource that was modified to create the subject resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/directSource</IRI>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/directSource</IRI>
+        <Literal xml:lang="en-us">direct source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/directSource</IRI>
+        <Literal xml:lang="en-us">definitive source of the subject resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/excerptedFrom</IRI>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/excerptedFrom</IRI>
+        <Literal xml:lang="en-us">excerpted from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/excerptedFrom</IRI>
+        <Literal>source of a resource that was imported unmodified from an external ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/excerptedFrom</IRI>
+        <Literal xml:lang="en-us">This annotation is to be used when an element from a non-IOF ontology is used in an IOF ontology (and the source ontology is not imported in its entirety).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote</IRI>
+        <Literal xml:lang="en-us">explanatory note</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote</IRI>
+        <Literal xml:lang="en-us">note that provides additional explanatory information about a given notion or resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom</IRI>
+        <Literal xml:lang="en-us">first-order logic axiom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom</IRI>
+        <Literal xml:lang="en-us">logic axiom annotation written in first order logic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom</IRI>
+        <Literal xml:lang="en-us">First-order logic axioms MAY be provided if the term is primitive (&apos;is primitive&apos; is true ) or non-primitive. A construct MAY include more than one first-order logic axiom annotation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition</IRI>
+        <Literal xml:lang="en-us">first order logic definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition</IRI>
+        <Literal>logic definition that expresses the axioms of a class or an object property in first order logic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition</IRI>
+        <Literal xml:lang="en-us">An example of a First Order Logic definition for &apos;Product&apos; might be (again bearing in mind the natural language terms appearing should be regarded as symbols in the IOF signature):
+ - Continuant(x) ∧ ¬(SpecificallyDependentContinuant(x) ∨ Person(x) ∨ Organization(x)) ∧ ∃r (ProductRole(r) ∧ hasRole(x, r))</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition</IRI>
+        <Literal xml:lang="en-us">The First Order Logic Definition annotation is comprised of the (complete) necessary and sufficient conditions.
+ - This annotation is Required for each non-primitive (aka non-axiomatic) class (i.e. unary relation) of a published IOF OWL ontology. This is the most authoritative and comprehensive definition of an IOF element. 
+ - IOF Common Logic ontologies do not require this annotation, but if included it must be logically equivalent to the Common Logic definition.
+ - A primitive (aka axiomatic) term will not have a First Order Logic definition in either an OWL or Common Logic IOF ontology.
+ - There should be at most one First Order Logic definition.
+ - The specific symbols to be used for existential and universal quantification along with those for conjunction, disjunction, negation, conditional (i.e. if-then), and equivalence will be those commonly used in the mathematical formulas and statement.
+ - Conjunction - ∧; Disjunction - ∨; Negation - ¬; Existential Quantification - ∃; Universal Quantification - ∀; Conditional - →; Equivalence - ↔; Left/Right Parentheses - (,); Left/Right Brackets - {,}.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/isPrimitive</IRI>
+        <Literal xml:lang="en-us">is primitive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/isPrimitive</IRI>
+        <Literal xml:lang="en-us">boolean flag indicating that necessary and sufficient conditions are not provided</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/isPrimitive</IRI>
+        <Literal xml:lang="en-us">&apos;is primitive&apos; must be present if the term does not have necessary and sufficient conditions and the value of the annotation must be set to true. When &apos;is primitive&apos; is set to true, a value for a &apos;primitive rationale&apos; annotation must also be provided.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom</IRI>
+        <Literal xml:lang="en-us">logic axiom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom</IRI>
+        <Literal xml:lang="en-us">logical statements constraining the interpretation of the notion represented by the construct that do not provide necessary and sufficient conditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom</IRI>
+        <Literal xml:lang="en-us">This annotation property is an abstraction of the more specialized logic axiom annotations used in IOF. However, this annotation property can also be used to group together the logic axiom annotation values of different forms (such as FOL and natural language) that express the same meaning for a particular construct.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom</IRI>
+        <Literal xml:lang="en-us">A first order logic axiom expression and a semi-formal natural language axiom expression should be added as Property values for each logic axiom annotation using 1 of each of the corresponding logic axiom annotation subproperties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition</IRI>
+        <Literal xml:lang="en-us">logic definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition</IRI>
+        <Literal xml:lang="en-us">definition in the form of a logical expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity</IRI>
+        <Literal xml:lang="en-us">maturity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity</IRI>
+        <Literal xml:lang="en-us">annotation property used to indicate the development status of a resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity</IRI>
+        <Literal xml:lang="en-us">Any value for maturity MUST be an instance of MaturityLevel. All IOF ontologies MUST include exactly one maturity annotation. IOF constructs may include a maturity annotation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition</IRI>
+        <Literal xml:lang="en-us">natural language definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition</IRI>
+        <Literal xml:lang="en-us">definition written in plain text for human understanding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition</IRI>
+        <Literal xml:lang="en-us">This annotation is Required for each non-primitive or non-axiomatic class of an IOF (OWL or Common Logic) ontology. 
+ - It is optional for primitive (aka axiomatic) classes since such the Elucidation annotation is required and will satisfy the role of a natural language definition.
+ - It is optional, but recommended, for relations when the intent of a relation may be misunderstood.
+ - There should be at most one.
+ - This natural language definition should be subject matter expert friendly and consistent with any formal definition or elucidation.
+ - Natural language definitions should use class and relation names with following caveats:
+ a) Relations – For those relations whose label (i.e. local identifier) consist of multiple terms hyphenate the terms of the label: e.g. &apos;hasPlan&apos; would be written as &apos;has-plan&apos;
+ b) Classes – For classes whose label has multiple distinct terms, e.g, ManufacturingOperationSpecification, separate the terms but bound them with apostrophe marks: &apos;Manufacturing Operation Specification&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale</IRI>
+        <Literal xml:lang="en-us">primitive rationale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale</IRI>
+        <Literal xml:lang="en-us">reason why necessary and sufficient conditions could not be provided</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale</IRI>
+        <Literal xml:lang="en-us">When &apos;is primitive&apos; is set to true, a value for &apos;primitive rationale&apos; must be provided. The rationale should indicate what is missing if additional work is required to define necessary and sufficient conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom</IRI>
+        <Literal xml:lang="en-us">semi-formal natural language axiom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom</IRI>
+        <Literal xml:lang="en-us">logic axiom expressed in natural language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom</IRI>
+        <Literal xml:lang="en-us">Semi-formal natural language axioms MAY be provided if the term is primitive (is primitive is true). A construct MAY include more than one semi-formal natural language axiom annotation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageDefinition</IRI>
+        <Literal xml:lang="en-us">semi-formal natural language definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageDefinition</IRI>
+        <Literal>logic definition that expresses a first order logic definition or common logic definition in natural language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageDefinition</IRI>
+        <Literal xml:lang="en-us">This annotation is required if an element in an IOF OWL ontology has a First Order Logic definition or in a IOF Common Logic (where the element is defined using Common Logic).
+ - The intent of this annotation to provide a transition or bridge from the First Order Logic definition of a notion to the natural language definition. This definition is intended to help a user understand the intended interpretation of the notion.
+ - As example using the First Order Logic definition of &apos;Product&apos; above, a semi-formal translation of that might be: 
+ - Product =def. Continuant that is not a Person and not an Organization and not a Specifically Dependent Continuant and there is a Product Role that the thing has or bears.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/subjectMatterExpertExplanation</IRI>
+        <Literal>subject matter expert explanation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/subjectMatterExpertExplanation</IRI>
+        <Literal>definition of the term expressed in natural language that has the minimal usage of ontological terms and is intended to be a self-standing explanation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/subjectMatterExpertExplanation</IRI>
+        <Literal>Usage of this annotation is optional but is recommended in cases where:
+- the natural language definition or elucidation rely heavily on the terms defined in the ontology
+- there exists an explanation of the term that is more familiar to SMEs that does not coincide with the definition present in the ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote</IRI>
+        <Literal xml:lang="en-us">usage note</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote</IRI>
+        <Literal xml:lang="en-us">note that provides information about how a given notion or resource is used in the ontology&apos;s context</Literal>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom"/>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/directSource"/>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/excerptedFrom"/>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom"/>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition"/>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom"/>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageDefinition"/>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/subjectMatterExpertExplanation"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote"/>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+    </SubAnnotationPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

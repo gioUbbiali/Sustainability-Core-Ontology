@@ -1,0 +1,63 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/sco/imports/OBOFoundry_general_import.ofn
+
+[Source ontology]
+IAO
+
+[Low level source term URIs]
+#annotation properties 
+http://purl.obolibrary.org/obo/IAO_0000118 #alternativeLabel
+http://purl.obolibrary.org/obo/IAO_0000232 #curatorNote
+http://purl.obolibrary.org/obo/IAO_0000115 #definition
+http://purl.obolibrary.org/obo/IAO_0000119 #definitionSource
+http://purl.obolibrary.org/obo/IAO_0000116 #editorNote
+http://purl.obolibrary.org/obo/IAO_0000111 #editorPreferredTerm
+http://purl.obolibrary.org/obo/IAO_0000600 #elucidation
+http://purl.obolibrary.org/obo/IAO_0000112 #exampleOfUsage
+http://purl.obolibrary.org/obo/IAO_0000424 #expandExpressionTo
+http://purl.obolibrary.org/obo/IAO_0000114 #hasCurationStatus
+http://purl.obolibrary.org/obo/IAO_0000117 #termEditor
+http://purl.obolibrary.org/obo/IAO_0000233 #termTrackerItem
+
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+###########################################
+
+[Source ontology]
+RO 
+
+[Low level source term URIs]
+# terms
+
+http://purl.obolibrary.org/obo/RO_0002577 #system
+
+# object properties
+http://purl.obolibrary.org/obo/RO_0002502 #dependsOn and children classes
+http://purl.obolibrary.org/obo/RO_0002314
+http://purl.obolibrary.org/obo/RO_0000052
+http://purl.obolibrary.org/obo/RO_0000092
+http://purl.obolibrary.org/obo/RO_0000079
+http://purl.obolibrary.org/obo/RO_0000080
+http://purl.obolibrary.org/obo/RO_0000081
+http://purl.obolibrary.org/obo/RO_0000053 #hasCharacteristic and children classes
+http://purl.obolibrary.org/obo/RO_0000091
+http://purl.obolibrary.org/obo/RO_0000085
+http://purl.obolibrary.org/obo/RO_0000086
+http://purl.obolibrary.org/obo/RO_0000087
+http://purl.obolibrary.org/obo/RO_0002323 #MereotopologicallyRelatedTo and child class
+http://purl.obolibrary.org/obo/RO_0002163
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+
+[Source term retrieval setting]
+includeNontermediates
+
+[Source annotation URIs]
+includeAllAxioms
+

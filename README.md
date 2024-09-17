@@ -29,7 +29,7 @@ SCO V1.0.0 is the first stable version and the current release of SCO. SCO V1.0.
 
 SCO materials, including a protocol detailing the process followed to develop this ontology, can be found here:
 
-- [SCO materials-total](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO)
+- [SCO materials-total.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO)
 - [SCO V1.0.0 current release. ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO)
 - [SCO V1.0.0 final draft version prior to release. ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO/src/ontology)
 - [SCO V1.0.0 imports from other ontologies. ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO/src/ontology/imports)

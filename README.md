@@ -14,7 +14,7 @@ SCO is designed to be the pivotal resource upon which to harmonize and integrate
 
 Currently, this repository hosts the SCO Structured Vocabulary (SCO SV) and the first version of SCO, SCO V1.0.0. 
 
-The SCO SV is an initial (non-exhaustive) ontological resource providing some essential terms and relations to include in SCO. This resource has been developed as Annex 2 of [Ubbiali *et al.* (2024)](https://doi.org/10.31219/osf.io/z8uqr ).
+The SCO SV is an initial (non-exhaustive) ontological resource providing some essential terms and relations to include in SCO. This resource has been developed as Annex 2 of [Ubbiali *et al.* (2024)](https://doi.org/10.31219/osf.io/z8uqr).
 
 The SCO SV includes two spreadsheets: 
 
@@ -25,7 +25,7 @@ The SV guidelines spreadsheet details the methodology followed for constructing 
 
 SCO structured vocabulary Spreadsheets are available in both Excel and CSV formats. The SCO SV spreadsheet also contains the graphical representation (named Supplementary Fig. S1 The structured vocabulary of SCO) of SCO SV in JPG format.
 
-SCO V1.0.0 is the first stable version and the current release of SCO. SCO V1.0.0 extends and deepens the SCO SV. It is formalized in [Web Ontology Language] (https://www.w3.org/TR/owl2-overview/) and covers three natural languages, English, French, and Italian. SCO encompasses 80 classes, 84 object properties, 65 annotation properties, and 2 individuals. SCO V1.0.0 conforms to [OBO-Foundry principles] (https://obofoundry.org/principles/fp-000-summary.html). 
+SCO V1.0.0 is the first stable version and the current release of SCO. SCO V1.0.0 extends and deepens the SCO SV. It is formalized in [Web Ontology Language ](https://www.w3.org/TR/owl2-overview/) and covers three natural languages, English, French, and Italian. SCO encompasses 80 classes, 84 object properties, 65 annotation properties, and 2 individuals. SCO V1.0.0 conforms to [OBO-Foundry principles](https://obofoundry.org/principles/fp-000-summary.html).
 
 SCO materials, including a protocol detailing the process followed to develop this ontology, can be found here:
 

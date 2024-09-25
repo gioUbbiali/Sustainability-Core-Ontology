@@ -39,7 +39,7 @@ SCO materials, including a protocol detailing the process followed to develop th
 
 The most recent version of SCO can be always found [here](https://github.com/gioUbbiali/Sustainability-Core-Ontology).
 
-##  SCO developer   
+##  SCO Developer   
 
 [Giorgio A.Ubbiali](https://orcid.org/0000-0001-7872-1770)
 

@@ -504,7 +504,7 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     <EquivalentClasses>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="bfo:BFO_0000030"/>
+            <Class abbreviatedIRI="bfo:BFO_0000040"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="bfo:BFO_0000176"/>
                 <Class abbreviatedIRI="bfo:RO_0002577"/>
@@ -514,7 +514,7 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     <EquivalentClasses>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="bfo:BFO_0000030"/>
+            <Class abbreviatedIRI="bfo:BFO_0000040"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="bfo:BFO_0000176"/>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000006"/>
@@ -1035,12 +1035,12 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
-        <Class abbreviatedIRI="bfo:BFO_0000030"/>
+        <Class abbreviatedIRI="bfo:BFO_0000040"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="bfo:BFO_0000030"/>
+            <Class abbreviatedIRI="bfo:BFO_0000040"/>
             <ObjectComplementOf>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
             </ObjectComplementOf>
@@ -1049,7 +1049,7 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="bfo:BFO_0000030"/>
+            <Class abbreviatedIRI="bfo:BFO_0000040"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="bfo:BFO_0000101"/>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
@@ -1058,12 +1058,12 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
-        <Class abbreviatedIRI="bfo:BFO_0000030"/>
+        <Class abbreviatedIRI="bfo:BFO_0000040"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="bfo:BFO_0000030"/>
+            <Class abbreviatedIRI="bfo:BFO_0000040"/>
             <ObjectComplementOf>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
             </ObjectComplementOf>
@@ -1072,7 +1072,7 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="bfo:BFO_0000030"/>
+            <Class abbreviatedIRI="bfo:BFO_0000040"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="bfo:BFO_0000101"/>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
@@ -3363,7 +3363,7 @@ http://humanbehaviourchange.org/ontology/BCIO_006063</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://gioUbbiali.github.io/sco/SCO_0000035</IRI>
-        <Literal>SCO indicator classes have been designed referring to the characterization of sustainable development indicators (SDGs indicators) proposed by SDGIO. we aimed to deepen this characterization and establish upper-level classes for SDGIO ones. Nevertheless, to conclude the alignment between SCO and SDGIO classes, it is necessary to negotiate the position of the “indicator” class within the BFO hierarchy. Currently, SDGIO categorizes it as a subclass of the “material entity” class, whereas SCO classifies it as a sub-class of the “object” class.</Literal>
+        <Literal xml:lang="en">SCO indicator classes have been designed referring to the characterization of sustainable development indicators (SDGs indicators) proposed by SDGIO. we aimed to deepen this characterization and establish upper-level classes for SDGIO ones.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

@@ -1607,7 +1607,7 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</rdfs
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RO_0002577"/>
@@ -1615,11 +1615,11 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</rdfs
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
                     <owl:Class>
                         <owl:complementOf rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000014"/>
                     </owl:Class>
@@ -1629,7 +1629,7 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</rdfs
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000101"/>
                         <owl:someValuesFrom rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000004"/>
@@ -1657,7 +1657,7 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</rdfs
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
                         <owl:someValuesFrom rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000006"/>
@@ -1665,11 +1665,11 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</rdfs
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
                     <owl:Class>
                         <owl:complementOf rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000013"/>
                     </owl:Class>
@@ -1679,7 +1679,7 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</rdfs
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000101"/>
                         <owl:someValuesFrom rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000004"/>
@@ -2612,7 +2612,7 @@ http://humanbehaviourchange.org/ontology/BCIO_006063</rdfs:seeAlso>
         <oboInOwl:hasExactSynonym xml:lang="en">complex system indicator</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym xml:lang="en">system indicator</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>Due to the SCO focus on complex systems, indicator classes have been designed referring specifically to complex systems. Nevertheless, future implementations may broaden the space of application to also systems.</rdfs:comment>
-        <rdfs:comment>SCO indicator classes have been designed referring to the characterization of sustainable development indicators (SDGs indicators) proposed by SDGIO. we aimed to deepen this characterization and establish upper-level classes for SDGIO ones. Nevertheless, to conclude the alignment between SCO and SDGIO classes, it is necessary to negotiate the position of the “indicator” class within the BFO hierarchy. Currently, SDGIO categorizes it as a subclass of the “material entity” class, whereas SCO classifies it as a sub-class of the “object” class.</rdfs:comment>
+        <rdfs:comment xml:lang="en">SCO indicator classes have been designed referring to the characterization of sustainable development indicators (SDGs indicators) proposed by SDGIO. we aimed to deepen this characterization and establish upper-level classes for SDGIO ones.</rdfs:comment>
         <rdfs:label xml:lang="fr">indicateur</rdfs:label>
         <rdfs:label xml:lang="en">indicator</rdfs:label>
         <rdfs:label xml:lang="it">indicatore</rdfs:label>

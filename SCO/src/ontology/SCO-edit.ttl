@@ -1238,7 +1238,7 @@ _:genid79 owl:intersectionOf ( CommonCoreOntologies:InformationContentEntity
 
 ###  http://gioUbbiali.github.io/sco/SCO_0000013
 <http://gioUbbiali.github.io/sco/SCO_0000013> rdf:type owl:Class ;
-                                              owl:equivalentClass [ owl:intersectionOf ( bfo:BFO_0000030
+                                              owl:equivalentClass [ owl:intersectionOf ( bfo:BFO_0000040
                                                                                          [ rdf:type owl:Restriction ;
                                                                                            owl:onProperty bfo:BFO_0000176 ;
                                                                                            owl:someValuesFrom bfo:RO_0002577
@@ -1246,15 +1246,15 @@ _:genid79 owl:intersectionOf ( CommonCoreOntologies:InformationContentEntity
                                                                                        ) ;
                                                                     rdf:type owl:Class
                                                                   ] ;
-                                              rdfs:subClassOf bfo:BFO_0000030 ,
-                                                              [ owl:intersectionOf ( bfo:BFO_0000030
+                                              rdfs:subClassOf bfo:BFO_0000040 ,
+                                                              [ owl:intersectionOf ( bfo:BFO_0000040
                                                                                      [ rdf:type owl:Class ;
                                                                                        owl:complementOf <http://gioUbbiali.github.io/sco/SCO_0000014>
                                                                                      ]
                                                                                    ) ;
                                                                 rdf:type owl:Class
                                                               ] ,
-                                                              [ owl:intersectionOf ( bfo:BFO_0000030
+                                                              [ owl:intersectionOf ( bfo:BFO_0000040
                                                                                      [ rdf:type owl:Restriction ;
                                                                                        owl:onProperty bfo:BFO_0000101 ;
                                                                                        owl:someValuesFrom <http://gioUbbiali.github.io/sco/SCO_0000004>
@@ -1276,7 +1276,7 @@ _:genid79 owl:intersectionOf ( CommonCoreOntologies:InformationContentEntity
 
 ###  http://gioUbbiali.github.io/sco/SCO_0000014
 <http://gioUbbiali.github.io/sco/SCO_0000014> rdf:type owl:Class ;
-                                              owl:equivalentClass [ owl:intersectionOf ( bfo:BFO_0000030
+                                              owl:equivalentClass [ owl:intersectionOf ( bfo:BFO_0000040
                                                                                          [ rdf:type owl:Restriction ;
                                                                                            owl:onProperty bfo:BFO_0000176 ;
                                                                                            owl:someValuesFrom <http://gioUbbiali.github.io/sco/SCO_0000006>
@@ -1284,15 +1284,15 @@ _:genid79 owl:intersectionOf ( CommonCoreOntologies:InformationContentEntity
                                                                                        ) ;
                                                                     rdf:type owl:Class
                                                                   ] ;
-                                              rdfs:subClassOf bfo:BFO_0000030 ,
-                                                              [ owl:intersectionOf ( bfo:BFO_0000030
+                                              rdfs:subClassOf bfo:BFO_0000040 ,
+                                                              [ owl:intersectionOf ( bfo:BFO_0000040
                                                                                      [ rdf:type owl:Class ;
                                                                                        owl:complementOf <http://gioUbbiali.github.io/sco/SCO_0000013>
                                                                                      ]
                                                                                    ) ;
                                                                 rdf:type owl:Class
                                                               ] ,
-                                                              [ owl:intersectionOf ( bfo:BFO_0000030
+                                                              [ owl:intersectionOf ( bfo:BFO_0000040
                                                                                      [ rdf:type owl:Restriction ;
                                                                                        owl:onProperty bfo:BFO_0000101 ;
                                                                                        owl:someValuesFrom <http://gioUbbiali.github.io/sco/SCO_0000004>
@@ -2003,7 +2003,7 @@ http://humanbehaviourchange.org/ontology/BCIO_006063""" ,
                                               oboInOwl:hasExactSynonym "complex system indicator"@en ;
                                               oboInOwl:hasRelatedSynonym "system indicator"@en ;
                                               rdfs:comment "Due to the SCO focus on complex systems, indicator classes have been designed referring specifically to complex systems. Nevertheless, future implementations may broaden the space of application to also systems." ,
-                                                           "SCO indicator classes have been designed referring to the characterization of sustainable development indicators (SDGs indicators) proposed by SDGIO. we aimed to deepen this characterization and establish upper-level classes for SDGIO ones. Nevertheless, to conclude the alignment between SCO and SDGIO classes, it is necessary to negotiate the position of the “indicator” class within the BFO hierarchy. Currently, SDGIO categorizes it as a subclass of the “material entity” class, whereas SCO classifies it as a sub-class of the “object” class." ;
+                                                           "SCO indicator classes have been designed referring to the characterization of sustainable development indicators (SDGs indicators) proposed by SDGIO. we aimed to deepen this characterization and establish upper-level classes for SDGIO ones."@en ;
                                               rdfs:label "indicateur"@fr ,
                                                          "indicator"@en ,
                                                          "indicatore"@it ;

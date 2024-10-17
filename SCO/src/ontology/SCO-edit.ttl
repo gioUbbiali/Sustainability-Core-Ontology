@@ -1253,14 +1253,6 @@ _:genid79 owl:intersectionOf ( CommonCoreOntologies:InformationContentEntity
                                                                                      ]
                                                                                    ) ;
                                                                 rdf:type owl:Class
-                                                              ] ,
-                                                              [ owl:intersectionOf ( bfo:BFO_0000040
-                                                                                     [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty bfo:BFO_0000101 ;
-                                                                                       owl:someValuesFrom <http://gioUbbiali.github.io/sco/SCO_0000004>
-                                                                                     ]
-                                                                                   ) ;
-                                                                rdf:type owl:Class
                                                               ] ;
                                               owl:disjointWith <http://gioUbbiali.github.io/sco/SCO_0000014> ;
                                               oboInOwl:hasExactSynonym "system element" ;
@@ -1288,14 +1280,6 @@ _:genid79 owl:intersectionOf ( CommonCoreOntologies:InformationContentEntity
                                                               [ owl:intersectionOf ( bfo:BFO_0000040
                                                                                      [ rdf:type owl:Class ;
                                                                                        owl:complementOf <http://gioUbbiali.github.io/sco/SCO_0000013>
-                                                                                     ]
-                                                                                   ) ;
-                                                                rdf:type owl:Class
-                                                              ] ,
-                                                              [ owl:intersectionOf ( bfo:BFO_0000040
-                                                                                     [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty bfo:BFO_0000101 ;
-                                                                                       owl:someValuesFrom <http://gioUbbiali.github.io/sco/SCO_0000004>
                                                                                      ]
                                                                                    ) ;
                                                                 rdf:type owl:Class
@@ -1406,7 +1390,7 @@ I2SV: https://i2insights.org/index/integration-and-implementation-sciences-vocab
                                                               ] ,
                                                               [ owl:intersectionOf ( bfo:BFO_0000016
                                                                                      [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty bfo:BFO_0000218 ;
+                                                                                       owl:onProperty bfo:RO_0000092 ;
                                                                                        owl:someValuesFrom [ rdf:type owl:Class ;
                                                                                                             owl:unionOf ( <http://gioUbbiali.github.io/sco/SCO_0000026>
                                                                                                                           <http://gioUbbiali.github.io/sco/SCO_0000028>
@@ -1711,7 +1695,23 @@ http://humanbehaviourchange.org/ontology/BCIO_006063""" ,
                                                                                        ) ;
                                                                     rdf:type owl:Class
                                                                   ] ;
-                                              rdfs:subClassOf <http://gioUbbiali.github.io/sco/SCO_0000014> ;
+                                              rdfs:subClassOf <http://gioUbbiali.github.io/sco/SCO_0000014> ,
+                                                              [ owl:intersectionOf ( <http://gioUbbiali.github.io/sco/SCO_0000014>
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty bfo:BFO_0000101 ;
+                                                                                       owl:someValuesFrom <http://gioUbbiali.github.io/sco/SCO_0000004>
+                                                                                     ]
+                                                                                   ) ;
+                                                                rdf:type owl:Class
+                                                              ] ,
+                                                              [ owl:intersectionOf ( <http://gioUbbiali.github.io/sco/SCO_0000014>
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty bfo:RO_0000091 ;
+                                                                                       owl:someValuesFrom <http://gioUbbiali.github.io/sco/SCO_0000016>
+                                                                                     ]
+                                                                                   ) ;
+                                                                rdf:type owl:Class
+                                                              ] ;
                                               owl:disjointWith <http://gioUbbiali.github.io/sco/SCO_0000028> ;
                                               oboInOwl:hasExactSynonym "complex system environment element" ,
                                                                        "complex system environment variable" ;
@@ -1781,7 +1781,7 @@ http://humanbehaviourchange.org/ontology/BCIO_006063""" ,
                                                               ] ,
                                                               [ owl:intersectionOf ( <http://gioUbbiali.github.io/sco/SCO_0000013>
                                                                                      [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty bfo:BFO_0000127 ;
+                                                                                       owl:onProperty bfo:RO_0000091 ;
                                                                                        owl:someValuesFrom <http://gioUbbiali.github.io/sco/SCO_0000016>
                                                                                      ]
                                                                                    ) ;
@@ -1837,7 +1837,7 @@ http://humanbehaviourchange.org/ontology/BCIO_006063""" ,
 <http://gioUbbiali.github.io/sco/SCO_0000030> rdf:type owl:Class ;
                                               owl:equivalentClass [ owl:intersectionOf ( <http://gioUbbiali.github.io/sco/SCO_0000016>
                                                                                          [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty bfo:BFO_0000218 ;
+                                                                                           owl:onProperty bfo:RO_0000092 ;
                                                                                            owl:someValuesFrom <http://gioUbbiali.github.io/sco/SCO_0000036>
                                                                                          ]
                                                                                        ) ;
@@ -2035,7 +2035,7 @@ http://humanbehaviourchange.org/ontology/BCIO_006063""" ,
                                                               ] ,
                                                               [ owl:intersectionOf ( <http://gioUbbiali.github.io/sco/SCO_0000028>
                                                                                      [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty bfo:BFO_0000127 ;
+                                                                                       owl:onProperty bfo:RO_0000091 ;
                                                                                        owl:someValuesFrom <http://gioUbbiali.github.io/sco/SCO_0000030>
                                                                                      ]
                                                                                    ) ;

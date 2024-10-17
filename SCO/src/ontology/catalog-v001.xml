@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1728539969873" name="http://gioUbbiali.github.io/sco/iof&amp;cco.general.imports.owl" uri="imports/iof&amp;cco-general-imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1728539969873" name="http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-edit.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1728539969873" name="http://purl.obolibrary.org/obo/bfo/" uri="imports/bfo-core.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1728539969873" name="http://purl.obolibrary.org/obo/sco/imports/OBOFoundry_general_import.ofn" uri="imports/obofoundry-general-import.ofn"/>
-        <uri id="Automatically generated entry, Timestamp=1728539969873" name="http://purl.obolibrary.org/obo/sco/imports/iao_import.ofn" uri="imports/iao-import.ofn"/>
-        <uri id="Automatically generated entry, Timestamp=1728539969873" name="http://purl.obolibrary.org/obo/sco/imports/ro_import.ofn" uri="imports/ro-import.ofn"/>
-        <uri id="Automatically generated entry, Timestamp=1728539969873" name="http://www.semanticweb.org/gaubb/ontologies/sco" uri="SCO-edit.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1729170905039" name="http://gioUbbiali.github.io/sco/iof&amp;cco.general.imports.owl" uri="imports/iof&amp;cco-general-imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1729170905039" name="http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1729170905039" name="http://purl.obolibrary.org/obo/bfo/" uri="imports/bfo-core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1729170905039" name="http://purl.obolibrary.org/obo/sco/imports/OBOFoundry_general_import.ofn" uri="imports/obofoundry-general-import.ofn"/>
+        <uri id="Automatically generated entry, Timestamp=1729170905039" name="http://purl.obolibrary.org/obo/sco/imports/iao_import.ofn" uri="imports/iao-import.ofn"/>
+        <uri id="Automatically generated entry, Timestamp=1729170905039" name="http://purl.obolibrary.org/obo/sco/imports/ro_import.ofn" uri="imports/ro-import.ofn"/>
+        <uri id="Automatically generated entry, Timestamp=1729170905039" name="http://www.semanticweb.org/gaubb/ontologies/sco" uri="SCO-edit.rdf"/>
     </group>
 </catalog>

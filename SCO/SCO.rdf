@@ -1588,6 +1588,17 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</rdfs
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://gioUbbiali.github.io/sco/SCO_0000014"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
+                        <owl:someValuesFrom rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000016"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000015"/>
         <oboInOwl:hasExactSynonym>complex system context</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="it">ambiente del sistema complesso</rdfs:label>
@@ -1623,17 +1634,6 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</rdfs
                     <owl:Class>
                         <owl:complementOf rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000014"/>
                     </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000101"/>
-                        <owl:someValuesFrom rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000004"/>
-                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
@@ -1673,17 +1673,6 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</rdfs
                     <owl:Class>
                         <owl:complementOf rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000013"/>
                     </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000101"/>
-                        <owl:someValuesFrom rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000004"/>
-                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
@@ -1829,7 +1818,7 @@ I2SV: https://i2insights.org/index/integration-and-implementation-sciences-vocab
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000218"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000092"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:unionOf rdf:parseType="Collection">
@@ -2321,7 +2310,7 @@ http://humanbehaviourchange.org/ontology/BCIO_006063</rdfs:seeAlso>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://gioUbbiali.github.io/sco/SCO_0000013"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000127"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
                         <owl:someValuesFrom rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000016"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2395,7 +2384,7 @@ http://humanbehaviourchange.org/ontology/BCIO_006063</rdfs:seeAlso>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://gioUbbiali.github.io/sco/SCO_0000016"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000218"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000092"/>
                         <owl:someValuesFrom rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000036"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2656,7 +2645,7 @@ http://humanbehaviourchange.org/ontology/BCIO_006063</rdfs:seeAlso>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://gioUbbiali.github.io/sco/SCO_0000028"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000127"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
                         <owl:someValuesFrom rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000030"/>
                     </owl:Restriction>
                 </owl:intersectionOf>

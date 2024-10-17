@@ -623,7 +623,7 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <ObjectIntersectionOf>
             <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="bfo:BFO_0000218"/>
+                <ObjectProperty abbreviatedIRI="bfo:RO_0000092"/>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000036"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
@@ -1034,6 +1034,16 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000012"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="bfo:RO_0000091"/>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
         <Class abbreviatedIRI="bfo:BFO_0000040"/>
     </SubClassOf>
@@ -1047,16 +1057,6 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="bfo:BFO_0000040"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="bfo:BFO_0000101"/>
-                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
         <Class abbreviatedIRI="bfo:BFO_0000040"/>
     </SubClassOf>
@@ -1067,16 +1067,6 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
             <ObjectComplementOf>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
             </ObjectComplementOf>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="bfo:BFO_0000040"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="bfo:BFO_0000101"/>
-                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
-            </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
@@ -1166,7 +1156,7 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="bfo:BFO_0000016"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="bfo:BFO_0000218"/>
+                <ObjectProperty abbreviatedIRI="bfo:RO_0000092"/>
                 <ObjectUnionOf>
                     <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000026"/>
                     <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000028"/>
@@ -1393,7 +1383,7 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <ObjectIntersectionOf>
             <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="bfo:BFO_0000127"/>
+                <ObjectProperty abbreviatedIRI="bfo:RO_0000091"/>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
@@ -1485,7 +1475,7 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <ObjectIntersectionOf>
             <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000028"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="bfo:BFO_0000127"/>
+                <ObjectProperty abbreviatedIRI="bfo:RO_0000091"/>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000030"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>

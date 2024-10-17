@@ -1034,16 +1034,6 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000012"/>
-        <ObjectIntersectionOf>
-            <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="bfo:RO_0000091"/>
-                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
         <Class abbreviatedIRI="bfo:BFO_0000040"/>
     </SubClassOf>
@@ -1359,6 +1349,26 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000026"/>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000026"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="bfo:BFO_0000101"/>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000026"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="bfo:RO_0000091"/>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000027"/>

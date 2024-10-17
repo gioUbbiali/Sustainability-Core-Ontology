@@ -1224,14 +1224,6 @@ _:genid79 owl:intersectionOf ( CommonCoreOntologies:InformationContentEntity
                                                                                      ]
                                                                                    ) ;
                                                                 rdf:type owl:Class
-                                                              ] ,
-                                                              [ owl:intersectionOf ( <http://gioUbbiali.github.io/sco/SCO_0000014>
-                                                                                     [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty bfo:RO_0000091 ;
-                                                                                       owl:someValuesFrom <http://gioUbbiali.github.io/sco/SCO_0000016>
-                                                                                     ]
-                                                                                   ) ;
-                                                                rdf:type owl:Class
                                                               ] ;
                                               owl:disjointWith <http://gioUbbiali.github.io/sco/SCO_0000015> ;
                                               oboInOwl:hasExactSynonym "complex system context" ;
@@ -1703,7 +1695,23 @@ http://humanbehaviourchange.org/ontology/BCIO_006063""" ,
                                                                                        ) ;
                                                                     rdf:type owl:Class
                                                                   ] ;
-                                              rdfs:subClassOf <http://gioUbbiali.github.io/sco/SCO_0000014> ;
+                                              rdfs:subClassOf <http://gioUbbiali.github.io/sco/SCO_0000014> ,
+                                                              [ owl:intersectionOf ( <http://gioUbbiali.github.io/sco/SCO_0000014>
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty bfo:BFO_0000101 ;
+                                                                                       owl:someValuesFrom <http://gioUbbiali.github.io/sco/SCO_0000004>
+                                                                                     ]
+                                                                                   ) ;
+                                                                rdf:type owl:Class
+                                                              ] ,
+                                                              [ owl:intersectionOf ( <http://gioUbbiali.github.io/sco/SCO_0000014>
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty bfo:RO_0000091 ;
+                                                                                       owl:someValuesFrom <http://gioUbbiali.github.io/sco/SCO_0000016>
+                                                                                     ]
+                                                                                   ) ;
+                                                                rdf:type owl:Class
+                                                              ] ;
                                               owl:disjointWith <http://gioUbbiali.github.io/sco/SCO_0000028> ;
                                               oboInOwl:hasExactSynonym "complex system environment element" ,
                                                                        "complex system environment variable" ;

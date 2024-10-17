@@ -1588,17 +1588,6 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</rdfs
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://gioUbbiali.github.io/sco/SCO_0000014"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
-                        <owl:someValuesFrom rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000016"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000015"/>
         <oboInOwl:hasExactSynonym>complex system context</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="it">ambiente del sistema complesso</rdfs:label>
@@ -2217,6 +2206,28 @@ http://humanbehaviourchange.org/ontology/BCIO_006063</rdfs:seeAlso>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://gioUbbiali.github.io/sco/SCO_0000014"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000101"/>
+                        <owl:someValuesFrom rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://gioUbbiali.github.io/sco/SCO_0000014"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
+                        <owl:someValuesFrom rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000016"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://gioUbbiali.github.io/sco/SCO_0000028"/>
         <oboInOwl:hasExactSynonym>complex system environment element</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>complex system environment variable</oboInOwl:hasExactSynonym>

@@ -883,7 +883,7 @@ Related axioms must be revised accordingly.""" ;
                                                            """http://purl.unep.org/sdg/SDGIO_00000000
 http://purl.unep.org/sdg/SDGIO_00000001 
 http://purl.unep.org/sdg/SDGIO_00000003""" ;
-                                              skos:definition "An representational information content entity that generically depends on some indicator and is about, providing insights into, the complex system to which the indicator belongs."@en ,
+                                              skos:definition "A representational information content entity that generically depends on some indicator and is about, providing insights into, the complex system to which the indicator belongs."@en ,
                                                               "Un contenu représentatif d’information qui dépend de façon générique d’un indicateur et qui concerne, fournissant des indications/renseignements, sur le système complexe auquel l’indicateur appartient."@fr ,
                                                               "Un contenuto informativo rappresentativo che genericamente dipende da un indicatore e riguarda, fornisce informazioni sul, complesso sistema a cui l'indicatore appartiene."@it ;
                                               AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .

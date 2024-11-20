@@ -2019,7 +2019,7 @@ http://purl.unep.org/sdg/SDGIO_00000003</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>http://gioUbbiali.github.io/sco/SCO_0000003</IRI>
-        <Literal xml:lang="en">An representational information content entity that generically depends on some indicator and is about, providing insights into, the complex system to which the indicator belongs.</Literal>
+        <Literal xml:lang="en">A representational information content entity that generically depends on some indicator and is about, providing insights into, the complex system to which the indicator belongs.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>

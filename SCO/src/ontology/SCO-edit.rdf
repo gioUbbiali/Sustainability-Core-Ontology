@@ -1147,7 +1147,7 @@ Related axioms must be revised accordingly.</rdfs:comment>
         <rdfs:seeAlso>http://purl.unep.org/sdg/SDGIO_00000000
 http://purl.unep.org/sdg/SDGIO_00000001 
 http://purl.unep.org/sdg/SDGIO_00000003</rdfs:seeAlso>
-        <skos:definition xml:lang="en">An representational information content entity that generically depends on some indicator and is about, providing insights into, the complex system to which the indicator belongs.</skos:definition>
+        <skos:definition xml:lang="en">A representational information content entity that generically depends on some indicator and is about, providing insights into, the complex system to which the indicator belongs.</skos:definition>
         <skos:definition xml:lang="fr">Un contenu représentatif d’information qui dépend de façon générique d’un indicateur et qui concerne, fournissant des indications/renseignements, sur le système complexe auquel l’indicateur appartient.</skos:definition>
         <skos:definition xml:lang="it">Un contenuto informativo rappresentativo che genericamente dipende da un indicatore e riguarda, fornisce informazioni sul, complesso sistema a cui l&apos;indicatore appartiene.</skos:definition>
         <AnnotationVocabulary:maturity rdf:resource="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional"/>

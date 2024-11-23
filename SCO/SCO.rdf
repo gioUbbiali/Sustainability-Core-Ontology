@@ -33,7 +33,7 @@ SCO aims to play a pivotal role in harmonizing and integrating top-level and dom
         <rdfs:seeAlso>Ubbiali, G. A., Borghini, A., &amp; Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr</rdfs:seeAlso>
         <owl:priorVersion xml:lang="en">The SCO Structured Vocabulary (SV) constitutes the prior version of this resources.
 SCO SV is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology.git</owl:priorVersion>
-        <owl:versionInfo xml:lang="en">2024-09-13</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">2024-09-17</owl:versionInfo>
         <owl:versionInfo>Version 1.0.0.</owl:versionInfo>
         <skos:note xml:lang="en">Currently, this resource includes labels and definitions in the following three natural languages: English, Italian, and French. In the next version of this resource, the creator intends to also encompass Italian and French translations of the remaining pieces of information as well as to cover other natural languages.</skos:note>
         <skos:note xml:lang="en">The current version of SCO does not cover classes and object properties accounting for systems granularity, scales, and levels. A deeper representation of system change and behaviors is equally required. These themes will be topics of inclusion in the next version of this resource.</skos:note>

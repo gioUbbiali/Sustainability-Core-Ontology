@@ -38,7 +38,7 @@ SCO materials, including a protocol detailing the process followed to develop th
 [SCO V1.0.0](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO) is rendered in [OWL/XML](https://www.w3.org/TR/owl2-overview/), [RDF/XML](https://www.w3.org/TR/rdf-syntax-grammar/), and [Terse RDF Triple Language](https://www.w3.org/TR/turtle/). The SCO protocol is available in both Word and PDF formats. [SCO materials](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO) have been organized considering a possible future migration of this repo to the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
 
 The most recent version of SCO can be always found [here](https://github.com/gioUbbiali/Sustainability-Core-Ontology).
-SCO is also accessible on [AgroPortal](https://agroportal.lirmm.fr/ontologies/SCO), [BioPOrtal](https://bioportal.bioontology.org/ontologies/SCO_V1), and [IndustryPortal](https://industryportal.enit.fr/ontologies/SCO).
+SCO is also accessible on [AgroPortal](https://agroportal.lirmm.fr/ontologies/SCO), [BioPortal](https://bioportal.bioontology.org/ontologies/SCO_V1), and [IndustryPortal](https://industryportal.enit.fr/ontologies/SCO).
 
 ##  SCO Developer   
 

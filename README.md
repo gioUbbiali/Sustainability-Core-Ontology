@@ -23,7 +23,7 @@ The SCO SV includes two spreadsheets:
 
 The SV guidelines spreadsheet details the methodology followed for constructing the list.
 
-SCO structured vocabulary Spreadsheets are available in both Excel and CSV formats. The SCO SV spreadsheet also contains the graphical representation (named Supplementary Fig. S1 The structured vocabulary of SCO) of SCO SV in JPG format.
+SCO structured vocabulary spreadsheets are available in both Excel and CSV formats. The SCO SV spreadsheet also contains the graphical representation (named Supplementary Fig. S1 The structured vocabulary of SCO) of SCO SV in JPG format.
 
 SCO V1.0.0 is the first stable version and the current release of SCO. SCO V1.0.0 extends and deepens the SCO SV. It is formalized in [Web Ontology Language (OWL)](https://www.w3.org/TR/owl2-overview/) and covers three natural languages, English, French, and Italian. SCO encompasses 80 classes, 84 object properties, 65 annotation properties, and 2 individuals. SCO V1.0.0 conforms to [OBO-Foundry principles](https://obofoundry.org/principles/fp-000-summary.html).
 

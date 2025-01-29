@@ -7,12 +7,12 @@ This repository maintains the Sustainability Core Ontology (SCO). SCO is a middl
 2) The relationship between sustainability and sustainable development.
 3) The complexity underlying sustainability.
    
-SCO is designed to be the pivotal resource upon which to harmonize and integrate top-level and domain ontologies regarding sustainability. The ultimate goal is to establish a family of interoperable sustainability ontologies. Currently, SCO employs [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020) as the upper-level ontology. SCO envisions also aligning with other top-level ontologies in the near future.
+SCO is designed to be the pivotal resource upon which to harmonize and integrate top-level and domain ontologies regarding sustainability. The ultimate goal is to establish a family of interoperable sustainability ontologies. Currently, SCO employs [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020) as the upper-level ontology. SCO is also aligning with the [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html), another top-level ontology.
 
 
 ## Material
 
-Currently, this repository hosts the SCO Structured Vocabulary (SCO SV) and the first version of SCO, SCO V1.0.0. 
+Currently, this repository hosts the SCO Structured Vocabulary (SCO SV) and the new working-in-progress version of SCO, SCO V1.1.0. 
 
 The SCO SV is an initial (non-exhaustive) ontological resource providing some essential terms and relations to include in SCO. This resource has been developed as Annex 2 of [Ubbiali *et al.* (2024)](https://doi.org/10.31219/osf.io/z8uqr).
 
@@ -25,7 +25,7 @@ The SV guidelines spreadsheet details the methodology followed for constructing 
 
 SCO structured vocabulary spreadsheets are available in both Excel and CSV formats. The SCO SV spreadsheet also contains the graphical representation (named Supplementary Fig. S1 The structured vocabulary of SCO) of SCO SV in JPG format.
 
-SCO V1.0.0 is the first stable version and the current release of SCO. SCO V1.0.0 extends and deepens the SCO SV. It is formalized in [Web Ontology Language (OWL)](https://www.w3.org/TR/owl2-overview/) and covers three natural languages, English, French, and Italian. SCO encompasses 80 classes, 84 object properties, 65 annotation properties, and 2 individuals. SCO V1.0.0 conforms to [OBO-Foundry principles](https://obofoundry.org/principles/fp-000-summary.html).
+SCO V1.0.0, [the first stable released version of SCO](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0), extends and deepens the SCO SV. It is formalized in [Web Ontology Language (OWL)](https://www.w3.org/TR/owl2-overview/) and covers three natural languages, English, French, and Italian. SCO encompasses 80 classes, 84 object properties, 65 annotation properties, and 2 individuals. SCO V1.0.0 conforms to [OBO-Foundry principles](https://obofoundry.org/principles/fp-000-summary.html).
 
 SCO materials, including a protocol detailing the process followed to develop this ontology, can be found here:
 
@@ -36,6 +36,8 @@ SCO materials, including a protocol detailing the process followed to develop th
 - [SCO development protocol. ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO/sco%20development%20protocol)
 
 [SCO V1.0.0](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO) is rendered in [OWL/XML](https://www.w3.org/TR/owl2-overview/), [RDF/XML](https://www.w3.org/TR/rdf-syntax-grammar/), and [Terse RDF Triple Language](https://www.w3.org/TR/turtle/). The SCO protocol is available in both Word and PDF formats. [SCO materials](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO) have been organized considering a possible future migration of this repo to the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
+
+SCO V1.0.0 extends
 
 The most recent version of SCO can be always found [here](https://github.com/gioUbbiali/Sustainability-Core-Ontology).
 SCO is also accessible on [AgroPortal](https://agroportal.lirmm.fr/ontologies/SCO), [BioPortal](https://bioportal.bioontology.org/ontologies/SCO_V1), and [IndustryPortal](https://industryportal.enit.fr/ontologies/SCO).

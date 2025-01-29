@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://gioUbbiali.github.io/sco/sco.owl"
-     versionIRI="http://gioUbbiali.github.io/sco/v1.0.0/24-09-17/sco.owl">
+     versionIRI="http://gioUbbiali.github.io/sco/v1.1.0/25-01-29/sco-edit.owl">
     <Prefix name="" IRI="http://www.semanticweb.org/gaubb/ontologies/sco#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="bfo" IRI="http://purl.obolibrary.org/obo/"/>
@@ -24,6 +24,7 @@
     <Prefix name="AnnotationVocabulary" IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"/>
     <Prefix name="CommonCoreOntologies" IRI="http://www.ontologyrepository.com/CommonCoreOntologies/"/>
     <Import>http://purl.obolibrary.org/obo/bfo/2020/bfo.owl</Import>
+    <Import>http://purl.org/nemo/gufo#/1.0.0</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:creator"/>
         <Literal>Giorgio A. Ubbiali</Literal>
@@ -63,11 +64,11 @@ SCO SV is available on GitHub at the following link: https://github.com/gioUbbia
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal xml:lang="en">2024-09-17</Literal>
+        <Literal xml:lang="en">2025-01-29</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal>Version 1.0.0.</Literal>
+        <Literal>Version 1.1.0.</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="skos:note"/>
@@ -1062,6 +1063,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
         <Class abbreviatedIRI="bfo:RO_0002577"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
+        <Class IRI="http://purl.org/nemo/gufo#FunctionalComplex"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>

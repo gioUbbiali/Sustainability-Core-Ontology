@@ -7,61 +7,47 @@ This repository maintains the Sustainability Core Ontology (SCO). SCO is a middl
 2) The relationship between sustainability and sustainable development.
 3) The complexity underlying sustainability.
    
-SCO is designed to be the pivotal resource upon which to harmonize and integrate top-level and domain ontologies regarding sustainability. The ultimate goal is to establish a family of interoperable sustainability ontologies. Currently, SCO employs [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020) as the upper-level ontology. SCO is also aligning with the [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html), another top-level ontology.
+SCO is designed to be the pivotal resource upon which to harmonize and integrate top-level and domain ontologies regarding sustainability. The ultimate goal is to establish a family of interoperable sustainability ontologies. Currently, SCO employs [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020) as the upper-level ontology. There are ongoing to also align SCO with the [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html).
 
 
 ## Material
 
-Currently, this repository hosts the SCO Structured Vocabulary (SCO SV) and the new working-in-progress version of SCO, SCO V1.1.0.. 
+Currently, this repository hosts the new working-in-progress version of SCO, SCO V1.1.0. 
 
-The SCO SV is an initial (non-exhaustive) ontological resource providing some essential terms and relations to include in SCO. This resource has been developed as Annex 2 of [Ubbiali *et al.* (2024)](https://doi.org/10.31219/osf.io/z8uqr).
+SCO V1.1.0 implement SCO V1.0.0. by aligning it to the [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html). SCO V1.0.0. employes only BFO as the upper level ontology. This implementation aims to consolidate SCO as a pivotal resource upon which to harmonize and integrate ontologies regarding sustainability.
 
-The SCO SV includes two spreadsheets: 
+SCO V1.1.0 is comprised of two segments: SCO-B (B for BFO) and SCO-U (U for UFO). SCO-B aligns the SCO vocabulary with BFO (as SCO V1.0.0). SCO-U aligns the SCO vocabulary with gUFO ([UFO implementation in the Web Ontology Language (OWL)](https://nemo-ufes.github.io/gufo/)). SCO-B and SCO-U are currently provided as a single resource.
 
-1) [The SCO SV guidelines.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO%20SV%20guidelines)
-2) [The SCO SV.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO%20SV%20guidelines) 
+SCO V1.1.0 is formalized in [OWL](https://www.w3.org/TR/owl2-overview/) and covers three natural languages, English, French, and Italian. SCO V1.1.0 conforms to [OBO-Foundry principles](https://obofoundry.org/principles/fp-000-summary.html).
 
-The SV guidelines spreadsheet details the methodology followed for constructing the list.
+This project is presently undergoing active development. See the [related development protocol](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/sco%20development%20protocol) and working materials for the current status and details.
 
-SCO structured vocabulary spreadsheets are available in both Excel and CSV formats. The SCO SV spreadsheet also contains the graphical representation (named Supplementary Fig. S1 The structured vocabulary of SCO) of SCO SV in JPG format.
-
-SCO V1.0.0., [the first stable released version of SCO](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0), extends and deepens the SCO SV. It is formalized in [Web Ontology Language (OWL)](https://www.w3.org/TR/owl2-overview/) and covers three natural languages, English, French, and Italian. SCO encompasses 80 classes, 84 object properties, 65 annotation properties, and 2 individuals. SCO V1.0.0 conforms to [OBO-Foundry principles](https://obofoundry.org/principles/fp-000-summary.html).
-
-[SCO V1.0.0.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO) is rendered in [OWL/XML](https://www.w3.org/TR/owl2-overview/), [RDF/XML](https://www.w3.org/TR/rdf-syntax-grammar/), and [Terse RDF Triple Language](https://www.w3.org/TR/turtle/). The SCO protocol is available in both Word and PDF formats. [SCO materials](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO) have been organized considering a possible future migration of this repo to the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
-
-SCO V1.0.0 extends
 
 SCO materials, including a protocol detailing the process followed to develop this ontology, can be found here:
 
-- [SCO V1.0.0. materials-total.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO)
-- [SCO V1.0.0. current release. ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO)
-- [SCO V1.0.0. final draft version prior to release. ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO/src/ontology)
-- [SCO V1.0.0. imports from other ontologies. ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO/src/ontology/imports)
-- [SCO V1.0.0. development protocol. ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO/sco%20development%20protocol)
-  
+- [SCO V1.0.0.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0)
 - [SCO V1.1.0. materials-total](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO).
 - [SCO V1.1.0. working-in-progress version](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/src/ontology).
 - [SCO V1.1.0. imports from other ontologies](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/src/ontology/imports).
-- SCO V1.1.0. development protocol.
+- [SCO V1.1.0. development protocol](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/sco%20development%20protocol).
 
-
-
-
-The most recent version of SCO can be always found [here](https://github.com/gioUbbiali/Sustainability-Core-Ontology).
+The most recent released version of SCO can be always found [here](https://github.com/gioUbbiali/Sustainability-Core-Ontology).
 SCO is also accessible on [AgroPortal](https://agroportal.lirmm.fr/ontologies/SCO), [BioPortal](https://bioportal.bioontology.org/ontologies/SCO_V1), and [IndustryPortal](https://industryportal.enit.fr/ontologies/SCO).
+
 
 ##  SCO Developer   
 
 [Giorgio A.Ubbiali](https://orcid.org/0000-0001-7872-1770)
 
-##  Supervisors  
 
-[Andrea Borghini](https://orcid.org/0000-0002-2239-1482)
+## Involved Institutions in the Development of SCO V1.1.0. 
 
-[Matthew C. Lange](https://orcid.org/0000-0002-6148-7962)
+[UNIMI](https://www.unimi.it/it)
+
+[UT](https://www.utwente.nl/en/)
 
 
-## Currently Involved Institutions
+## Involved Institutions in the Development of SCO V1.0.0. 
 
 [UNIMI](https://www.unimi.it/it)
 

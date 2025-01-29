@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://gioUbbiali.github.io/sco/sco.owl"
-     versionIRI="http://gioUbbiali.github.io/sco/v1.0.0/24-09-13/sco-edit.owl">
+     versionIRI="http://gioUbbiali.github.io/sco/v1.0.0/24-09-17/sco.owl">
     <Prefix name="" IRI="http://www.semanticweb.org/gaubb/ontologies/sco#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="bfo" IRI="http://purl.obolibrary.org/obo/"/>
@@ -63,7 +63,7 @@ SCO SV is available on GitHub at the following link: https://github.com/gioUbbia
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal xml:lang="en">2024-09-13</Literal>
+        <Literal xml:lang="en">2024-09-17</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>

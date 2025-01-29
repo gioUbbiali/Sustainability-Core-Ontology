@@ -279,6 +279,9 @@ SCO SV is available on GitHub at the following link: https://github.com/gioUbbia
         <ObjectProperty abbreviatedIRI="CommonCoreOntologies:represents"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual abbreviatedIRI="AnnotationVocabulary:Provisional"/>
     </Declaration>
     <Declaration>
@@ -1699,6 +1702,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000042"/>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000043"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Category"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
+    </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="AnnotationVocabulary:MaturityLevel"/>
         <NamedIndividual abbreviatedIRI="AnnotationVocabulary:Provisional"/>

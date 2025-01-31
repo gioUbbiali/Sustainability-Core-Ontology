@@ -279,7 +279,40 @@ SCO SV is available on GitHub at the following link: https://github.com/gioUbbia
         <ObjectProperty abbreviatedIRI="CommonCoreOntologies:represents"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000007"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000008"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000009"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000010"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000011"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000020"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000021"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000022"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000023"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="AnnotationVocabulary:Provisional"/>
@@ -738,6 +771,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000001"/>
+        <Class IRI="http://purl.org/nemo/gufo#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000001"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="bfo:BFO_0000015"/>
             <ObjectSomeValuesFrom>
@@ -778,6 +815,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000002"/>
         <Class abbreviatedIRI="bfo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000002"/>
+        <Class IRI="http://purl.org/nemo/gufo#Event"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000002"/>
@@ -1021,7 +1062,7 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000011"/>
-        <Class abbreviatedIRI="bfo:BFO_0000182"/>
+        <Class IRI="http://purl.org/nemo/gufo#Event"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000012"/>
@@ -1703,8 +1744,52 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000043"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000007"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000008"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000009"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000010"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000011"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#Category"/>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000020"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000021"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000022"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000023"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="AnnotationVocabulary:MaturityLevel"/>

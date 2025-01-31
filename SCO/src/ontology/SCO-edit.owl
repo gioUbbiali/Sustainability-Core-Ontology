@@ -285,6 +285,9 @@ SCO SV is available on GitHub at the following link: https://github.com/gioUbbia
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000002"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000006"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000007"/>
     </Declaration>
     <Declaration>
@@ -300,6 +303,15 @@ SCO SV is available on GitHub at the following link: https://github.com/gioUbbia
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000011"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000012"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
     </Declaration>
     <Declaration>
@@ -313,6 +325,45 @@ SCO SV is available on GitHub at the following link: https://github.com/gioUbbia
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000023"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000024"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000025"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000026"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000027"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000028"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000029"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000031"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000032"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000033"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000034"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000035"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000036"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="bfo:RO_0002577"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="AnnotationVocabulary:Provisional"/>
@@ -910,6 +961,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000006"/>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000006"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="bfo:BFO_0000040"/>
             <ObjectSomeValuesFrom>
@@ -1084,6 +1139,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="bfo:BFO_0000040"/>
             <ObjectComplementOf>
@@ -1097,6 +1156,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="bfo:BFO_0000040"/>
             <ObjectComplementOf>
@@ -1107,10 +1170,6 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
         <Class abbreviatedIRI="bfo:RO_0002577"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
-        <Class IRI="http://purl.org/nemo/gufo#FunctionalComplex"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
@@ -1392,8 +1451,16 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <Class abbreviatedIRI="bfo:BFO_0000146"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000024"/>
+        <Class IRI="http://purl.org/nemo/gufo#Endurant"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000025"/>
         <Class abbreviatedIRI="bfo:BFO_0000028"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000025"/>
+        <Class IRI="http://purl.org/nemo/gufo#Endurant"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000026"/>
@@ -1601,6 +1668,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="bfo:RO_0002577"/>
+        <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="bfo:RO_0002577"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="bfo:BFO_0000040"/>
             <ObjectSomeValuesFrom>
@@ -1752,6 +1823,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000002"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000006"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#EventType"/>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000007"/>
     </ClassAssertion>
@@ -1772,7 +1847,19 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000011"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Phase"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000012"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#Category"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Category"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Phase"/>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1790,6 +1877,58 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#EventType"/>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000023"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000024"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000025"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Category"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000026"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#PhaseMixin"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000027"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Category"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000028"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#PhaseMixin"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000029"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000031"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000032"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#PhaseMixin"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000033"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#PhaseMixin"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000034"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#RoleMixin"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000035"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#RoleMixin"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000036"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual abbreviatedIRI="bfo:RO_0002577"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="AnnotationVocabulary:MaturityLevel"/>
@@ -2973,6 +3112,11 @@ http://humanbehaviourchange.org/ontology/BCIO_006063</Literal>
         <Literal>Future SCO implementations may deal with representing system environment boudaries.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://gioUbbiali.github.io/sco/SCO_0000024</IRI>
+        <Literal xml:lang="en">We currently only included the classes “system boundary” and “system spatial region” (and subclasses) as subclasses of the “endurant” class. We envision discussions with subject matter experts regarding including the entire BFO “immaterial entity” hierarchy branch under the class “endurant”.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://gioUbbiali.github.io/sco/SCO_0000024</IRI>
         <Literal xml:lang="it">confine del sistema</Literal>
@@ -3006,6 +3150,11 @@ http://humanbehaviourchange.org/ontology/BCIO_006063</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://gioUbbiali.github.io/sco/SCO_0000025</IRI>
         <Literal>Future SCO implementations may consider including classes also covering spatial region for the system environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://gioUbbiali.github.io/sco/SCO_0000025</IRI>
+        <Literal xml:lang="en">We currently only included the classes “system boundary” and “system spatial region” (and subclasses) as subclasses of the “endurant” class. We envision discussions with subject matter experts regarding including the entire BFO “immaterial entity” hierarchy branch under the class “endurant”.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

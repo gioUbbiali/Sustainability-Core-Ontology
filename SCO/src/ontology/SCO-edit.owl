@@ -216,6 +216,15 @@ SCO SV is available on GitHub at the following link: https://github.com/gioUbbia
         <Class abbreviatedIRI="CommonCoreOntologies:RepresentationalInformationContentEntity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="https://purl.org/krdb-core/cover#Disposition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/krdb-core/cover#Mode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/krdb-core/cover#Trope"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="AnnotationVocabulary:MaturityLevel"/>
     </Declaration>
     <Declaration>
@@ -285,6 +294,15 @@ SCO SV is available on GitHub at the following link: https://github.com/gioUbbia
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000002"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000005"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000006"/>
     </Declaration>
     <Declaration>
@@ -313,6 +331,18 @@ SCO SV is available on GitHub at the following link: https://github.com/gioUbbia
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000017"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000018"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000019"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000020"/>
@@ -345,6 +375,9 @@ SCO SV is available on GitHub at the following link: https://github.com/gioUbbia
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000029"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000030"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000031"/>
     </Declaration>
     <Declaration>
@@ -363,7 +396,31 @@ SCO SV is available on GitHub at the following link: https://github.com/gioUbbia
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000036"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000040"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000042"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000043"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual abbreviatedIRI="bfo:RO_0002577"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="CommonCoreOntologies:InformationContentEntity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="CommonCoreOntologies:RepresentationalInformationContentEntity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://purl.org/krdb-core/cover#Disposition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://purl.org/krdb-core/cover#Mode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://purl.org/krdb-core/cover#Trope"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="AnnotationVocabulary:Provisional"/>
@@ -1241,6 +1298,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
+        <Class IRI="https://purl.org/krdb-core/cover#Disposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="bfo:BFO_0000016"/>
             <ObjectSomeValuesFrom>
@@ -1278,6 +1339,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000017"/>
+        <Class IRI="http://purl.org/nemo/gufo#ExtrinsicMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000017"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="bfo:BFO_0000023"/>
             <ObjectSomeValuesFrom>
@@ -1292,6 +1357,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000018"/>
+        <Class IRI="http://purl.org/nemo/gufo#ExtrinsicMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000018"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="bfo:BFO_0000023"/>
             <ObjectSomeValuesFrom>
@@ -1303,6 +1372,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000019"/>
         <Class abbreviatedIRI="bfo:BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000019"/>
+        <Class IRI="http://purl.org/nemo/gufo#ExtrinsicMode"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000019"/>
@@ -1635,8 +1708,16 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <Class abbreviatedIRI="bfo:BFO_0000020"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000041"/>
+        <Class IRI="http://purl.org/nemo/gufo#Aspect"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000042"/>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000041"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000042"/>
+        <Class IRI="http://purl.org/nemo/gufo#Quality"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000042"/>
@@ -1651,6 +1732,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000043"/>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000041"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000043"/>
+        <Class IRI="http://purl.org/nemo/gufo#Quality"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000043"/>
@@ -1739,8 +1824,35 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <Class abbreviatedIRI="bfo:BFO_0000031"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="CommonCoreOntologies:InformationContentEntity"/>
+        <Class IRI="http://purl.org/nemo/gufo#Aspect"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="CommonCoreOntologies:RepresentationalInformationContentEntity"/>
         <Class abbreviatedIRI="CommonCoreOntologies:InformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/krdb-core/cover#Disposition"/>
+        <Class IRI="https://purl.org/krdb-core/cover#Mode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/krdb-core/cover#Mode"/>
+        <Class IRI="http://purl.org/nemo/gufo#Aspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/krdb-core/cover#Mode"/>
+        <Class IRI="https://purl.org/krdb-core/cover#Trope"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/krdb-core/cover#Mode"/>
+        <ObjectUnionOf>
+            <Class IRI="http://purl.org/nemo/gufo#ExtrinsicMode"/>
+            <Class IRI="http://purl.org/nemo/gufo#IntrinsicMode"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://purl.org/krdb-core/cover#Trope"/>
+        <Class IRI="http://purl.org/nemo/gufo#Aspect"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000002"/>
@@ -1814,6 +1926,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000042"/>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000043"/>
     </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.org/nemo/gufo#Quality"/>
+        <Class IRI="https://purl.org/krdb-core/cover#Mode"/>
+    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#EventType"/>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000001"/>
@@ -1821,6 +1937,18 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#EventType"/>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Phase"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Phase"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Phase"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000005"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#Kind"/>
@@ -1863,6 +1991,22 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#RoleMixin"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000017"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#RoleMixin"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000018"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Role"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000019"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#EventType"/>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000020"/>
     </ClassAssertion>
@@ -1903,6 +2047,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000029"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Phase"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000030"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000031"/>
     </ClassAssertion>
@@ -1927,8 +2075,40 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000036"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Phase"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000040"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000042"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000043"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#Kind"/>
         <NamedIndividual abbreviatedIRI="bfo:RO_0002577"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual abbreviatedIRI="CommonCoreOntologies:InformationContentEntity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
+        <NamedIndividual abbreviatedIRI="CommonCoreOntologies:RepresentationalInformationContentEntity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Category"/>
+        <NamedIndividual IRI="https://purl.org/krdb-core/cover#Disposition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Category"/>
+        <NamedIndividual IRI="https://purl.org/krdb-core/cover#Mode"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Category"/>
+        <NamedIndividual IRI="https://purl.org/krdb-core/cover#Trope"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="AnnotationVocabulary:MaturityLevel"/>
@@ -16753,6 +16933,28 @@ A chemical with no chiral centers can not have an enantiomer. A chemical with mu
         <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
         <AbbreviatedIRI>CommonCoreOntologies:represents</AbbreviatedIRI>
         <Literal xml:lang="en">Given a stronger temporal interpretation, this property may be functional. For more info please refer to https://github.com/BFO-ontology/BFO-2020/tree/master/src/owl/temporal%20extensions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/krdb-core/cover#Disposition</IRI>
+        <Literal xml:lang="en">Disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://purl.org/krdb-core/cover#Mode</IRI>
+        <Literal xml:lang="en">SCO developer: COVER duplicates the class gUFO “quality” and creates a disjointedness restriction with the class “mode”. We apply this restriction to gUFO “quality” class, removing the COVER duplicated class. 
+
+https://purl.org/krdb-core/cover#Quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/krdb-core/cover#Mode</IRI>
+        <Literal xml:lang="en">Mode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://purl.org/krdb-core/cover#Trope</IRI>
+        <Literal xml:lang="en">Trope</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

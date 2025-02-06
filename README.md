@@ -18,8 +18,8 @@ The SCO SV is an initial (non-exhaustive) ontological resource providing some es
 
 The SCO SV includes two spreadsheets: 
 
-1) [The SCO SV guidelines.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO%20SV%20guidelines)
-2) [The SCO SV.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO%20SV%20guidelines) 
+- [The SCO SV guidelines.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO%20SV%20guidelines)
+- [The SCO SV.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO%20SV%20guidelines) 
 
 The SV guidelines spreadsheet details the methodology followed for constructing the list.
 

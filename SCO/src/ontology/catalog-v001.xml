@@ -2,7 +2,7 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://purl.org/nemo/gufo#/1.0.0" uri="http://purl.org/nemo/gufo#"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1738432661600" name="http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-edit.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1738432661600" name="shadowed:http://gioUbbiali.github.io/sco/sco.owl" uri="imports/SCO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1739365063509" name="http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1739365063509" name="shadowed:http://gioUbbiali.github.io/sco/sco.owl" uri="imports/SCO.owl"/>
     </group>
 </catalog>

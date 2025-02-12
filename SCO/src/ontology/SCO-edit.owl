@@ -873,13 +873,16 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://purl.org/krdb-core/cover#Trope"/>
+        <ObjectUnionOf>
+            <Class IRI="http://purl.org/nemo/gufo#Quality"/>
+            <Class IRI="https://purl.org/krdb-core/cover#Mode"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000001"/>
         <Class abbreviatedIRI="bfo:BFO_0000015"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000001"/>
-        <Class IRI="http://purl.org/nemo/gufo#Event"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000001"/>
@@ -1820,6 +1823,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.org/nemo/gufo#Quality"/>
+        <Class IRI="https://purl.org/krdb-core/cover#Trope"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="CommonCoreOntologies:InformationContentEntity"/>
         <Class abbreviatedIRI="bfo:BFO_0000031"/>
     </SubClassOf>
@@ -1943,7 +1950,7 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000003"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Phase"/>
+        <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1987,7 +1994,7 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Phase"/>
+        <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -16950,6 +16957,13 @@ https://purl.org/krdb-core/cover#Quality</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://purl.org/krdb-core/cover#Mode</IRI>
         <Literal xml:lang="en">Mode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://purl.org/krdb-core/cover#Trope</IRI>
+        <Literal xml:lang="en">SCO developer: COVER duplicates the class gUFO “quality” and creates axiomatization over that duplicated class. We removed the COVER duplicated class and reproposed COVER axiomatization applying it to gUFO “quality” class.
+
+https://purl.org/krdb-core/cover#Quality</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

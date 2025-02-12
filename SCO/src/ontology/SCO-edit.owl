@@ -2002,15 +2002,15 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#RoleMixin"/>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000017"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#RoleMixin"/>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000018"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Role"/>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000019"/>
     </ClassAssertion>
     <ClassAssertion>

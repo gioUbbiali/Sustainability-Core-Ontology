@@ -243,6 +243,9 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
         <ObjectProperty IRI="http://gioUbbiali.github.io/sco/SCO_0000038"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="/SCO0000044"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty abbreviatedIRI="bfo:RO_0000052"/>
     </Declaration>
     <Declaration>
@@ -704,13 +707,22 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000024"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="bfo:BFO_0000146"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="bfo:BFO_0000137"/>
-                <Class abbreviatedIRI="bfo:RO_0002577"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <Class abbreviatedIRI="bfo:BFO_0000030"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.org/nemo/gufo#isObjectProperPartOf"/>
+                    <Class abbreviatedIRI="bfo:RO_0002577"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class abbreviatedIRI="bfo:BFO_0000146"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="bfo:BFO_0000137"/>
+                    <Class abbreviatedIRI="bfo:RO_0002577"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000026"/>
@@ -774,23 +786,41 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000030"/>
-        <ObjectIntersectionOf>
-            <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="bfo:RO_0000092"/>
-                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000036"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="bfo:RO_0000092"/>
+                    <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000036"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+                    <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000036"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000031"/>
-        <ObjectIntersectionOf>
-            <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000024"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="bfo:BFO_0000137"/>
-                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000024"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="bfo:BFO_0000137"/>
+                    <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000024"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.org/nemo/gufo#isObjectProperPartOf"/>
+                    <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000033"/>
@@ -1257,6 +1287,16 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="bfo:RO_0002577"/>
             <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="/SCO0000044"/>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000032"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="bfo:RO_0002577"/>
+            <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="bfo:BFO_0000056"/>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000010"/>
             </ObjectSomeValuesFrom>
@@ -1297,6 +1337,12 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal xml:lang="en">See annotations to the SCO &apos;occupies spatial region at all times&apos; object property.
+
+http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
+        </Annotation>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="bfo:RO_0002577"/>
@@ -1358,6 +1404,19 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://purl.org/krdb-core/cover#Disposition"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+                <ObjectUnionOf>
+                    <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000026"/>
+                    <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000028"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000017"/>
         <Class abbreviatedIRI="bfo:BFO_0000023"/>
     </SubClassOf>
@@ -1376,6 +1435,16 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000017"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/nemo/gufo#ExtrinsicMode"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000035"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000018"/>
         <Class abbreviatedIRI="bfo:BFO_0000023"/>
     </SubClassOf>
@@ -1389,6 +1458,16 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
             <Class abbreviatedIRI="bfo:BFO_0000023"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="bfo:RO_0000081"/>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000036"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000018"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/nemo/gufo#ExtrinsicMode"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000036"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
@@ -1754,6 +1833,16 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000042"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/nemo/gufo#Quality"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000043"/>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000041"/>
     </SubClassOf>
@@ -1772,8 +1861,14 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="bfo:RO_0002577"/>
-        <Class abbreviatedIRI="bfo:BFO_0000040"/>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000043"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/nemo/gufo#Quality"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="bfo:RO_0002577"/>
@@ -1839,6 +1934,22 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
             <Class abbreviatedIRI="bfo:BFO_0000040"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="bfo:BFO_0000211"/>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000025"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal xml:lang="en">See annotations to the SCO &apos;occupies spatial region at all times&apos; object property.
+
+http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
+        </Annotation>
+        <Class abbreviatedIRI="bfo:RO_0002577"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/nemo/gufo#Object"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="/SCO0000044"/>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000025"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
@@ -2155,6 +2266,10 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         <ObjectProperty abbreviatedIRI="bfo:BFO_0000056"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="/SCO0000044"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty abbreviatedIRI="bfo:RO_0000052"/>
         <ObjectProperty abbreviatedIRI="bfo:RO_0002314"/>
     </SubObjectPropertyOf>
@@ -2262,6 +2377,14 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+            <Literal xml:lang="en">See annotations to the object property.</Literal>
+        </Annotation>
+        <ObjectProperty IRI="/SCO0000044"/>
+        <Class abbreviatedIRI="bfo:RO_0002577"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="bfo:RO_0000079"/>
         <Class abbreviatedIRI="bfo:BFO_0000034"/>
     </ObjectPropertyDomain>
@@ -2301,6 +2424,14 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of</Lite
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://gioUbbiali.github.io/sco/SCO_0000038"/>
         <Class abbreviatedIRI="bfo:BFO_0000015"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal xml:lang="en">See annotations to the object property.</Literal>
+        </Annotation>
+        <ObjectProperty IRI="/SCO0000044"/>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000025"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="bfo:RO_0000053"/>
@@ -4171,6 +4302,38 @@ This procedure supports establishing indirectly the grounding of certain entitie
         <AnnotationProperty abbreviatedIRI="AnnotationVocabulary:maturity"/>
         <IRI>http://gioUbbiali.github.io/sco/SCO_0000043</IRI>
         <AbbreviatedIRI>AnnotationVocabulary:Provisional</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SCO0000044</IRI>
+        <Literal xml:lang="en">As UFO does not deal with spatial regions, we currently restrict these object properties to “system” and “system spatial region” classes. This is adequate for the purposes of SCO. For the same reasons, we equally judged it adequate to focus on this property and not address its upper-level object property. Nevertheless, we envision discussions with subject matter experts regarding spatial region representation using UFO and gUFO and related object property modeling.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SCO0000044</IRI>
+        <Literal xml:lang="en">This object property is intended to correspond to BFO &apos;occupies spatial region at all times&apos; object property within the context of UFO representation.
+
+http://purl.obolibrary.org/obo/BFO_0000211</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/SCO0000044</IRI>
+        <Literal xml:lang="it">occupa la regione spaziale in qualsiasi momento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/SCO0000044</IRI>
+        <Literal xml:lang="fr">occupe la région d’ espace à chaque temps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/SCO0000044</IRI>
+        <Literal xml:lang="en">occupies spatial region at all times</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>/SCO0000044</IRI>
+        <Literal xml:lang="en">http://purl.obolibrary.org/obo/BFO_0000211</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="bfo:IAO_0000115"/>

@@ -27,8 +27,8 @@ SCO materials, including a protocol detailing the process followed to develop th
 
 - [SCO V1.0.0.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0)
 - [SCO V1.1.0. materials-total](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO).
-- SCO-B.
-- SCO-U.
+- [SCO-B.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/src)
+- [SCO-U.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/src)
 - [SCO V1.1.0. working-in-progress version](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/src/ontology).
 - [SCO V1.1.0. imports from other ontologies](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/src/ontology/imports).
 - [SCO V1.1.0. development protocol](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/working%20materials/sco%20development%20protocol).

@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://gioUbbiali.github.io/sco/sco.owl"
-     versionIRI="http://gioUbbiali.github.io/sco/v1.1.0/25-01-29/sco-edit.owl">
+     versionIRI="http://gioUbbiali.github.io/sco/v1.1.0/25-01-29/sco-u-edit.owl">
     <Prefix name="" IRI="http://www.semanticweb.org/gaubb/ontologies/sco#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="bfo" IRI="http://purl.obolibrary.org/obo/"/>
@@ -31,7 +31,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:description"/>
-        <Literal xml:lang="en">SCO V1.1.0 aligns with two Top-Level Ontologies (TLOs), Basic Formal Ontology (BFO) and Unified Foundational Ontology (UFO). SCO V1.1.0 is comprised of two segments: SCO-B (B for BFO) and SCO-U (U for UFO). SCO-B aligns the SCO vocabulary with BFO (as SCO V1.0.0). SCO-U aligns the SCO vocabulary with gUFO (UFO implementation in the Web Ontology Language (OWL)). 
+        <Literal xml:lang="en">SCO V1.1.0 aligns with two Top-Level Ontologies (TLOs), Basic Formal Ontology (BFO) and Unified Foundational Ontology (UFO). SCO V1.1.0 is comprised of two segments: SCO-B (B for BFO) and SCO-U (U for UFO). SCO-B aligns the SCO vocabulary with BFO (as SCO V1.0.0). SCO-U aligns the SCO vocabulary with gUFO (UFO implementation in the Web Ontology Language (OWL)). This file provides SCO-U segment.
 
 References – TLOs:  
 https://github.com/BFO-ontology/BFO-2020 
@@ -77,7 +77,7 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal>Version 1.1.0.</Literal>
+        <Literal xml:lang="en">Version 1.1.0.; segment U.</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="skos:note"/>

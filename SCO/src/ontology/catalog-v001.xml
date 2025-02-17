@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://gioUbbiali.github.io/sco/v1.0.0/24-09-17/sco.owl" uri="https://raw.githubusercontent.com/gioUbbiali/Sustainability-Core-Ontology/refs/heads/main/SCO/SCO.owl"/>
+    <uri id="User Entered Import Resolution" name="http://gioUbbiali.github.io/sco/v1.0.0/24-09-17/sco.owl" uri="catalog-v001.xml"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/nemo/gufo#/1.0.0" uri="http://purl.org/nemo/gufo#"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1739547607405" name="http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-edit.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1739547607405" name="shadowed:http://gioUbbiali.github.io/sco/sco.owl" uri="imports/SCO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1739803780441" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-B-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1739803780441" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1739803780441" name="http://www.semanticweb.org/gaubb/ontologies/2025/1/untitled-ontology-15/" uri="SCO-B-edit.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1739803780441" name="shadowed:http://gioUbbiali.github.io/sco/sco.owl" uri="imports/SCO-B%20imports/SCO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1739803780441" name="shadowed:http://gioUbbiali.github.io/sco/sco.owl" uri="imports/SCO-U%20imports/SCO.owl"/>
     </group>
 </catalog>

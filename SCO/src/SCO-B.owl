@@ -62,7 +62,7 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal>2025-01-29</Literal>
+        <Literal>2025-02-17</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>

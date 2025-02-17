@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://gioUbbiali.github.io/sco/sco.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://gioUbbiali.github.io/sco/sco.owl"
+     versionIRI="http://gioUbbiali.github.io/sco/v1.1.0/25-01-29/sco-b-edit.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/gaubb/ontologies/2025/1/untitled-ontology-15/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://gioUbbiali.github.io/sco/v1.0.0/24-09-17/sco.owl</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal xml:lang="en">Giorgio A. Ubbiali</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal xml:lang="en">SCO V1.1.0 aligns with two Top-Level Ontologies (TLOs), Basic Formal Ontology (BFO) and Unified Foundational Ontology (UFO). SCO V1.1.0 is comprised of two segments: SCO-B (B for BFO) and SCO-U (U for UFO). SCO-B aligns the SCO vocabulary with BFO (as SCO V1.0.0). SCO-U aligns the SCO vocabulary with gUFO (UFO implementation in the Web Ontology Language (OWL)). This file provides SCO-B segment.
+
+References – TLOs:  
+https://github.com/BFO-ontology/BFO-2020 
+https://ontouml.readthedocs.io/en/latest/intro/ufo.html 
+https://nemo-ufes.github.io/gufo/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <Literal xml:lang="en">SCO is a middle-level ontology, representing the major theoretical challenges to sustainability:
+1) The polysemy of the term sustainability.
+2) The relationship between sustainability and sustainable development.
+3) The complexity underlying sustainability.
+SCO aims to play a pivotal role in harmonizing and integrating top-level and domain ontologies regarding sustainability.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal xml:lang="it">L&apos;ontologia fondazionale della sostenibilità</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal xml:lang="fr">L&apos;ontologie fondationnelle de la durabilité</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal xml:lang="en">Sustainability Core Ontology (SCO)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal xml:lang="en">Ubbiali, G. A., Borghini, A., &amp; Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
+        <Literal xml:lang="en">SCO V1.0.0.
+https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">Version 1.1.0.; segment SCO-B</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>2025-01-29</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+        <Literal xml:lang="en">Currently, this resource includes labels and definitions in the following three natural languages: English, Italian, and French. In the next version of this resource, the creator intends to also encompass Italian and French translations of the remaining pieces of information as well as to cover other natural languages.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+        <Literal xml:lang="en">The current version of SCO does not cover classes and object properties accounting for systems granularity, scales, and levels. A deeper representation of system change and behaviors is equally required. These themes will be topics of inclusion in the next version of this resource.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+        <Literal xml:lang="en">The current version of this resource does not include semi-formal natural language definitions or First Order Logics definitions. In the next version of this resource, the creator intends to also include them.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+        <Literal xml:lang="en">The most recent version of this file is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology.git</Literal>
+    </Annotation>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

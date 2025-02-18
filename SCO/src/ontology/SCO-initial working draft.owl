@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://gioUbbiali.github.io/sco/sco.owl"
-     versionIRI="http://gioUbbiali.github.io/sco/v1.1.0/25-01-29/sco-u-edit.owl">
+     versionIRI="http://gioUbbiali.github.io/sco/v1.1.0/25-01-29/sco-udraft-edit.owl">
     <Prefix name="" IRI="http://www.semanticweb.org/gaubb/ontologies/sco#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="bfo" IRI="http://purl.obolibrary.org/obo/"/>

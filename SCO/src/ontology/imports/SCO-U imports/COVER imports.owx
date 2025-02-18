@@ -22,10 +22,25 @@
         <Literal xml:lang="en">2025-02-17</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="http://purl.org/nemo/gufo#Aspect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/nemo/gufo#Category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/nemo/gufo#ExtrinsicMode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/nemo/gufo#IntrinsicMode"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="https://purl.org/krdb-core/cover#Disposition"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://purl.org/krdb-core/cover#Mode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://purl.org/krdb-core/cover#Quality"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://purl.org/krdb-core/cover#Trope"/>
@@ -38,21 +53,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://purl.org/krdb-core/cover#Trope"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/nemo/gufo#ExtrinsicMode"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/nemo/gufo#Aspect"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://purl.org/krdb-core/cover#Quality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/nemo/gufo#Category"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.org/nemo/gufo#IntrinsicMode"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="https://purl.org/krdb-core/cover#Trope"/>

@@ -589,10 +589,20 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
     <EquivalentClasses>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
         <ObjectIntersectionOf>
-            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+            <Class IRI="http://purl.org/nemo/gufo#Object"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://purl.org/nemo/gufo#isObjectProperPartOf"/>
                 <Class IRI="http://purl.obolibrary.org/obo/RO_0002577"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/nemo/gufo#Object"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/nemo/gufo#isObjectProperPartOf"/>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000006"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -736,8 +746,26 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
         <Class IRI="http://purl.org/nemo/gufo#Object"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/nemo/gufo#Object"/>
+            <ObjectComplementOf>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
         <Class IRI="http://purl.org/nemo/gufo#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/nemo/gufo#Object"/>
+            <ObjectComplementOf>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
@@ -1113,124 +1141,15 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
         <NamedIndividual IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
     </ClassAssertion>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://gioUbbiali.github.io/sco/SCO_0000037"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000057"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://gioUbbiali.github.io/sco/SCO_0000038"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000056"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="/SCO0000044"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002314"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000079"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000080"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000081"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000085"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000087"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000091"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000092"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002163"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002323"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002314"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002502"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represented_by"/>
-        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represents"/>
-        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
-    </SubObjectPropertyOf>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="http://gioUbbiali.github.io/sco/SCO_0000037"/>
-        <ObjectProperty IRI="http://gioUbbiali.github.io/sco/SCO_0000038"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000079"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000085"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000080"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000081"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000087"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000091"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000092"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
-        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represented_by"/>
-        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represents"/>
-    </InverseObjectProperties>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
     </FunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
     </InverseFunctionalObjectProperty>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://gioUbbiali.github.io/sco/SCO_0000037"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://gioUbbiali.github.io/sco/SCO_0000038"/>
-        <ObjectUnionOf>
-            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000020"/>
-            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
-            <ObjectIntersectionOf>
-                <Class IRI="http://purl.obolibrary.org/obo/BFO_0000004"/>
-                <ObjectComplementOf>
-                    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000006"/>
-                </ObjectComplementOf>
-            </ObjectIntersectionOf>
-        </ObjectUnionOf>
-    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
@@ -1239,47 +1158,6 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
         <ObjectProperty IRI="/SCO0000044"/>
         <Class IRI="http://purl.obolibrary.org/obo/RO_0002577"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000079"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000085"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000004"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000087"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000004"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000091"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000004"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
-        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represents"/>
-        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://gioUbbiali.github.io/sco/SCO_0000037"/>
-        <ObjectUnionOf>
-            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000020"/>
-            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000031"/>
-            <ObjectIntersectionOf>
-                <Class IRI="http://purl.obolibrary.org/obo/BFO_0000004"/>
-                <ObjectComplementOf>
-                    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000006"/>
-                </ObjectComplementOf>
-            </ObjectIntersectionOf>
-        </ObjectUnionOf>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://gioUbbiali.github.io/sco/SCO_0000038"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1287,38 +1165,6 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
         </Annotation>
         <ObjectProperty IRI="/SCO0000044"/>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000025"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000020"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000085"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000087"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000091"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000016"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000001"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of"/>
-        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represented_by"/>
-        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -16286,98 +16132,6 @@ https://purl.org/krdb-core/cover#Quality</Literal>
         <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote</IRI>
         <Literal xml:lang="en-us">note that provides information about how a given notion or resource is used in the ontology&apos;s context</Literal>
     </AnnotationAssertion>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/RO_0001900"/>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/RO_0002422"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/RO_0002421"/>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/RO_0002416"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/RO_0002422"/>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/RO_0002421"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom"/>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/directSource"/>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/excerptedFrom"/>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote"/>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom"/>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition"/>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom"/>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition"/>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition"/>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale"/>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom"/>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageDefinition"/>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/subjectMatterExpertExplanation"/>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-    </SubAnnotationPropertyOf>
-    <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote"/>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-    </SubAnnotationPropertyOf>
-    <AnnotationPropertyRange>
-        <AnnotationProperty IRI="http://gioUbbiali.github.io/sco/SCO_0000039"/>
-        <IRI>/SCO_0000016</IRI>
-    </AnnotationPropertyRange>
 </Ontology>
 
 

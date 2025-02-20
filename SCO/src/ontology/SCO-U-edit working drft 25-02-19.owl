@@ -260,16 +260,58 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
         <ObjectProperty IRI="/SCO_0000048"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/SCO_0000049"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/SCO_0000050"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000079"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000080"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000081"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000085"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000086"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000087"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000091"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000092"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002163"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002314"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002323"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002502"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represented_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/represents"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000001"/>
@@ -461,13 +503,7 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
         <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#editor_note"/>
@@ -512,16 +548,7 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
         <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#scopeNote"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom"/>
@@ -675,10 +702,6 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
         <Class IRI="http://purl.org/nemo/gufo#Event"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
-        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000006"/>
         <Class IRI="http://purl.org/nemo/gufo#Object"/>
     </SubClassOf>
@@ -737,16 +760,6 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
             <ObjectComplementOf>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
             </ObjectComplementOf>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
-        <ObjectIntersectionOf>
-            <Class IRI="http://purl.org/nemo/gufo#Object"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.org/nemo/gufo#isObjectProperPartOf"/>
-                <Class IRI="http://purl.obolibrary.org/obo/RO_0002577"/>
-            </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
@@ -896,10 +909,6 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000032"/>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000025"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000036"/>
         <ObjectIntersectionOf>
             <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000028"/>
@@ -910,10 +919,6 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000030"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000040"/>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000041"/>
@@ -989,42 +994,6 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
         <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
         <Class IRI="http://purl.org/nemo/gufo#Aspect"/>
     </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000006"/>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000024"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000006"/>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000025"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000024"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000025"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000024"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000025"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000024"/>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000025"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000024"/>
-        <Class IRI="http://purl.obolibrary.org/obo/RO_0002577"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000025"/>
-        <Class IRI="http://purl.obolibrary.org/obo/RO_0002577"/>
-    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#EventType"/>
         <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000001"/>
@@ -1205,25 +1174,12 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
         <ObjectProperty IRI="/SCO_0000047"/>
         <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
     </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="/SCO_0000050"/>
-        <ObjectProperty IRI="/SCO_0000049"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.org/nemo/gufo#isAspectProperPartOf"/>
-        <ObjectProperty IRI="/SCO_0000050"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.org/nemo/gufo#isObjectProperPartOf"/>
-        <ObjectProperty IRI="/SCO_0000050"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.org/nemo/gufo#isProperPartOf"/>
-        <ObjectProperty IRI="/SCO_0000049"/>
-    </SubObjectPropertyOf>
-    <TransitiveObjectProperty>
-        <ObjectProperty IRI="/SCO_0000050"/>
-    </TransitiveObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000053"/>
+    </InverseFunctionalObjectProperty>
     <ObjectPropertyDomain>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
@@ -1264,14 +1220,6 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
             </ObjectIntersectionOf>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/SCO_0000049"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/SCO_0000050"/>
-        <Class IRI="http://purl.org/nemo/gufo#Endurant"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1311,14 +1259,6 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
         </Annotation>
         <ObjectProperty IRI="/SCO_0000048"/>
         <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/SCO_0000049"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/SCO_0000050"/>
-        <Class IRI="http://purl.org/nemo/gufo#Endurant"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3173,17 +3113,17 @@ http://purl.obolibrary.org/obo/BFO_0000211</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/SCO_0000044</IRI>
+        <Literal xml:lang="en">Occupies spatial region at all times</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/SCO_0000044</IRI>
         <Literal xml:lang="it">occupa la regione spaziale in qualsiasi momento (UFO)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/SCO_0000044</IRI>
         <Literal xml:lang="fr">occupe la région d’ espace à chaque temps (UFO)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000044</IRI>
-        <Literal xml:lang="en">occupies spatial region</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
@@ -3329,106 +3269,6 @@ Arp, R., Smith, B., &amp; Spear, A. D. 2015. Building Ontologies with Basic Form
     <AnnotationAssertion>
         <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
         <IRI>/SCO_0000048</IRI>
-        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/SCO_0000049</IRI>
-        <Literal xml:lang="en">Do not use this object property directly. It has been constructed as a grouping for object properties dealing with parthood and proper parthood.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000049</IRI>
-        <Literal xml:lang="fr">est une partie de</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000049</IRI>
-        <Literal xml:lang="en">is part of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000049</IRI>
-        <Literal xml:lang="it">è parte di</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>/SCO_0000049</IRI>
-        <Literal xml:lang="en">Currently, we only construct sibling properties required in SCO representation. Additional ones may be constructed on necessity.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>/SCO_0000049</IRI>
-        <Literal>http://purl.obolibrary.org/obo/BFO_0000176 
-http://purl.obolibrary.org/obo/BFO_0000132
-http://purl.obolibrary.org/obo/BFO_0000050</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
-        <IRI>/SCO_0000049</IRI>
-        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/SCO_0000050</IRI>
-        <Literal xml:lang="en">We construct this property definition referring to gUFO ‘is proper part of”, BFO “continuant part of’ and BFO “continuant part of at all time” object properties. 
-
-We envision discussion with subject matter experts to improve this definition.  
-
-http://purl.obolibrary.org/obo/BFO_0000176
-http://purl.obolibrary.org/obo/BFO_0000177
-http://purl.org/nemo/gufo#isProperPartOf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000050</IRI>
-        <Literal xml:lang="fr">est une partie endurante de</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000050</IRI>
-        <Literal xml:lang="en">is endurant part of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000050</IRI>
-        <Literal xml:lang="it">è parte endurante di</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
-            <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
-        </Annotation>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>/SCO_0000050</IRI>
-        <Literal xml:lang="fr">B est une partie endurante de c = Def. a chaque instant t (b existe à t, implique b est une partie endurante de c &amp; b et c sont des endurants).
-
-Elle identifie un ensemble (endurant) c dont l’endurant b est une partie.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
-            <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
-        </Annotation>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>/SCO_0000050</IRI>
-        <Literal xml:lang="en">b is endurant part of c = Def. for all times t, (b exists at t, implies b is endurant part of c at t &amp; b and c are endurants).
-
-It identifies a whole (endurant) c of which the endurant b is a part.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
-            <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
-        </Annotation>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>/SCO_0000050</IRI>
-        <Literal xml:lang="it">b è parte endurante di c = Def. ad ogni tempo t, (b esiste a t, implica b è parte endurante di c a t &amp; b e c sono enduranti).
-Idetifica un insieme (endurante) c di cui l’endurante b è parte.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
-        <IRI>/SCO_0000050</IRI>
         <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -5922,6 +5762,81 @@ This issue is outside the scope of OBI.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000052</IRI>
+        <Literal xml:lang="en">inheres in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000052</IRI>
+        <Literal xml:lang="en">this fragility is a characteristic of this vase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000052</IRI>
+        <Literal xml:lang="en">this red color is a characteristic of this apple</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000052</IRI>
+        <Literal xml:lang="en">a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000052</IRI>
+        <Literal xml:lang="en">inheres_in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000052</IRI>
+        <Literal>Note that this relation was previously called &quot;inheres in&quot;, but was changed to be called &quot;characteristic of&quot; because BFO2 uses &quot;inheres in&quot; in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000052</IRI>
+        <Literal xml:lang="en">characteristic of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000053</IRI>
+        <Literal xml:lang="en">bearer of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000053</IRI>
+        <Literal xml:lang="en">this apple is bearer of this red color</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000053</IRI>
+        <Literal xml:lang="en">this vase is bearer of this fragility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000053</IRI>
+        <Literal xml:lang="en">Inverse of characteristic_of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000053</IRI>
+        <Literal xml:lang="en">A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000053</IRI>
+        <Literal xml:lang="en">bearer_of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000053</IRI>
+        <Literal xml:lang="en">is bearer of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000053</IRI>
+        <Literal xml:lang="en">has characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000111"/>
         <IRI>http://purl.obolibrary.org/obo/RO_0000056</IRI>
         <Literal xml:lang="en">participates in</Literal>
     </AnnotationAssertion>
@@ -6014,6 +5929,216 @@ This issue is outside the scope of OBI.</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/RO_0000059</IRI>
         <Literal xml:lang="en">A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000079</IRI>
+        <Literal xml:lang="en">this catalysis function is a function of this enzyme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000079</IRI>
+        <Literal xml:lang="en">a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000079</IRI>
+        <Literal xml:lang="en">A function inheres in its bearer at all times for which the function exists, however the function need not be realized at all the times that the function exists.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000079</IRI>
+        <Literal xml:lang="en">function_of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000079</IRI>
+        <Literal xml:lang="en">is function of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000079</IRI>
+        <Literal>This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000079</IRI>
+        <Literal xml:lang="en">function of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000080</IRI>
+        <Literal xml:lang="en">this red color is a quality of this apple</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000080</IRI>
+        <Literal xml:lang="en">a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000080</IRI>
+        <Literal xml:lang="en">A quality inheres in its bearer at all times for which the quality exists.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000080</IRI>
+        <Literal xml:lang="en">is quality of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000080</IRI>
+        <Literal xml:lang="en">quality_of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000080</IRI>
+        <Literal>This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000080</IRI>
+        <Literal xml:lang="en">quality of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000081</IRI>
+        <Literal xml:lang="en">this investigator role is a role of this person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000081</IRI>
+        <Literal xml:lang="en">a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000081</IRI>
+        <Literal xml:lang="en">A role inheres in its bearer at all times for which the role exists, however the role need not be realized at all the times that the role exists.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000081</IRI>
+        <Literal xml:lang="en">is role of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000081</IRI>
+        <Literal xml:lang="en">role_of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000081</IRI>
+        <Literal>This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000081</IRI>
+        <Literal xml:lang="en">role of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000085</IRI>
+        <Literal xml:lang="en">this enzyme has function this catalysis function (more colloquially: this enzyme has this catalysis function)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000085</IRI>
+        <Literal xml:lang="en">a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000085</IRI>
+        <Literal xml:lang="en">A bearer can have many functions, and its functions can exist for different periods of time, but none of its functions can exist when the bearer does not exist. A function need not be realized at all the times that the function exists.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000085</IRI>
+        <Literal xml:lang="en">has_function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000085</IRI>
+        <Literal xml:lang="en">has function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000086</IRI>
+        <Literal xml:lang="en">this apple has quality this red color</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000086</IRI>
+        <Literal xml:lang="en">a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000086</IRI>
+        <Literal xml:lang="en">A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000086</IRI>
+        <Literal xml:lang="en">has_quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000086</IRI>
+        <Literal xml:lang="en">has quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000087</IRI>
+        <Literal xml:lang="en">this person has role this investigator role (more colloquially: this person has this role of investigator)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000087</IRI>
+        <Literal xml:lang="en">a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000087</IRI>
+        <Literal xml:lang="en">A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000087</IRI>
+        <Literal xml:lang="en">has_role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000087</IRI>
+        <Literal xml:lang="en">has role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000091</IRI>
+        <Literal xml:lang="en">a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000091</IRI>
+        <Literal xml:lang="en">has disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000092</IRI>
+        <Literal>inverse of has disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000092</IRI>
+        <IRI>http://purl.obolibrary.org/obo/RO_0002259</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000092</IRI>
+        <Literal>This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0000092</IRI>
+        <Literal xml:lang="en">disposition of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -8802,6 +8927,41 @@ where
         <Literal>regulates localization of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0002314</IRI>
+        <Literal>q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0002314</IRI>
+        <Literal>Because part_of is transitive, inheres in is a sub-relation of characteristic of part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0002314</IRI>
+        <IRI>https://orcid.org/0000-0002-6601-2165</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0002314</IRI>
+        <Literal>inheres in part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0002314</IRI>
+        <IRI>http://www.ncbi.nlm.nih.gov/pubmed/20064205</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0002314</IRI>
+        <Literal xml:lang="en">characteristic of part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0002314</IRI>
+        <IRI>http://purl.obolibrary.org/obo/ro/docs/reflexivity/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
         <IRI>http://purl.obolibrary.org/obo/RO_0002315</IRI>
         <Literal>an annotation of gene X to cell differentiation with results_in_maturation_of CL:0000057 (fibroblast) means that at the end of the process the input cell that did not have features of a fibroblast, now has the features of a fibroblast.</Literal>
@@ -10906,6 +11066,21 @@ the a supports either the existence of b, or the truth value of b.</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/RO_0002501</IRI>
         <IRI>http://purl.obolibrary.org/obo/ro/docs/causal-relations</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0002502</IRI>
+        <IRI>https://orcid.org/0000-0002-6601-2165</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0002502</IRI>
+        <Literal>depends on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.obolibrary.org/obo/RO_0002502</IRI>
+        <IRI>http://purl.obolibrary.org/obo/BFO_0000169</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -15800,6 +15975,91 @@ A chemical with no chiral centers can not have an enantiomer. A chemical with mu
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity</IRI>
         <Literal xml:lang="en">Representational Information Content Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/is_about</IRI>
+        <Literal xml:lang="en">A primitive relationship between an Information Content Entity and some Entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/definition_source"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/is_about</IRI>
+        <Literal>http://purl.obolibrary.org/obo/IAO_0000136</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/is_about</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/is_about</IRI>
+        <Literal xml:lang="en">is about</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of</IRI>
+        <Literal xml:lang="en">A primitive relationship between an instance of an Entity and an instance of an Information Content Entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of</IRI>
+        <Literal xml:lang="en">is subject of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represented_by</IRI>
+        <Literal xml:lang="en">y represented_by x iff x is an instance of Information Content Entity, and y is an instance of Entity, and z is carrier of x, such that x is about y in virtue of there existing an isomorphism between characteristics of z and y.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represented_by</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represented_by</IRI>
+        <Literal>See notes for inverse property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represented_by</IRI>
+        <Literal xml:lang="en">represented by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represents</IRI>
+        <Literal xml:lang="en">x represents y iff x is an instance of Information Content Entity, y is an instance of Entity, and z is carrier of x, such that x is about y in virtue of there existing an isomorphism between characteristics of z and y.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/elucidation"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represents</IRI>
+        <Literal xml:lang="en">The relationship that is being defined here is that between the content of a photographic image and its object, between the content of a video and its objects and events, between the content of an audio recording and the sounds or events generating those sounds, or between the content of a written transcript and the verbal event that it transcribes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represents</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represents</IRI>
+        <Literal xml:lang="en">Isomorphism between the carrier of x and the represented entity can be via a direct similarity relation, e.g., grooves in a vinyl record corresponding to sound waves, or linguistic convention, e.g., a court stenographer&apos;s transcription of spoken words, as well as others, such as encoding processes for images.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represents</IRI>
+        <Literal xml:lang="en">represents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+        <IRI>http://www.ontologyrepository.com/CommonCoreOntologies/represents</IRI>
+        <Literal xml:lang="en">Given a stronger temporal interpretation, this property may be functional. For more info please refer to https://github.com/BFO-ontology/BFO-2020/tree/master/src/owl/temporal%20extensions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

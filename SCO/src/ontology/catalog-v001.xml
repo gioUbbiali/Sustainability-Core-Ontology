@@ -6,12 +6,13 @@
     <uri id="User Entered Import Resolution" name="http://gioUbbiali.github.io/sco/v1.0.0/24-09-17/sco.owl" uri="catalog-v001.xml"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/nemo/gufo#/1.0.0" uri="http://purl.org/nemo/gufo#"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1739884468232" name="http://gioUbbiali.github.io/sco/sco-u/cover.imports.owl" uri="imports/SCO-U%20imports/COVER%20imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1739884468232" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-B-edit.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1739884468232" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-initial%20working%20draft.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1739884468232" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-U-edit.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1739884468232" name="http://www.semanticweb.org/gaubb/ontologies/2025/1/untitled-ontology-15/" uri="SCO-B-edit.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1739884468232" name="shadowed:http://gioUbbiali.github.io/sco/sco.owl" uri="imports/SCO-B%20imports/SCO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1739884468232" name="shadowed:http://gioUbbiali.github.io/sco/sco.owl" uri="imports/SCO-U%20imports/SCO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740058562888" name="http://gioUbbiali.github.io/sco/sco-u/cover.imports.owl" uri="imports/SCO-U%20imports/COVER%20imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740058562888" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-B-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740058562888" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-initial%20working%20draft.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740058562888" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-U-edit%20working%20draft%2025-02-20.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740058562888" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-U-edit%20working%20drft%2025-02-19.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740058562888" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-U-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740058562888" name="shadowed:http://gioUbbiali.github.io/sco/sco.owl" uri="imports/SCO-B%20imports/SCO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740058562888" name="shadowed:http://gioUbbiali.github.io/sco/sco.owl" uri="imports/SCO-U%20imports/SCO.owl"/>
     </group>
 </catalog>

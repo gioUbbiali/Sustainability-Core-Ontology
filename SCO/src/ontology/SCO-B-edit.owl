@@ -80,46 +80,11 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
         <Literal xml:lang="en">The most recent version of this file is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology.git</Literal>
     </Annotation>
-    <SubClassOf>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000006"/>
-        <ObjectIntersectionOf>
-            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002163"/>
-                <Class IRI="http://purl.obolibrary.org/obo/RO_0002577"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000012"/>
-        <ObjectIntersectionOf>
-            <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000006"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002163"/>
-                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
-        <ObjectIntersectionOf>
-            <Class IRI="http://purl.obolibrary.org/obo/RO_0002577"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002163"/>
-                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000012"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/RO_0002577"/>
-        <ObjectIntersectionOf>
-            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002163"/>
-                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000006"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
+        <IRI>http://gioUbbiali.github.io/sco/SCO_0000001</IRI>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released</IRI>
+    </AnnotationAssertion>
 </Ontology>
 
 

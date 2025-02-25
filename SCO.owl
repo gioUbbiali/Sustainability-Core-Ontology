@@ -12,7 +12,7 @@
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
 @prefix AnnotationVocabulary: <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/> .
 @prefix CommonCoreOntologies: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
-@base <https://www.w3id.org/sco> .
+@base <https://www.w3id.org/sco#> .
 
 <https://www.w3id.org/sco> rdf:type owl:Ontology ;
                             owl:versionIRI <https://www.w3id.org/sco#v1.0.0/24-09-17/sco.owl> ;
@@ -29,13 +29,15 @@ SCO aims to play a pivotal role in harmonizing and integrating top-level and dom
                                         "Sustainability Core Ontology (SCO)"@en ;
                             rdfs:seeAlso "Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr" ;
                             owl:priorVersion """The SCO Structured Vocabulary (SV) constitutes the prior version of this resources.
-SCO SV is available on GitHub at the following link: https://www.w3id.org/sco/git"""@en ;
+SCO SV is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology"""@en ;
                             owl:versionInfo "2024-09-17"@en ,
                                             "Version 1.0.0." ;
                             skos:note "Currently, this resource includes labels and definitions in the following three natural languages: English, Italian, and French. In the next version of this resource, the creator intends to also encompass Italian and French translations of the remaining pieces of information as well as to cover other natural languages."@en ,
+                                      """Repository: https://github.com/gioUbbiali/Sustainability-Core-Ontology 
+Documentation webpage: https://gioubbiali.github.io/Sustainability-Core-Ontology/"""@en ,
                                       "The current version of SCO does not cover classes and object properties accounting for systems granularity, scales, and levels. A deeper representation of system change and behaviors is equally required. These themes will be topics of inclusion in the next version of this resource."@en ,
-                                      "The current version of this resource does not include semi-formal natural language definitions or First Order Logics definitions. In the next version of this resource, the creator intends to also include them." ,
-                                      "The most recent version of this file is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology.git"@en .
+                                      "The current version of this resource does not include semi-formal natural language definitions or First Order Logics definitions. In the next version of this resource, the creator intends to also include them."@en ,
+                                      "The most recent version of this file is available on GitHub at the following link: https://www.w3id.org/sco/"@en .
 
 #################################################################
 #    Annotation properties
@@ -58,8 +60,8 @@ bfo:IAO_0000112 rdf:type owl:AnnotationProperty ;
                 bfo:IAO_0000115 "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en ;
                 bfo:IAO_0000117 "PERSON:Daniel Schober"@en ;
                 bfo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
-                rdfs:label "example of usage" ,
-                           "example of usage"@en .
+                rdfs:label "example of usage"@en ,
+                           "example of usage" .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000114
@@ -100,8 +102,8 @@ We also have the outstanding issue of how to aim different definitions to differ
                 bfo:IAO_0000117 "PERSON:Daniel Schober"@en ;
                 bfo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
                 rdfs:isDefinedBy bfo:iao.owl ;
-                rdfs:label "definition" ,
-                           "definition"@en ,
+                rdfs:label "definition"@en ,
+                           "definition" ,
                            "textual definition" .
 
 
@@ -131,8 +133,8 @@ bfo:IAO_0000118 rdf:type owl:AnnotationProperty ;
                 bfo:IAO_0000111 "alternative label"@en ;
                 bfo:IAO_0000114 bfo:IAO_0000125 ;
                 bfo:IAO_0000115 "A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like."@en ;
-                bfo:IAO_0000117 "OBO Operations committee" ,
-                                "PERSON:Daniel Schober"@en ;
+                bfo:IAO_0000117 "PERSON:Daniel Schober"@en ,
+                                "OBO Operations committee" ;
                 bfo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
                 rdfs:comment "Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related)." ;
                 rdfs:label "alternative label"@en .
@@ -2136,8 +2138,8 @@ sco:SCO_0000035 rdf:type owl:Class ;
                                 ] ;
                 oboInOwl:hasExactSynonym "complex system indicator"@en ;
                 oboInOwl:hasRelatedSynonym "system indicator"@en ;
-                rdfs:comment "Due to the SCO focus on complex systems, indicator classes have been designed referring specifically to complex systems. Nevertheless, future implementations may broaden the space of application to also systems." ,
-                             "SCO indicator classes have been designed referring to the characterization of sustainable development indicators (SDGs indicators) proposed by SDGIO. we aimed to deepen this characterization and establish upper-level classes for SDGIO ones."@en ;
+                rdfs:comment "SCO indicator classes have been designed referring to the characterization of sustainable development indicators (SDGs indicators) proposed by SDGIO. we aimed to deepen this characterization and establish upper-level classes for SDGIO ones."@en ,
+                             "Due to the SCO focus on complex systems, indicator classes have been designed referring specifically to complex systems. Nevertheless, future implementations may broaden the space of application to also systems." ;
                 rdfs:label "indicateur"@fr ,
                            "indicator"@en ,
                            "indicatore"@it ;
@@ -2897,8 +2899,8 @@ bfo:IAO_8000019 bfo:IAO_0000111 "ontology module subsetted by OWL profile"@en .
 bfo:IAO_8000020 bfo:IAO_0000111 "EL++ ontology module"@en .
 
 
-bfo:OBI_0000011 bfo:IAO_0000111 "planned process" ,
-                                "planned process"@en ;
+bfo:OBI_0000011 bfo:IAO_0000111 "planned process"@en ,
+                                "planned process" ;
                 bfo:IAO_0000112 "Injecting mice with a vaccine in order to test its efficacy" ;
                 bfo:IAO_0000114 bfo:IAO_0000122 ;
                 bfo:IAO_0000115 "A process that realizes a plan which is the concretization of a plan specification."@en ;
@@ -3164,8 +3166,8 @@ bfo:RO_0001015 bfo:IAO_0000111 "is location of"@en ;
 
 
 bfo:RO_0001018 bfo:IAO_0000111 "contained in"@en ;
-               bfo:IAO_0000116 "Containment is location not involving parthood, and arises only where some immaterial continuant is involved." ,
-                               "Containment obtains in each case between material and immaterial continuants, for instance: lung contained_in thoracic cavity; bladder contained_in pelvic cavity. Hence containment is not a transitive relation.    If c part_of c1 at t then we have also, by our definition and by the axioms of mereology applied to spatial regions, c located_in c1 at t. Thus, many examples of instance-level location relations for continuants are in fact cases of instance-level parthood. For material continuants location and parthood coincide. Containment is location not involving parthood, and arises only where some immaterial continuant is involved. To understand this relation, we first define overlap for continuants as follows:    c1 overlap c2 at t =def for some c, c part_of c1 at t and c part_of c2 at t. The containment relation on the instance level can then be defined (see definition):"@en ;
+               bfo:IAO_0000116 "Containment obtains in each case between material and immaterial continuants, for instance: lung contained_in thoracic cavity; bladder contained_in pelvic cavity. Hence containment is not a transitive relation.    If c part_of c1 at t then we have also, by our definition and by the axioms of mereology applied to spatial regions, c located_in c1 at t. Thus, many examples of instance-level location relations for continuants are in fact cases of instance-level parthood. For material continuants location and parthood coincide. Containment is location not involving parthood, and arises only where some immaterial continuant is involved. To understand this relation, we first define overlap for continuants as follows:    c1 overlap c2 at t =def for some c, c part_of c1 at t and c part_of c2 at t. The containment relation on the instance level can then be defined (see definition):"@en ,
+                               "Containment is location not involving parthood, and arises only where some immaterial continuant is involved." ;
                bfo:IAO_0000118 "contained_in"@en .
 
 
@@ -4048,23 +4050,23 @@ bfo:RO_0002296 bfo:IAO_0000112 "every flower development (GO:0009908) results in
                bfo:IAO_0000119 "http://www.geneontology.org/GO.doc.development.shtml"^^xsd:anyURI .
 
 
-bfo:RO_0002297 bfo:IAO_0000112 "an annotation of gene X to anatomical structure formation with results_in_formation_of UBERON:0000007 (pituitary gland) means that at the beginning of the process a pituitary gland does not exist and at the end of the process a pituitary gland exists." ,
-                               "every \"endocardial cushion formation\" (GO:0003272) results_in_formation_of some \"endocardial cushion\" (UBERON:0002062)"@en ;
+bfo:RO_0002297 bfo:IAO_0000112 "every \"endocardial cushion formation\" (GO:0003272) results_in_formation_of some \"endocardial cushion\" (UBERON:0002062)"@en ,
+                               "an annotation of gene X to anatomical structure formation with results_in_formation_of UBERON:0000007 (pituitary gland) means that at the beginning of the process a pituitary gland does not exist and at the end of the process a pituitary gland exists." ;
                bfo:IAO_0000114 bfo:IAO_0000125 ;
                bfo:IAO_0000117 <https://orcid.org/0000-0002-6601-2165> ;
                bfo:IAO_0000119 "GOC:mtg_berkeley_2013" .
 
 
-bfo:RO_0002298 bfo:IAO_0000112 "an annotation of gene X to cell morphogenesis with results_in_morphogenesis_of CL:0000540 (neuron) means that at the end of the process an input neuron has attained its shape." ,
-                               "tongue morphogenesis (GO:0043587) results in morphogenesis of tongue (UBERON:0001723)"@en ;
+bfo:RO_0002298 bfo:IAO_0000112 "tongue morphogenesis (GO:0043587) results in morphogenesis of tongue (UBERON:0001723)"@en ,
+                               "an annotation of gene X to cell morphogenesis with results_in_morphogenesis_of CL:0000540 (neuron) means that at the end of the process an input neuron has attained its shape." ;
                bfo:IAO_0000114 bfo:IAO_0000125 ;
                bfo:IAO_0000115 "The relationship that links an entity with the process that results in the formation and shaping of that entity over time from an immature to a mature state." ;
                bfo:IAO_0000117 <https://orcid.org/0000-0002-6601-2165> ;
                bfo:IAO_0000119 "GOC:mtg_berkeley_2013" .
 
 
-bfo:RO_0002299 bfo:IAO_0000112 " an annotation of gene X to cell maturation with results_in_maturation_of CL:0000057 (fibroblast) means that the fibroblast is mature at the end of the process" ,
-                               "bone maturation (GO:0070977) results_in_maturation_of bone (UBERON:0001474)"@en ;
+bfo:RO_0002299 bfo:IAO_0000112 "bone maturation (GO:0070977) results_in_maturation_of bone (UBERON:0001474)"@en ,
+                               " an annotation of gene X to cell maturation with results_in_maturation_of CL:0000057 (fibroblast) means that the fibroblast is mature at the end of the process" ;
                bfo:IAO_0000114 bfo:IAO_0000125 ;
                bfo:IAO_0000115 "The relationship that links an entity with a process that results in the progression of the entity over time that is independent of changes in it's shape and results in an end point state of that entity." ;
                bfo:IAO_0000117 <https://orcid.org/0000-0002-6601-2165> ;
@@ -4102,8 +4104,8 @@ bfo:RO_0002305 bfo:IAO_0000115 "p is causally upstream of, negative effect q iff
 bfo:RO_0002309 bfo:IAO_0000115 "A relationship between an exposure event or process and any agent, stimulus, activity, or event that causally effects an organism and interacts with an exposure receptor during an exposure event." .
 
 
-bfo:RO_0002310 bfo:IAO_0000112 "An exposure event in which a human is exposed to particulate matter in the air. Here the exposure stimulus/stress is the particulate matter, the receptor is the airways and lungs of the human," ,
-                               "An exposure event in which a plant is provided with fertilizer. The exposure receptor is the root system of the plant, the stimulus is the fertilizing chemical, the route is via the soil, possibly mediated by symbotic microbes."^^xsd:anyURI ;
+bfo:RO_0002310 bfo:IAO_0000112 "An exposure event in which a plant is provided with fertilizer. The exposure receptor is the root system of the plant, the stimulus is the fertilizing chemical, the route is via the soil, possibly mediated by symbotic microbes."^^xsd:anyURI ,
+                               "An exposure event in which a human is exposed to particulate matter in the air. Here the exposure stimulus/stress is the particulate matter, the receptor is the airways and lungs of the human," ;
                bfo:IAO_0000115 "OBSOLETE A process occurring within or in the vicinity of an organism that exerts some causal influence on the organism via the interaction between an exposure stimulus and an exposure receptor. The exposure stimulus may be a process, material entity or condition (for example, lack of nutrients). The exposure receptor can be an organism, organism population or a part of an organism." ;
                bfo:IAO_0000116 "This class is intended as a grouping for various domain and species-specific exposure classes. The ExO class http://purl.obolibrary.org/obo/ExO_0000002 'exposure event' assumes that all exposures involve stressors, which limits the applicability of this class to 'positive' exposures, e.g. exposing a plant to beneficial growing conditions." .
 
@@ -4553,8 +4555,8 @@ bfo:RO_0002433 bfo:IAO_0000115 "p contributes to morphology of w if and only if 
 
 
 bfo:RO_0002434 bfo:IAO_0000115 "A relationship that holds between two entities in which the processes executed by the two entities are causally connected." ;
-               bfo:IAO_0000116 "This relation and all sub-relations can be applied to either (1) pairs of entities that are interacting at any moment of time (2) populations or species of entity whose members have the disposition to interact (3) classes whose members have the disposition to interact." ,
-                               "Considering relabeling as 'pairwise interacts with'"^^xsd:anyURI ;
+               bfo:IAO_0000116 "Considering relabeling as 'pairwise interacts with'"^^xsd:anyURI ,
+                               "This relation and all sub-relations can be applied to either (1) pairs of entities that are interacting at any moment of time (2) populations or species of entity whose members have the disposition to interact (3) classes whose members have the disposition to interact." ;
                bfo:IAO_0000117 <https://orcid.org/0000-0002-6601-2165> ;
                oboInOwl:hasExactSynonym "in pairwise interaction with" .
 

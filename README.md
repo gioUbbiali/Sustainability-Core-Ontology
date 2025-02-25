@@ -30,10 +30,10 @@ SCO V1.0.0 is the first stable version and the current release of SCO. SCO V1.0.
 SCO materials, including a protocol detailing the process followed to develop this ontology, can be found here:
 
 - [SCO materials-total.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO)
-- [SCO V1.0.0 current release.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/blob/main/SCO.owl)
+- [SCO V1.0.0. current release.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/blob/main/SCO.owl)
 - [SCO V1.0.0. - BFO imports merged.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/blob/main/SCO%20-%20BFO%20merged.owl)
-- [SCO V1.0.0 final draft version prior to release.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO/src/ontology)
-- [SCO V1.0.0 imports from other ontologies.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO/src/ontology/imports)
+- [SCO V1.0.0. final draft version prior to release.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO/src/ontology)
+- [SCO V1.0.0. imports from other ontologies.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO/src/ontology/imports)
 - [SCO development protocol. ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO/sco%20development%20protocol)
 
 The SCO protocol is available in both Word and PDF formats. [SCO materials](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO) have been organized considering a possible future migration of this repo to the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).

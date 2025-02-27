@@ -3089,7 +3089,7 @@ sco:SCO_0000016 rdf:type owl:Class ;
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ;
-                rdfs:comment "SCO currently accounts for perspectives of complex system components and complex system environment components because the focus of this ontology is on complex systems. Future versions of this ontology may explore extending reference more broadly to systems." ;
+                rdfs:comment "SCO currently accounts for perspectives of complex system components and complex system environment components because the focus of this ontology is on complex systems. Future versions of this ontology may explore extending reference more broadly to systems."@en ;
                 rdfs:label "perspective"@en ,
                            "perspective"@fr ,
                            "prospettiva"@it ;

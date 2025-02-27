@@ -1,19 +1,21 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://gioUbbiali.github.io/sco/sco.owl"
+     xml:base="https://www.w3id.org/sco(sco-b"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://gioUbbiali.github.io/sco/sco.owl"
-     versionIRI="http://gioUbbiali.github.io/sco/v1.1.0/25-01-29/sco-b-edit.owl">
-    <Prefix name="" IRI="http://www.semanticweb.org/gaubb/ontologies/2025/1/untitled-ontology-15/"/>
+     ontologyIRI="https://www.w3id.org/sco(sco-b"
+     versionIRI="https://www.w3id.org/sco/sco-b#v1.1.0/sco-b">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="sco" IRI="https://www.w3id.org/sco#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://gioUbbiali.github.io/sco/v1.0.0/24-09-17/sco.owl</Import>
+    <Prefix name="sco-b" IRI="https://www.w3id.org/sco/sco-b#"/>
+    <Import>https://www.w3id.org/sco#v1.0.1</Import>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
         <Literal xml:lang="en">Giorgio A. Ubbiali</Literal>
@@ -70,6 +72,11 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+        <Literal xml:lang="en">Repository: https://github.com/gioUbbiali/Sustainability-Core-Ontology 
+Documentation webpage: https://gioubbiali.github.io/Sustainability-Core-Ontology/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
         <Literal xml:lang="en">The current version of SCO does not cover classes and object properties accounting for systems granularity, scales, and levels. A deeper representation of system change and behaviors is equally required. These themes will be topics of inclusion in the next version of this resource.</Literal>
     </Annotation>
     <Annotation>
@@ -78,11 +85,16 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <Literal xml:lang="en">The most recent version of this file is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology.git</Literal>
+        <Literal xml:lang="en">The most recent version of this file is available on GitHub at the following link: https://www.w3id.org/sco</Literal>
     </Annotation>
     <AnnotationAssertion>
         <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
         <IRI>http://gioUbbiali.github.io/sco/SCO_0000001</IRI>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
+        <AbbreviatedIRI>sco:SCO_0000001</AbbreviatedIRI>
         <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released</IRI>
     </AnnotationAssertion>
 </Ontology>

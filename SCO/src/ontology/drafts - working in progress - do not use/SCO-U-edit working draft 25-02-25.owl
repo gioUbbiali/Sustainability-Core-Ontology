@@ -239,6 +239,18 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
         <Class IRI="/SCO_0000055"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/SCO_0000059"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SCO_0000060"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SCO_0000061"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SCO_0000062"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/RO_0002577"/>
     </Declaration>
     <Declaration>
@@ -287,133 +299,34 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002323"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000001"/>
+        <NamedIndividual IRI="&apos;worth_information_content_entity&apos;"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000002"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000001"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000003"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000002"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000003"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000005"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000004"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000006"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000005"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000007"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000006"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000008"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000007"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000009"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000008"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000010"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000011"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000012"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000017"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000018"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000019"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000020"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000021"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000022"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000023"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000024"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000025"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000026"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000027"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000028"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000029"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000030"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000031"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000032"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000033"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000034"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000035"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000036"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000040"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000042"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000043"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/SCO_0000052"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/SCO_0000053"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/SCO_0000054"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/SCO_0000055"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000009"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.obolibrary.org/obo/RO_0002577"/>
@@ -429,6 +342,120 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000004"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000006"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000007"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000008"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000009"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000010"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000011"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000012"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000013"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000014"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000015"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000016"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000017"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000018"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000019"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000020"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000021"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000022"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000023"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000024"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000025"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000026"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000027"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000028"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000029"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000030"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000031"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000032"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000033"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000034"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000035"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000036"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000040"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000042"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000043"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://gioUbbiali.github.io/sco/SCO_0000039"/>
@@ -860,6 +887,54 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="/SCO_0000059"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/nemo/gufo#TemporaryRelationshipSituation"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/nemo/gufo#concernsRelatedEndurant"/>
+                <ObjectUnionOf>
+                    <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000026"/>
+                    <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000028"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="http://purl.org/nemo/gufo#concernsRelationshipType"/>
+                <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000003"/>
+            </ObjectHasValue>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectInverseOf>
+                    <ObjectProperty IRI="http://purl.org/nemo/gufo#standsInQualifiedRelationship"/>
+                </ObjectInverseOf>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/SCO_0000062"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/nemo/gufo#TemporaryRelationshipSituation"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/nemo/gufo#concernsRelatedEndurant"/>
+                <ObjectUnionOf>
+                    <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000012"/>
+                    <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
+                    <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000026"/>
+                    <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000028"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="http://purl.org/nemo/gufo#concernsRelationshipType"/>
+                <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000003"/>
+            </ObjectHasValue>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectInverseOf>
+                    <ObjectProperty IRI="http://purl.org/nemo/gufo#standsInQualifiedRelationship"/>
+                </ObjectInverseOf>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000005"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
         <ObjectIntersectionOf>
             <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
@@ -895,6 +970,50 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
         <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/nemo/gufo#standsInQualifiedRelationship"/>
+                <Class IRI="/SCO_0000059"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectInverseOf>
+                    <ObjectProperty IRI="/SCO_0000048"/>
+                </ObjectInverseOf>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000005"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/nemo/gufo#standsInQualifiedRelationship"/>
+                <Class IRI="/SCO_0000062"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000005"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectInverseOf>
+                    <ObjectProperty IRI="/SCO_0000048"/>
+                </ObjectInverseOf>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000019"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000006"/>
@@ -1056,6 +1175,10 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
                 <ObjectProperty IRI="/SCO_0000051"/>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000023"/>
             </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="/SCO_0000051"/>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000023"/>
+            </ObjectAllValuesFrom>
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
@@ -1110,11 +1233,33 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
         <ObjectIntersectionOf>
             <Class IRI="https://purl.org/krdb-core/cover#Disposition"/>
             <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="/SCO_0000048"/>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://purl.org/krdb-core/cover#Disposition"/>
+            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
                 <ObjectUnionOf>
                     <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000026"/>
                     <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000028"/>
                 </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://purl.org/krdb-core/cover#Disposition"/>
+            <ObjectSomeValuesFrom>
+                <ObjectInverseOf>
+                    <ObjectProperty IRI="/SCO_0000045"/>
+                </ObjectInverseOf>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </SubClassOf>
@@ -1151,6 +1296,28 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
         <Class IRI="http://purl.org/nemo/gufo#ExtrinsicMode"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000019"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/nemo/gufo#ExtrinsicMode"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="/SCO_0000048"/>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000005"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000019"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.org/nemo/gufo#ExtrinsicMode"/>
+            <ObjectSomeValuesFrom>
+                <ObjectInverseOf>
+                    <ObjectProperty IRI="/SCO_0000045"/>
+                </ObjectInverseOf>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000005"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000024"/>
         <Class IRI="http://purl.org/nemo/gufo#Object"/>
     </SubClassOf>
@@ -1174,6 +1341,18 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
             <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
             <ObjectSomeValuesFrom>
                 <ObjectInverseOf>
+                    <ObjectProperty IRI="http://purl.org/nemo/gufo#concernsRelatedEndurant"/>
+                </ObjectInverseOf>
+                <Class IRI="/SCO_0000059"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000026"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
+            <ObjectSomeValuesFrom>
+                <ObjectInverseOf>
                     <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
                 </ObjectInverseOf>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
@@ -1186,9 +1365,55 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
             <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
             <ObjectSomeValuesFrom>
                 <ObjectInverseOf>
+                    <ObjectProperty IRI="http://purl.org/nemo/gufo#concernsRelatedEndurant"/>
+                </ObjectInverseOf>
+                <Class IRI="/SCO_0000059"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000028"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
+            <ObjectSomeValuesFrom>
+                <ObjectInverseOf>
                     <ObjectProperty IRI="http://purl.org/nemo/gufo#inheresIn"/>
                 </ObjectInverseOf>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000030"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="/SCO_0000048"/>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000040"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000030"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
+            <ObjectSomeValuesFrom>
+                <ObjectInverseOf>
+                    <ObjectProperty IRI="/SCO_0000045"/>
+                </ObjectInverseOf>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000040"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000035"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000028"/>
+            <ObjectSomeValuesFrom>
+                <ObjectInverseOf>
+                    <ObjectProperty IRI="/SCO_0000046"/>
+                </ObjectInverseOf>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000003"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </SubClassOf>
@@ -1207,6 +1432,18 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000040"/>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000040"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
+            <ObjectSomeValuesFrom>
+                <ObjectInverseOf>
+                    <ObjectProperty IRI="/SCO_0000048"/>
+                </ObjectInverseOf>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000030"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000041"/>
@@ -1253,6 +1490,22 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
         <Class IRI="/SCO_0000054"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/SCO_0000059"/>
+        <Class IRI="http://purl.org/nemo/gufo#TemporaryRelationshipSituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SCO_0000060"/>
+        <Class IRI="/SCO_0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SCO_0000061"/>
+        <Class IRI="http://purl.org/nemo/gufo#TemporaryRelationshipSituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SCO_0000062"/>
+        <Class IRI="http://purl.org/nemo/gufo#TemporaryRelationshipSituation"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/RO_0002577"/>
         <Class IRI="http://purl.org/nemo/gufo#Object"/>
     </SubClassOf>
@@ -1274,6 +1527,10 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
                 <ObjectProperty IRI="/SCO_0000051"/>
                 <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000011"/>
             </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="/SCO_0000051"/>
+                <Class IRI="http://gioUbbiali.github.io/sco/SCO_0000011"/>
+            </ObjectAllValuesFrom>
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
@@ -1389,176 +1646,44 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
         <Class IRI="http://purl.obolibrary.org/obo/RO_0002577"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000001"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000002"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Phase"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000003"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000004"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000005"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000006"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000007"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000008"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000009"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000010"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000011"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000012"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Category"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000013"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Category"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000014"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000015"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000016"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000017"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000018"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000019"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000020"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000021"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000022"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000023"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000024"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000025"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Category"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000026"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#PhaseMixin"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000027"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Category"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000028"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#PhaseMixin"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000029"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Phase"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000030"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000031"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000032"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#PhaseMixin"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000033"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#PhaseMixin"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000034"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#RoleMixin"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000035"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#RoleMixin"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000036"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Phase"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000040"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000042"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
-        <NamedIndividual IRI="http://gioUbbiali.github.io/sco/SCO_0000043"/>
+        <NamedIndividual IRI="&apos;worth_information_content_entity&apos;"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#SituationType"/>
-        <NamedIndividual IRI="/SCO_0000052"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000001"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#SituationType"/>
-        <NamedIndividual IRI="/SCO_0000053"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#MaterialRelationshipType"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000003"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#SituationType"/>
-        <NamedIndividual IRI="/SCO_0000054"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000004"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#SituationType"/>
-        <NamedIndividual IRI="/SCO_0000055"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000005"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#SituationType"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000006"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#SituationType"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000007"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#SituationType"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000008"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#SituationType"/>
+        <NamedIndividual IRI="http://gioUbbiali.io/sco/sco-u#SCO_0000009"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#Kind"/>
@@ -1571,6 +1696,158 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
     <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
         <NamedIndividual IRI="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Phase"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000004"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000006"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000007"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000008"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000009"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000010"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000011"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000012"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Category"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000013"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Category"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000014"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000015"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000016"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000017"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000018"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000019"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000020"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000021"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000022"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#EventType"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000023"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000024"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000025"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Category"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000026"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#PhaseMixin"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000027"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Category"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000028"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#PhaseMixin"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000029"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Phase"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000030"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000031"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#SubKind"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000032"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#PhaseMixin"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000033"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#PhaseMixin"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000034"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#RoleMixin"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000035"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#RoleMixin"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000036"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Phase"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000040"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000042"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/nemo/gufo#Kind"/>
+        <NamedIndividual IRI="https://www.w3id.org/sco#SCO_0000043"/>
     </ClassAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/SCO_0000044"/>
@@ -1684,41 +1961,6 @@ http://gioUbbiali.github.io/sco/sco.owl/SCO0000044</Literal>
         <Class IRI="http://purl.org/nemo/gufo#Endurant"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
-        <IRI>http://gioUbbiali.github.io/sco/SCO_0000001</IRI>
-        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://gioUbbiali.github.io/sco/SCO_0000003</IRI>
-        <Literal xml:lang="it">il valore dell&apos;indicatore</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://gioUbbiali.github.io/sco/SCO_0000003</IRI>
-        <Literal xml:lang="fr">la valeur de l’indicateur</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://gioUbbiali.github.io/sco/SCO_0000024</IRI>
-        <Literal xml:lang="en">We currently only included the classes “system boundary” and “system spatial region” (and subclasses) as subclasses of the “endurant” class. We envision discussions with subject matter experts regarding including the entire BFO “immaterial entity” hierarchy branch under the class “endurant”.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://gioUbbiali.github.io/sco/SCO_0000025</IRI>
-        <Literal xml:lang="en">We currently only included the classes “system boundary” and “system spatial region” (and subclasses) as subclasses of the “endurant” class. We envision discussions with subject matter experts regarding including the entire BFO “immaterial entity” hierarchy branch under the class “endurant”.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://gioUbbiali.github.io/sco/SCO_0000035</IRI>
-        <Literal xml:lang="en">Event” and “situation” classes can be designed to represent stakeholder identification as well as indicator identification, on necessity.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://gioUbbiali.github.io/sco/SCO_0000036</IRI>
-        <Literal xml:lang="en">Event” and “situation” classes can be designed to represent stakeholder identification as well as indicator identification, on necessity.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>/SCO_0000044</IRI>
         <Literal xml:lang="en">As UFO does not deal with spatial regions, we currently do not specify the domain and range of this property. In line with BFO representation, the domain should roughly be “object” and ¬ a new “object” subclass “spatial region”, and the range this latter subclass. Nevertheless, we envision discussions with subject matter experts regarding spatial region representation using UFO and gUFO and related object property modeling.
@@ -1819,42 +2061,6 @@ See the corresponding CCO object property for a definition and further details. 
     <AnnotationAssertion>
         <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
         <IRI>/SCO_0000046</IRI>
-        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/SCO_0000047</IRI>
-        <Literal xml:lang="en">This object property is intended to correspond to BFO ‘generically depends on’ object property within the context of UFO representation. 
-
-As UFO does not deal with generical dependence (BFO sense, see for instance Arp et al., 2015), we provide a representation following BFO indications. We also restrict the domain of this object property to the ‘information content entity’ class and the range to the union of ‘object’ and ¬ ‘system spatial region’ classes. This is enough adequate for the current purposes of SCO. Nevertheless, we envision discussions with subject matter experts regarding the representation of generical dependence in the context of UFO, modeling of related object properties as well as to revise object property domain and range.
-
-See the corresponding BFO object property for a definition and further details.  http://purl.obolibrary.org/obo/BFO_0000084 
-
-Arp, R., Smith, B., &amp; Spear, A. D. 2015. Building Ontologies with Basic Formal Ontology. Cambridge, Massachusetts: Massachusetts Institute of Technology.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000047</IRI>
-        <Literal xml:lang="it">dipende genericamente da</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000047</IRI>
-        <Literal xml:lang="fr">dépend génériquement de</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000047</IRI>
-        <Literal xml:lang="en">generically depends on</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>/SCO_0000047</IRI>
-        <Literal>http://purl.obolibrary.org/obo/BFO_0000084</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
-        <IRI>/SCO_0000047</IRI>
         <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -2032,153 +2238,329 @@ http://purl.obolibrary.org/obo/BFO_0000185</Literal>
         <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/SCO_0000052</IRI>
-        <Literal xml:lang="en">Time intervals (and possibly instants, to discuss) can be further specified using gUFO properties on necessity. We suggest doing so for subclasses that have been designed to address specific  (complex) system/system environment components.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000052</IRI>
-        <Literal xml:lang="fr">situation d’ appartenance de la composante de système au système</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000052</IRI>
-        <Literal xml:lang="it">situazione di appartenenza della componente del sistema al sistema</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000052</IRI>
-        <Literal xml:lang="en">system-system component parthood situation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>/SCO_0000052</IRI>
-        <Literal xml:lang="en">A temporary parthood situation in which a system component is part of a system.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>/SCO_0000052</IRI>
-        <Literal xml:lang="it">Una situazione temporale di appartenenza in cui una componente del sistema è parte del sistema.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>/SCO_0000052</IRI>
-        <Literal xml:lang="fr">Une situation d’ appartenance temporelle dans laquelle une composante de système est une partie du système.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
-        <IRI>/SCO_0000052</IRI>
-        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000053</IRI>
-        <Literal xml:lang="en">complex system-complex system component parthood situation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000053</IRI>
-        <Literal xml:lang="fr">situation d’ appartenance de la composante de système complexe au système complexe</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000053</IRI>
-        <Literal xml:lang="it">situazione di appartenenza della componente del sistema complesso al sistema complesso</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>/SCO_0000053</IRI>
-        <Literal xml:lang="en">A complex system-complex system component parthood situation in which a complex system component is part of a complex system.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>/SCO_0000053</IRI>
-        <Literal xml:lang="it">Una situazione di appartenenza della componente del sistema complesso al sistema complesso in cui una componente del sistema complesso è parte del sistema complesso.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>/SCO_0000053</IRI>
-        <Literal xml:lang="fr">Une situation d’ appartenance de la composante de système au système dans laquelle une composante de système complexe est une partie du système complexe.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
-        <IRI>/SCO_0000053</IRI>
-        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>/SCO_0000054</IRI>
-        <Literal xml:lang="en">Time intervals (and possibly instants, to discuss) can be further specified using gUFO properties on necessity. We suggest doing so for subclasses that have been designed to address specific  (complex) system/system environment components.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000054</IRI>
-        <Literal xml:lang="fr">situation d’ appartenance de la composante de l’environnement de système à l’environnement de système</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000054</IRI>
-        <Literal xml:lang="it">situazione di appartenenza della componente dell’ambiente del sistema all’ambiente del sistema</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000054</IRI>
-        <Literal xml:lang="en">system environment-system environment component parthood situation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>/SCO_0000054</IRI>
-        <Literal xml:lang="en">A system environment-system environment component parthood situation in which a system environment component is part of a system environment.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>/SCO_0000054</IRI>
-        <Literal xml:lang="it">Una situazione temporale di appartenenza in cui una componente dell’ambiente del sistema è parte dell’ambiente del sistema.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>/SCO_0000054</IRI>
-        <Literal xml:lang="fr">Une situation d’appartenance temporelle dans laquelle une composante de l’environnement de système est une partie du système.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
-        <IRI>/SCO_0000054</IRI>
-        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000055</IRI>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000001</IRI>
         <Literal xml:lang="en">complex system environment- complex system environment component parthood situation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000055</IRI>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000001</IRI>
         <Literal xml:lang="fr">situation d’ appartenance de la composante de l’environnement de système complexe à l’environnement de système complexe</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/SCO_0000055</IRI>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000001</IRI>
         <Literal xml:lang="it">situazione di appartenenza della componente dell’ambiente del sistema complesso all’ambiente del sistema complesso</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>/SCO_0000055</IRI>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000001</IRI>
         <Literal xml:lang="en">A complex system environment- complex system environment component parthood situation in which a complex system environment component is part of a complex system environment.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>/SCO_0000055</IRI>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000001</IRI>
         <Literal xml:lang="it">Una situazione di appartenenza della componente dell’ambiente del sistema complesso all’ambiente del sistema complesso in cui una componente dell’ambiente del sistema complesso è parte dell’ambiente del sistema complesso.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>/SCO_0000055</IRI>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000001</IRI>
         <Literal xml:lang="fr">Une situation d’ appartenance de la composante de l’environnement de système complexe à l’environnement de système complexe dans laquelle une composante de l’environnement de système complexe est une partie de l’environnement du système complexe.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
-        <IRI>/SCO_0000055</IRI>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000001</IRI>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000002</IRI>
+        <Literal xml:lang="en">complex system-complex system component parthood situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000002</IRI>
+        <Literal xml:lang="fr">situation d’ appartenance de la composante de système complexe au système complexe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000002</IRI>
+        <Literal xml:lang="it">situazione di appartenenza della componente del sistema complesso al sistema complesso</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000002</IRI>
+        <Literal xml:lang="en">A complex system-complex system component parthood situation in which a complex system component is part of a complex system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000002</IRI>
+        <Literal xml:lang="it">Una situazione di appartenenza della componente del sistema complesso al sistema complesso in cui una componente del sistema complesso è parte del sistema complesso.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000002</IRI>
+        <Literal xml:lang="fr">Une situation d’ appartenance de la composante de système au système dans laquelle une composante de système complexe est une partie du système complexe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000002</IRI>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000003</IRI>
+        <Literal xml:lang="en">This object property is intended to correspond to BFO ‘generically depends on’ object property within the context of UFO representation. 
+
+As UFO does not deal with generical dependence (BFO sense, see for instance Arp et al., 2015), we provide a representation following BFO indications. We also restrict the domain of this object property to the ‘information content entity’ class and the range to the union of ‘object’ and ¬ ‘system spatial region’ classes. This is enough adequate for the current purposes of SCO. Nevertheless, we envision discussions with subject matter experts regarding the representation of generical dependence in the context of UFO, modeling of related object properties as well as to revise object property domain and range.
+
+See the corresponding BFO object property for a definition and further details.  http://purl.obolibrary.org/obo/BFO_0000084 
+
+Arp, R., Smith, B., &amp; Spear, A. D. 2015. Building Ontologies with Basic Formal Ontology. Cambridge, Massachusetts: Massachusetts Institute of Technology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000003</IRI>
+        <Literal xml:lang="it">dipende genericamente da</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000003</IRI>
+        <Literal xml:lang="fr">dépend génériquement de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000003</IRI>
+        <Literal xml:lang="en">generically depends on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000003</IRI>
+        <Literal>http://purl.obolibrary.org/obo/BFO_0000084</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000003</IRI>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000004</IRI>
+        <Literal xml:lang="fr">situation de dépendance générique de la valeur de l&apos;indicateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000004</IRI>
+        <Literal xml:lang="en">situation of generical dependence of indicator value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000004</IRI>
+        <Literal xml:lang="it">situazione di dipendenza generica del valore dell&apos;indicatore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000004</IRI>
+        <Literal xml:lang="en">A temporary relationship situation in which an indicator value stands in a relationship of generic dependence with at least an indicator.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000004</IRI>
+        <Literal xml:lang="it">Una situazione di relazione temporale in cui il valore di un indicatore è in relazione di dipendenza generica con almeno un indicatore.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000004</IRI>
+        <Literal xml:lang="fr">Une situation de relation temporelle dans laquelle la valeur d’un indicateur est en relation de dépendance générique avec au moins un indicateur.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000004</IRI>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000005</IRI>
+        <Literal xml:lang="fr">situation de dépendance générique du contenu informatif de la perspective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000005</IRI>
+        <Literal xml:lang="en">situation of generical dependence of perspective information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000005</IRI>
+        <Literal xml:lang="it">situazione di dipendenza generica del contenuto informativo della prospettiva</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000005</IRI>
+        <Literal xml:lang="en">A temporary relationship situation in which a perspective information content entity stands in a relationship of generic dependence with at least a complex system component or complex system environment component.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000005</IRI>
+        <Literal xml:lang="it">Una situazione di relazione temporale in cui il contenuto informativo di una prospettiva è in relazione di dipendenza generica con almeno una componente del sistema complesso o un componente dell’ambiente di quel sistema complesso.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000005</IRI>
+        <Literal xml:lang="fr">Une situation de relation temporelle dans laquelle le contenu informatif d’une perspective est en relation de dépendance générique avec au moins une composante du système complexe ou une composante de l’environnement de ce système complexe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000005</IRI>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000006</IRI>
+        <Literal xml:lang="fr">situation de dépendance générique du contenu informatif de la perspective de partie prenante</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000006</IRI>
+        <Literal xml:lang="en">situation of generical dependence of stakeholder perspective information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000006</IRI>
+        <Literal xml:lang="it">situazione di dipendenza generica del contenuto informativo della prospettiva di stakeholder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000006</IRI>
+        <Literal xml:lang="en">A situation of generical dependence of perspective information in which a stakeholder perspective information content entity stands in a relationship of generic dependence with at least a stakeholder.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000006</IRI>
+        <Literal xml:lang="it">Una situazione di dipendenza generica del contenuto informativo di una prospettiva in cui il contenuto informativo di una prospettiva di uno stakeholder è in relazione di dipendenza generica con almeno uno stakeholder.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000006</IRI>
+        <Literal xml:lang="fr">Une situation de dépendance générique du contenu informatif d’une perspective dans laquelle le contenu informatif d’une perspective d’une partie prenante est en relation de dépendance générique avec au moins une partie prenante.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000006</IRI>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000007</IRI>
+        <Literal xml:lang="fr">situation de dépendance générique du contenu informatif de la valeur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000007</IRI>
+        <Literal xml:lang="en">situation of generical dependence of worth information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000007</IRI>
+        <Literal xml:lang="it">situazione di dipendenza generica del contenuto informativo del valore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000007</IRI>
+        <Literal xml:lang="en">A temporary relationship situation in which a worth information content entity, that is concretized by the value (worth) that some complex system component or complex system environment component recognizes to the complex system or complex system environment to which it belongs (or some part(s) of them), stands in a relationship of generic dependence with that complex system or complex system environment, (or some part(s) of them).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000007</IRI>
+        <Literal xml:lang="it">Una situazione di relazione temporale in cui il contenuto informativo del valore, che è concretizzato dal valore che una componente del sistema complesso or dell’ambiente del sistema complesso riconosce di avere al sistema complesso o ambiente del sistema complesso a cui appartiene (o una o più parti di essi), è in relazione di dipendenza generica con quel sistema complesso o l’ambiente di quel sistema complesso (o una o più parti di essi).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000007</IRI>
+        <Literal xml:lang="fr">Une situation de relation temporelle dans laquelle le contenu informatif du valeur, qui est concrétisé par la valeur qu’une composante du système complexe ou de l’environnement du système complexe reconnaît d’avoir au système complexe ou à l’ environnement de système complexe auquel elle appartient (ou une ou plus parties de celux-ci), est en relation de dépendance générique avec ce système complexe-là ou à ce-t-environnement de système complexe-là (ou une ou plus parties de celux-ci).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000007</IRI>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000008</IRI>
+        <Literal xml:lang="en">Time intervals (and possibly instants, to discuss) can be further specified using gUFO properties on necessity. We suggest doing so for subclasses that have been designed to address specific  (complex) system/system environment components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000008</IRI>
+        <Literal xml:lang="fr">situation d’ appartenance de la composante de l’environnement de système à l’environnement de système</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000008</IRI>
+        <Literal xml:lang="it">situazione di appartenenza della componente dell’ambiente del sistema all’ambiente del sistema</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000008</IRI>
+        <Literal xml:lang="en">system environment-system environment component parthood situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000008</IRI>
+        <Literal xml:lang="en">A temporary parthood situation in which a system environment component is part of a system environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000008</IRI>
+        <Literal xml:lang="it">Una situazione temporale di appartenenza in cui una componente dell’ambiente del sistema è parte dell’ambiente del sistema.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000008</IRI>
+        <Literal xml:lang="fr">Une situation d’appartenance temporelle dans laquelle une composante de l’environnement de système est une partie du système.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000008</IRI>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000009</IRI>
+        <Literal xml:lang="en">Time intervals (and possibly instants, to discuss) can be further specified using gUFO properties on necessity. We suggest doing so for subclasses that have been designed to address specific  (complex) system/system environment components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000009</IRI>
+        <Literal xml:lang="fr">situation d’ appartenance de la composante de système au système</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000009</IRI>
+        <Literal xml:lang="it">situazione di appartenenza della componente del sistema al sistema</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000009</IRI>
+        <Literal xml:lang="en">system-system component parthood situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000009</IRI>
+        <Literal xml:lang="en">A temporary parthood situation in which a system component is part of a system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000009</IRI>
+        <Literal xml:lang="it">Una situazione temporale di appartenenza in cui una componente del sistema è parte del sistema.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000009</IRI>
+        <Literal xml:lang="fr">Une situation d’ appartenance temporelle dans laquelle une composante de système est une partie du système.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
+        <IRI>http://gioUbbiali.io/sco/sco-u#SCO_0000009</IRI>
         <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -13834,6 +14216,41 @@ A chemical with no chiral centers can not have an enantiomer. A chemical with mu
         <Literal xml:lang="en">SCO developer: COVER duplicates the class gUFO “quality” and creates a disjointedness restriction with the class “mode”. We apply this restriction to gUFO “quality” class, removing the COVER duplicated class. 
 
 https://purl.org/krdb-core/cover#Quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity"/>
+        <IRI>https://www.w3id.org/sco#SCO_0000001</IRI>
+        <IRI>https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://www.w3id.org/sco#SCO_0000003</IRI>
+        <Literal xml:lang="it">il valore dell&apos;indicatore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://www.w3id.org/sco#SCO_0000003</IRI>
+        <Literal xml:lang="fr">la valeur de l’indicateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://www.w3id.org/sco#SCO_0000024</IRI>
+        <Literal xml:lang="en">We currently only included the classes “system boundary” and “system spatial region” (and subclasses) as subclasses of the “endurant” class. We envision discussions with subject matter experts regarding including the entire BFO “immaterial entity” hierarchy branch under the class “endurant”.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://www.w3id.org/sco#SCO_0000025</IRI>
+        <Literal xml:lang="en">We currently only included the classes “system boundary” and “system spatial region” (and subclasses) as subclasses of the “endurant” class. We envision discussions with subject matter experts regarding including the entire BFO “immaterial entity” hierarchy branch under the class “endurant”.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://www.w3id.org/sco#SCO_0000035</IRI>
+        <Literal xml:lang="en">Event” and “situation” classes can be designed to represent stakeholder identification as well as indicator identification, on necessity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://www.w3id.org/sco#SCO_0000036</IRI>
+        <Literal xml:lang="en">Event” and “situation” classes can be designed to represent stakeholder identification as well as indicator identification, on necessity.</Literal>
     </AnnotationAssertion>
 </Ontology>
 

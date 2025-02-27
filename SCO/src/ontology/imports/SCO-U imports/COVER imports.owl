@@ -40,9 +40,6 @@
         <Class IRI="https://purl.org/krdb-core/cover#Mode"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://purl.org/krdb-core/cover#Quality"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="https://purl.org/krdb-core/cover#Trope"/>
     </Declaration>
     <Declaration>
@@ -54,13 +51,6 @@
     <Declaration>
         <NamedIndividual IRI="https://purl.org/krdb-core/cover#Trope"/>
     </Declaration>
-    <EquivalentClasses>
-        <Class IRI="https://purl.org/krdb-core/cover#Trope"/>
-        <ObjectUnionOf>
-            <Class IRI="https://purl.org/krdb-core/cover#Mode"/>
-            <Class IRI="https://purl.org/krdb-core/cover#Quality"/>
-        </ObjectUnionOf>
-    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="https://purl.org/krdb-core/cover#Disposition"/>
         <Class IRI="https://purl.org/krdb-core/cover#Mode"/>
@@ -84,10 +74,6 @@
         <Class IRI="https://purl.org/krdb-core/cover#Trope"/>
         <Class IRI="http://purl.org/nemo/gufo#Aspect"/>
     </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="https://purl.org/krdb-core/cover#Mode"/>
-        <Class IRI="https://purl.org/krdb-core/cover#Quality"/>
-    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="http://purl.org/nemo/gufo#Category"/>
         <NamedIndividual IRI="https://purl.org/krdb-core/cover#Disposition"/>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1740662295121" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-initial%20working%20draft.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740662295121" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-U-edit%20-%20draft%2025-02-25a.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740662295121" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-U-edit%20work%20copy%2025-02-26.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740662295121" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-U-edit%20working%20draft%2025-02-19.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740662295121" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-U-edit%20working%20draft%2025-02-20.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740662295121" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-U-edit%20working%20draft%2025-02-25%20(2).owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740662295121" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-U-edit%20working%20draft%2025-02-25.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740662295121" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="SCO-U-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1740662295121" name="https://www.w3id.org/sco(sco-b" uri="SCO-B-edit.owl"/>
+    </group>
+</catalog>

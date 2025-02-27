@@ -15,7 +15,7 @@
 @base <https://www.w3id.org/sco#> .
 
 <https://www.w3id.org/sco> rdf:type owl:Ontology ;
-                            owl:versionIRI <https://www.w3id.org/sco#v1.0.0/24-09-17/sco.owl> ;
+                            owl:versionIRI sco:v1.0.1 ;
                             owl:imports <http://purl.obolibrary.org/obo/bfo/2020/bfo.owl> ;
                             terms:creator "Giorgio A. Ubbiali" ;
                             terms:description """SCO is a middle-level ontology, representing the major theoretical challenges to sustainability:
@@ -28,16 +28,16 @@ SCO aims to play a pivotal role in harmonizing and integrating top-level and dom
                                         "L'ontologie fondationnelle de la durabilité"@fr ,
                                         "Sustainability Core Ontology (SCO)"@en ;
                             rdfs:seeAlso "Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr" ;
-                            owl:priorVersion """The SCO Structured Vocabulary (SV) constitutes the prior version of this resources.
-SCO SV is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology"""@en ;
-                            owl:versionInfo "2024-09-17"@en ,
-                                            "Version 1.0.0." ;
+                            owl:priorVersion """SCO V1.0.0. constitutes the prior version of this resources.
+SCO V1.0.0. is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0"""@en ;
+                            owl:versionInfo "2025-02-26"@en ,
+                                            "Version 1.0.1."@en ;
                             skos:note "Currently, this resource includes labels and definitions in the following three natural languages: English, Italian, and French. In the next version of this resource, the creator intends to also encompass Italian and French translations of the remaining pieces of information as well as to cover other natural languages."@en ,
                                       """Repository: https://github.com/gioUbbiali/Sustainability-Core-Ontology 
 Documentation webpage: https://gioubbiali.github.io/Sustainability-Core-Ontology/"""@en ,
                                       "The current version of SCO does not cover classes and object properties accounting for systems granularity, scales, and levels. A deeper representation of system change and behaviors is equally required. These themes will be topics of inclusion in the next version of this resource."@en ,
                                       "The current version of this resource does not include semi-formal natural language definitions or First Order Logics definitions. In the next version of this resource, the creator intends to also include them."@en ,
-                                      "The most recent version of this file is available on GitHub at the following link: https://www.w3id.org/sco/"@en .
+                                      "The most recent version of this file is available on GitHub at the following link: https://www.w3id.org/sco"@en .
 
 #################################################################
 #    Annotation properties

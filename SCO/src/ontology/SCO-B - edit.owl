@@ -928,12 +928,7 @@ AnnotationVocabulary:MaturityLevel rdf:type owl:Class ;
 
 ###  https://www.w3id.org/sco#SCO_0000001
 sco:SCO_0000001 rdf:type owl:Class ;
-                owl:equivalentClass [ rdf:type owl:Class ;
-                                      owl:unionOf ( sco:SCO_0000007
-                                                    sco:SCO_0000008
-                                                    sco:SCO_0000009
-                                                  )
-                                    ] ;
+                owl:equivalentClass _:genid51 ;
                 rdfs:subClassOf bfo:BFO_0000015 ,
                                 [ owl:intersectionOf ( bfo:BFO_0000015
                                                        [ rdf:type owl:Restriction ;
@@ -984,6 +979,19 @@ http://purl.obolibrary.org/obo/INO_0000016""" ;
                 AnnotationVocabulary:adaptedFrom "http://purl.obolibrary.org/obo/INO_0000002" ;
                 AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
+_:genid51 rdf:type owl:Class ;
+           owl:unionOf ( sco:SCO_0000007
+                         sco:SCO_0000008
+                         sco:SCO_0000009
+                       ) .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource sco:SCO_0000001 ;
+   owl:annotatedProperty owl:equivalentClass ;
+   owl:annotatedTarget _:genid51 ;
+   rdfs:comment "This class has been restricted to those specific subclasses for the purposes of SCO."@en
+ ] .
+
 
 ###  https://www.w3id.org/sco#SCO_0000002
 sco:SCO_0000002 rdf:type owl:Class ;
@@ -1012,7 +1020,7 @@ Related axioms must be revised accordingly.""" ;
 
 ###  https://www.w3id.org/sco#SCO_0000003
 sco:SCO_0000003 rdf:type owl:Class ;
-                owl:equivalentClass _:genid79 ;
+                owl:equivalentClass _:genid80 ;
                 rdfs:subClassOf CommonCoreOntologies:RepresentationalInformationContentEntity ,
                                 [ owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
                                                        [ rdf:type owl:Restriction ;
@@ -1035,7 +1043,7 @@ http://purl.unep.org/sdg/SDGIO_00000003""" ;
                                 "Un contenuto informativo rappresentativo che genericamente dipende da un indicatore e riguarda, fornisce informazioni sul, complesso sistema a cui l'indicatore appartiene."@it ;
                 AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
-_:genid79 owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
+_:genid80 owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty CommonCoreOntologies:is_about ;
                                   owl:someValuesFrom sco:SCO_0000015
@@ -1050,7 +1058,7 @@ _:genid79 owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationC
 [ rdf:type owl:Axiom ;
    owl:annotatedSource sco:SCO_0000003 ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid79 ;
+   owl:annotatedTarget _:genid80 ;
    rdfs:comment """Discussion with subject matter experts is required to revise this axiom with regard to the “represents” object property. This was the most appropriate object property among those pertaining to OBO-Foundry and compliant ontologies to use in constructing this axiom. 
 Nevertheless, implementations seem necessary to deepen the characterization, for instance with regard to representing and measuring the complex system of interest.. Revisions may regard adapting this object property or even further creating a new ad hoc object property. 
 
@@ -1112,7 +1120,7 @@ sco:SCO_0000005 rdf:type owl:Class ;
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf CommonCoreOntologies:InformationContentEntity ,
-                                _:genid109 ,
+                                _:genid110 ,
                                 [ owl:intersectionOf ( CommonCoreOntologies:InformationContentEntity
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty bfo:BFO_0000165 ;
@@ -1129,7 +1137,7 @@ sco:SCO_0000005 rdf:type owl:Class ;
                                 "Un contenuto informativo che dipende genericamente dal sistema complesso o dall'ambiente del sistema complesso (o una o più parti di essi) e riguarda il valore (che lo concretizza) che una componente del sistema complesso del suo ambiente riconosce di avere a quel sistema complesso o ambiente del sistema complesso (o una o più parti di essi)."@it ;
                 AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
-_:genid109 owl:intersectionOf ( CommonCoreOntologies:InformationContentEntity
+_:genid110 owl:intersectionOf ( CommonCoreOntologies:InformationContentEntity
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty bfo:BFO_0000084 ;
                                    owl:someValuesFrom [ rdf:type owl:Class ;
@@ -1146,7 +1154,7 @@ _:genid109 owl:intersectionOf ( CommonCoreOntologies:InformationContentEntity
 [ rdf:type owl:Axiom ;
    owl:annotatedSource sco:SCO_0000005 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid109 ;
+   owl:annotatedTarget _:genid110 ;
    rdfs:comment "To amend this axiom in case worth is associated with some object aggregate that is part of the complex system or complex system environment of interest. To extend this axiom to also cover the \"object aggregate\" class."
  ] .
 

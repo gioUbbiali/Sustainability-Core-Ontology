@@ -30,9 +30,9 @@ SCO structured vocabulary spreadsheets are available in both Excel and CSV forma
 
 ### SCO V1.0.1.
 
-[SCO V1.0.0 ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0)is the first release of SCO and has been constructed on the basis of SCO SV. SCO V1.0.1. is the current release of SCO and supplies SCO V1.0.0. with permanent IRIs. SCO V1.0.1 does not introduce any additional changes to SCO V1.0.0. 
+[SCO V1.0.0. ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0)is the first release of SCO and has been constructed on the basis of SCO SV. SCO V1.0.1. is the current release of SCO and supplies SCO V1.0.0. with permanent IRIs. SCO V1.0.1. does not introduce any additional changes to SCO V1.0.0. 
 
-SCO V1.0.1. is formalized in [Web Ontology Language (OWL)](https://www.w3.org/TR/owl2-overview/) and covers three natural languages, English, French, and Italian. SCO V1.0.1 encompasses 80 classes, 84 object properties, 65 annotation properties, and 2 individuals. SCO V1.0.1 conforms to [OBO-Foundry principles](https://obofoundry.org/principles/fp-000-summary.html).
+SCO V1.0.1. is formalized in [Web Ontology Language (OWL)](https://www.w3.org/TR/owl2-overview/) and covers three natural languages, English, French, and Italian. SCO V1.0.1. encompasses 80 classes, 84 object properties, 65 annotation properties, and 2 individuals. SCO V1.0.1. conforms to [OBO-Foundry principles](https://obofoundry.org/principles/fp-000-summary.html).
 
 SCO materials can be found here:
 
@@ -44,7 +44,7 @@ SCO materials can be found here:
 - [SCO V1.0.1. - BFO imports merged.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/blob/main/SCO%20-%20BFO%20merged.owl)
 - [SCO V1.0.1. - final draft version prior to release.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO%20material/src/ontology)
 
-As SCO V1.0.1 only differs from SCO V1.0.0. regarding URIs, this repository offers the SCO V1.0.0. development protocol and imports for reference.The SCO protocol is available in both Word and PDF formats. [SCO materials](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO) have been organized considering a possible future migration of this repo to the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
+As SCO V1.0.1. only differs from SCO V1.0.0. regarding URIs, this repository offers the SCO V1.0.0. development protocol and imports for reference.The SCO protocol is available in both Word and PDF formats. [SCO materials](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO) have been organized considering a possible future migration of this repo to the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
 
 The most recent version of SCO can be always found at the following link: [https://w3id.org/sco](https://w3id.org/sco). SCO is also accessible on [Ontobee](https://ontobee.org/ontology/SCO), [AgroPortal](https://agroportal.lirmm.fr/ontologies/SCO), [BioPortal](https://bioportal.bioontology.org/ontologies/SCO_V1), and [IndustryPortal](https://industryportal.enit.fr/ontologies/SCO).
 

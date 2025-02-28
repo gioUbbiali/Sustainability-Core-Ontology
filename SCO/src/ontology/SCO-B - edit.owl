@@ -36,7 +36,7 @@ SCO aims to play a pivotal role in harmonizing and integrating top-level and dom
                                         "Sustainability Core Ontology (SCO)"@en ;
                             rdfs:seeAlso "Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr" ;
                             owl:priorVersion """SCO V1.0.1. constitutes the prior version of this resources.
-SCO V1.0.1. is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology/blob/main/SCO.owl"""@en ;
+SCO V1.0.1. is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1"""@en ;
                             owl:versionInfo "2025-02-26"@en ,
                                             "Version 1.1.0. ; segment B."@en ;
                             skos:note "Currently, this resource includes labels and definitions in the following three natural languages: English, Italian, and French. In the next version of this resource, the creator intends to also encompass Italian and French translations of the remaining pieces of information as well as to cover other natural languages."@en ,
@@ -937,7 +937,7 @@ sco:SCO_0000001 rdf:type owl:Class ;
                 rdfs:subClassOf bfo:BFO_0000015 ,
                                 [ owl:intersectionOf ( bfo:BFO_0000015
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty bfo:BFO_0000057 ;
+                                                         owl:onProperty bfo:BFO_0000167 ;
                                                          owl:someValuesFrom [ rdf:type owl:Class ;
                                                                               owl:unionOf ( bfo:BFO_0000020
                                                                                             bfo:BFO_0000031
@@ -964,7 +964,7 @@ sco:SCO_0000001 rdf:type owl:Class ;
                                 ] ,
                                 [ owl:intersectionOf ( bfo:BFO_0000015
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty bfo:BFO_0000057 ;
+                                                         owl:onProperty bfo:BFO_0000167 ;
                                                          owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                                          owl:onClass bfo:BFO_0000040
                                                        ]
@@ -990,7 +990,7 @@ sco:SCO_0000002 rdf:type owl:Class ;
                 rdfs:subClassOf bfo:BFO_0000015 ,
                                 [ owl:intersectionOf ( bfo:BFO_0000015
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty bfo:BFO_0000057 ;
+                                                         owl:onProperty bfo:BFO_0000167 ;
                                                          owl:someValuesFrom bfo:RO_0002577
                                                        ]
                                                      ) ;
@@ -1202,7 +1202,7 @@ sco:SCO_0000007 rdf:type owl:Class ;
                                 ] ,
                                 [ owl:intersectionOf ( sco:SCO_0000001
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty bfo:BFO_0000057 ;
+                                                         owl:onProperty bfo:BFO_0000167 ;
                                                          owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                                          owl:onClass sco:SCO_0000013
                                                        ]
@@ -1242,7 +1242,7 @@ sco:SCO_0000008 rdf:type owl:Class ;
                                 ] ,
                                 [ owl:intersectionOf ( sco:SCO_0000001
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty bfo:BFO_0000057 ;
+                                                         owl:onProperty bfo:BFO_0000167 ;
                                                          owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                                          owl:onClass sco:SCO_0000014
                                                        ]
@@ -1265,7 +1265,7 @@ sco:SCO_0000009 rdf:type owl:Class ;
                 rdfs:subClassOf sco:SCO_0000001 ,
                                 [ owl:intersectionOf ( sco:SCO_0000001
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty bfo:BFO_0000057 ;
+                                                         owl:onProperty bfo:BFO_0000167 ;
                                                          owl:someValuesFrom sco:SCO_0000013
                                                        ]
                                                      ) ;
@@ -1273,7 +1273,7 @@ sco:SCO_0000009 rdf:type owl:Class ;
                                 ] ,
                                 [ owl:intersectionOf ( sco:SCO_0000001
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty bfo:BFO_0000057 ;
+                                                         owl:onProperty bfo:BFO_0000167 ;
                                                          owl:someValuesFrom sco:SCO_0000014
                                                        ]
                                                      ) ;
@@ -1318,7 +1318,7 @@ sco:SCO_0000010 rdf:type owl:Class ;
                 rdfs:subClassOf sco:SCO_0000002 ,
                                 [ owl:intersectionOf ( sco:SCO_0000002
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty bfo:BFO_0000057 ;
+                                                         owl:onProperty bfo:BFO_0000167 ;
                                                          owl:someValuesFrom sco:SCO_0000015
                                                        ]
                                                      ) ;
@@ -1402,7 +1402,7 @@ sco:SCO_0000013 rdf:type owl:Class ;
                 oboInOwl:hasExactSynonym "system element" ;
                 oboInOwl:hasRelatedSynonym "system variable" ;
                 rdfs:label "componente del sistema"@it ,
-                           "conposante de système"@fr ,
+                           "composante de système"@fr ,
                            "system component"@en ;
                 skos:definition "A material entity that belongs to a system."@en ,
                                 "Un'entità materiale che appartiene a un sistema."@it ,
@@ -1431,7 +1431,7 @@ sco:SCO_0000014 rdf:type owl:Class ;
                 oboInOwl:hasExactSynonym "system environment element" ;
                 oboInOwl:hasRelatedSynonym "system environment variable" ;
                 rdfs:label "componente dell' ambiente del systema"@it ,
-                           "conposante de l'environnement de système"@fr ,
+                           "composante de l'environnement de système"@fr ,
                            "system environment component"@en ;
                 skos:definition "A material entity that belongs to a system environment."@en ,
                                 "Un'entità materiale che appartiene all’ambiente di un sistema."@it ,
@@ -1636,7 +1636,7 @@ sco:SCO_0000020 rdf:type owl:Class ;
                 rdfs:subClassOf sco:SCO_0000009 ,
                                 [ owl:intersectionOf ( sco:SCO_0000009
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty bfo:BFO_0000057 ;
+                                                         owl:onProperty bfo:BFO_0000167 ;
                                                          owl:someValuesFrom sco:SCO_0000026
                                                        ]
                                                      ) ;
@@ -1644,7 +1644,7 @@ sco:SCO_0000020 rdf:type owl:Class ;
                                 ] ,
                                 [ owl:intersectionOf ( sco:SCO_0000009
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty bfo:BFO_0000057 ;
+                                                         owl:onProperty bfo:BFO_0000167 ;
                                                          owl:someValuesFrom sco:SCO_0000028
                                                        ]
                                                      ) ;
@@ -1707,7 +1707,7 @@ sco:SCO_0000021 rdf:type owl:Class ;
                                 ] ,
                                 [ owl:intersectionOf ( sco:SCO_0000008
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty bfo:BFO_0000057 ;
+                                                         owl:onProperty bfo:BFO_0000167 ;
                                                          owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                                          owl:onClass sco:SCO_0000026
                                                        ]
@@ -1746,7 +1746,7 @@ sco:SCO_0000022 rdf:type owl:Class ;
                                 ] ,
                                 [ owl:intersectionOf ( sco:SCO_0000007
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty bfo:BFO_0000057 ;
+                                                         owl:onProperty bfo:BFO_0000167 ;
                                                          owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                                          owl:onClass sco:SCO_0000028
                                                        ]
@@ -1853,7 +1853,7 @@ sco:SCO_0000026 rdf:type owl:Class ;
                                          "complex system environment variable" ;
                 rdfs:label "complex system environment component"@en ,
                            "componente dell' ambiente del systema complesso"@it ,
-                           "conposante de l'environnement de système complexe"@fr ;
+                           "composante de l'environnement de système complexe"@fr ;
                 skos:definition "A system evironment component that belongs to the system environment of a complex system."@en ,
                                 "Una componente dell'ambiente di sistema che appartiene all’ambiente di un sistema complesso."@it ,
                                 "Une composante de l'environnement de système qui appartient à l’environnement d’un système complexe."@fr ;
@@ -1927,7 +1927,7 @@ sco:SCO_0000028 rdf:type owl:Class ;
                 oboInOwl:hasRelatedSynonym "complex system variable" ;
                 rdfs:label "complex system component"@en ,
                            "componente del sistema complesso"@it ,
-                           "conposante de système complexe"@fr ;
+                           "composante de système complexe"@fr ;
                 skos:definition "A system component that belongs to a complex system."@en ,
                                 "Una componente del sistema che appartiene a un sistema complesso."@it ,
                                 "Une composante de système qui appartient à un système complexe."@fr ;

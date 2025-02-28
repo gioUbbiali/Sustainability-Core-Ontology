@@ -36,7 +36,7 @@ SCO aims to play a pivotal role in harmonizing and integrating top-level and dom
                                               "Sustainability Core Ontology (SCO)"@en ;
                                   rdfs:seeAlso "Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr" ;
                                   owl:priorVersion """SCO V1.0.1. constitutes the prior version of this resources.
-SCO V1.0.1. is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology/blob/main/SCO.owl"""@en ;
+SCO V1.0.1. is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1"""@en ;
                                   owl:versionInfo "2025-02-26"@en ,
                                                   "Version 1.1.0. ; segment U."@en ;
                                   skos:note "Currently, this resource includes labels and definitions in the following three natural languages: English, Italian, and French. In the next version of this resource, the creator intends to also encompass Italian and French translations of the remaining pieces of information as well as to cover other natural languages."@en ,
@@ -899,7 +899,54 @@ sco-u:SCO_0000001 rdf:type owl:Class ;
                                                       sco-u:SCO_0000009
                                                     )
                                       ] ;
-                  rdfs:subClassOf <http://purl.org/nemo/gufo#Event> .
+                  rdfs:subClassOf <http://purl.org/nemo/gufo#Event> ,
+                                  [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Event>
+                                                         [ rdf:type owl:Class ;
+                                                           owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#manifestedIn>
+                                                                                          ] ;
+                                                                           owl:someValuesFrom <http://purl.org/nemo/gufo#Aspect>
+                                                                         ]
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#participatedIn>
+                                                                                          ] ;
+                                                                           owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Object>
+                                                                                                                     [ rdf:type owl:Class ;
+                                                                                                                       owl:complementOf [ rdf:type owl:Class ;
+                                                                                                                                          owl:unionOf ( sco-u:SCO_0000024
+                                                                                                                                                        sco-u:SCO_0000025
+                                                                                                                                                      )
+                                                                                                                                        ]
+                                                                                                                     ]
+                                                                                                                   ) ;
+                                                                                                rdf:type owl:Class
+                                                                                              ]
+                                                                         ]
+                                                                       )
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ,
+                                  [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Event>
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#participatedIn>
+                                                                          ] ;
+                                                           owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                           owl:onClass [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Object>
+                                                                                              [ rdf:type owl:Class ;
+                                                                                                owl:complementOf [ rdf:type owl:Class ;
+                                                                                                                   owl:unionOf ( sco-u:SCO_0000024
+                                                                                                                                 sco-u:SCO_0000025
+                                                                                                                               )
+                                                                                                                 ]
+                                                                                              ]
+                                                                                            ) ;
+                                                                         rdf:type owl:Class
+                                                                       ]
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000002
@@ -910,7 +957,7 @@ sco-u:SCO_0000002 rdf:type owl:Class ;
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000003
 sco-u:SCO_0000003 rdf:type owl:Class ;
-                  owl:equivalentClass _:genid79 ;
+                  owl:equivalentClass _:genid108 ;
                   rdfs:subClassOf CommonCoreOntologies:RepresentationalInformationContentEntity ,
                                   [ owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
                                                          [ rdf:type owl:Restriction ;
@@ -921,22 +968,22 @@ sco-u:SCO_0000003 rdf:type owl:Class ;
                                     rdf:type owl:Class
                                   ] .
 
-_:genid79 owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty sco-u:SCO_0000052 ;
-                                  owl:someValuesFrom sco-u:SCO_0000015
-                                ]
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty sco-u:SCO_0000053 ;
-                                  owl:someValuesFrom sco-u:SCO_0000035
-                                ]
-                              ) ;
-           rdf:type owl:Class .
+_:genid108 owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty sco-u:SCO_0000052 ;
+                                   owl:someValuesFrom sco-u:SCO_0000015
+                                 ]
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty sco-u:SCO_0000053 ;
+                                   owl:someValuesFrom sco-u:SCO_0000035
+                                 ]
+                               ) ;
+            rdf:type owl:Class .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource sco-u:SCO_0000003 ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid79 ;
+   owl:annotatedTarget _:genid108 ;
    rdfs:comment """From SCO-B:
 
 Discussion with subject matter experts is required to revise this axiom with regard to the “represents” object property. This was the most appropriate object property among those pertaining to OBO-Foundry and compliant ontologies to use in constructing this axiom. 
@@ -1045,20 +1092,94 @@ sco-u:SCO_0000006 rdf:type owl:Class ;
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000007
 sco-u:SCO_0000007 rdf:type owl:Class ;
-                  rdfs:subClassOf sco-u:SCO_0000001 ;
+                  rdfs:subClassOf sco-u:SCO_0000001 ,
+                                  [ owl:intersectionOf ( sco-u:SCO_0000001
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#contributedToTrigger>
+                                                                          ] ;
+                                                           owl:someValuesFrom sco-u:SCO_0000058
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ,
+                                  [ owl:intersectionOf ( sco-u:SCO_0000001
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#contributedToTrigger>
+                                                                          ] ;
+                                                           owl:someValuesFrom sco-u:SCO_0000059
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ,
+                                  [ owl:intersectionOf ( sco-u:SCO_0000001
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#participatedIn>
+                                                                          ] ;
+                                                           owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                           owl:onClass sco-u:SCO_0000013
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
                   owl:disjointWith sco-u:SCO_0000008 ,
                                    sco-u:SCO_0000009 .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000008
 sco-u:SCO_0000008 rdf:type owl:Class ;
-                  rdfs:subClassOf sco-u:SCO_0000001 ;
+                  rdfs:subClassOf sco-u:SCO_0000001 ,
+                                  [ owl:intersectionOf ( sco-u:SCO_0000001
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#contributedToTrigger>
+                                                                          ] ;
+                                                           owl:someValuesFrom sco-u:SCO_0000060
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ,
+                                  [ owl:intersectionOf ( sco-u:SCO_0000001
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#participatedIn>
+                                                                          ] ;
+                                                           owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                           owl:onClass sco-u:SCO_0000014
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
                   owl:disjointWith sco-u:SCO_0000009 .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000009
 sco-u:SCO_0000009 rdf:type owl:Class ;
-                  rdfs:subClassOf sco-u:SCO_0000001 .
+                  rdfs:subClassOf sco-u:SCO_0000001 ,
+                                  [ owl:intersectionOf ( sco-u:SCO_0000001
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#contributedToTrigger>
+                                                                          ] ;
+                                                           owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                owl:unionOf ( sco-u:SCO_0000058
+                                                                                              sco-u:SCO_0000060
+                                                                                            )
+                                                                              ]
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ,
+                                  [ owl:intersectionOf ( sco-u:SCO_0000001
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#participatedIn>
+                                                                          ] ;
+                                                           owl:someValuesFrom sco-u:SCO_0000013
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#participatedIn>
+                                                                          ] ;
+                                                           owl:someValuesFrom sco-u:SCO_0000014
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000010
@@ -1355,20 +1476,76 @@ sco-u:SCO_0000019 rdf:type owl:Class ;
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000020
 sco-u:SCO_0000020 rdf:type owl:Class ;
-                  rdfs:subClassOf sco-u:SCO_0000009 ;
+                  rdfs:subClassOf sco-u:SCO_0000009 ,
+                                  [ owl:intersectionOf ( sco-u:SCO_0000009
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#contributedToTrigger>
+                                                                          ] ;
+                                                           owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                owl:unionOf ( sco-u:SCO_0000059
+                                                                                              sco-u:SCO_0000061
+                                                                                            )
+                                                                              ]
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ,
+                                  [ owl:intersectionOf ( sco-u:SCO_0000009
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#participatedIn>
+                                                                          ] ;
+                                                           owl:someValuesFrom sco-u:SCO_0000026
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#participatedIn>
+                                                                          ] ;
+                                                           owl:someValuesFrom sco-u:SCO_0000028
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
                   owl:disjointWith sco-u:SCO_0000021 ,
                                    sco-u:SCO_0000022 .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000021
 sco-u:SCO_0000021 rdf:type owl:Class ;
-                  rdfs:subClassOf sco-u:SCO_0000008 ;
+                  rdfs:subClassOf sco-u:SCO_0000008 ,
+                                  [ owl:intersectionOf ( sco-u:SCO_0000008
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#contributedToTrigger>
+                                                                          ] ;
+                                                           owl:someValuesFrom sco-u:SCO_0000061
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ,
+                                  [ owl:intersectionOf ( sco-u:SCO_0000008
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#participatedIn>
+                                                                          ] ;
+                                                           owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                           owl:onClass sco-u:SCO_0000026
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
                   owl:disjointWith sco-u:SCO_0000022 .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000022
 sco-u:SCO_0000022 rdf:type owl:Class ;
-                  rdfs:subClassOf sco-u:SCO_0000007 .
+                  rdfs:subClassOf sco-u:SCO_0000007 ,
+                                  [ owl:intersectionOf ( sco-u:SCO_0000007
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#participatedIn>
+                                                                          ] ;
+                                                           owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                           owl:onClass sco-u:SCO_0000028
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000023
@@ -1452,6 +1629,14 @@ sco-u:SCO_0000026 rdf:type owl:Class ;
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000027
 sco-u:SCO_0000027 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( sco-u:SCO_0000014
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.org/nemo/gufo#standsIn> ;
+                                                               owl:someValuesFrom sco-u:SCO_0000060
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf sco-u:SCO_0000014 ;
                   owl:disjointWith sco-u:SCO_0000029 .
 
@@ -1498,6 +1683,14 @@ sco-u:SCO_0000028 rdf:type owl:Class ;
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000029
 sco-u:SCO_0000029 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( sco-u:SCO_0000013
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.org/nemo/gufo#standsIn> ;
+                                                               owl:someValuesFrom sco-u:SCO_0000058
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf sco-u:SCO_0000013 .
 
 
@@ -1552,12 +1745,28 @@ sco-u:SCO_0000032 rdf:type owl:Class ;
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000033
 sco-u:SCO_0000033 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( sco-u:SCO_0000026
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.org/nemo/gufo#standsIn> ;
+                                                               owl:someValuesFrom sco-u:SCO_0000061
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf sco-u:SCO_0000027 ;
                   owl:disjointWith sco-u:SCO_0000034 .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000034
 sco-u:SCO_0000034 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( sco-u:SCO_0000028
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.org/nemo/gufo#standsIn> ;
+                                                               owl:someValuesFrom sco-u:SCO_0000059
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf sco-u:SCO_0000029 .
 
 
@@ -1876,9 +2085,144 @@ sco-u:SCO_0000051 rdf:type owl:Class ;
                   rdfs:subClassOf <http://purl.org/nemo/gufo#TemporaryRelationshipSituation> .
 
 
+###  https://www.w3id.org/sco/sco-u#SCO_0000058
+sco-u:SCO_0000058 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Situation>
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.org/nemo/gufo#contributedToTrigger> ;
+                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( sco-u:SCO_0000007
+                                                                                                  sco-u:SCO_0000009
+                                                                                                )
+                                                                                  ]
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#standsIn>
+                                                                              ] ;
+                                                               owl:someValuesFrom sco-u:SCO_0000029
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#standsIn>
+                                                                              ] ;
+                                                               owl:allValuesFrom sco-u:SCO_0000029
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf <http://purl.org/nemo/gufo#Situation> ;
+                  rdfs:comment "Time intervals (and possibly instants, to discuss) can be further specified using gUFO properties on necessity. We suggest doing so for subclasses that have been designed to address specific system and system environment agents."@en ;
+                  rdfs:label "situation d’agence (être un agent de système) de la composante du système"@fr ,
+                             "situation of system component agency"@en ,
+                             "situazione di agenza della componente di sistema"@it ;
+                  rdfs:seeAlso "https://www.w3id.org/sco#SCO_0000038" ;
+                  skos:definition "A situation in which a system component is causally active in an interaction among system components or between system components and system environment components."@en ,
+                                  "Una situazione in cui una componente di sistema è causalmente attiva in un' interazione tra le componenti di sistema o tra componenti di sistema e le componenti dell’ambiente del sistema."@it ,
+                                  "Une situation dans laquelle une composante de système est causalement active en une interaction entre les composantes de système ou entre les composantes de système et les composantes de l’environnement de système."@fr ;
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000059
+sco-u:SCO_0000059 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( sco-u:SCO_0000058
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.org/nemo/gufo#contributedToTrigger> ;
+                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( sco-u:SCO_0000020
+                                                                                                  sco-u:SCO_0000022
+                                                                                                )
+                                                                                  ]
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#standsIn>
+                                                                              ] ;
+                                                               owl:someValuesFrom sco-u:SCO_0000034
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#standsIn>
+                                                                              ] ;
+                                                               owl:allValuesFrom sco-u:SCO_0000034
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf sco-u:SCO_0000058 ,
+                                  [ owl:intersectionOf ( sco-u:SCO_0000058
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://purl.org/nemo/gufo#contributedToTrigger> ;
+                                                           owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                owl:unionOf ( sco-u:SCO_0000020
+                                                                                              sco-u:SCO_0000022
+                                                                                            )
+                                                                              ]
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000060
+sco-u:SCO_0000060 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Situation>
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.org/nemo/gufo#contributedToTrigger> ;
+                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( sco-u:SCO_0000008
+                                                                                                  sco-u:SCO_0000009
+                                                                                                )
+                                                                                  ]
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#standsIn>
+                                                                              ] ;
+                                                               owl:someValuesFrom sco-u:SCO_0000027
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#standsIn>
+                                                                              ] ;
+                                                               owl:allValuesFrom sco-u:SCO_0000027
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf <http://purl.org/nemo/gufo#Situation> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000061
+sco-u:SCO_0000061 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( sco-u:SCO_0000060
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.org/nemo/gufo#contributedToTrigger> ;
+                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( sco-u:SCO_0000020
+                                                                                                  sco-u:SCO_0000021
+                                                                                                )
+                                                                                  ]
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#standsIn>
+                                                                              ] ;
+                                                               owl:someValuesFrom sco-u:SCO_0000033
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#standsIn>
+                                                                              ] ;
+                                                               owl:allValuesFrom sco-u:SCO_0000033
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf sco-u:SCO_0000060 .
+
+
 #################################################################
 #    Individuals
 #################################################################
+
+###  situation_of_system_component_agency
+<situation_of_system_component_agency> rdf:type owl:NamedIndividual ,
+                                                <http://purl.org/nemo/gufo#SituationType> ;
+                                       rdfs:label "situation of system component agency"@en .
+
 
 ###  http://purl.obolibrary.org/obo/RO_0002577
 bfo:RO_0002577 rdf:type owl:NamedIndividual ,
@@ -2148,6 +2492,21 @@ sco-u:SCO_0000050 rdf:type owl:NamedIndividual ,
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000051
 sco-u:SCO_0000051 rdf:type owl:NamedIndividual ,
+                           <http://purl.org/nemo/gufo#SituationType> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000059
+sco-u:SCO_0000059 rdf:type owl:NamedIndividual ,
+                           <http://purl.org/nemo/gufo#SituationType> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000060
+sco-u:SCO_0000060 rdf:type owl:NamedIndividual ,
+                           <http://purl.org/nemo/gufo#SituationType> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000061
+sco-u:SCO_0000061 rdf:type owl:NamedIndividual ,
                            <http://purl.org/nemo/gufo#SituationType> .
 
 
@@ -7138,7 +7497,7 @@ sco-u:SCO_0000012 oboInOwl:hasExactSynonym "complex system context" ;
 sco-u:SCO_0000013 oboInOwl:hasExactSynonym "system element" ;
                   oboInOwl:hasRelatedSynonym "system variable" ;
                   rdfs:label "componente del sistema"@it ,
-                             "conposante de système"@fr ,
+                             "composante de système"@fr ,
                              "system component"@en ;
                   skos:definition "A material entity that belongs to a system."@en ,
                                   "Un'entità materiale che appartiene a un sistema."@it ,
@@ -7149,7 +7508,7 @@ sco-u:SCO_0000013 oboInOwl:hasExactSynonym "system element" ;
 sco-u:SCO_0000014 oboInOwl:hasExactSynonym "system environment element" ;
                   oboInOwl:hasRelatedSynonym "system environment variable" ;
                   rdfs:label "componente dell' ambiente del systema"@it ,
-                             "conposante de l'environnement de système"@fr ,
+                             "composante de l'environnement de système"@fr ,
                              "system environment component"@en ;
                   skos:definition "A material entity that belongs to a system environment."@en ,
                                   "Un'entità materiale che appartiene all’ambiente di un sistema."@it ,
@@ -7281,7 +7640,7 @@ sco-u:SCO_0000026 oboInOwl:hasExactSynonym "complex system environment element" 
                                            "complex system environment variable" ;
                   rdfs:label "complex system environment component"@en ,
                              "componente dell' ambiente del systema complesso"@it ,
-                             "conposante de l'environnement de système complexe"@fr ;
+                             "composante de l'environnement de système complexe"@fr ;
                   skos:definition "A system evironment component that belongs to the system environment of a complex system."@en ,
                                   "Una componente dell'ambiente di sistema che appartiene all’ambiente di un sistema complesso."@it ,
                                   "Une composante de l'environnement de système qui appartient à l’environnement d’un système complexe."@fr ;
@@ -7304,7 +7663,7 @@ sco-u:SCO_0000028 oboInOwl:hasExactSynonym "complex system element" ;
                   oboInOwl:hasRelatedSynonym "complex system variable" ;
                   rdfs:label "complex system component"@en ,
                              "componente del sistema complesso"@it ,
-                             "conposante de système complexe"@fr ;
+                             "composante de système complexe"@fr ;
                   skos:definition "A system component that belongs to a complex system."@en ,
                                   "Una componente del sistema che appartiene a un sistema complesso."@it ,
                                   "Une composante de système qui appartient à un système complexe."@fr ;
@@ -7519,6 +7878,35 @@ sco-u:SCO_0000051 rdfs:comment "Time intervals (and possibly instants, to discus
                   skos:definition "A temporary relationship situation in which a worth information content entity, that is concretized by the value (worth) that some complex system component or complex system environment component recognizes to the complex system or complex system environment to which it belongs (or some part(s) of them), stands in a relationship of generic dependence with that complex system or complex system environment, (or some part(s) of them)."@en ,
                                   "Una situazione di relazione temporale in cui il contenuto informativo del valore, che è concretizzato dal valore che una componente del sistema complesso or dell’ambiente del sistema complesso riconosce di avere al sistema complesso o ambiente del sistema complesso a cui appartiene (o una o più parti di essi), è in relazione di dipendenza generica con quel sistema complesso o l’ambiente di quel sistema complesso (o una o più parti di essi)."@it ,
                                   "Une situation de relation temporelle dans laquelle le contenu informatif du valeur, qui est concrétisé par la valeur qu’une composante du système complexe ou de l’environnement du système complexe reconnaît d’avoir au système complexe ou à l’ environnement de système complexe auquel elle appartient (ou une ou plus parties de celux-ci), est en relation de dépendance générique avec ce système complexe-là ou à ce-t-environnement de système complexe-là (ou une ou plus parties de celux-ci)."@fr ;
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
+
+
+sco-u:SCO_0000059 rdfs:label "situation d’agence (être un agent de système) de la composante du système complexe"@fr ,
+                             "situation of complex system component agency"@en ,
+                             "situazione di agenza della componente di sistema complesso"@it ;
+                  skos:definition "A situation in which a complex system component is causally active in an interaction among complex system components or between complex system components and complex system environment components."@en ,
+                                  "Una situazione in cui una componente di sistema complesso è causalmente attiva in un' interazione tra componenti di sistema complesso o tra componenti di sistema complesso e le componenti dell’ambiente del sistema complesso."@it ,
+                                  "Une situation dans laquelle une composante de système complexe est causalement active en une interaction entre les composantes de système complexe ou entre les composantes de système complexe et les composantes de l’environnement de système complexe."@fr ;
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
+
+
+sco-u:SCO_0000060 rdfs:comment "Time intervals (and possibly instants, to discuss) can be further specified using gUFO properties on necessity. We suggest doing so for subclasses that have been designed to address specific system and system environment agents."@en ;
+                  rdfs:label "situation d’agence (être un agent de l’environnement de système) de la composante de l'environnement de système"@fr ,
+                             "situation of system environment component agency"@en ,
+                             "situazione di agenza della componente dell’ambiente del sistema"@it ;
+                  rdfs:seeAlso "https://www.w3id.org/sco#SCO_0000038" ;
+                  skos:definition "A situation in which a system environment component is causally active in an interaction among system environment components or between system components and system environment components."@en ,
+                                  "Una situazione in cui una componente dell’ambiente del sistema è causalmente attiva in un' interazione tra componenti dell’ambiente del sistema o tra le componenti di sistema e le componenti dell’ambiente del sistema."@it ,
+                                  "Une situation dans laquelle une composante de l’environnement de système est causalement active en une interaction entre les composantes de l’environnement de système ou entre les composantes de système et les composantes de l’environnement de système."@fr ;
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
+
+
+sco-u:SCO_0000061 rdfs:label "situation d’agence (être un agent de l’environnement de système) de la composante de l'environnement de système complexe"@fr ,
+                             "situation of complex system environment component agency"@en ,
+                             "situazione di agenza della componente dell’ambiente del sistema complesso"@it ;
+                  skos:definition "A situation in which a complex system environment component is causally active in an interaction among complex system environment components or between complex system components and complex system environment components."@en ,
+                                  "Una situazione in cui una componente dell’ambiente del sistema complesso è causalmente attiva in un' interazione tra componenti dell’ambiente del sistema complesso o tra le componenti del sistema complesso e le componenti dell’ambiente del sistema complesso."@it ,
+                                  "Une situation dans laquelle une composante de l’environnement de système complexe est causalement active en une interaction entre les composantes de l’environnement de système complexe or entre les composantes de système complexe et les composantes de l’environnement de système complexe."@fr ;
                   AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 

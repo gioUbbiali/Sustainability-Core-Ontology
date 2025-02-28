@@ -3,7 +3,7 @@
 ## Description
 
 This repository maintains the Sustainability Core Ontology (SCO). SCO is a middle-level ontology, covering the terminology related to the three major theoretical challenges of sustainability [Ubbiali *et al.* (2024)](https://doi.org/10.31219/osf.io/z8uqr ):
-1) The polysemy of the term sustainability.
+1) The polysemy of the term "sustainability".
 2) The relationship between sustainability and sustainable development.
 3) The complexity underlying sustainability.
    
@@ -30,7 +30,7 @@ SCO structured vocabulary spreadsheets are available in both Excel and CSV forma
 
 ### SCO V1.0.1.
 
-[SCO V1.0.0 ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0)is the first release of SCO and has been constructed on the basis of SCO SV. SCO V1.0.1. is the current release of SCO and supplies SCO V1.0.0. with permanent URIs. SCO V1.0.1 does not introduce any additional changes to SCO V1.0.0. 
+[SCO V1.0.0 ](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0)is the first release of SCO and has been constructed on the basis of SCO SV. SCO V1.0.1. is the current release of SCO and supplies SCO V1.0.0. with permanent IRIs. SCO V1.0.1 does not introduce any additional changes to SCO V1.0.0. 
 
 SCO V1.0.1. is formalized in [Web Ontology Language (OWL)](https://www.w3.org/TR/owl2-overview/) and covers three natural languages, English, French, and Italian. SCO V1.0.1 encompasses 80 classes, 84 object properties, 65 annotation properties, and 2 individuals. SCO V1.0.1 conforms to [OBO-Foundry principles](https://obofoundry.org/principles/fp-000-summary.html).
 

@@ -12,7 +12,7 @@
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
 @prefix AnnotationVocabulary: <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/> .
 @prefix CommonCoreOntologies: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
-@base <https://www.w3id.org/sco/sco-u> .
+@base <https://www.w3id.org/sco/sco-u#> .
 
 <https://www.w3id.org/sco/sco-u> rdf:type owl:Ontology ;
                                   owl:versionIRI <https://www.w3id.org/sco/sco-u#v1.1.0/sco-u> ;
@@ -2279,12 +2279,6 @@ sco-u:SCO_0000062 rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  situation_of_system_component_agency
-<situation_of_system_component_agency> rdf:type owl:NamedIndividual ,
-                                                <http://purl.org/nemo/gufo#SituationType> ;
-                                       rdfs:label "situation of system component agency"@en .
-
-
 ###  http://purl.obolibrary.org/obo/RO_0002577
 bfo:RO_0002577 rdf:type owl:NamedIndividual ,
                         <http://purl.org/nemo/gufo#Kind> .
@@ -2314,6 +2308,12 @@ AnnotationVocabulary:Released rdf:type owl:NamedIndividual ,
                               rdfs:label "released"@en-us ;
                               skos:definition "construct or ontology development state in which the resource is stable, usable, and has been made available to external users"@en-us ;
                               AnnotationVocabulary:explanatoryNote "Release notes will be provided for any changes concerning released content, and any revisions will be backward compatible with the prior version to the degree possible."@en-us .
+
+
+###  https://www.w3id.org/sco/situation_of_system_component_agency
+<https://www.w3id.org/sco/situation_of_system_component_agency> rdf:type owl:NamedIndividual ,
+                                                                         <http://purl.org/nemo/gufo#SituationType> ;
+                                                                rdfs:label "situation of system component agency"@en .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000001
@@ -2458,7 +2458,7 @@ sco-u:SCO_0000028 rdf:type owl:NamedIndividual ,
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000029
 sco-u:SCO_0000029 rdf:type owl:NamedIndividual ,
-                           <http://purl.org/nemo/gufo#PhaseMixin> .
+                           <http://purl.org/nemo/gufo#RoleMixin> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000030
@@ -2483,7 +2483,7 @@ sco-u:SCO_0000033 rdf:type owl:NamedIndividual ,
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000034
 sco-u:SCO_0000034 rdf:type owl:NamedIndividual ,
-                           <http://purl.org/nemo/gufo#PhaseMixin> .
+                           <http://purl.org/nemo/gufo#RoleMixin> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000035
@@ -7433,7 +7433,21 @@ We imported this representation of modes and tropes from COVER as gUFO does not 
 
 
 sco-u:SCO_0000001 rdfs:comment """In the original definition, INO developers define this class with respect to interactors involved in the interaction process. INO includes the classes “interactor” and “interactor role” (see SeeAlso note). Here, we generalize this definition, excluding reference to interactors. In the context of SCO, we aim to provide users with an upper-level class that generally points to the involvement of material entities in an interaction process mutually influencing each other. We suggest not using this class directly but, instead, extending SCO-provided subclasses as needed. We wish users to classify interactions according to whether they occur among system components, among system environment components, or between system and system environment components.
-Original definition: “Interaction is a processual entity that has two or more participants (i.e., interactors) that have an effect upon one another.”"""@en ;
+Original definition: “Interaction is a processual entity that has two or more participants (i.e., interactors) that have an effect upon one another.”"""@en ,
+                               """SCO-U representation of agency and interactions is compatible with UFO-C. Nevertheless, it relies on a less human interaction-focused modeling strategy and is more compact than that of UFO-C. This representation is adequate for the current SCO purposes. In addition, it also appears in line with the representation provided in SCO-B. We do not exclude possible future implementations to align more closely to UFO-C. Discussion with subject matter experts will be required.
+
+To date, SCO-U does not include classes for representing entities, such as communicating agents, institutional agents, intentional moments, or perception events, as UFO-C does. UFO-C classes are a good starting point to implement in this direction.
+
+Currently, SCO does not provide a representation of intentionality. We consider UFO-C representation adequate to support SCO implementation, and we accept the notion of “intentional moment” (UFO-C sense). Nevertheless, UFO-C representation is strongly centered on mental moments (a subtype of intentional moments), such as desires or beliefs, and related mental states. Even if UFO-C does not impose mental moments as a necessary condition for agents, we consider it essential to strongly stress that not all system agents necessarily bear mental moments. Consider for instance bacteria or plants. Although they may be agents in certain systems, a cautious approach suggests remaining agnostic about owning desires and beliefs. Thus, possible future UFO-C-compliant implementations of SCO-U must clearly portray these features.
+
+SCO and UFO-C differ in the usage of the term “interaction”. See the SCO “interaction” class definition and the papers cited at the end of this comment for more details. SCO-U associates a more grounding and neutral sense to the tern “interaction” than UFO-C does to the terms “action” and “interaction” (a complex action to which several agents contribute). SCO emphasizes the mutual effects among interaction participants and does not directly rely on agency to define an interaction as UFO-C does. UFO-C representation seems to likely correspond to that of action and activity, proposed in SuMSO. See comments to SuMSO “complex system activity” classes in the OWL file. https://github.com/gioUbbiali/Sustainable-Meat-Systems-Ontology This representation builds upon SCO representation of interactions, ensuring conserving compliance also with this regard. 
+
+SCO-U introduces specific agency situations to model system agency and interactions concerning time.
+
+References:
+Guizzardi, G., & Wagner, G. (2005a). Some Applications of a Unified Foundational Ontology in Business Modeling: In P. F. Green & M. Rosemann (A c. Di), Business Systems Analysis with Ontologies (pp. 345–367). IGI Global. https://doi.org/10.4018/978-1-59140-339-5.ch013
+Guizzardi, G., & Wagner, G. (2005b). Towards Ontological Foundations for Agent Modelling Concepts Using the Unified Fundational Ontology (UFO). In P. Bresciani, P. Giorgini, B. Henderson-Sellers, G. Low, & M. Winikoff (A c. Di), Agent-Oriented Information Systems II (Vol. 3508, pp. 110–124). Springer Berlin Heidelberg. https://doi.org/10.1007/11426714_8
+Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software domain ontologies in the unified foundational ontology (UFO): The case of the ODE. Memorias de la XI Conferencia Iberoamericana de Software Engineering (CIbSE 2008), Recife, Pernambuco, Brasil, February 13-17, 2008, 127–140."""@en ;
                   rdfs:label "interaction"@en ,
                              "interaction"@fr ,
                              "interazione"@it ;
@@ -7712,7 +7726,21 @@ sco-u:SCO_0000026 oboInOwl:hasExactSynonym "complex system environment element" 
                   AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
-sco-u:SCO_0000027 rdfs:label "agent de l’environnement de système"@fr ,
+sco-u:SCO_0000027 rdfs:comment """SCO-U representation of agency and interactions is compatible with UFO-C. Nevertheless, it relies on a less human interaction-focused modeling strategy and is more compact than that of UFO-C. This representation is adequate for the current SCO purposes. In addition, it also appears in line with the representation provided in SCO-B. We do not exclude possible future implementations to align more closely to UFO-C. Discussion with subject matter experts will be required.
+
+To date, SCO-U does not include classes for representing entities, such as communicating agents, institutional agents, intentional moments, or perception events, as UFO-C does. UFO-C classes are a good starting point to implement in this direction.
+
+Currently, SCO does not provide a representation of intentionality. We consider UFO-C representation adequate to support SCO implementation, and we accept the notion of “intentional moment” (UFO-C sense). Nevertheless, UFO-C representation is strongly centered on mental moments (a subtype of intentional moments), such as desires or beliefs, and related mental states. Even if UFO-C does not impose mental moments as a necessary condition for agents, we consider it essential to strongly stress that not all system agents necessarily bear mental moments. Consider for instance bacteria or plants. Although they may be agents in certain systems, a cautious approach suggests remaining agnostic about owning desires and beliefs. Thus, possible future UFO-C-compliant implementations of SCO-U must clearly portray these features.
+
+SCO and UFO-C differ in the usage of the term “interaction”. See the SCO “interaction” class definition and the papers cited at the end of this comment for more details. SCO-U associates a more grounding and neutral sense to the tern “interaction” than UFO-C does to the terms “action” and “interaction” (a complex action to which several agents contribute). SCO emphasizes the mutual effects among interaction participants and does not directly rely on agency to define an interaction as UFO-C does. UFO-C representation seems to likely correspond to that of action and activity, proposed in SuMSO. See comments to SuMSO “complex system activity” classes in the OWL file. https://github.com/gioUbbiali/Sustainable-Meat-Systems-Ontology This representation builds upon SCO representation of interactions, ensuring conserving compliance also with this regard. 
+
+SCO-U introduces specific agency situations to model system agency and interactions concerning time.
+
+References:
+Guizzardi, G., & Wagner, G. (2005a). Some Applications of a Unified Foundational Ontology in Business Modeling: In P. F. Green & M. Rosemann (A c. Di), Business Systems Analysis with Ontologies (pp. 345–367). IGI Global. https://doi.org/10.4018/978-1-59140-339-5.ch013
+Guizzardi, G., & Wagner, G. (2005b). Towards Ontological Foundations for Agent Modelling Concepts Using the Unified Fundational Ontology (UFO). In P. Bresciani, P. Giorgini, B. Henderson-Sellers, G. Low, & M. Winikoff (A c. Di), Agent-Oriented Information Systems II (Vol. 3508, pp. 110–124). Springer Berlin Heidelberg. https://doi.org/10.1007/11426714_8
+Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software domain ontologies in the unified foundational ontology (UFO): The case of the ODE. Memorias de la XI Conferencia Iberoamericana de Software Engineering (CIbSE 2008), Recife, Pernambuco, Brasil, February 13-17, 2008, 127–140."""@en ;
+                  rdfs:label "agent de l’environnement de système"@fr ,
                              "agente dell’ambiente del sistema"@it ,
                              "system environnement agent"@en ;
                   rdfs:seeAlso <https://www.w3id.org/sco#sco.owl/SCO_0000037> ,
@@ -7735,7 +7763,21 @@ sco-u:SCO_0000028 oboInOwl:hasExactSynonym "complex system element" ;
                   AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
-sco-u:SCO_0000029 rdfs:label "agent de système"@fr ,
+sco-u:SCO_0000029 rdfs:comment """SCO-U representation of agency and interactions is compatible with UFO-C. Nevertheless, it relies on a less human interaction-focused modeling strategy and is more compact than that of UFO-C. This representation is adequate for the current SCO purposes. In addition, it also appears in line with the representation provided in SCO-B. We do not exclude possible future implementations to align more closely to UFO-C. Discussion with subject matter experts will be required.
+
+To date, SCO-U does not include classes for representing entities, such as communicating agents, institutional agents, intentional moments, or perception events, as UFO-C does. UFO-C classes are a good starting point to implement in this direction.
+
+Currently, SCO does not provide a representation of intentionality. We consider UFO-C representation adequate to support SCO implementation, and we accept the notion of “intentional moment” (UFO-C sense). Nevertheless, UFO-C representation is strongly centered on mental moments (a subtype of intentional moments), such as desires or beliefs, and related mental states. Even if UFO-C does not impose mental moments as a necessary condition for agents, we consider it essential to strongly stress that not all system agents necessarily bear mental moments. Consider for instance bacteria or plants. Although they may be agents in certain systems, a cautious approach suggests remaining agnostic about owning desires and beliefs. Thus, possible future UFO-C-compliant implementations of SCO-U must clearly portray these features.
+
+SCO and UFO-C differ in the usage of the term “interaction”. See the SCO “interaction” class definition and the papers cited at the end of this comment for more details. SCO-U associates a more grounding and neutral sense to the tern “interaction” than UFO-C does to the terms “action” and “interaction” (a complex action to which several agents contribute). SCO emphasizes the mutual effects among interaction participants and does not directly rely on agency to define an interaction as UFO-C does. UFO-C representation seems to likely correspond to that of action and activity, proposed in SuMSO. See comments to SuMSO “complex system activity” classes in the OWL file. https://github.com/gioUbbiali/Sustainable-Meat-Systems-Ontology This representation builds upon SCO representation of interactions, ensuring conserving compliance also with this regard. 
+
+SCO-U introduces specific agency situations to model system agency and interactions concerning time.
+
+References:
+Guizzardi, G., & Wagner, G. (2005a). Some Applications of a Unified Foundational Ontology in Business Modeling: In P. F. Green & M. Rosemann (A c. Di), Business Systems Analysis with Ontologies (pp. 345–367). IGI Global. https://doi.org/10.4018/978-1-59140-339-5.ch013
+Guizzardi, G., & Wagner, G. (2005b). Towards Ontological Foundations for Agent Modelling Concepts Using the Unified Fundational Ontology (UFO). In P. Bresciani, P. Giorgini, B. Henderson-Sellers, G. Low, & M. Winikoff (A c. Di), Agent-Oriented Information Systems II (Vol. 3508, pp. 110–124). Springer Berlin Heidelberg. https://doi.org/10.1007/11426714_8
+Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software domain ontologies in the unified foundational ontology (UFO): The case of the ODE. Memorias de la XI Conferencia Iberoamericana de Software Engineering (CIbSE 2008), Recife, Pernambuco, Brasil, February 13-17, 2008, 127–140."""@en ;
+                  rdfs:label "agent de système"@fr ,
                              "agente del sistema"@it ,
                              "system agent"@en ;
                   rdfs:seeAlso <https://www.w3id.org/sco#sco.owl/SCO_0000037> ,
@@ -7975,7 +8017,21 @@ sco-u:SCO_0000061 rdfs:label "situation d’agence (être un agent de l’enviro
                   AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
-sco-u:SCO_0000062 rdfs:label "situation d’agence (agir)"@fr ,
+sco-u:SCO_0000062 rdfs:comment """SCO-U representation of agency and interactions is compatible with UFO-C. Nevertheless, it relies on a less human interaction-focused modeling strategy and is more compact than that of UFO-C. This representation is adequate for the current SCO purposes. In addition, it also appears in line with the representation provided in SCO-B. We do not exclude possible future implementations to align more closely to UFO-C. Discussion with subject matter experts will be required.
+
+To date, SCO-U does not include classes for representing entities, such as communicating agents, institutional agents, intentional moments, or perception events, as UFO-C does. UFO-C classes are a good starting point to implement in this direction.
+
+Currently, SCO does not provide a representation of intentionality. We consider UFO-C representation adequate to support SCO implementation, and we accept the notion of “intentional moment” (UFO-C sense). Nevertheless, UFO-C representation is strongly centered on mental moments (a subtype of intentional moments), such as desires or beliefs, and related mental states. Even if UFO-C does not impose mental moments as a necessary condition for agents, we consider it essential to strongly stress that not all system agents necessarily bear mental moments. Consider for instance bacteria or plants. Although they may be agents in certain systems, a cautious approach suggests remaining agnostic about owning desires and beliefs. Thus, possible future UFO-C-compliant implementations of SCO-U must clearly portray these features.
+
+SCO and UFO-C differ in the usage of the term “interaction”. See the SCO “interaction” class definition and the papers cited at the end of this comment for more details. SCO-U associates a more grounding and neutral sense to the tern “interaction” than UFO-C does to the terms “action” and “interaction” (a complex action to which several agents contribute). SCO emphasizes the mutual effects among interaction participants and does not directly rely on agency to define an interaction as UFO-C does. UFO-C representation seems to likely correspond to that of action and activity, proposed in SuMSO. See comments to SuMSO “complex system activity” classes in the OWL file. https://github.com/gioUbbiali/Sustainable-Meat-Systems-Ontology This representation builds upon SCO representation of interactions, ensuring conserving compliance also with this regard. 
+
+SCO-U introduces specific agency situations to model system agency and interactions concerning time.
+
+References:
+Guizzardi, G., & Wagner, G. (2005a). Some Applications of a Unified Foundational Ontology in Business Modeling: In P. F. Green & M. Rosemann (A c. Di), Business Systems Analysis with Ontologies (pp. 345–367). IGI Global. https://doi.org/10.4018/978-1-59140-339-5.ch013
+Guizzardi, G., & Wagner, G. (2005b). Towards Ontological Foundations for Agent Modelling Concepts Using the Unified Fundational Ontology (UFO). In P. Bresciani, P. Giorgini, B. Henderson-Sellers, G. Low, & M. Winikoff (A c. Di), Agent-Oriented Information Systems II (Vol. 3508, pp. 110–124). Springer Berlin Heidelberg. https://doi.org/10.1007/11426714_8
+Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software domain ontologies in the unified foundational ontology (UFO): The case of the ODE. Memorias de la XI Conferencia Iberoamericana de Software Engineering (CIbSE 2008), Recife, Pernambuco, Brasil, February 13-17, 2008, 127–140."""@en ;
+                  rdfs:label "situation d’agence (agir)"@fr ,
                              "situation of agency"@en ,
                              "situazione di agenza"@it ;
                   skos:definition "A situation in which an object is causally active in an interaction."@en ,

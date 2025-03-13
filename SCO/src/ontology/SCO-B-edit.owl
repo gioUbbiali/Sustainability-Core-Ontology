@@ -977,7 +977,7 @@ sco:SCO_0000001 rdf:type owl:Class ;
                                 [ owl:intersectionOf ( bfo:BFO_0000015
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty sco:SCO_0000037 ;
-                                                         owl:someValuesFrom bfo:BFO_0000040
+                                                         owl:someValuesFrom bfo:BFO_0000004
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
@@ -986,7 +986,7 @@ sco:SCO_0000001 rdf:type owl:Class ;
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty bfo:BFO_0000167 ;
                                                          owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                                                         owl:onClass bfo:BFO_0000040
+                                                         owl:onClass bfo:BFO_0000004
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
@@ -998,9 +998,9 @@ Original definition: “Interaction is a processual entity that has two or more 
                            "interazione"@it ;
                 rdfs:seeAlso """http://purl.obolibrary.org/obo/INO_0000015 
 http://purl.obolibrary.org/obo/INO_0000016""" ;
-                skos:definition "A process that has at least two material entities as participants that have an effect upon one another."@en ,
-                                "Un processo che ha almeno due entità materiali come partecipanti, aventi un effetto l’una sull’altra."@it ,
-                                "Un processus qui a au moins deux entités matérielles comme participants, ayant un effet l’une sur l’autre."@fr ;
+                skos:definition "A process that has at least two independent continuants (no spatial regions) as participants that have an effect upon one another."@en ,
+                                "Un processo che ha almeno due continuanti indipendenti (no regioni spaziali) come partecipanti, aventi un effetto l’una sull’altra."@it ,
+                                "Un processus qui a au moins deux continuants indépendants (pas de régions spatiales) comme participants, ayant un effet l’une sur l’autre."@fr ;
                 AnnotationVocabulary:adaptedFrom "http://purl.obolibrary.org/obo/INO_0000002" ;
                 AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
@@ -1065,7 +1065,7 @@ http://purl.unep.org/sdg/SDGIO_00000001
 http://purl.unep.org/sdg/SDGIO_00000003""" ;
                 skos:definition "A representational information content entity that generically depends on some indicator and is about, providing insights into, the complex system to which the indicator belongs."@en ,
                                 "Un contenu représentatif d’information qui dépend de façon générique d’un indicateur et qui concerne, fournissant des indications/renseignements, sur le système complexe auquel l’indicateur appartient."@fr ,
-                                "Un contenuto informativo rappresentativo che genericamente dipende da un indicatore e riguarda, fornisce informazioni sul, complesso sistema a cui l'indicatore appartiene."@it ;
+                                "Un contenuto informativo rappresentativo che genericamente dipende da un indicatore e riguarda, fornisce informazioni sul, sistema complesso a cui l'indicatore appartiene."@it ;
                 AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 _:genid80 owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
@@ -1581,7 +1581,7 @@ sco:SCO_0000016 rdf:type owl:Class ;
                 rdfs:label "perspective"@en ,
                            "perspective"@fr ,
                            "prospettiva"@it ;
-                rdfs:seeAlso <https://www.w3id.org/sco#sco.owl/SCO_0000039> ;
+                rdfs:seeAlso sco:SCO_0000039 ;
                 skos:definition "A disposition whose realization leads the complex system component or the complex system environment component to (re)position itself within and regarding the complex system or complex system environment it belongs to (or a part of it) and possibly act accordingly."@en ,
                                 "Una disposizione la cui realizzazione porta la componente del sistema complesso o la componente dell’ambiente del sistema complesso a (ri)posizionarsi nel e rispetto al sistema complesso o all’ ambiente del sistema complesso a cui appartiene (o parte di esso) ed eventualmente ad agire di conseguenza."@it ,
                                 "Une disposition dont la réalisation conduit la composante de système complexe ou la composante de l’environnement du système complexe à se (re)positionner dans et par rapport au système complexe ou à l’environnement du système complexe auquel elle appartient (ou d’une partie de celui-ci) et, éventuellement, à agir en conséquence."@fr ;

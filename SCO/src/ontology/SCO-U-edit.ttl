@@ -566,7 +566,8 @@ bfo:RO_0002323 rdf:type owl:ObjectProperty ;
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000037
 sco-u:SCO_0000037 rdf:type owl:ObjectProperty ;
-                  rdfs:comment """As UFO does not deal with spatial regions, we currently do not specify the domain and range of this property. In line with BFO representation, the domain should roughly be “object” and ¬ a new “object” subclass “spatial region”, and the range this latter subclass. Nevertheless, we envision discussions with subject matter experts regarding spatial region representation using UFO and gUFO and related object property modeling.
+                  rdfs:comment "As UFO does not address spatial regions, SCO-U adapts BFO representation with regards to systems. See corresponding definitions and axioms that include reference to them. We envision discussions with subject matter experts to deepen this representation towards a UFO compliant representation of spatial regions."@en ,
+                               """As UFO does not deal with spatial regions, we currently do not specify the domain and range of this property. In line with BFO representation, the domain should roughly be “object” and ¬ a new “object” subclass “spatial region”, and the range this latter subclass. Nevertheless, we envision discussions with subject matter experts regarding spatial region representation using UFO and gUFO and related object property modeling.
 
 We also focus on this property and we do not address its upper-level object property."""@en ,
                                """This object property is intended to correspond to BFO 'occupies spatial region at all times' object property within the context of UFO representation.
@@ -692,7 +693,8 @@ _:genid11 rdf:type owl:Class ;
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000055
 sco-u:SCO_0000055 rdf:type owl:ObjectProperty ;
-                  rdfs:comment "As UFO does not deal with the histories of entities, we currently do not specify the domain and range of this property. In line with BFO representation, the domain should roughly be “object” ( to discuss with regard to BFO immaterial entities”, BFO does not allow it), and the range a “history” subclass of gUFO “event” class. We envision discussions with subject matter experts regarding representing entity histories using UFO and gUFO and related object property modeling."@en ,
+                  rdfs:comment "As UFO does not address history, SCO-U adapts BFO representation with regards to systems. See corresponding definitions and axioms that include reference to them. We envision discussions with subject matter experts to deepen this representation towards a UFO compliant representation of history."@en ,
+                               "As UFO does not deal with the histories of entities, we currently do not specify the domain and range of this property. In line with BFO representation, the domain should roughly be “object” ( to discuss with regard to BFO immaterial entities”, BFO does not allow it), and the range a “history” subclass of gUFO “event” class. We envision discussions with subject matter experts regarding representing entity histories using UFO and gUFO and related object property modeling."@en ,
                                """This object property is intended to correspond to BFO has history' object property within the context of UFO representation.
 
 See the BFO corresponding object property for a definition and further details.
@@ -837,18 +839,6 @@ bfo:RO_0002577 rdf:type owl:Class ;
                                 sco-u:SCO_0000025 .
 
 
-###  http://purl.org/nemo/gufo#Event
-<http://purl.org/nemo/gufo#Event> rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Event>
-                                                                         [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#participatedIn>
-                                                                                          ] ;
-                                                                           owl:someValuesFrom bfo:RO_0002577
-                                                                         ]
-                                                                       ) ;
-                                                    rdf:type owl:Class
-                                                  ] .
-
-
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity
 CommonCoreOntologies:InformationContentEntity rdf:type owl:Class ;
                                               rdfs:subClassOf <http://purl.org/nemo/gufo#Aspect> ,
@@ -893,12 +883,7 @@ AnnotationVocabulary:MaturityLevel rdf:type owl:Class ;
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000001
 sco-u:SCO_0000001 rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Class ;
-                                        owl:unionOf ( sco-u:SCO_0000007
-                                                      sco-u:SCO_0000008
-                                                      sco-u:SCO_0000009
-                                                    )
-                                      ] ;
+                  owl:equivalentClass _:genid70 ;
                   rdfs:subClassOf <http://purl.org/nemo/gufo#Event> ,
                                   [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Event>
                                                          [ rdf:type owl:Class ;
@@ -912,11 +897,7 @@ sco-u:SCO_0000001 rdf:type owl:Class ;
                                                                                           ] ;
                                                                            owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Object>
                                                                                                                      [ rdf:type owl:Class ;
-                                                                                                                       owl:complementOf [ rdf:type owl:Class ;
-                                                                                                                                          owl:unionOf ( sco-u:SCO_0000024
-                                                                                                                                                        sco-u:SCO_0000025
-                                                                                                                                                      )
-                                                                                                                                        ]
+                                                                                                                       owl:complementOf sco-u:SCO_0000025
                                                                                                                      ]
                                                                                                                    ) ;
                                                                                                 rdf:type owl:Class
@@ -957,11 +938,7 @@ sco-u:SCO_0000001 rdf:type owl:Class ;
                                                            owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                                            owl:onClass [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Object>
                                                                                               [ rdf:type owl:Class ;
-                                                                                                owl:complementOf [ rdf:type owl:Class ;
-                                                                                                                   owl:unionOf ( sco-u:SCO_0000024
-                                                                                                                                 sco-u:SCO_0000025
-                                                                                                                               )
-                                                                                                                 ]
+                                                                                                owl:complementOf sco-u:SCO_0000025
                                                                                               ]
                                                                                             ) ;
                                                                          rdf:type owl:Class
@@ -971,16 +948,38 @@ sco-u:SCO_0000001 rdf:type owl:Class ;
                                     rdf:type owl:Class
                                   ] .
 
+_:genid70 rdf:type owl:Class ;
+           owl:unionOf ( sco-u:SCO_0000007
+                         sco-u:SCO_0000008
+                         sco-u:SCO_0000009
+                       ) .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource sco-u:SCO_0000001 ;
+   owl:annotatedProperty owl:equivalentClass ;
+   owl:annotatedTarget _:genid70 ;
+   rdfs:comment "This class has been restricted to those specific subclasses for the purposes of SCO."@en
+ ] .
+
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000002
 sco-u:SCO_0000002 rdf:type owl:Class ;
-                  rdfs:subClassOf <http://purl.org/nemo/gufo#Event> ;
+                  rdfs:subClassOf <http://purl.org/nemo/gufo#Event> ,
+                                  [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Event>
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#participatedIn>
+                                                                          ] ;
+                                                           owl:someValuesFrom bfo:RO_0002577
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
                   owl:disjointWith sco-u:SCO_0000011 .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000003
 sco-u:SCO_0000003 rdf:type owl:Class ;
-                  owl:equivalentClass _:genid121 ;
+                  owl:equivalentClass _:genid116 ;
                   rdfs:subClassOf CommonCoreOntologies:RepresentationalInformationContentEntity ,
                                   [ owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
                                                          [ rdf:type owl:Restriction ;
@@ -991,7 +990,7 @@ sco-u:SCO_0000003 rdf:type owl:Class ;
                                     rdf:type owl:Class
                                   ] .
 
-_:genid121 owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
+_:genid116 owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty sco-u:SCO_0000052 ;
                                    owl:someValuesFrom sco-u:SCO_0000015
@@ -1006,7 +1005,7 @@ _:genid121 owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformation
 [ rdf:type owl:Axiom ;
    owl:annotatedSource sco-u:SCO_0000003 ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid121 ;
+   owl:annotatedTarget _:genid116 ;
    rdfs:comment """From SCO-B:
 
 Discussion with subject matter experts is required to revise this axiom with regard to the “represents” object property. This was the most appropriate object property among those pertaining to OBO-Foundry and compliant ontologies to use in constructing this axiom. 
@@ -7575,13 +7574,16 @@ Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software 
                              "interazione"@it ;
                   rdfs:seeAlso """http://purl.obolibrary.org/obo/INO_0000015 
 http://purl.obolibrary.org/obo/INO_0000016""" ;
-                  skos:definition "A process that has at least two material entities as participants that have an effect upon one another."@en ,
-                                  "Un processo che ha almeno due entità materiali come partecipanti, aventi un effetto l’una sull’altra."@it ,
-                                  "Un processus qui a au moins deux entités matérielles comme participants, ayant un effet l’une sur l’autre."@fr ;
+                  skos:definition "An event that has at least two objects (no system spatial regions) as participants that have an effect upon one another."@en ,
+                                  "Un evento che ha almeno due oggetti (no regioni spaziali di sistema) come partecipanti, aventi un effetto l’una sull’altra."@it ,
+                                  "Un événement qui a au moins deux objets (pas de régions spatiales de système) comme participants, ayant un effet l’une sur l’autre."@fr ;
                   AnnotationVocabulary:adaptedFrom "http://purl.obolibrary.org/obo/INO_0000002" .
 
 
-sco-u:SCO_0000002 rdfs:comment """This class aims to be the starting point for developing a representation of system change. Future SCO implementations will provide additional classes and object properties addressing system behaviors, system processes, system scales and levels, and related themes.
+sco-u:SCO_0000002 rdfs:comment """Currently, we classify the development of systems as a gUFO event. Nevertheless, a more adequate representation may identify system developments as processes constituted by events. See Guarino & Guizzardi (2024) for insights and a deep analysis. We envision discussions with subject matter experts to deepen this representation. 
+ 
+Guarino, N., & Guizzardi, G. (2024). Processes as variable embodiments. Synthese, 203(4), 104. https://doi.org/10.1007/s11229-024-04505-2"""@en ,
+                               """This class aims to be the starting point for developing a representation of system change. Future SCO implementations will provide additional classes and object properties addressing system behaviors, system processes, system scales and levels, and related themes.
 
 Related axioms must be revised accordingly.""" ;
                   rdfs:label "développement de système"@fr ,
@@ -7602,27 +7604,27 @@ sco-u:SCO_0000003 oboInOwl:hasRelatedSynonym "indicator information" ;
                                """http://purl.unep.org/sdg/SDGIO_00000000
 http://purl.unep.org/sdg/SDGIO_00000001 
 http://purl.unep.org/sdg/SDGIO_00000003""" ;
-                  skos:definition "A representational information content entity that generically depends on some indicator and is about, providing insights into, the complex system to which the indicator belongs."@en ,
-                                  "Un contenu représentatif d’information qui dépend de façon générique d’un indicateur et qui concerne, fournissant des indications/renseignements, sur le système complexe auquel l’indicateur appartient."@fr ,
-                                  "Un contenuto informativo rappresentativo che genericamente dipende da un indicatore e riguarda, fornisce informazioni sul, complesso sistema a cui l'indicatore appartiene."@it ;
+                  skos:definition "A representational information content entity that stands in a situation of generical dependence of indicator value on some indicator and is about, providing insights into, the complex system to which the indicator belongs."@en ,
+                                  "Un contenu représentatif d’information qui se tient dans une situation de dépendance générique de la valeur de l'indicateur d’un indicateur et qui concerne, fournissant des indications/renseignements, sur le système complexe auquel l’indicateur appartient."@fr ,
+                                  "Un contenuto informativo rappresentativo che sta in una situazione di dipendenza generica del valore dell'indicatore da un indicatore e riguarda, fornisce informazioni sul, sistema complesso a cui l'indicatore appartiene."@it ;
                   AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000004 rdfs:label "contenu informatif de la perspective"@fr ,
                              "contenuto informativo della prospettiva"@it ,
                              "perspective information content entity"@en ;
-                  skos:definition "An information content entity that generically depends on some complex system component or complex system environment component and is about the perspective (that concretizes it) of that complex system component or complex system environment component."@en ,
-                                  "Un contenu d’information qui dépend de façon générique d’une composante de système complexe ou d’une composant d’environnement de système complexe et qui concerne la perspective (qui le concrétise) de cette composante de système complexe ou de cette composante environnement de système complexe."@fr ,
-                                  "Un contenuto informativo che dipende genericamente da una componente del sistema complesso o da una componente dell'ambiente del sistema complesso e riguarda la prospettiva (che lo concretizza) di tale componente del sistema complesso o dell’ambiente del sistema complesso."@it ;
+                  skos:definition "An information content entity that stands in a situation of generical dependence of perspective information on some complex system component or complex system environment component and is about the perspective (that concretizes it) of that complex system component or complex system environment component."@en ,
+                                  "Un contenu d’information qui se tient dans une situation de dépendance générique du contenu informatif de la perspective d’une composante de système complexe ou d’une composant d’environnement de système complexe et qui concerne la perspective (qui le concrétise) de cette composante de système complexe ou de cette composante environnement de système complexe."@fr ,
+                                  "Un contenuto informativo che che sta in una situazione di dipendenza generica del contenuto informativo della prospettiva da una componente del sistema complesso o da una componente dell'ambiente del sistema complesso e riguarda la prospettiva (che lo concretizza) di tale componente del sistema complesso o dell’ambiente del sistema complesso."@it ;
                   AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000005 rdfs:label "contenu informatif de la valeur"@fr ,
                              "contenuto informativo del valore"@it ,
                              "worth information content entity"@en ;
-                  skos:definition "An information content entity that generically depends on a complex system or a complex system environment (or some part(s) of them) and is about the worth (that concretizes it) that some complex system component or complex system environment component recognizes that that complex system or complex system environment (or some part(s) of them) bearer."@en ,
-                                  "Un contenu d’information qui dépend de façon générique d’un système complexe ou de l’environnement de système complexe (ou une ou plus parties de ceux-ci) et qui concerne la valeur (qui le concrétise) qu’une composante de système complexe ou de son environnement reconnaît d’avoir à ce système complexe-là ou à ce-t-environnement de système complexe-là (ou une ou plus parties de celux-ci)."@fr ,
-                                  "Un contenuto informativo che dipende genericamente dal sistema complesso o dall'ambiente del sistema complesso (o una o più parti di essi) e riguarda il valore (che lo concretizza) che una componente del sistema complesso del suo ambiente riconosce di avere a quel sistema complesso o ambiente del sistema complesso (o una o più parti di essi)."@it ;
+                  skos:definition "An information content entity that stands in a situation of generical dependence of worth information on a complex system or a complex system environment (or some part(s) of them) and is about the worth (that concretizes it) that some complex system component or complex system environment component recognizes that that complex system or complex system environment (or some part(s) of them) bearer."@en ,
+                                  "Un contenu d’information qui se tient dans une situation de dépendance générique du contenu informatif de la valeur d’un système complexe ou de l’environnement de système complexe (ou une ou plus parties de ceux-ci) et qui concerne la valeur (qui le concrétise) qu’une composante de système complexe ou de son environnement reconnaît d’avoir à ce système complexe-là ou à ce-t-environnement de système complexe-là (ou une ou plus parties de celux-ci)."@fr ,
+                                  "Un contenuto informativo che sta in una situazione di dipendenza generica del contenuto informativo del valore dal sistema complesso o dall'ambiente del sistema complesso (o una o più parti di essi) e riguarda il valore (che lo concretizza) che una componente del sistema complesso del suo ambiente riconosce di avere a quel sistema complesso o ambiente del sistema complesso (o una o più parti di essi)."@it ;
                   AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
@@ -7676,13 +7678,24 @@ sco-u:SCO_0000010 rdfs:label "complex system development"@en ,
                   AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
-sco-u:SCO_0000011 rdfs:label "historie de système"@fr ,
+sco-u:SCO_0000011 rdfs:comment "As UFO does not address history, SCO-U adapts BFO representation with regards to systems. See corresponding definitions and axioms that include reference to them. We envision discussions with subject matter experts to deepen this representation towards a UFO compliant representation of hisotry."@en ,
+                               """Currently, we classify the history of a system as a gUFO event. Nevertheless, a more adequate representation may identify system histories  as processes constituted by events. See Guarino & Guizzardi (2024) for insights and a deep analysis. We envision discussions with subject matter experts to deepen this representation.
+
+ Guarino, N., & Guizzardi, G. (2024). Processes as variable embodiments. Synthese, 203(4), 104. https://doi.org/10.1007/s11229-024-04505-2"""@en ,
+                               """We construct this definition based on the definitions of the following BFO classes. It is provisional. 
+
+http://purl.obolibrary.org/obo/BFO_0000182
+http://purl.obolibrary.org/obo/BFO_0000011 
+
+We envision discussions with subject matter experts to identify adequate strategies to represent entity histories (BFO sense), according to UFO."""@en ;
+                  rdfs:label "historie de système"@fr ,
                              "storia del sistema"@it ,
                              "system history"@en ;
-                  skos:definition "La storia di un sistema."@it ,
-                                  "L’histoire d’un système."@fr ,
-                                  "The history of a system."@en ;
-                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
+                  rdfs:seeAlso "https://www.w3id.org/sco/sco-u#SCO_0000055" ;
+                  skos:definition "An event that is the sum of the totality of events taking place in the perdurant part of spacetime occupied by a system."@en ,
+                                  "Un event oche è la somma degli eventi che avvengono nella parte perdurante di spazio-tempo occupata da un sistema."@it ,
+                                  "Un événement qui est la somme des événements ayant lieu dans la partie perdurante de l’espace-temps occupée par un système."@fr ;
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000012 oboInOwl:hasExactSynonym "complex system context" ;
@@ -7736,14 +7749,15 @@ sco-u:SCO_0000016 rdfs:comment "SCO currently accounts for perspectives of compl
                   rdfs:label "perspective"@en ,
                              "perspective"@fr ,
                              "prospettiva"@it ;
-                  rdfs:seeAlso <https://www.w3id.org/sco#sco.owl/SCO_0000039> ;
+                  rdfs:seeAlso sco-u:SCO_0000039 ;
                   skos:definition "A disposition whose realization leads the complex system component or the complex system environment component to (re)position itself within and regarding the complex system or complex system environment it belongs to (or a part of it) and possibly act accordingly."@en ,
                                   "Una disposizione la cui realizzazione porta la componente del sistema complesso o la componente dell’ambiente del sistema complesso a (ri)posizionarsi nel e rispetto al sistema complesso o all’ ambiente del sistema complesso a cui appartiene (o parte di esso) ed eventualmente ad agire di conseguenza."@it ,
                                   "Une disposition dont la réalisation conduit la composante de système complexe ou la composante de l’environnement du système complexe à se (re)positionner dans et par rapport au système complexe ou à l’environnement du système complexe auquel elle appartient (ou d’une partie de celui-ci) et, éventuellement, à agir en conséquence."@fr ;
                   AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
-sco-u:SCO_0000017 rdfs:comment "To distinguish and account for indicators according to the perspectives of different complex systems (and environment) components, we suggest proceeding following the indications provided under the “according to the perspective” annotation property. In this case, regarding the subclasses to create, we recommend establishing axioms restricting to this class." ;
+sco-u:SCO_0000017 rdfs:comment "We recommend including classes and individuals representing specific situations under which a complex system component is recognized as an indicator for the system to which it belongs, as needed."@en ,
+                               "To distinguish and account for indicators according to the perspectives of different complex systems (and environment) components, we suggest proceeding following the indications provided under the “according to the perspective” annotation property. In this case, regarding the subclasses to create, we recommend establishing axioms restricting to this class." ;
                   rdfs:label "indicateur (rôle)"@fr ,
                              "indicator-role"@en ,
                              "ruolo di indicatore"@it ;
@@ -7754,7 +7768,8 @@ sco-u:SCO_0000017 rdfs:comment "To distinguish and account for indicators accord
                   AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
-sco-u:SCO_0000018 rdfs:label "ruolo di parte interessata (stakeholder)"@it ,
+sco-u:SCO_0000018 rdfs:comment "We recommend including classes and individuals representing specific situations under which a complex system component is recognized as a stakeholder, as needed."@en ;
+                  rdfs:label "ruolo di parte interessata (stakeholder)"@it ,
                              "rôle de partie prenante (stakeholder)"@fr ,
                              "stakeholder-role"@en ;
                   skos:definition "A role whose realization leads the complex system component to be recognized as a bearer, in the belonging complex system, of at least one role (different from the role of stakeholder) and/or disposition (primarily a disposition to benefit/be damaged as being part of that complex system)."@en ,
@@ -7764,7 +7779,8 @@ sco-u:SCO_0000018 rdfs:label "ruolo di parte interessata (stakeholder)"@it ,
 
 
 sco-u:SCO_0000019 oboInOwl:hasRelatedSynonym "value" ;
-                  rdfs:comment "Due to the SCO focus on complex systems, the worth-role class have been designed referring specifically to complex systems. Nevertheless, future implementations may broaden the space of application to also systems. Implementations may equally deepen this representation, detailing and elucidating the distinction and connection between worth and value(s)." ,
+                  rdfs:comment "We recommend including classes and individuals representing specific situations under which worth is recognized to a complex system or a complex system environment (or some part(s) of them), as needed."@en ,
+                               "Due to the SCO focus on complex systems, the worth-role class have been designed referring specifically to complex systems. Nevertheless, future implementations may broaden the space of application to also systems. Implementations may equally deepen this representation, detailing and elucidating the distinction and connection between worth and value(s)." ,
                                "To distinguish and account for what is considered worthy of value for different complex systems (and environment) components according to proper perspectives,we suggest proceeding following the indications provided under the “according to the perspective” annotation property. In this case, regarding the subclasses to create, we recommend establishing axioms restricting to this class." ;
                   rdfs:label "Valeur (sens donner de la valeur)"@fr ,
                              "valore (senso dare valore)"@it ,
@@ -7814,27 +7830,44 @@ sco-u:SCO_0000023 rdfs:label "complex system history"@en ,
                   skos:definition "La storia del sistema di un sistema complesso."@it ,
                                   "L’historique de système d’un système complexe."@fr ,
                                   "The system history of a complex system."@en ;
-                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
-sco-u:SCO_0000024 rdfs:comment AnnotationVocabulary:Released ,
+sco-u:SCO_0000024 rdfs:comment AnnotationVocabulary:Provisional ,
+                               "As UFO does not address spatial regions and boundaries, SCO-U adapts BFO representation with regards to systems. See corresponding definitions and axioms that include reference to them. We envision discussions with subject matter experts to deepen this representation towards a UFO compliant representation of spatial regions and boundaries."@en ,
+                               """We construct this definition on the basis of the definitions of the following BFO classes. It is provisional. 
+
+http://purl.obolibrary.org/obo/BFO_0000146 
+http://purl.obolibrary.org/obo/BFO_0000141 
+http://purl.obolibrary.org/obo/BFO_0000140 
+
+We envision discussions with subject matter experts to identify adequate strategies to represent immaterial entities (BFO sense), such as boundaries and spatial regions, according to UFO."""@en ,
                                "Future SCO implementations may deal with representing system environment boudaries." ;
                   rdfs:label "confine del sistema"@it ,
                              "frontière de système"@fr ,
                              "system boundary"@en ;
-                  skos:definition "A fiat surface of a system."@en ,
-                                  "Una superficie fiat di un sistema."@it ,
-                                  "Une surface fiat d’un système."@fr .
+                  skos:definition "A two-dimensional immaterial object that is self-connected and there is no time at which it has a system spatial region as endurant part, and whose location is determined in relation to the corresponding system."@en ,
+                                  "Un objet immatériel bidimensionnel qui est connecté en soi-même et il n’y a pas un moment quand il a une région spatiale tridimensionnelle de système comme partie endurante, et dont la localisation est déterminée par rapport au système correspondant."@fr ,
+                                  "Un oggetto immateriale bidimensionale che è connesso in sè stesso e non esiste un tempo in cui ha una regione spaziale tridimensionale di sistema come parte endurante, e la cui posizione è determinata rispetto al sistema corrispondente."@it .
 
 
-sco-u:SCO_0000025 rdfs:comment "Future SCO implementations may consider including classes also covering spatial region for the system environment." ;
+sco-u:SCO_0000025 rdfs:comment "As UFO does not address spatial regions and boundaries, SCO-U adapts BFO representation with regards to systems. See corresponding definitions and axioms that include reference to them. We envision discussions with subject matter experts to deepen this representation towards a UFO compliant representation of spatial regions and boundaries."@en ,
+                               """We construct this definition on the basis of the definitions of the following BFO classes. It is provisional. 
+
+http://purl.obolibrary.org/obo/BFO_0000141 
+http://purl.obolibrary.org/obo/BFO_0000006 
+http://purl.obolibrary.org/obo/BFO_0000028 
+
+We envision discussions with subject matter experts to identify adequate strategies to represent immaterial entities (BFO sense), such as boundaries and spatial regions, according to UFO."""@en ,
+                               "Future SCO implementations may consider including classes also covering spatial region for the system environment." ;
                   rdfs:label "regione spaziale del sistema"@it ,
                              "région d’espace de système"@fr ,
                              "system spatial region"@en ;
-                  skos:definition "A three-dimensional spatial region of a system."@en ,
-                                  "Una regione di spazio tridimensionale di un sistema."@it ,
-                                  "Une région d’espace tridimensionnelle d’un système."@fr ;
-                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
+                  rdfs:seeAlso "https://www.w3id.org/sco/sco-u#SCO_0000037"@en ;
+                  skos:definition "A three-dimensional immaterial object that is an endurant part of the spatial projection of a portion of spacetime at a given time of a system."@en ,
+                                  "Un objet immatériel tridimensionnel qui est une partie de la projection spatiale d’une portion d’espace-temps à un moment donné d’un système."@fr ,
+                                  "Un oggetto tridimensionale immateriale che è una parte endurante della proiezione spaziale di una porzione di spazio-tempo in un dato momento di un sistema."@it ;
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000026 oboInOwl:hasExactSynonym "complex system environment element" ,
@@ -7941,7 +7974,7 @@ sco-u:SCO_0000031 rdfs:label "complex system boundary"@en ,
                   skos:definition "A system boundary of a complex system."@en ,
                                   "Un confine del sistema di un sistema complesso."@it ,
                                   "Une frontière de système d’un système complexe."@fr ;
-                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000032 rdfs:label "complex system spatial region"@en ,
@@ -7950,7 +7983,7 @@ sco-u:SCO_0000032 rdfs:label "complex system spatial region"@en ,
                   skos:definition "A system spatial region of a complex system."@en ,
                                   "Una regione di spazio del sistema di un sistema complesso."@it ,
                                   "Une région d’espace de système d’un système complexe."@fr ;
-                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000033 rdfs:label "agent de l’environnement de système complexe"@fr ,

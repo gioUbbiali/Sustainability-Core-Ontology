@@ -8,15 +8,15 @@
     <uri id="User Entered Import Resolution" name="http://gioUbbiali.github.io/sco/v1.0.0/24-09-17/sco.owl" uri="catalog-v001.xml"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/nemo/gufo#/1.0.0" uri="http://purl.org/nemo/gufo#"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1740747053766" name="http://gioUbbiali.github.io/sco/sco-u/cover.imports.owl" uri="imports/SCO-U%20imports/COVER%20imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1740747053766" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-initial%20working%20draft.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1740747053766" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-U-edit%20-%20draft%2025-02-25a.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1740747053766" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-U-edit%20work%20copy%2025-02-26.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1740747053766" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-U-edit%20working%20draft%2025-02-19.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1740747053766" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-U-edit%20working%20draft%2025-02-20.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1740747053766" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-U-edit%20working%20draft%2025-02-25%20(2).owl"/>
-        <uri id="Automatically generated entry, Timestamp=1740747053766" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-U-edit%20working%20draft%2025-02-25.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1740747053766" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-U-edit.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1740747053766" name="https://www.w3id.org/sco(sco-b" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-B-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1741864582113" name="http://gioUbbiali.github.io/sco/sco-u/cover.imports.owl" uri="imports/SCO-U%20imports/COVER%20imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1741864582113" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-initial%20working%20draft.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1741864582113" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-U-edit%20-%20draft%2025-02-25a.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1741864582113" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-U-edit%20work%20copy%2025-02-26.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1741864582113" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-U-edit%20working%20draft%2025-02-19.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1741864582113" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-U-edit%20working%20draft%2025-02-20.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1741864582113" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-U-edit%20working%20draft%2025-02-25%20(2).owl"/>
+        <uri id="Automatically generated entry, Timestamp=1741864582113" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-U-edit%20working%20draft%2025-02-25.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1741864582113" name="duplicate:http://gioUbbiali.github.io/sco/sco.owl" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-U-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1741864582113" name="https://www.w3id.org/sco(sco-b" uri="drafts%20-%20working%20in%20progress%20-%20do%20not%20use/SCO-B-edit.owl"/>
     </group>
 </catalog>

@@ -46,7 +46,7 @@ SCO materials can be found here:
 
 As SCO V1.0.1. only differs from SCO V1.0.0. regarding URIs, this repository offers the SCO V1.0.0. development protocol and imports for reference.The SCO protocol is available in both Word and PDF formats. [SCO materials](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO) have been organized considering a possible future migration of this repo to the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
 
-The most recent version of SCO can be always found at the following link: [https://w3id.org/sco](https://w3id.org/sco). SCO is also accessible on [Ontobee](https://ontobee.org/ontology/SCO), [AgroPortal](https://agroportal.lirmm.fr/ontologies/SCO), [BioPortal](https://bioportal.bioontology.org/ontologies/SCO_V1), and [IndustryPortal](https://industryportal.enit.fr/ontologies/SCO).
+The most recent version of SCO can be always found at the following link: [https://w3id.org/sco](https://w3id.org/sco). The related BFO merged version at the following link: [https://w3id.org/sco/bfo-merged](https://w3id.org/sco/bfo-merged). SCO is also accessible on [Ontobee](https://ontobee.org/ontology/SCO), [AgroPortal](https://agroportal.lirmm.fr/ontologies/SCO), [BioPortal](https://bioportal.bioontology.org/ontologies/SCO_V1), and [IndustryPortal](https://industryportal.enit.fr/ontologies/SCO).
 
 ##  SCO Developer   
 

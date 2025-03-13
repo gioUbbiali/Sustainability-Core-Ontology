@@ -736,7 +736,14 @@ sco:SCO_0000037 rdf:type owl:ObjectProperty ;
                                            ]
                                          )
                            ] ;
-                rdfs:comment "Common Core Ontologies (CC) provide corresponding properties for this and the “agent at time t” relations. See “see also” annotation”. As these relations apply specifically to the CCO “Agent” class and lack reference to time, the SCO creator decided to establish SCO's own versions of these relations, directly referring to the original source. See “adapted from” annotation." ,
+                rdfs:comment """We envision revisions of the current SCO theory of agency. This is due to the limited power of explainability of present representation. A sounder and deeper interpretation of the causal role of an agent in an interaction, compared to other participants, is required.
+
+Tentative proposal: a possible direction of implementation is towards a telic vision of agency intended as end-point driven. On this more fundamental neutral vision, a second layer of representation may be constructed to model intentionality, goals, and plans in relation to agency. Here, SCO may harmonize and align with UFO-C representation. 
+
+For insight for discussion see: 
+Guarino, N., & Guizzardi, G. (2024). Processes as variable embodiments. Synthese, 203(4), 104. https://doi.org/10.1007/s11229-024-04505-2
+Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software domain ontologies in the unified foundational ontology (UFO): The case of the ODE. Memorias de la XI Conferencia Iberoamericana de Software Engineering (CIbSE 2008), Recife, Pernambuco, Brasil, February 13-17, 2008, 127–140."""@en ,
+                             "Common Core Ontologies (CC) provide corresponding properties for this and the “agent at time t” relations. See “see also” annotation”. As these relations apply specifically to the CCO “Agent” class and lack reference to time, the SCO creator decided to establish SCO's own versions of these relations, directly referring to the original source. See “adapted from” annotation." ,
                              """Future implementations may involve the introduction of an “act within the system” class, to deepen the characterization of system agency. Insights to implementation may come from the following CCO classes:
 
 http://www.ontologyrepository.com/CommonCoreOntologies/Act 
@@ -748,13 +755,14 @@ The aim is to align SCO and CCO “agent” classes in order to have a shared th
                 rdfs:label "a un agent au temps t"@fr ,
                            "ha un agente al tempo t"@it ,
                            "has agent at time t"@en ;
-                rdfs:seeAlso """http://www.ontologyrepository.com/CommonCoreOntologies/agent_in 
+                rdfs:seeAlso "comments to https://www.w3id.org/sco/sco-u#SCO_0000027 and https://www.w3id.org/sco/sco-u#SCO_0000029"@en ,
+                             """http://www.ontologyrepository.com/CommonCoreOntologies/agent_in 
 http://www.ontologyrepository.com/CommonCoreOntologies/has_agent""" ;
                 skos:definition "A primitive relation between a process x, a continuant y, and a time at which y is causally active in x."@en ,
                                 "Una relazione primitiva tra un processo x, un continuante y e un tempo t a cui y è causalmente attivo in x."@it ,
                                 "Une relation primitive entre un processus x, un continuant y et un temps t auquel y est causalement actif en x."@fr ;
                 AnnotationVocabulary:adaptedFrom "https://doi.org/10.1186/gb-2005-6-5-r46" ;
-                AnnotationVocabulary:maturity AnnotationVocabulary:Released .
+                AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 ###  https://www.w3id.org/sco#SCO_0000038
@@ -773,14 +781,22 @@ sco:SCO_0000038 rdf:type owl:ObjectProperty ;
                                           )
                             ] ;
                 rdfs:range bfo:BFO_0000015 ;
+                rdfs:comment """We envision revisions of the current SCO theory of agency. This is due to the limited power of explainability of present representation. A sounder and deeper interpretation of the causal role of an agent in an interaction, compared to other participants, is required.
+
+Tentative proposal: a possible direction of implementation is towards a telic vision of agency intended as end-point driven. On this more fundamental neutral vision, a second layer of representation may be constructed to model intentionality, goals, and plans in relation to agency. Here, SCO may harmonize and align with UFO-C representation. 
+
+For insight for discussion see: 
+Guarino, N., & Guizzardi, G. (2024). Processes as variable embodiments. Synthese, 203(4), 104. https://doi.org/10.1007/s11229-024-04505-2
+Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software domain ontologies in the unified foundational ontology (UFO): The case of the ODE. Memorias de la XI Conferencia Iberoamericana de Software Engineering (CIbSE 2008), Recife, Pernambuco, Brasil, February 13-17, 2008, 127–140."""@en ;
                 rdfs:label "agent en au temps t"@fr ,
                            "agent in at time t"@en ,
                            "agente in al tempo t"@it ;
-                rdfs:seeAlso "See information under the inverse \"has agent at t\" property." ;
+                rdfs:seeAlso "comments to https://www.w3id.org/sco/sco-u#SCO_0000027 and https://www.w3id.org/sco/sco-u#SCO_0000029"@en ,
+                             "See information under the inverse \"has agent at t\" property." ;
                 skos:definition "A primitive relation between a continuant x, a process y, and a time at which x is causally active in y."@en ,
                                 "Una relazione primitiva tra un continuante x, un processo y e un tempo t a cui x è causalmente attivo in y."@it ,
                                 "Une relation primitive entre un continuant x, un processus y et un temps t auquel x est causalement actif en y."@fr ;
-                AnnotationVocabulary:maturity AnnotationVocabulary:Released .
+                AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 #################################################################
@@ -896,6 +912,15 @@ CommonCoreOntologies:InformationContentEntity rdf:type owl:Class ;
                                               CommonCoreOntologies:definition_source "http://purl.obolibrary.org/obo/IAO_0000030" ;
                                               CommonCoreOntologies:elucidation "Information Content Entity is here intended to be a class of Entities whose instances are the informational content of Information Bearing Entities. For example, three instances of information bearers -- such as a bar chart, color-coded map, and a written report -- each of which lists the GDP of Countries for the year 2010 are each different carriers of the same information content. It is this content that is generically dependent upon its carrier. This treatment of Informational Content Entity (cf. the Information Artifact Ontology) leads to a principle of subtyping based upon the relationship that ICE's have with the Entity they are about rather than characteristics such as format, language, measurement scale, or media. The latter are treated here as being Qualities of bearers."@en ;
                                               CommonCoreOntologies:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
+                                              rdfs:comment """SCO developer comment:
+
+Currently, SCO-B reuses the representation of information that belongs to IAO/CCO. Nevertheless, debates are ongoing on whether information may be better represented through a type-token relationship within a multi-level type hierarchy. See the paper cited at the end of the comment.
+
+We envision discussions with subject matter experts from both BFO and UFO communities regarding this point.
+
+Weigand, H. (2025). Generic Ontological Dependence⋆. https://www.utwente.nl/en/eemcs/vmbo2025/papers/vmbo-2025-paper-4-2.pdf"""@en ,
+                                                           """SCO developer comment:
+SCO-B does not currently cover a class for information bearing entity. We directly refer ICE subclasses to corresponding information bearing entities."""@en ;
                                               rdfs:label "Information Content Entity"@en .
 
 
@@ -1892,16 +1917,24 @@ sco:SCO_0000027 rdf:type owl:Class ;
                                     ] ;
                 rdfs:subClassOf sco:SCO_0000014 ;
                 owl:disjointWith sco:SCO_0000029 ;
+                rdfs:comment """We envision revisions of the current SCO theory of agency. This is due to the limited power of explainability of present representation. A sounder and deeper interpretation of the causal role of an agent in an interaction, compared to other participants, is required.
+
+Tentative proposal: a possible direction of implementation is towards a telic vision of agency intended as end-point driven. On this more fundamental neutral vision, a second layer of representation may be constructed to model intentionality, goals, and plans in relation to agency. Here, SCO may harmonize and align with UFO-C representation. 
+
+For insight for discussion see: 
+Guarino, N., & Guizzardi, G. (2024). Processes as variable embodiments. Synthese, 203(4), 104. https://doi.org/10.1007/s11229-024-04505-2
+Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software domain ontologies in the unified foundational ontology (UFO): The case of the ODE. Memorias de la XI Conferencia Iberoamericana de Software Engineering (CIbSE 2008), Recife, Pernambuco, Brasil, February 13-17, 2008, 127–140."""@en ;
                 rdfs:label "agent de l’environnement de système"@fr ,
                            "agente dell’ambiente del sistema"@it ,
                            "system environnement agent"@en ;
                 rdfs:seeAlso <https://www.w3id.org/sco#sco.owl/SCO_0000037> ,
                              <https://www.w3id.org/sco#sco.owl/SCO_0000038> ,
+                             "comments to https://www.w3id.org/sco/sco-u#SCO_0000027 and https://www.w3id.org/sco/sco-u#SCO_0000029"@en ,
                              "See information under the \"has agent at t\" property." ;
                 skos:definition "A system environment component that is an agent in an interaction among system environment components or in an interaction between system components and system environment components."@en ,
                                 "Una componente dell’ambiente del sistema che è un agente in un'interazione tra le componenti dell'ambiente del sistema o in un'interazione tra componenti del sistema e le componenti dell'ambiente del sistema."@it ,
                                 "Une composante de l’environnement de système qui est un agent dans une interaction entre les composantes de l’environnement du système ou dans une interaction entre les composantes de système et les composants de l’environnement de système."@fr ;
-                AnnotationVocabulary:maturity AnnotationVocabulary:Released .
+                AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 ###  https://www.w3id.org/sco#SCO_0000028
@@ -1965,16 +1998,24 @@ sco:SCO_0000029 rdf:type owl:Class ;
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf sco:SCO_0000013 ;
+                rdfs:comment """We envision revisions of the current SCO theory of agency. This is due to the limited power of explainability of present representation. A sounder and deeper interpretation of the causal role of an agent in an interaction, compared to other participants, is required.
+
+Tentative proposal: a possible direction of implementation is towards a telic vision of agency intended as end-point driven. On this more fundamental neutral vision, a second layer of representation may be constructed to model intentionality, goals, and plans in relation to agency. Here, SCO may harmonize and align with UFO-C representation. 
+
+For insight for discussion see: 
+Guarino, N., & Guizzardi, G. (2024). Processes as variable embodiments. Synthese, 203(4), 104. https://doi.org/10.1007/s11229-024-04505-2
+Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software domain ontologies in the unified foundational ontology (UFO): The case of the ODE. Memorias de la XI Conferencia Iberoamericana de Software Engineering (CIbSE 2008), Recife, Pernambuco, Brasil, February 13-17, 2008, 127–140."""@en ;
                 rdfs:label "agent de système"@fr ,
                            "agente del sistema"@it ,
                            "system agent"@en ;
                 rdfs:seeAlso <https://www.w3id.org/sco#sco.owl/SCO_0000037> ,
                              <https://www.w3id.org/sco#sco.owl/SCO_0000038> ,
+                             "comments to https://www.w3id.org/sco/sco-u#SCO_0000027 and https://www.w3id.org/sco/sco-u#SCO_0000029"@en ,
                              "See information under the \"has agent at t\" property." ;
                 skos:definition "A system component that is an agent in an interaction among system components or in an interaction between system components and system environment components."@en ,
                                 "Una componente di sistema che è un agente in un'interazione tra le componenti del sistema o in un'interazione tra le componenti di sistema e le componenti dell'ambiente di sistema."@it ,
                                 "Une composante de système qui est un agent dans une interaction entre les composantes de l’environnement du système ou dans une interaction entre les composantes de système et les composants de l’environnement de système."@fr ;
-                AnnotationVocabulary:maturity AnnotationVocabulary:Released .
+                AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 ###  https://www.w3id.org/sco#SCO_0000030

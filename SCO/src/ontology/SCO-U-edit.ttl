@@ -938,6 +938,20 @@ sco-u:SCO_0000001 rdf:type owl:Class ;
                                   ] ,
                                   [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Event>
                                                          [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#manifestedIn>
+                                                                          ] ;
+                                                           owl:someValuesFrom sco-u:SCO_0000063
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#manifestedIn>
+                                                                          ] ;
+                                                           owl:someValuesFrom sco-u:SCO_0000064
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ,
+                                  [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Event>
+                                                         [ rdf:type owl:Restriction ;
                                                            owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#participatedIn>
                                                                           ] ;
                                                            owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
@@ -966,7 +980,7 @@ sco-u:SCO_0000002 rdf:type owl:Class ;
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000003
 sco-u:SCO_0000003 rdf:type owl:Class ;
-                  owl:equivalentClass _:genid113 ;
+                  owl:equivalentClass _:genid121 ;
                   rdfs:subClassOf CommonCoreOntologies:RepresentationalInformationContentEntity ,
                                   [ owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
                                                          [ rdf:type owl:Restriction ;
@@ -977,7 +991,7 @@ sco-u:SCO_0000003 rdf:type owl:Class ;
                                     rdf:type owl:Class
                                   ] .
 
-_:genid113 owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
+_:genid121 owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty sco-u:SCO_0000052 ;
                                    owl:someValuesFrom sco-u:SCO_0000015
@@ -992,7 +1006,7 @@ _:genid113 owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformation
 [ rdf:type owl:Axiom ;
    owl:annotatedSource sco-u:SCO_0000003 ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid113 ;
+   owl:annotatedTarget _:genid121 ;
    rdfs:comment """From SCO-B:
 
 Discussion with subject matter experts is required to revise this axiom with regard to the “represents” object property. This was the most appropriate object property among those pertaining to OBO-Foundry and compliant ontologies to use in constructing this axiom. 
@@ -1000,7 +1014,8 @@ Nevertheless, implementations seem necessary to deepen the characterization, for
 
 The CCO object properties “describes” and “is measurement of” appear other interesting options.
 http://www.ontologyrepository.com/CommonCoreOntologies/describes
-http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"""@en
+http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"""@en ;
+   rdfs:seeAlso "https://www.w3id.org/sco#SCO_0000003"
  ] .
 
 
@@ -1274,6 +1289,15 @@ sco-u:SCO_0000013 rdf:type owl:Class ;
                                                          ]
                                                        ) ;
                                     rdf:type owl:Class
+                                  ] ,
+                                  [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Object>
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#inheresIn>
+                                                                          ] ;
+                                                           owl:someValuesFrom sco-u:SCO_0000064
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
                                   ] ;
                   owl:disjointWith sco-u:SCO_0000014 ,
                                    sco-u:SCO_0000024 ,
@@ -1308,6 +1332,15 @@ sco-u:SCO_0000014 rdf:type owl:Class ;
                                   [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Object>
                                                          [ rdf:type owl:Class ;
                                                            owl:complementOf sco-u:SCO_0000013
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ,
+                                  [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Object>
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#inheresIn>
+                                                                          ] ;
+                                                           owl:someValuesFrom sco-u:SCO_0000064
                                                          ]
                                                        ) ;
                                     rdf:type owl:Class
@@ -1643,6 +1676,11 @@ sco-u:SCO_0000027 rdf:type owl:Class ;
                                                                owl:onProperty <http://purl.org/nemo/gufo#standsIn> ;
                                                                owl:someValuesFrom sco-u:SCO_0000060
                                                              ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#inheresIn>
+                                                                              ] ;
+                                                               owl:someValuesFrom sco-u:SCO_0000063
+                                                             ]
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
@@ -1696,6 +1734,11 @@ sco-u:SCO_0000029 rdf:type owl:Class ;
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty <http://purl.org/nemo/gufo#standsIn> ;
                                                                owl:someValuesFrom sco-u:SCO_0000058
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#inheresIn>
+                                                                              ] ;
+                                                               owl:someValuesFrom sco-u:SCO_0000063
                                                              ]
                                                            ) ;
                                         rdf:type owl:Class
@@ -2275,6 +2318,48 @@ sco-u:SCO_0000062 rdf:type owl:Class ;
                   rdfs:subClassOf <http://purl.org/nemo/gufo#Situation> .
 
 
+###  https://www.w3id.org/sco/sco-u#SCO_0000063
+sco-u:SCO_0000063 rdf:type owl:Class ;
+                  rdfs:subClassOf sco-u:SCO_0000064 ,
+                                  [ owl:intersectionOf ( sco-u:SCO_0000064
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://purl.org/nemo/gufo#inheresIn> ;
+                                                           owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                owl:unionOf ( sco-u:SCO_0000027
+                                                                                              sco-u:SCO_0000029
+                                                                                            )
+                                                                              ]
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://purl.org/nemo/gufo#manifestedIn> ;
+                                                           owl:someValuesFrom sco-u:SCO_0000001
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000064
+sco-u:SCO_0000064 rdf:type owl:Class ;
+                  rdfs:subClassOf <https://purl.org/krdb-core/cover#Disposition> ,
+                                  [ owl:intersectionOf ( <https://purl.org/krdb-core/cover#Disposition>
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://purl.org/nemo/gufo#inheresIn> ;
+                                                           owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                owl:unionOf ( sco-u:SCO_0000013
+                                                                                              sco-u:SCO_0000014
+                                                                                            )
+                                                                              ]
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://purl.org/nemo/gufo#manifestedIn> ;
+                                                           owl:someValuesFrom sco-u:SCO_0000001
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] .
+
+
 #################################################################
 #    Individuals
 #################################################################
@@ -2573,6 +2658,16 @@ sco-u:SCO_0000061 rdf:type owl:NamedIndividual ,
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000062
 sco-u:SCO_0000062 rdf:type owl:NamedIndividual .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000063
+sco-u:SCO_0000063 rdf:type owl:NamedIndividual ,
+                           <http://purl.org/nemo/gufo#SubKind> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000064
+sco-u:SCO_0000064 rdf:type owl:NamedIndividual ,
+                           <http://purl.org/nemo/gufo#Kind> .
 
 
 #################################################################
@@ -7408,12 +7503,39 @@ bfo:UBERON_0010000 bfo:IAO_0000115 "An anatomical structure that has more than o
  ] .
 
 
+<http://purl.org/nemo/gufo#categorizes> rdfs:comment """SCO developer comment:
+
+Currently, SCO-U does not offer a multi-level modeling representation of sustainability challenges. We envision future implementations exploring this possibility.
+
+Reference: Carvalho, V. A., Almeida, J. P. A., & Guizzardi, G. (2017). Using a Well-Founded Multi-level Theory to Support the Analysis and Representation of the Powertype Pattern in Conceptual Modeling. In S. Nurcan, P. Soffer, M. Bajec, & J. Eder (A c. Di), Advanced Information Systems Engineering (Vol. 9694, pp. 309–324). Springer International Publishing. https://doi.org/10.1007/978-3-319-39696-5_19"""@en .
+
+
 CommonCoreOntologies:InformationContentEntity CommonCoreOntologies:alternative_label "ICE"@en ;
                                               CommonCoreOntologies:definition "A Generically Dependent Continuant that generically depends on some Information Bearing Entity and stands in relation of aboutness to some Entity."@en ;
                                               CommonCoreOntologies:definition_source "http://purl.obolibrary.org/obo/IAO_0000030" ;
                                               CommonCoreOntologies:elucidation "Information Content Entity is here intended to be a class of Entities whose instances are the informational content of Information Bearing Entities. For example, three instances of information bearers -- such as a bar chart, color-coded map, and a written report -- each of which lists the GDP of Countries for the year 2010 are each different carriers of the same information content. It is this content that is generically dependent upon its carrier. This treatment of Informational Content Entity (cf. the Information Artifact Ontology) leads to a principle of subtyping based upon the relationship that ICE's have with the Entity they are about rather than characteristics such as format, language, measurement scale, or media. The latter are treated here as being Qualities of bearers."@en ;
                                               CommonCoreOntologies:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/InformationEntityOntology"^^xsd:anyURI ;
-                                              rdfs:label "Information Content Entity"@en .
+                                              rdfs:comment """SCO developer comment:
+
+Currently, SCO-U reuses the representation of information that belongs to IAO/CCO. Nevertheless, debates are ongoing on whether information may be better represented through a type-token relationship within a multi-level type hierarchy. See the paper cited at the end of the comment.
+
+We envision discussions with subject matter experts from both BFO and UFO communities regarding this point.
+
+Weigand, H. (2025). Generic Ontological Dependence⋆. https://www.utwente.nl/en/eemcs/vmbo2025/papers/vmbo-2025-paper-4-2.pdf"""@en ;
+                                              rdfs:label "Information Content Entity"@en ;
+                                              skos:definition """SCO definition adapted to comply to UFO ontological view:
+
+An aspect that generically depends on some Information Bearing Entity and stands in relation of aboutness to some Entity."""@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource CommonCoreOntologies:InformationContentEntity ;
+   owl:annotatedProperty skos:definition ;
+   owl:annotatedTarget """SCO definition adapted to comply to UFO ontological view:
+
+An aspect that generically depends on some Information Bearing Entity and stands in relation of aboutness to some Entity."""@en ;
+   rdfs:seeAlso "SCO-U does not currently cover a class for information bearing entity. We directly refer ICE subclasses to corresponding information bearing entities."@en ,
+                "https://www.commoncoreontologies.org/ont00000253"
+ ] .
 
 
 CommonCoreOntologies:RepresentationalInformationContentEntity CommonCoreOntologies:definition "An Information Content Entity that represents some Entity."@en ;
@@ -7538,7 +7660,7 @@ sco-u:SCO_0000008 oboInOwl:hasRelatedSynonym "relation among system environment 
 sco-u:SCO_0000009 oboInOwl:hasRelatedSynonym "relation between system components and the system environment, interconnection between system components and the system environment" ;
                   rdfs:label "Interaction entre les composantes de système et les composantes de l’environnement de système"@fr ,
                              "interaction between system components and system environment components"@en ,
-                             "interazione tra le componenti del sistema e le componenti de l'ambiente del sistema"@it ;
+                             "interazione tra le componenti del sistema e le componenti dell'ambiente del sistema"@it ;
                   skos:definition "An interaction that occurs between at least one system component and one system environment component where the latter belongs to the system environment of the system to which the system component belongs."@en ,
                                   "Une interaction qui se produit entre au moins une composante d’un système et au moins une composante de l’environnement du système auquel la composante de système appartient."@fr ,
                                   "Un’interazione che avviene tra almeno una componente di un sistema e almeno un componente dell’ ambiente del sistema a cui la componente del sistema appartiene."@it ;
@@ -7739,6 +7861,13 @@ SCO-U introduces specific agency situations to model system agency and interacti
 References:
 Guizzardi, G., & Wagner, G. (2005a). Some Applications of a Unified Foundational Ontology in Business Modeling: In P. F. Green & M. Rosemann (A c. Di), Business Systems Analysis with Ontologies (pp. 345–367). IGI Global. https://doi.org/10.4018/978-1-59140-339-5.ch013
 Guizzardi, G., & Wagner, G. (2005b). Towards Ontological Foundations for Agent Modelling Concepts Using the Unified Fundational Ontology (UFO). In P. Bresciani, P. Giorgini, B. Henderson-Sellers, G. Low, & M. Winikoff (A c. Di), Agent-Oriented Information Systems II (Vol. 3508, pp. 110–124). Springer Berlin Heidelberg. https://doi.org/10.1007/11426714_8
+Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software domain ontologies in the unified foundational ontology (UFO): The case of the ODE. Memorias de la XI Conferencia Iberoamericana de Software Engineering (CIbSE 2008), Recife, Pernambuco, Brasil, February 13-17, 2008, 127–140."""@en ,
+                               """We envision revisions of the current SCO theory of agency. This is due to the limited power of explainability of present representation. A sounder and deeper interpretation of the causal role of an agent in an interaction, compared to other participants, is required.
+
+Tentative proposal: a possible direction of implementation is towards a telic vision of agency intended as end-point driven. On this more fundamental neutral vision, a second layer of representation may be constructed to model intentionality, goals, and plans in relation to agency. Here, SCO may harmonize and align with UFO-C representation. 
+
+For insight for discussion see: 
+Guarino, N., & Guizzardi, G. (2024). Processes as variable embodiments. Synthese, 203(4), 104. https://doi.org/10.1007/s11229-024-04505-2
 Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software domain ontologies in the unified foundational ontology (UFO): The case of the ODE. Memorias de la XI Conferencia Iberoamericana de Software Engineering (CIbSE 2008), Recife, Pernambuco, Brasil, February 13-17, 2008, 127–140."""@en ;
                   rdfs:label "agent de l’environnement de système"@fr ,
                              "agente dell’ambiente del sistema"@it ,
@@ -7749,7 +7878,7 @@ Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software 
                   skos:definition "A system environment component that is an agent in an interaction among system environment components or in an interaction between system components and system environment components."@en ,
                                   "Una componente dell’ambiente del sistema che è un agente in un'interazione tra le componenti dell'ambiente del sistema o in un'interazione tra componenti del sistema e le componenti dell'ambiente del sistema."@it ,
                                   "Une composante de l’environnement de système qui est un agent dans une interaction entre les composantes de l’environnement du système ou dans une interaction entre les composantes de système et les composants de l’environnement de système."@fr ;
-                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000028 oboInOwl:hasExactSynonym "complex system element" ;
@@ -7776,6 +7905,13 @@ SCO-U introduces specific agency situations to model system agency and interacti
 References:
 Guizzardi, G., & Wagner, G. (2005a). Some Applications of a Unified Foundational Ontology in Business Modeling: In P. F. Green & M. Rosemann (A c. Di), Business Systems Analysis with Ontologies (pp. 345–367). IGI Global. https://doi.org/10.4018/978-1-59140-339-5.ch013
 Guizzardi, G., & Wagner, G. (2005b). Towards Ontological Foundations for Agent Modelling Concepts Using the Unified Fundational Ontology (UFO). In P. Bresciani, P. Giorgini, B. Henderson-Sellers, G. Low, & M. Winikoff (A c. Di), Agent-Oriented Information Systems II (Vol. 3508, pp. 110–124). Springer Berlin Heidelberg. https://doi.org/10.1007/11426714_8
+Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software domain ontologies in the unified foundational ontology (UFO): The case of the ODE. Memorias de la XI Conferencia Iberoamericana de Software Engineering (CIbSE 2008), Recife, Pernambuco, Brasil, February 13-17, 2008, 127–140."""@en ,
+                               """We envision revisions of the current SCO theory of agency. This is due to the limited power of explainability of present representation. A sounder and deeper interpretation of the causal role of an agent in an interaction, compared to other participants, is required.
+
+Tentative proposal: a possible direction of implementation is towards a telic vision of agency intended as end-point driven. On this more fundamental neutral vision, a second layer of representation may be constructed to model intentionality, goals, and plans in relation to agency. Here, SCO may harmonize and align with UFO-C representation. 
+
+For insight for discussion see: 
+Guarino, N., & Guizzardi, G. (2024). Processes as variable embodiments. Synthese, 203(4), 104. https://doi.org/10.1007/s11229-024-04505-2
 Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software domain ontologies in the unified foundational ontology (UFO): The case of the ODE. Memorias de la XI Conferencia Iberoamericana de Software Engineering (CIbSE 2008), Recife, Pernambuco, Brasil, February 13-17, 2008, 127–140."""@en ;
                   rdfs:label "agent de système"@fr ,
                              "agente del sistema"@it ,
@@ -7786,7 +7922,7 @@ Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software 
                   skos:definition "A system component that is an agent in an interaction among system components or in an interaction between system components and system environment components."@en ,
                                   "Una componente di sistema che è un agente in un'interazione tra le componenti del sistema o in un'interazione tra le componenti di sistema e le componenti dell'ambiente di sistema."@it ,
                                   "Une composante de système qui est un agent dans une interaction entre les composantes de l’environnement du système ou dans une interaction entre les composantes de système et les composants de l’environnement de système."@fr ;
-                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000030 oboInOwl:hasExactSynonym "complex system stakeholder perspective, system stakeholder perspective" ;
@@ -8030,6 +8166,13 @@ SCO-U introduces specific agency situations to model system agency and interacti
 References:
 Guizzardi, G., & Wagner, G. (2005a). Some Applications of a Unified Foundational Ontology in Business Modeling: In P. F. Green & M. Rosemann (A c. Di), Business Systems Analysis with Ontologies (pp. 345–367). IGI Global. https://doi.org/10.4018/978-1-59140-339-5.ch013
 Guizzardi, G., & Wagner, G. (2005b). Towards Ontological Foundations for Agent Modelling Concepts Using the Unified Fundational Ontology (UFO). In P. Bresciani, P. Giorgini, B. Henderson-Sellers, G. Low, & M. Winikoff (A c. Di), Agent-Oriented Information Systems II (Vol. 3508, pp. 110–124). Springer Berlin Heidelberg. https://doi.org/10.1007/11426714_8
+Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software domain ontologies in the unified foundational ontology (UFO): The case of the ODE. Memorias de la XI Conferencia Iberoamericana de Software Engineering (CIbSE 2008), Recife, Pernambuco, Brasil, February 13-17, 2008, 127–140."""@en ,
+                               """We envision revisions of the current SCO theory of agency. This is due to the limited power of explainability of present representation. A sounder and deeper interpretation of the causal role of an agent in an interaction, compared to other participants, is required.
+
+Tentative proposal: a possible direction of implementation is towards a telic vision of agency intended as end-point driven. On this more fundamental neutral vision, a second layer of representation may be constructed to model intentionality, goals, and plans in relation to agency. Here, SCO may harmonize and align with UFO-C representation. 
+
+For insight for discussion see: 
+Guarino, N., & Guizzardi, G. (2024). Processes as variable embodiments. Synthese, 203(4), 104. https://doi.org/10.1007/s11229-024-04505-2
 Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software domain ontologies in the unified foundational ontology (UFO): The case of the ODE. Memorias de la XI Conferencia Iberoamericana de Software Engineering (CIbSE 2008), Recife, Pernambuco, Brasil, February 13-17, 2008, 127–140."""@en ;
                   rdfs:label "situation d’agence (agir)"@fr ,
                              "situation of agency"@en ,
@@ -8037,6 +8180,24 @@ Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software 
                   skos:definition "A situation in which an object is causally active in an interaction."@en ,
                                   "Una situazione in cui un oggetto è causalmente attivo in una interazione."@it ,
                                   "Une situation dans laquelle un objet est causalement active en une interaction."@fr ;
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
+
+
+sco-u:SCO_0000063 rdfs:label "disposition to act"@en ,
+                             "disposition à agir"@fr ,
+                             "disposizione ad agire"@it ;
+                  skos:definition "A disposition to participate in an interaction that inherits in a system or system environment agent, that stands in a situation of agency, and manifests respectively in an interaction among system components, an interaction among system environment components, or an interaction between system components and system environment components when the system or system environment agent acts in such an interaction."@en ,
+                                  "Una disposizione a partecipare in un’interazione esibita da un agente di sistema o dell’ambiente del sistema che sta in una situazione di agenza, e che si manifesta rispettivamente in un’interazione tra componenti di sistema, tra componenti dell’ambiente del sistema, o tra componenti di sistema e dell’ambiente di sistema quando l’agente di sistema o dell’ambiente del sistema agisce in tale interazione."@it ,
+                                  "Une disposition à participer dans une interaction exhibée par un agent de système or de l’environnement de système qui se tient dans une situation d’agence (agir), et qui se manifeste respectivement dans une interaction entre les composantes de système, entre les composantes de l’environnement de système, ou entre les composantes de système et les composantes de l’environnement de système quand l’agent de système or de l’environnement de système acte dans telle interaction."@fr ;
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
+
+
+sco-u:SCO_0000064 rdfs:label "disposition to participate in an interaction"@en ,
+                             "disposition à participer dans une interaction"@fr ,
+                             "disposizione a partecipare in un’interazione"@it ;
+                  skos:definition "A disposition that inherits in a system or system environment component and manifests respectively in an interaction among system components, an interaction among system environment components, or an interaction between system components and system environment components when the system or system environment component participates in such an interaction."@en ,
+                                  "Una disposizione esibita da una componente di sistema o dell’ambiente del sistema e che si manifesta rispettivamente in un’interazione tra componenti di sistema, tra componenti dell’ambiente del sistema, o tra componenti di sistema e dell’ambiente di sistema quando la componente di sistema o dell’ambiente del sistema partecipa in tale interazione."@it ,
+                                  "Une disposition exhibée par une composante de système or de l’environnement de système, et qui se manifeste respectivement dans une interaction entre les composantes de système, entre les composantes de l’environnement de système, ou entre les composantes de système et les composantes de l’environnement de système quand la composante de système or de l’environnement de système participe dans telle interaction."@fr ;
                   AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 

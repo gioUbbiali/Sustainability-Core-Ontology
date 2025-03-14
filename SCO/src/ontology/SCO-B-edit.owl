@@ -881,6 +881,14 @@ bfo:RO_0002577 rdf:type owl:Class ;
                                                       ]
                                                     ) ;
                                  rdf:type owl:Class
+                               ] ,
+                               [ owl:intersectionOf ( bfo:BFO_0000040
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty bfo:RO_0002163 ;
+                                                        owl:someValuesFrom sco:SCO_0000006
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
                                ] ;
                owl:disjointWith sco:SCO_0000006 ;
                bfo:IAO_0000115 "A material entity consisting of multiple components that are causally integrated." ;
@@ -890,10 +898,36 @@ bfo:RO_0002577 rdf:type owl:Class ;
                rdfs:comment """SCO cretor comment:
 RO defines the class “system” as a subclass of the “material entity” class. Nevertheless, a system is a fiat object, e.g. an object that is “delimited” according to the perspective of the stakeholder (Landgrebe and Smith 2022, p. 117,118). System delimitation determines the boundaries of the systems, but the stakeholder, however, does not create the system through this delimitation process (Landgrebe and Smith 2022, p. 117,118). 
 As this class is extensively reused among ontologies within the OBO-Foundry context, we maintain its current hierarchical position. However, we recommend a revision of this class. There are two possible strategies to consider: 1) to reclassify this class as a subclass of “fiat object part” one or 2) to create a dedicated “fiat object” class that will be a subclass of “material entity” and the superclass for the “system” one (and related subclasses). We leave the discussion open with the intention of engaging with subject matter experts, planning that these modifications may be included in the next release of this resource.
-As the environment of a system corresponds to what has not been delimited as part of such a system, these considerations correspondingly also apply to the class “system environment” (at least regarding the system-system environment boundaries)."""@en ;
+As the environment of a system corresponds to what has not been delimited as part of such a system, these considerations correspondingly also apply to the class “system environment” (at least regarding the system-system environment boundaries)."""@en ,
+                            """SCO developer comment:
+Despite minor differences, SCO representation of systems and related architecture and composition is compatible with that of the System Core Ontology (Calhau et al., 2024). The system Core Ontology centers on socio-techno systems, primarily pointing to an intention/goal-directed representation of these systems. SCO representation, instead, adopts a more neutral modeling approach for complex systems, seeking to account for a wider range of systems. SCO is also more compact than the system Core Ontology. This is, however, adequate for the current purposes of SCO. 
+
+We envision employing the system Core Ontology as a starting point to extend SCO representation of system architecture, situations, properties, and functions. We also envision possible alignments and reciprocal implementations between these two ontologies.
+
+Calhau, R. F., Prince Sales, T., Oliveira, Í., Kokkula, S., Ferreira Pires, L., Cameron, D., Guizzardi, G., & Almeida, J. P. A. (2024). A System Core Ontology for Capability Emergence Modeling. In H. A. Proper, L. Pufahl, D. Karastoyanova, M. Van Sinderen, & J. Moreira (A c. Di), Enterprise Design, Operations, and Computing (Vol. 14367, pp. 3–20). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-46587-1_1
+
+Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr"""@en ,
+                            """SCO developer comment:
+We envision discussions with subject matter experts regarding whether the current SCO representation of system-system component (and related environment) parthood is suitable or whether a proper parthood-based representation is more adequate. Insights for discussion may be found in Calhau et al. (2024) and Ubbiali et al. (2024).
+
+Calhau, R. F., Prince Sales, T., Oliveira, Í., Kokkula, S., Ferreira Pires, L., Cameron, D., Guizzardi, G., & Almeida, J. P. A. (2024). A System Core Ontology for Capability Emergence Modeling. In H. A. Proper, L. Pufahl, D. Karastoyanova, M. Van Sinderen, & J. Moreira (A c. Di), Enterprise Design, Operations, and Computing (Vol. 14367, pp. 3–20). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-46587-1_1
+
+Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr"""@en ;
                rdfs:label "system" ;
                rdfs:seeAlso """SCO creator cited reference: 
 Landgrebe, Jobst, and Barry Smith. 2022. Why Machines Will Never Rule the World: Artificial Intelligence without Fear. Taylor & Francis. 10.4324/9781003310105"""@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource bfo:RO_0002577 ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget """SCO developer comment:
+We envision discussions with subject matter experts regarding whether the current SCO representation of system-system component (and related environment) parthood is suitable or whether a proper parthood-based representation is more adequate. Insights for discussion may be found in Calhau et al. (2024) and Ubbiali et al. (2024).
+
+Calhau, R. F., Prince Sales, T., Oliveira, Í., Kokkula, S., Ferreira Pires, L., Cameron, D., Guizzardi, G., & Almeida, J. P. A. (2024). A System Core Ontology for Capability Emergence Modeling. In H. A. Proper, L. Pufahl, D. Karastoyanova, M. Van Sinderen, & J. Moreira (A c. Di), Enterprise Design, Operations, and Computing (Vol. 14367, pp. 3–20). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-46587-1_1
+
+Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr"""@en ;
+   rdfs:seeAlso "See also comments to https://www.w3id.org/sco/sco-u#SCO_0000056"@en
+ ] .
 
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity
@@ -953,31 +987,18 @@ AnnotationVocabulary:MaturityLevel rdf:type owl:Class ;
 
 ###  https://www.w3id.org/sco#SCO_0000001
 sco:SCO_0000001 rdf:type owl:Class ;
-                owl:equivalentClass _:genid51 ;
+                owl:equivalentClass _:genid56 ;
                 rdfs:subClassOf bfo:BFO_0000015 ,
                                 [ owl:intersectionOf ( bfo:BFO_0000015
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty bfo:BFO_0000167 ;
-                                                         owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                              owl:unionOf ( bfo:BFO_0000020
-                                                                                            bfo:BFO_0000031
-                                                                                            [ owl:intersectionOf ( bfo:BFO_0000004
-                                                                                                                   [ rdf:type owl:Class ;
-                                                                                                                     owl:complementOf bfo:BFO_0000006
-                                                                                                                   ]
-                                                                                                                 ) ;
-                                                                                              rdf:type owl:Class
-                                                                                            ]
-                                                                                          )
-                                                                            ]
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ,
-                                [ owl:intersectionOf ( bfo:BFO_0000015
-                                                       [ rdf:type owl:Restriction ;
                                                          owl:onProperty sco:SCO_0000037 ;
-                                                         owl:someValuesFrom bfo:BFO_0000004
+                                                         owl:someValuesFrom [ owl:intersectionOf ( bfo:BFO_0000004
+                                                                                                   [ rdf:type owl:Class ;
+                                                                                                     owl:complementOf bfo:BFO_0000006
+                                                                                                   ]
+                                                                                                 ) ;
+                                                                              rdf:type owl:Class
+                                                                            ]
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
@@ -986,7 +1007,13 @@ sco:SCO_0000001 rdf:type owl:Class ;
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty bfo:BFO_0000167 ;
                                                          owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                                                         owl:onClass bfo:BFO_0000004
+                                                         owl:onClass [ owl:intersectionOf ( bfo:BFO_0000004
+                                                                                            [ rdf:type owl:Class ;
+                                                                                              owl:complementOf bfo:BFO_0000006
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ]
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
@@ -1004,7 +1031,7 @@ http://purl.obolibrary.org/obo/INO_0000016""" ;
                 AnnotationVocabulary:adaptedFrom "http://purl.obolibrary.org/obo/INO_0000002" ;
                 AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
-_:genid51 rdf:type owl:Class ;
+_:genid56 rdf:type owl:Class ;
            owl:unionOf ( sco:SCO_0000007
                          sco:SCO_0000008
                          sco:SCO_0000009
@@ -1013,7 +1040,7 @@ _:genid51 rdf:type owl:Class ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource sco:SCO_0000001 ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid51 ;
+   owl:annotatedTarget _:genid56 ;
    rdfs:comment "This class has been restricted to those specific subclasses for the purposes of SCO."@en
  ] .
 
@@ -1030,7 +1057,12 @@ sco:SCO_0000002 rdf:type owl:Class ;
                                   rdf:type owl:Class
                                 ] ;
                 owl:disjointWith sco:SCO_0000011 ;
-                rdfs:comment """This class aims to be the starting point for developing a representation of system change. Future SCO implementations will provide additional classes and object properties addressing system behaviors, system processes, system scales and levels, and related themes.
+                rdfs:comment """SCO must extend its representation to (complex) system behaviors. A possible starting point may be the work of Calhau et al. (2023) and Calhau et al. (2024).
+
+Calhau, R., Sales, T. P., Almeida, J. P. A., & Guizzardi, G. (2023). Exploring system behavior in a system ontology. Int Conf Concept Model.
+
+Calhau, R. F., Prince Sales, T., Oliveira, Í., Kokkula, S., Ferreira Pires, L., Cameron, D., Guizzardi, G., & Almeida, J. P. A. (2024). A System Core Ontology for Capability Emergence Modeling. In H. A. Proper, L. Pufahl, D. Karastoyanova, M. Van Sinderen, & J. Moreira (A c. Di), Enterprise Design, Operations, and Computing (Vol. 14367, pp. 3–20). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-46587-1_1"""@en ,
+                             """This class aims to be the starting point for developing a representation of system change. Future SCO implementations will provide additional classes and object properties addressing system behaviors, system processes, system scales and levels, and related themes.
 
 Related axioms must be revised accordingly.""" ;
                 rdfs:label "développement de système"@fr ,
@@ -1045,7 +1077,7 @@ Related axioms must be revised accordingly.""" ;
 
 ###  https://www.w3id.org/sco#SCO_0000003
 sco:SCO_0000003 rdf:type owl:Class ;
-                owl:equivalentClass _:genid80 ;
+                owl:equivalentClass _:genid81 ;
                 rdfs:subClassOf CommonCoreOntologies:RepresentationalInformationContentEntity ,
                                 [ owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
                                                        [ rdf:type owl:Restriction ;
@@ -1068,7 +1100,7 @@ http://purl.unep.org/sdg/SDGIO_00000003""" ;
                                 "Un contenuto informativo rappresentativo che genericamente dipende da un indicatore e riguarda, fornisce informazioni sul, sistema complesso a cui l'indicatore appartiene."@it ;
                 AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
-_:genid80 owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
+_:genid81 owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty CommonCoreOntologies:is_about ;
                                   owl:someValuesFrom sco:SCO_0000015
@@ -1083,7 +1115,7 @@ _:genid80 owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationC
 [ rdf:type owl:Axiom ;
    owl:annotatedSource sco:SCO_0000003 ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid80 ;
+   owl:annotatedTarget _:genid81 ;
    rdfs:comment """Discussion with subject matter experts is required to revise this axiom with regard to the “represents” object property. This was the most appropriate object property among those pertaining to OBO-Foundry and compliant ontologies to use in constructing this axiom. 
 Nevertheless, implementations seem necessary to deepen the characterization, for instance with regard to representing and measuring the complex system of interest.. Revisions may regard adapting this object property or even further creating a new ad hoc object property. 
 
@@ -1145,7 +1177,7 @@ sco:SCO_0000005 rdf:type owl:Class ;
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf CommonCoreOntologies:InformationContentEntity ,
-                                _:genid110 ,
+                                _:genid111 ,
                                 [ owl:intersectionOf ( CommonCoreOntologies:InformationContentEntity
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty bfo:BFO_0000165 ;
@@ -1162,7 +1194,7 @@ sco:SCO_0000005 rdf:type owl:Class ;
                                 "Un contenuto informativo che dipende genericamente dal sistema complesso o dall'ambiente del sistema complesso (o una o più parti di essi) e riguarda il valore (che lo concretizza) che una componente del sistema complesso del suo ambiente riconosce di avere a quel sistema complesso o ambiente del sistema complesso (o una o più parti di essi)."@it ;
                 AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
-_:genid110 owl:intersectionOf ( CommonCoreOntologies:InformationContentEntity
+_:genid111 owl:intersectionOf ( CommonCoreOntologies:InformationContentEntity
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty bfo:BFO_0000084 ;
                                    owl:someValuesFrom [ rdf:type owl:Class ;
@@ -1179,7 +1211,7 @@ _:genid110 owl:intersectionOf ( CommonCoreOntologies:InformationContentEntity
 [ rdf:type owl:Axiom ;
    owl:annotatedSource sco:SCO_0000005 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid110 ;
+   owl:annotatedTarget _:genid111 ;
    rdfs:comment "To amend this axiom in case worth is associated with some object aggregate that is part of the complex system or complex system environment of interest. To extend this axiom to also cover the \"object aggregate\" class."
  ] .
 
@@ -1202,9 +1234,22 @@ sco:SCO_0000006 rdf:type owl:Class ;
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ owl:intersectionOf ( bfo:BFO_0000040
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty bfo:RO_0002163 ;
+                                                         owl:someValuesFrom bfo:RO_0002577
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
                                 ] ;
                 oboInOwl:hasExactSynonym "system context" ;
-                rdfs:comment "See the comment under the \"system\" class."@en ;
+                rdfs:comment "See the comment under the \"system\" class."@en ,
+                             """We envision discussions with subject matter experts regarding whether the current SCO representation of system-system component (and related environment) parthood is suitable or whether a proper parthood-based representation is more adequate. Insights for discussion may be found in Calhau et al. (2024) and Ubbiali et al. (2024).
+
+Calhau, R. F., Prince Sales, T., Oliveira, Í., Kokkula, S., Ferreira Pires, L., Cameron, D., Guizzardi, G., & Almeida, J. P. A. (2024). A System Core Ontology for Capability Emergence Modeling. In H. A. Proper, L. Pufahl, D. Karastoyanova, M. Van Sinderen, & J. Moreira (A c. Di), Enterprise Design, Operations, and Computing (Vol. 14367, pp. 3–20). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-46587-1_1
+
+Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr"""@en ;
                 rdfs:label "ambiente del sistema"@it ,
                            "environnement de système"@fr ,
                            "system environment"@en ;
@@ -1212,6 +1257,17 @@ sco:SCO_0000006 rdf:type owl:Class ;
                                 "Un'entità materiale che circonda ed è distinta e disgiunta da un sistema."@it ,
                                 "Une entité matérielle qui entourne et qui est distincte et disjointe d’un système."@fr ;
                 AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource sco:SCO_0000006 ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget """We envision discussions with subject matter experts regarding whether the current SCO representation of system-system component (and related environment) parthood is suitable or whether a proper parthood-based representation is more adequate. Insights for discussion may be found in Calhau et al. (2024) and Ubbiali et al. (2024).
+
+Calhau, R. F., Prince Sales, T., Oliveira, Í., Kokkula, S., Ferreira Pires, L., Cameron, D., Guizzardi, G., & Almeida, J. P. A. (2024). A System Core Ontology for Capability Emergence Modeling. In H. A. Proper, L. Pufahl, D. Karastoyanova, M. Van Sinderen, & J. Moreira (A c. Di), Enterprise Design, Operations, and Computing (Vol. 14367, pp. 3–20). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-46587-1_1
+
+Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr"""@en ;
+   rdfs:seeAlso "See also comments to https://www.w3id.org/sco/sco-u#SCO_0000056"@en
+ ] .
 
 
 ###  https://www.w3id.org/sco#SCO_0000007
@@ -1401,6 +1457,14 @@ sco:SCO_0000012 rdf:type owl:Class ;
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ owl:intersectionOf ( sco:SCO_0000006
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty bfo:RO_0002163 ;
+                                                         owl:someValuesFrom sco:SCO_0000015
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
                                 ] ;
                 owl:disjointWith sco:SCO_0000015 ;
                 oboInOwl:hasExactSynonym "complex system context" ;
@@ -1434,6 +1498,18 @@ sco:SCO_0000013 rdf:type owl:Class ;
                 owl:disjointWith sco:SCO_0000014 ;
                 oboInOwl:hasExactSynonym "system element" ;
                 oboInOwl:hasRelatedSynonym "system variable" ;
+                rdfs:comment """Despite minor differences, SCO representation of systems and related architecture and composition is compatible with that of the System Core Ontology (Calhau et al., 2024). The system Core Ontology centers on socio-techno systems, primarily pointing to an intention/goal-directed representation of these systems. SCO representation, instead, adopts a more neutral modeling approach for complex systems, seeking to account for a wider range of systems. SCO is also more compact than the system Core Ontology. This is, however, adequate for the current purposes of SCO. 
+
+We envision employing the system Core Ontology as a starting point to extend SCO representation of system architecture, situations, properties, and functions. We also envision possible alignments and reciprocal implementations between these two ontologies.
+
+Calhau, R. F., Prince Sales, T., Oliveira, Í., Kokkula, S., Ferreira Pires, L., Cameron, D., Guizzardi, G., & Almeida, J. P. A. (2024). A System Core Ontology for Capability Emergence Modeling. In H. A. Proper, L. Pufahl, D. Karastoyanova, M. Van Sinderen, & J. Moreira (A c. Di), Enterprise Design, Operations, and Computing (Vol. 14367, pp. 3–20). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-46587-1_1
+
+Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr"""@en ,
+                             """We envision discussions with subject matter experts regarding whether the current SCO representation of system-system component (and related environment) parthood is suitable or whether a proper parthood-based representation is more adequate. Insights for discussion may be found in Calhau et al. (2024) and Ubbiali et al. (2024).
+
+Calhau, R. F., Prince Sales, T., Oliveira, Í., Kokkula, S., Ferreira Pires, L., Cameron, D., Guizzardi, G., & Almeida, J. P. A. (2024). A System Core Ontology for Capability Emergence Modeling. In H. A. Proper, L. Pufahl, D. Karastoyanova, M. Van Sinderen, & J. Moreira (A c. Di), Enterprise Design, Operations, and Computing (Vol. 14367, pp. 3–20). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-46587-1_1
+
+Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr"""@en ;
                 rdfs:label "componente del sistema"@it ,
                            "composante de système"@fr ,
                            "system component"@en ;
@@ -1441,6 +1517,17 @@ sco:SCO_0000013 rdf:type owl:Class ;
                                 "Un'entità materiale che appartiene a un sistema."@it ,
                                 "Une entité matérielle qui appartient à un système."@fr ;
                 AnnotationVocabulary:maturity AnnotationVocabulary:Released .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource sco:SCO_0000013 ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget """We envision discussions with subject matter experts regarding whether the current SCO representation of system-system component (and related environment) parthood is suitable or whether a proper parthood-based representation is more adequate. Insights for discussion may be found in Calhau et al. (2024) and Ubbiali et al. (2024).
+
+Calhau, R. F., Prince Sales, T., Oliveira, Í., Kokkula, S., Ferreira Pires, L., Cameron, D., Guizzardi, G., & Almeida, J. P. A. (2024). A System Core Ontology for Capability Emergence Modeling. In H. A. Proper, L. Pufahl, D. Karastoyanova, M. Van Sinderen, & J. Moreira (A c. Di), Enterprise Design, Operations, and Computing (Vol. 14367, pp. 3–20). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-46587-1_1
+
+Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr"""@en ;
+   rdfs:seeAlso "See also comments to https://www.w3id.org/sco/sco-u#SCO_0000056"@en
+ ] .
 
 
 ###  https://www.w3id.org/sco#SCO_0000014
@@ -1463,6 +1550,11 @@ sco:SCO_0000014 rdf:type owl:Class ;
                                 ] ;
                 oboInOwl:hasExactSynonym "system environment element" ;
                 oboInOwl:hasRelatedSynonym "system environment variable" ;
+                rdfs:comment """We envision discussions with subject matter experts regarding whether the current SCO representation of system-system component (and related environment) parthood is suitable or whether a proper parthood-based representation is more adequate. Insights for discussion may be found in Calhau et al. (2024) and Ubbiali et al. (2024).
+
+Calhau, R. F., Prince Sales, T., Oliveira, Í., Kokkula, S., Ferreira Pires, L., Cameron, D., Guizzardi, G., & Almeida, J. P. A. (2024). A System Core Ontology for Capability Emergence Modeling. In H. A. Proper, L. Pufahl, D. Karastoyanova, M. Van Sinderen, & J. Moreira (A c. Di), Enterprise Design, Operations, and Computing (Vol. 14367, pp. 3–20). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-46587-1_1
+
+Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr"""@en ;
                 rdfs:label "componente dell' ambiente del systema"@it ,
                            "composante de l'environnement de système"@fr ,
                            "system environment component"@en ;
@@ -1470,6 +1562,17 @@ sco:SCO_0000014 rdf:type owl:Class ;
                                 "Un'entità materiale che appartiene all’ambiente di un sistema."@it ,
                                 "Une entité matérielle qui appartient à l’environnement d’un système."@fr ;
                 AnnotationVocabulary:maturity AnnotationVocabulary:Released .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource sco:SCO_0000014 ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget """We envision discussions with subject matter experts regarding whether the current SCO representation of system-system component (and related environment) parthood is suitable or whether a proper parthood-based representation is more adequate. Insights for discussion may be found in Calhau et al. (2024) and Ubbiali et al. (2024).
+
+Calhau, R. F., Prince Sales, T., Oliveira, Í., Kokkula, S., Ferreira Pires, L., Cameron, D., Guizzardi, G., & Almeida, J. P. A. (2024). A System Core Ontology for Capability Emergence Modeling. In H. A. Proper, L. Pufahl, D. Karastoyanova, M. Van Sinderen, & J. Moreira (A c. Di), Enterprise Design, Operations, and Computing (Vol. 14367, pp. 3–20). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-46587-1_1
+
+Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr"""@en ;
+   rdfs:seeAlso "See also comments to https://www.w3id.org/sco/sco-u#SCO_0000056"@en
+ ] .
 
 
 ###  https://www.w3id.org/sco#SCO_0000015
@@ -1527,6 +1630,14 @@ sco:SCO_0000015 rdf:type owl:Class ;
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty bfo:BFO_0000211 ;
                                                          owl:someValuesFrom sco:SCO_0000032
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ,
+                                [ owl:intersectionOf ( bfo:RO_0002577
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty bfo:RO_0002163 ;
+                                                         owl:someValuesFrom sco:SCO_0000012
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
@@ -1927,8 +2038,8 @@ Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software 
                 rdfs:label "agent de l’environnement de système"@fr ,
                            "agente dell’ambiente del sistema"@it ,
                            "system environnement agent"@en ;
-                rdfs:seeAlso <https://www.w3id.org/sco#sco.owl/SCO_0000037> ,
-                             <https://www.w3id.org/sco#sco.owl/SCO_0000038> ,
+                rdfs:seeAlso sco:SCO_0000037 ,
+                             sco:SCO_0000038 ,
                              "comments to https://www.w3id.org/sco/sco-u#SCO_0000027 and https://www.w3id.org/sco/sco-u#SCO_0000029"@en ,
                              "See information under the \"has agent at t\" property." ;
                 skos:definition "A system environment component that is an agent in an interaction among system environment components or in an interaction between system components and system environment components."@en ,
@@ -2008,8 +2119,8 @@ Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software 
                 rdfs:label "agent de système"@fr ,
                            "agente del sistema"@it ,
                            "system agent"@en ;
-                rdfs:seeAlso <https://www.w3id.org/sco#sco.owl/SCO_0000037> ,
-                             <https://www.w3id.org/sco#sco.owl/SCO_0000038> ,
+                rdfs:seeAlso sco:SCO_0000037 ,
+                             sco:SCO_0000038 ,
                              "comments to https://www.w3id.org/sco/sco-u#SCO_0000027 and https://www.w3id.org/sco/sco-u#SCO_0000029"@en ,
                              "See information under the \"has agent at t\" property." ;
                 skos:definition "A system component that is an agent in an interaction among system components or in an interaction between system components and system environment components."@en ,
@@ -2114,8 +2225,8 @@ sco:SCO_0000033 rdf:type owl:Class ;
                 rdfs:label "agent de l’environnement de système complexe"@fr ,
                            "agente dell’ambiente del sistema complesso"@it ,
                            "complex system environment agent"@en ;
-                rdfs:seeAlso <https://www.w3id.org/sco#sco.owl/SCO_0000037> ,
-                             <https://www.w3id.org/sco#sco.owl/SCO_0000038> ,
+                rdfs:seeAlso sco:SCO_0000037 ,
+                             sco:SCO_0000038 ,
                              "See information under the \"has agent at t\" property." ;
                 skos:definition "A complex system environment component that is an agent in an interaction among complex system environment components or in an interaction between complex system components and complex system environment components."@en ,
                                 "Una componente dell’ambiente del sistema complesso che è un agente in un'interazione tra componenti dell’ambiente del sistema complesso o in un'interazione tra le componenti del sistema complesso e le componenti dell’ambiente del sistema complesso."@it ,
@@ -2149,8 +2260,8 @@ sco:SCO_0000034 rdf:type owl:Class ;
                 rdfs:label "agent de système complexe"@fr ,
                            "agente del sistema complesso"@it ,
                            "complex system agent"@en ;
-                rdfs:seeAlso <https://www.w3id.org/sco#sco.owl/SCO_0000037> ,
-                             <https://www.w3id.org/sco#sco.owl/SCO_0000038> ,
+                rdfs:seeAlso sco:SCO_0000037 ,
+                             sco:SCO_0000038 ,
                              "See information under the \"has agent at t\" property." ;
                 skos:definition "A complex system component that is an agent in an interaction among complex system components or in an interaction between complex system components and complex system environment components."@en ,
                                 "Una componente del sistema complesso che è un agente in un'interazione tra le componenti del sistema complesso o in un'interazione tra le componenti del sistema complesso e le componenti dell’ambiente del sistema complesso."@it ,
@@ -2194,7 +2305,7 @@ sco:SCO_0000035 rdf:type owl:Class ;
                            "indicatore"@it ;
                 rdfs:seeAlso "http://purl.unep.org/sdg/SDGIO_00000002" ;
                 skos:definition "A complex system component with an indicator role."@en ,
-                                "La componente del sistema complesso con un ruolo d’indicatore."@it ,
+                                "Una componente del sistema complesso con un ruolo d’indicatore."@it ,
                                 "Une composante de système complexe ayant un rôle d’indicateur."@fr ;
                 AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
@@ -2294,7 +2405,10 @@ sco:SCO_0000042 rdf:type owl:Class ;
                                   rdf:type owl:Class
                                 ] ;
                 owl:disjointWith sco:SCO_0000043 ;
-                rdfs:comment "This class should be amended according to SCO implementations regarding system scales, levels, and change." ;
+                rdfs:comment """A more extensive representation of emergence is required. A possible starting point may be the work of Calhau et al. (2024).
+
+Calhau, R. F., Prince Sales, T., Oliveira, Í., Kokkula, S., Ferreira Pires, L., Cameron, D., Guizzardi, G., & Almeida, J. P. A. (2024). A System Core Ontology for Capability Emergence Modeling. In H. A. Proper, L. Pufahl, D. Karastoyanova, M. Van Sinderen, & J. Moreira (A c. Di), Enterprise Design, Operations, and Computing (Vol. 14367, pp. 3–20). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-46587-1_1"""@en ,
+                             "This class should be amended according to SCO implementations regarding system scales, levels, and change." ;
                 rdfs:label "emergence"@en ,
                            "emergenza (proprietà emergenti)"@it ,
                            "émergence (propriété émergentes"@fr ;

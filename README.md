@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository maintains the Sustainability Core Ontology (SCO). SCO is a middle-level ontology, covering the terminology related to the three major theoretical challenges of sustainability [(Ubbiali *et al.* 2024)](https://doi.org/10.31219/osf.io/z8uqr ):
+This repository maintains the Sustainability Core Ontology (SCO). SCO is a middle-level ontology, covering the terminology related to the three major theoretical challenges of sustainability [(Ubbiali *et al.*, 2024)](https://doi.org/10.31219/osf.io/z8uqr ):
 1) The polysemy of the term sustainability.
 2) The relationship between sustainability and sustainable development.
 3) The complexity underlying sustainability.

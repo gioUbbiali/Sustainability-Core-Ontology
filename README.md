@@ -9,6 +9,8 @@ This repository maintains the Sustainability Core Ontology (SCO). SCO is a middl
    
 SCO is designed to be a pivotal resource upon which to harmonize and integrate ontologies regarding sustainability. The ultimate goal is to establish a family of interoperable sustainability ontologies. Currently, SCO employs [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020) as the upper-level ontology. There are ongoing works to also align SCO with the [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html).  
 
+See also the SCO documentation webpage.
+
 
 ## Material
 

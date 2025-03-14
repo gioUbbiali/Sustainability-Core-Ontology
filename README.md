@@ -14,7 +14,7 @@ SCO is designed to be a pivotal resource upon which to harmonize and integrate o
 
 Currently, this repository hosts the new working-in-progress version of SCO, SCO V1.1.0. 
 
-SCO V1.1.0. implement SCO V1.0.0. by aligning it to the [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html). SCO V1.0.0. employes only BFO as the upper level ontology. This implementation aims to consolidate SCO as a pivotal resource upon which to harmonize and integrate ontologies regarding sustainability, providing a complementing .
+SCO V1.1.0. implement SCO V1.0.0. by aligning it to the [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html). SCO V1.0.0. employes only BFO as the upper level ontology. This implementation aims to consolidate SCO as a pivotal resource upon which to harmonize and integrate ontologies regarding sustainability by complementing the BFO-compliant representation of sustainability challenges with a UFO-compliant representation.
 
 SCO V1.1.0. is comprised of two segments: SCO-B (B for BFO) and SCO-U (U for UFO). SCO-B aligns the SCO vocabulary with BFO (as SCO V1.0.0.). SCO-U aligns the SCO vocabulary with gUFO ([UFO implementation in the Web Ontology Language (OWL)](https://nemo-ufes.github.io/gufo/)).
 

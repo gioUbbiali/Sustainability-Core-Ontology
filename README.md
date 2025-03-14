@@ -14,7 +14,7 @@ SCO is designed to be a pivotal resource upon which to harmonize and integrate o
 
 Currently, this repository hosts the new working-in-progress version of SCO, SCO V1.1.0. 
 
-SCO V1.1.0. implement SCO V1.0.0. by aligning it to the [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html). SCO V1.0.0. employes only BFO as the upper level ontology. This implementation aims to consolidate SCO as a pivotal resource upon which to harmonize and integrate ontologies regarding sustainability by complementing the BFO-compliant representation of sustainability challenges with a UFO-compliant representation.
+SCO V1.1.0. implement SCO V1.0.1. by aligning it to the [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html). SCO V1.0.1. employes only BFO as the upper level ontology. This implementation aims to consolidate SCO as a pivotal resource upon which to harmonize and integrate ontologies regarding sustainability by complementing the BFO-compliant representation of sustainability challenges with a UFO-compliant representation.
 
 SCO V1.1.0. is comprised of two segments: SCO-B (B for BFO) and SCO-U (U for UFO). SCO-B aligns the SCO vocabulary with BFO (as SCO V1.0.0.). SCO-U aligns the SCO vocabulary with gUFO ([UFO implementation in the Web Ontology Language (OWL)](https://nemo-ufes.github.io/gufo/)).
 
@@ -25,18 +25,19 @@ This project is presently undergoing active development. See the [development pr
 
 SCO materials, including a protocol detailing the process followed to develop this ontology, can be found here:
 
-- [SCO V1.0.0.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0)
-- [SCO V1.1.0. materials-total](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO).
-- [SCO-B current release.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/src)
+- [SCO V1.0.1.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1)
+- [SCO V1.1.0. materials-total.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO)
+- SCO-B current release.
 - SCO-U current release.
-- [SCO V1.1.0. working-in-progress version](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/src/ontology).
+- Mapping between SCO-B and SCO-U.
+- [SCO-B working-in-progress version.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/src/ontology)
+- [SCO-U working-in-progress version.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/src/ontology)
 - [SCO V1.1.0. imports from other ontologies](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/src/ontology/imports).
-- [SCO-B imports.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/src/ontology/imports/SCO-B%20imports)
 - [SCO-U imports.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/src/ontology/imports/SCO-U%20imports)
-- [SCO V1.1.0. development protocol](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/working%20materials/sco%20development%20protocol).
 - [Working materials](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/working%20materials).
+- [SCO V1.1.0. development protocol](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/SCO-Alignment-to-UFO/SCO/working%20materials/sco%20development%20protocol).
   
-The most recent released version of SCO can be always found [here](https://github.com/gioUbbiali/Sustainability-Core-Ontology).
+The most recent version of SCO can be always found at the following link:[ https://w3id.org/sco. ](https://w3id.org/sco)
 SCO is also accessible on [Ontobee](https://ontobee.org/ontology/SCO), [AgroPortal](https://agroportal.lirmm.fr/ontologies/SCO), [BioPortal](https://bioportal.bioontology.org/ontologies/SCO_V1), and [IndustryPortal](https://industryportal.enit.fr/ontologies/SCO).
 
 
@@ -46,6 +47,13 @@ SCO is also accessible on [Ontobee](https://ontobee.org/ontology/SCO), [AgroPort
 
 
 ## Involved Institutions in the Development of SCO V1.1.0. 
+
+[UNIMI](https://www.unimi.it/it)
+
+[UT](https://www.utwente.nl/en/)
+
+
+## Involved Institutions in the Development of SCO V1.0.1. 
 
 [UNIMI](https://www.unimi.it/it)
 

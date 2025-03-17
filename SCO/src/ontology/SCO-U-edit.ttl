@@ -34,6 +34,20 @@ SCO aims to play a pivotal role in harmonizing and integrating top-level and dom
                                   terms:title "L'ontologia fondazionale della sostenibilità"@it ,
                                               "L'ontologie fondationnelle de la durabilité"@fr ,
                                               "Sustainability Core Ontology (SCO)"@en ;
+                                  rdfs:comment """Currently, running the GUFO rules’ validator suggests that the following classes need to be either “specialized by a sortal or specialize another non-sortal which is in its turn specialized by a sortal”. 
+
+https://www.w3id.org/sco/sco-u#SCO_0000013
+https://www.w3id.org/sco/sco-u#SCO_0000014 
+https://www.w3id.org/sco/sco-u#SCO_0000026
+https://www.w3id.org/sco/sco-u#SCO_0000027
+https://www.w3id.org/sco/sco-u#SCO_0000028
+https://www.w3id.org/sco/sco-u#SCO_0000029
+https://www.w3id.org/sco/sco-u#SCO_0000033
+https://www.w3id.org/sco/sco-u#SCO_0000036 
+
+In fact, these classes are non-sortal and are not specialized by any class of a specific kind. We do not regard this as problematic because SCO aims to provide a general high-level layer of representation to extend within more domain-focused ontologies. SCO-extending ontologies can specialize these classes with subclasses of specific kinds thereby easily addressing and resolving this concern.
+
+“Complex system property” and “information content entity” classes specialize “aspect” class appositely. The first aims to be a grouping for different system properties. The second requires further discussion as UFO does not address presentations of information (see comment to the class)."""@en ;
                                   rdfs:seeAlso "Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr" ;
                                   owl:priorVersion """SCO V1.0.1. constitutes the prior version of this resources.
 SCO V1.0.1. is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1"""@en ;
@@ -1928,12 +1942,7 @@ sco-u:SCO_0000040 rdf:type owl:Class ;
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000041
 sco-u:SCO_0000041 rdf:type owl:Class ;
-                  rdfs:subClassOf <http://purl.org/nemo/gufo#Aspect> ;
-                  rdfs:comment "Do not use this class directly. This class is constructed as a grouping for complex system properties, such as emergence and self-organization, in order to facilitate class retrieval and visualization." ;
-                  rdfs:label "complex system property"@en ,
-                             "proprietà del systema complesso"@it ;
-                  skos:definition "propriété de système complexe"@fr ;
-                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
+                  rdfs:subClassOf <http://purl.org/nemo/gufo#Aspect> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000042
@@ -2573,7 +2582,7 @@ sco-u:SCO_0000032 rdf:type owl:NamedIndividual ,
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000033
 sco-u:SCO_0000033 rdf:type owl:NamedIndividual ,
-                           <http://purl.org/nemo/gufo#PhaseMixin> .
+                           <http://purl.org/nemo/gufo#RoleMixin> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000034
@@ -2601,14 +2610,19 @@ sco-u:SCO_0000040 rdf:type owl:NamedIndividual ,
                            <http://purl.org/nemo/gufo#Phase> .
 
 
+###  https://www.w3id.org/sco/sco-u#SCO_0000041
+sco-u:SCO_0000041 rdf:type owl:NamedIndividual ,
+                           <http://purl.org/nemo/gufo#Kind> .
+
+
 ###  https://www.w3id.org/sco/sco-u#SCO_0000042
 sco-u:SCO_0000042 rdf:type owl:NamedIndividual ,
-                           <http://purl.org/nemo/gufo#Kind> .
+                           <http://purl.org/nemo/gufo#SubKind> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000043
 sco-u:SCO_0000043 rdf:type owl:NamedIndividual ,
-                           <http://purl.org/nemo/gufo#Kind> .
+                           <http://purl.org/nemo/gufo#SubKind> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000044
@@ -2667,7 +2681,8 @@ sco-u:SCO_0000061 rdf:type owl:NamedIndividual ,
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000062
-sco-u:SCO_0000062 rdf:type owl:NamedIndividual .
+sco-u:SCO_0000062 rdf:type owl:NamedIndividual ,
+                           <http://purl.org/nemo/gufo#SituationType> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000063
@@ -7556,6 +7571,12 @@ We envision discussions with subject matter experts from both BFO and UFO commun
 
 Weigand, H. (2025). Generic Ontological Dependence⋆. https://www.utwente.nl/en/eemcs/vmbo2025/papers/vmbo-2025-paper-4-2.pdf"""@en ;
                                               rdfs:label "Information Content Entity"@en ;
+                                              rdfs:seeAlso """SCO comment:
+
+See also
+https://www.w3id.org/sco/sco-u#SCO_0000038
+https://www.w3id.org/sco/sco-u#SCO_0000052
+https://www.w3id.org/sco/sco-u#SCO_0000054"""@en ;
                                               skos:definition """SCO definition adapted to comply with UFO ontological view:
 
 An aspect that generically depends on some Information Bearing Entity and stands in relation of aboutness to some Entity."""@en .
@@ -8137,6 +8158,13 @@ sco-u:SCO_0000040 rdfs:label "contenu informatif de la perspective de partie pre
                   skos:definition "A perspective information content entity of a stakeholder perspective."@en ,
                                   "Un contenu informatif de la perspective d’une perspective de partie prenante (stakeholder)."@fr ,
                                   "Un contenuto informativo della prospettiva di una prospettiva di parte interessata (stakeholder)."@it ;
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
+
+
+sco-u:SCO_0000041 rdfs:comment "Do not use this class directly. This class is constructed as a grouping for complex system properties, such as emergence and self-organization, in order to facilitate class retrieval and visualization." ;
+                  rdfs:label "complex system property"@en ,
+                             "proprietà del systema complesso"@it ;
+                  skos:definition "propriété de système complexe"@fr ;
                   AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 

@@ -3,6 +3,6 @@
     <uri id="Imports Wizard Entry" name="http://gioUbbiali.github.io/sco/sco-u/2025-02-17/cover.imports.owl" uri="SCO/src/ontology/imports/SCO-U%20imports/COVER%20imports.owl"/>
     <uri id="User Entered Import Resolution" name="http://gioUbbiali.github.io/sco/sco-u/2025-02-17/cover.imports.owl" uri="SCO-U.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1742284341365" name="http://gioUbbiali.github.io/sco/sco-u/cover.imports.owl" uri="SCO/src/ontology/imports/SCO-U%20imports/COVER%20imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1742393428418" name="http://gioUbbiali.github.io/sco/sco-u/cover.imports.owl" uri="SCO/src/ontology/imports/SCO-U%20imports/COVER%20imports.owl"/>
     </group>
 </catalog>

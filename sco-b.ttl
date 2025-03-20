@@ -16,7 +16,7 @@
 @base <https://www.w3id.org/sco#> .
 
 <https://www.w3id.org/sco> rdf:type owl:Ontology ;
-                            owl:versionIRI <https://www.w3id.org/sco/sco-b#v1.0.1/sco-b> ;
+                            owl:versionIRI <https://www.w3id.org/sco/sco-b#v1.1.0/sco-b> ;
                             owl:imports <http://purl.obolibrary.org/obo/bfo/2020/bfo.owl> ;
                             terms:creator "Giorgio A. Ubbiali" ;
                             terms:description """SCO V1.1.0 aligns with two Top-Level Ontologies (TLOs), Basic Formal Ontology (BFO) and Unified Foundational Ontology (UFO). SCO V1.1.0 is comprised of two segments: SCO-B (B for BFO) and SCO-U (U for UFO). SCO-B aligns the SCO vocabulary with BFO (as SCO V1.0.0). SCO-U aligns the SCO vocabulary with gUFO (UFO implementation in the Web Ontology Language (OWL)). This file provides SCO-B segment.

@@ -1,8 +1,8 @@
+@prefix : <https://www.w3id.org/sco/sco-u#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix bfo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix sco: <https://www.w3id.org/sco#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,7 +12,7 @@
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
 @prefix AnnotationVocabulary: <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/> .
 @prefix CommonCoreOntologies: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
-@base <https://www.w3id.org/sco/sco-u#> .
+@base <https://www.w3id.org/sco/sco-u> .
 
 <https://www.w3id.org/sco/sco-u> rdf:type owl:Ontology ;
                                   owl:versionIRI <https://www.w3id.org/sco/sco-u#v1.1.0/sco-u> ;
@@ -52,7 +52,7 @@ In fact, these classes are non-sortal and are not specialized by any class of a 
                                   owl:priorVersion """SCO V1.0.1. constitutes the prior version of this resources.
 SCO V1.0.1. is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1"""@en ;
                                   owl:versionInfo "Version 1.1.0. ; segment U."@en ,
-                                                  "2025-03-20" ;
+                                                  "2025-03-19" ;
                                   skos:note "Currently, this resource includes labels and definitions in the following three natural languages: English, Italian, and French. In the next version of this resource, the creator intends to also encompass Italian and French translations of the remaining pieces of information as well as to cover other natural languages."@en ,
                                             """Repository: https://github.com/gioUbbiali/Sustainability-Core-Ontology 
 Documentation webpage: https://gioubbiali.github.io/Sustainability-Core-Ontology/"""@en ,

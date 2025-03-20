@@ -1,4 +1,4 @@
-@prefix : <https://www.w3id.org/sco/> .
+@prefix : <https://www.w3id.org/sco/sco-u#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix bfo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -10,30 +10,31 @@
 @prefix sco-u: <https://www.w3id.org/sco/sco-u#> .
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix AnnotationVocabulary: <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/> .
 @prefix CommonCoreOntologies: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
-@base <https://www.w3id.org/sco/> .
+@base <https://www.w3id.org/sco/sco-u#> .
 
-<https://www.w3id.org/sco/> rdf:type owl:Ontology ;
-                             owl:versionIRI <https://www.w3id.org/sco/sco-u#v1.1.0/sco-u> ;
-                             owl:imports <http://gioUbbiali.github.io/sco/sco-u/2025-02-17/cover.imports.owl> ,
-                                         <http://purl.org/nemo/gufo#/1.0.0> ;
-                             terms:creator "Giorgio A. Ubbiali" ;
-                             terms:description """SCO V1.1.0 aligns with two Top-Level Ontologies (TLOs), Basic Formal Ontology (BFO) and Unified Foundational Ontology (UFO). SCO V1.1.0 is comprised of two segments: SCO-B (B for BFO) and SCO-U (U for UFO). SCO-B aligns the SCO vocabulary with BFO (as SCO V1.0.0). SCO-U aligns the SCO vocabulary with gUFO (UFO implementation in the Web Ontology Language (OWL)). This file provides SCO-U segment.
+<https://www.w3id.org/sco/sco-u> rdf:type owl:Ontology ;
+                                  owl:versionIRI <https://www.w3id.org/sco/sco-u#v1.1.0/sco-u> ;
+                                  owl:imports <http://gioUbbiali.github.io/sco/sco-u/2025-02-17/cover.imports.owl> ,
+                                              <http://purl.org/nemo/gufo#/1.0.0> ;
+                                  terms:creator "Giorgio A. Ubbiali" ;
+                                  terms:description """SCO V1.1.0 aligns with two Top-Level Ontologies (TLOs), Basic Formal Ontology (BFO) and Unified Foundational Ontology (UFO). SCO V1.1.0 is comprised of two segments: SCO-B (B for BFO) and SCO-U (U for UFO). SCO-B aligns the SCO vocabulary with BFO (as SCO V1.0.0). SCO-U aligns the SCO vocabulary with gUFO (UFO implementation in the Web Ontology Language (OWL)). This file provides SCO-U segment.
 
 References – TLOs:  
 https://github.com/BFO-ontology/BFO-2020 
 https://ontouml.readthedocs.io/en/latest/intro/ufo.html 
 https://nemo-ufes.github.io/gufo/"""@en ,
-                                               """SCO is a middle-level ontology, representing the major theoretical challenges to sustainability:
+                                                    """SCO is a middle-level ontology, representing the major theoretical challenges to sustainability:
 1) The polysemy of the term sustainability.
 2) The relationship between sustainability and sustainable development.
 3) The complexity underlying sustainability.
 SCO aims to play a pivotal role in harmonizing and integrating top-level and domain ontologies regarding sustainability."""@en ;
-                             terms:license "https://creativecommons.org/licenses/by/4.0/" ;
-                             terms:title "L'ontologia fondazionale della sostenibilità"@it ,
-                                         "L'ontologie fondationnelle de la durabilité"@fr ,
-                                         "Sustainability Core Ontology (SCO)"@en ;
-                             rdfs:comment """Currently, running the GUFO rules’ validator suggests that the following classes need to be either “specialized by a sortal or specialize another non-sortal which is in its turn specialized by a sortal”. 
+                                  terms:license "https://creativecommons.org/licenses/by/4.0/" ;
+                                  terms:title "L'ontologia fondazionale della sostenibilità"@it ,
+                                              "L'ontologie fondationnelle de la durabilité"@fr ,
+                                              "Sustainability Core Ontology (SCO)"@en ;
+                                  rdfs:comment """Currently, running the GUFO rules’ validator suggests that the following classes need to be either “specialized by a sortal or specialize another non-sortal which is in its turn specialized by a sortal”. 
 
 https://www.w3id.org/sco/sco-u#SCO_0000013
 https://www.w3id.org/sco/sco-u#SCO_0000014 
@@ -47,17 +48,17 @@ https://www.w3id.org/sco/sco-u#SCO_0000036
 In fact, these classes are non-sortal and are not specialized by any class of a specific kind. We do not regard this as problematic because SCO aims to provide a general high-level layer of representation to extend within more domain-focused ontologies. SCO-extending ontologies can specialize these classes with subclasses of specific kinds thereby easily addressing and resolving this concern.
 
 “Complex system property” and “information content entity” classes specialize “aspect” class appositely. The first aims to be a grouping for different system properties. The second requires further discussion as UFO does not address presentations of information (see comment to the class)."""@en ;
-                             rdfs:seeAlso "Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr" ;
-                             owl:priorVersion """SCO V1.0.1. constitutes the prior version of this resources.
+                                  rdfs:seeAlso "Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr" ;
+                                  owl:priorVersion """SCO V1.0.1. constitutes the prior version of this resources.
 SCO V1.0.1. is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1"""@en ;
-                             owl:versionInfo "2025-03-18"@en ,
-                                             "Version 1.1.0. ; segment U."@en ;
-                             skos:note "Currently, this resource includes labels and definitions in the following three natural languages: English, Italian, and French. In the next version of this resource, the creator intends to also encompass Italian and French translations of the remaining pieces of information as well as to cover other natural languages."@en ,
-                                       """Repository: https://github.com/gioUbbiali/Sustainability-Core-Ontology 
+                                  owl:versionInfo "Version 1.1.0. ; segment U."@en ,
+                                                  "2025-03-20" ;
+                                  skos:note "Currently, this resource includes labels and definitions in the following three natural languages: English, Italian, and French. In the next version of this resource, the creator intends to also encompass Italian and French translations of the remaining pieces of information as well as to cover other natural languages."@en ,
+                                            """Repository: https://github.com/gioUbbiali/Sustainability-Core-Ontology 
 Documentation webpage: https://gioubbiali.github.io/Sustainability-Core-Ontology/"""@en ,
-                                       "The current version of SCO does not cover classes and object properties accounting for systems granularity, scales, and levels. A deeper representation of system change and behaviors is equally required. These themes will be topics of inclusion in the next version of this resource."@en ,
-                                       "The current version of this resource does not include semi-formal natural language definitions or First Order Logics definitions. In the next version of this resource, the creator intends to also include them."@en ,
-                                       "The most recent version of this file is available on GitHub at the following link: https://www.w3id.org/sco"@en .
+                                            "The current version of SCO does not cover classes and object properties accounting for systems granularity, scales, and levels. A deeper representation of system change and behaviors is equally required. These themes will be topics of inclusion in the next version of this resource."@en ,
+                                            "The current version of this resource does not include semi-formal natural language definitions or First Order Logics definitions. In the next version of this resource, the creator intends to also include them."@en ,
+                                            "The most recent version of this file is available on GitHub at the following link: https://www.w3id.org/sco"@en .
 
 #################################################################
 #    Annotation properties
@@ -267,7 +268,7 @@ terms:source rdf:type owl:AnnotationProperty ;
              rdfs:isDefinedBy terms:source ;
              rdfs:label "source"@en-us ;
              skos:definition "related resource from which the described resource is derived"@en-us ;
-             <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote> """The intent is to provide a user with a reference as to how the thing being annotated was derived or arrived at. 
+             AnnotationVocabulary:explanatoryNote """The intent is to provide a user with a reference as to how the thing being annotated was derived or arrived at. 
  - The source can be a URL to a standard, common dictionary (e.g. Oxford), or similar reference. Or it can be a short description of where the entity being annotated was derived from.
  - The 'Source' annotation would most likely be used as an annotation on an annotation. For instance annotating a Natural Language definition annotation."""@en-us .
 
@@ -373,96 +374,96 @@ skos:note rdf:type owl:AnnotationProperty .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> rdf:type owl:AnnotationProperty ;
-                                                                                            rdfs:isDefinedBy <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/> ;
-                                                                                            rdfs:label "adapted from"@en-us ;
-                                                                                            skos:definition "source for the resource that was modified to create the subject resource"@en-us ;
-                                                                                            rdfs:subPropertyOf terms:source .
+AnnotationVocabulary:adaptedFrom rdf:type owl:AnnotationProperty ;
+                                 rdfs:isDefinedBy AnnotationVocabulary: ;
+                                 rdfs:label "adapted from"@en-us ;
+                                 skos:definition "source for the resource that was modified to create the subject resource"@en-us ;
+                                 rdfs:subPropertyOf terms:source .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/directSource
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/directSource> rdf:type owl:AnnotationProperty ;
-                                                                                             rdfs:isDefinedBy <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/> ;
-                                                                                             rdfs:label "direct source"@en-us ;
-                                                                                             skos:definition "definitive source of the subject resource"@en-us ;
-                                                                                             rdfs:subPropertyOf terms:source .
+AnnotationVocabulary:directSource rdf:type owl:AnnotationProperty ;
+                                  rdfs:isDefinedBy AnnotationVocabulary: ;
+                                  rdfs:label "direct source"@en-us ;
+                                  skos:definition "definitive source of the subject resource"@en-us ;
+                                  rdfs:subPropertyOf terms:source .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/excerptedFrom
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/excerptedFrom> rdf:type owl:AnnotationProperty ;
-                                                                                              rdfs:isDefinedBy <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/> ;
-                                                                                              rdfs:label "excerpted from"@en-us ;
-                                                                                              skos:definition "source of a resource that was imported unmodified from an external ontology" ;
-                                                                                              <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote> "This annotation is to be used when an element from a non-IOF ontology is used in an IOF ontology (and the source ontology is not imported in its entirety)."@en-us ;
-                                                                                              rdfs:subPropertyOf terms:source .
+AnnotationVocabulary:excerptedFrom rdf:type owl:AnnotationProperty ;
+                                   rdfs:isDefinedBy AnnotationVocabulary: ;
+                                   rdfs:label "excerpted from"@en-us ;
+                                   skos:definition "source of a resource that was imported unmodified from an external ontology" ;
+                                   AnnotationVocabulary:usageNote "This annotation is to be used when an element from a non-IOF ontology is used in an IOF ontology (and the source ontology is not imported in its entirety)."@en-us ;
+                                   rdfs:subPropertyOf terms:source .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote> rdf:type owl:AnnotationProperty ;
-                                                                                                rdfs:label "explanatory note"@en-us ;
-                                                                                                skos:definition "note that provides additional explanatory information about a given notion or resource"@en-us ;
-                                                                                                rdfs:subPropertyOf skos:note .
+AnnotationVocabulary:explanatoryNote rdf:type owl:AnnotationProperty ;
+                                     rdfs:label "explanatory note"@en-us ;
+                                     skos:definition "note that provides additional explanatory information about a given notion or resource"@en-us ;
+                                     rdfs:subPropertyOf skos:note .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom> rdf:type owl:AnnotationProperty ;
-                                                                                                     rdfs:label "first-order logic axiom"@en-us ;
-                                                                                                     skos:definition "logic axiom annotation written in first order logic"@en-us ;
-                                                                                                     <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote> "First-order logic axioms MAY be provided if the term is primitive ('is primitive' is true ) or non-primitive. A construct MAY include more than one first-order logic axiom annotation."@en-us ;
-                                                                                                     rdfs:subPropertyOf <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom> .
+AnnotationVocabulary:firstOrderLogicAxiom rdf:type owl:AnnotationProperty ;
+                                          rdfs:label "first-order logic axiom"@en-us ;
+                                          skos:definition "logic axiom annotation written in first order logic"@en-us ;
+                                          AnnotationVocabulary:usageNote "First-order logic axioms MAY be provided if the term is primitive ('is primitive' is true ) or non-primitive. A construct MAY include more than one first-order logic axiom annotation."@en-us ;
+                                          rdfs:subPropertyOf AnnotationVocabulary:logicAxiom .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition> rdf:type owl:AnnotationProperty ;
-                                                                                                          rdfs:label "first order logic definition"@en-us ;
-                                                                                                          skos:definition "logic definition that expresses the axioms of a class or an object property in first order logic" ;
-                                                                                                          skos:example """An example of a First Order Logic definition for 'Product' might be (again bearing in mind the natural language terms appearing should be regarded as symbols in the IOF signature):
+AnnotationVocabulary:firstOrderLogicDefinition rdf:type owl:AnnotationProperty ;
+                                               rdfs:label "first order logic definition"@en-us ;
+                                               skos:definition "logic definition that expresses the axioms of a class or an object property in first order logic" ;
+                                               skos:example """An example of a First Order Logic definition for 'Product' might be (again bearing in mind the natural language terms appearing should be regarded as symbols in the IOF signature):
  - Continuant(x) ∧ ¬(SpecificallyDependentContinuant(x) ∨ Person(x) ∨ Organization(x)) ∧ ∃r (ProductRole(r) ∧ hasRole(x, r))"""@en-us ;
-                                                                                                          <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote> """The First Order Logic Definition annotation is comprised of the (complete) necessary and sufficient conditions.
+                                               AnnotationVocabulary:usageNote """The First Order Logic Definition annotation is comprised of the (complete) necessary and sufficient conditions.
  - This annotation is Required for each non-primitive (aka non-axiomatic) class (i.e. unary relation) of a published IOF OWL ontology. This is the most authoritative and comprehensive definition of an IOF element. 
  - IOF Common Logic ontologies do not require this annotation, but if included it must be logically equivalent to the Common Logic definition.
  - A primitive (aka axiomatic) term will not have a First Order Logic definition in either an OWL or Common Logic IOF ontology.
  - There should be at most one First Order Logic definition.
  - The specific symbols to be used for existential and universal quantification along with those for conjunction, disjunction, negation, conditional (i.e. if-then), and equivalence will be those commonly used in the mathematical formulas and statement.
  - Conjunction - ∧; Disjunction - ∨; Negation - ¬; Existential Quantification - ∃; Universal Quantification - ∀; Conditional - →; Equivalence - ↔; Left/Right Parentheses - (,); Left/Right Brackets - {,}."""@en-us ;
-                                                                                                          rdfs:subPropertyOf <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition> .
+                                               rdfs:subPropertyOf AnnotationVocabulary:logicDefinition .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/isPrimitive
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/isPrimitive> rdf:type owl:AnnotationProperty ;
-                                                                                            rdfs:label "is primitive"@en-us ;
-                                                                                            skos:definition "boolean flag indicating that necessary and sufficient conditions are not provided"@en-us ;
-                                                                                            <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote> "'is primitive' must be present if the term does not have necessary and sufficient conditions and the value of the annotation must be set to true. When 'is primitive' is set to true, a value for a 'primitive rationale' annotation must also be provided."@en-us .
+AnnotationVocabulary:isPrimitive rdf:type owl:AnnotationProperty ;
+                                 rdfs:label "is primitive"@en-us ;
+                                 skos:definition "boolean flag indicating that necessary and sufficient conditions are not provided"@en-us ;
+                                 AnnotationVocabulary:usageNote "'is primitive' must be present if the term does not have necessary and sufficient conditions and the value of the annotation must be set to true. When 'is primitive' is set to true, a value for a 'primitive rationale' annotation must also be provided."@en-us .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom> rdf:type owl:AnnotationProperty ;
-                                                                                           rdfs:label "logic axiom"@en-us ;
-                                                                                           skos:definition "logical statements constraining the interpretation of the notion represented by the construct that do not provide necessary and sufficient conditions"@en-us ;
-                                                                                           <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote> "This annotation property is an abstraction of the more specialized logic axiom annotations used in IOF. However, this annotation property can also be used to group together the logic axiom annotation values of different forms (such as FOL and natural language) that express the same meaning for a particular construct."@en-us ;
-                                                                                           <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote> "A first order logic axiom expression and a semi-formal natural language axiom expression should be added as Property values for each logic axiom annotation using 1 of each of the corresponding logic axiom annotation subproperties."@en-us ;
-                                                                                           rdfs:subPropertyOf skos:note .
+AnnotationVocabulary:logicAxiom rdf:type owl:AnnotationProperty ;
+                                rdfs:label "logic axiom"@en-us ;
+                                skos:definition "logical statements constraining the interpretation of the notion represented by the construct that do not provide necessary and sufficient conditions"@en-us ;
+                                AnnotationVocabulary:explanatoryNote "This annotation property is an abstraction of the more specialized logic axiom annotations used in IOF. However, this annotation property can also be used to group together the logic axiom annotation values of different forms (such as FOL and natural language) that express the same meaning for a particular construct."@en-us ;
+                                AnnotationVocabulary:usageNote "A first order logic axiom expression and a semi-formal natural language axiom expression should be added as Property values for each logic axiom annotation using 1 of each of the corresponding logic axiom annotation subproperties."@en-us ;
+                                rdfs:subPropertyOf skos:note .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition> rdf:type owl:AnnotationProperty ;
-                                                                                                rdfs:label "logic definition"@en-us ;
-                                                                                                skos:definition "definition in the form of a logical expression"@en-us ;
-                                                                                                rdfs:subPropertyOf skos:definition .
+AnnotationVocabulary:logicDefinition rdf:type owl:AnnotationProperty ;
+                                     rdfs:label "logic definition"@en-us ;
+                                     skos:definition "definition in the form of a logical expression"@en-us ;
+                                     rdfs:subPropertyOf skos:definition .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> rdf:type owl:AnnotationProperty ;
-                                                                                         rdfs:label "maturity"@en-us ;
-                                                                                         skos:definition "annotation property used to indicate the development status of a resource"@en-us ;
-                                                                                         <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote> "Any value for maturity MUST be an instance of MaturityLevel. All IOF ontologies MUST include exactly one maturity annotation. IOF constructs may include a maturity annotation."@en-us .
+AnnotationVocabulary:maturity rdf:type owl:AnnotationProperty ;
+                              rdfs:label "maturity"@en-us ;
+                              skos:definition "annotation property used to indicate the development status of a resource"@en-us ;
+                              AnnotationVocabulary:usageNote "Any value for maturity MUST be an instance of MaturityLevel. All IOF ontologies MUST include exactly one maturity annotation. IOF constructs may include a maturity annotation."@en-us .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition> rdf:type owl:AnnotationProperty ;
-                                                                                                          rdfs:label "natural language definition"@en-us ;
-                                                                                                          skos:definition "definition written in plain text for human understanding"@en-us ;
-                                                                                                          <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote> """This annotation is Required for each non-primitive or non-axiomatic class of an IOF (OWL or Common Logic) ontology. 
+AnnotationVocabulary:naturalLanguageDefinition rdf:type owl:AnnotationProperty ;
+                                               rdfs:label "natural language definition"@en-us ;
+                                               skos:definition "definition written in plain text for human understanding"@en-us ;
+                                               AnnotationVocabulary:usageNote """This annotation is Required for each non-primitive or non-axiomatic class of an IOF (OWL or Common Logic) ontology. 
  - It is optional for primitive (aka axiomatic) classes since such the Elucidation annotation is required and will satisfy the role of a natural language definition.
  - It is optional, but recommended, for relations when the intent of a relation may be misunderstood.
  - There should be at most one.
@@ -470,51 +471,51 @@ skos:note rdf:type owl:AnnotationProperty .
  - Natural language definitions should use class and relation names with following caveats:
  a) Relations – For those relations whose label (i.e. local identifier) consist of multiple terms hyphenate the terms of the label: e.g. 'hasPlan' would be written as 'has-plan'
  b) Classes – For classes whose label has multiple distinct terms, e.g, ManufacturingOperationSpecification, separate the terms but bound them with apostrophe marks: 'Manufacturing Operation Specification'."""@en-us ;
-                                                                                                          rdfs:subPropertyOf skos:definition .
+                                               rdfs:subPropertyOf skos:definition .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale> rdf:type owl:AnnotationProperty ;
-                                                                                                   rdfs:label "primitive rationale"@en-us ;
-                                                                                                   skos:definition "reason why necessary and sufficient conditions could not be provided"@en-us ;
-                                                                                                   <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote> "When 'is primitive' is set to true, a value for 'primitive rationale' must be provided. The rationale should indicate what is missing if additional work is required to define necessary and sufficient conditions."@en-us ;
-                                                                                                   rdfs:subPropertyOf skos:note .
+AnnotationVocabulary:primitiveRationale rdf:type owl:AnnotationProperty ;
+                                        rdfs:label "primitive rationale"@en-us ;
+                                        skos:definition "reason why necessary and sufficient conditions could not be provided"@en-us ;
+                                        AnnotationVocabulary:usageNote "When 'is primitive' is set to true, a value for 'primitive rationale' must be provided. The rationale should indicate what is missing if additional work is required to define necessary and sufficient conditions."@en-us ;
+                                        rdfs:subPropertyOf skos:note .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom> rdf:type owl:AnnotationProperty ;
-                                                                                                               rdfs:label "semi-formal natural language axiom"@en-us ;
-                                                                                                               skos:definition "logic axiom expressed in natural language"@en-us ;
-                                                                                                               <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote> "Semi-formal natural language axioms MAY be provided if the term is primitive (is primitive is true). A construct MAY include more than one semi-formal natural language axiom annotation."@en-us ;
-                                                                                                               rdfs:subPropertyOf <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom> .
+AnnotationVocabulary:semiFormalNaturalLanguageAxiom rdf:type owl:AnnotationProperty ;
+                                                    rdfs:label "semi-formal natural language axiom"@en-us ;
+                                                    skos:definition "logic axiom expressed in natural language"@en-us ;
+                                                    AnnotationVocabulary:usageNote "Semi-formal natural language axioms MAY be provided if the term is primitive (is primitive is true). A construct MAY include more than one semi-formal natural language axiom annotation."@en-us ;
+                                                    rdfs:subPropertyOf AnnotationVocabulary:logicAxiom .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageDefinition
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageDefinition> rdf:type owl:AnnotationProperty ;
-                                                                                                                    rdfs:label "semi-formal natural language definition"@en-us ;
-                                                                                                                    skos:definition "logic definition that expresses a first order logic definition or common logic definition in natural language" ;
-                                                                                                                    <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote> """This annotation is required if an element in an IOF OWL ontology has a First Order Logic definition or in a IOF Common Logic (where the element is defined using Common Logic).
+AnnotationVocabulary:semiFormalNaturalLanguageDefinition rdf:type owl:AnnotationProperty ;
+                                                         rdfs:label "semi-formal natural language definition"@en-us ;
+                                                         skos:definition "logic definition that expresses a first order logic definition or common logic definition in natural language" ;
+                                                         AnnotationVocabulary:usageNote """This annotation is required if an element in an IOF OWL ontology has a First Order Logic definition or in a IOF Common Logic (where the element is defined using Common Logic).
  - The intent of this annotation to provide a transition or bridge from the First Order Logic definition of a notion to the natural language definition. This definition is intended to help a user understand the intended interpretation of the notion.
  - As example using the First Order Logic definition of 'Product' above, a semi-formal translation of that might be: 
  - Product =def. Continuant that is not a Person and not an Organization and not a Specifically Dependent Continuant and there is a Product Role that the thing has or bears."""@en-us ;
-                                                                                                                    rdfs:subPropertyOf <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition> .
+                                                         rdfs:subPropertyOf AnnotationVocabulary:logicDefinition .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/subjectMatterExpertExplanation
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/subjectMatterExpertExplanation> rdf:type owl:AnnotationProperty ;
-                                                                                                               rdfs:label "subject matter expert explanation" ;
-                                                                                                               skos:definition "definition of the term expressed in natural language that has the minimal usage of ontological terms and is intended to be a self-standing explanation" ;
-                                                                                                               <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote> """Usage of this annotation is optional but is recommended in cases where:
+AnnotationVocabulary:subjectMatterExpertExplanation rdf:type owl:AnnotationProperty ;
+                                                    rdfs:label "subject matter expert explanation" ;
+                                                    skos:definition "definition of the term expressed in natural language that has the minimal usage of ontological terms and is intended to be a self-standing explanation" ;
+                                                    AnnotationVocabulary:usageNote """Usage of this annotation is optional but is recommended in cases where:
 - the natural language definition or elucidation rely heavily on the terms defined in the ontology
 - there exists an explanation of the term that is more familiar to SMEs that does not coincide with the definition present in the ontology""" ;
-                                                                                                               rdfs:subPropertyOf skos:definition .
+                                                    rdfs:subPropertyOf skos:definition .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote> rdf:type owl:AnnotationProperty ;
-                                                                                          rdfs:label "usage note"@en-us ;
-                                                                                          skos:definition "note that provides information about how a given notion or resource is used in the ontology's context"@en-us ;
-                                                                                          rdfs:subPropertyOf skos:note .
+AnnotationVocabulary:usageNote rdf:type owl:AnnotationProperty ;
+                               rdfs:label "usage note"@en-us ;
+                               skos:definition "note that provides information about how a given notion or resource is used in the ontology's context"@en-us ;
+                               rdfs:subPropertyOf skos:note .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000039
@@ -565,7 +566,7 @@ http://purl.obolibrary.org/obo/BFO_0000211"""@en ;
                              "occupe la région d’ espace à chaque temps"@fr ,
                              "occupies spatial region"@en ;
                   rdfs:seeAlso "http://purl.obolibrary.org/obo/BFO_0000211" ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000038
@@ -611,7 +612,7 @@ Weigand, H. (2025). Generic Ontological Dependence⋆. https://www.utwente.nl/en
                              "is about"@en ,
                              "riguarda"@it ;
                   rdfs:seeAlso "http://www.ontologyrepository.com/CommonCoreOntologies/is_about" ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 _:genid7 rdf:type owl:Class ;
           owl:unionOf ( <http://purl.org/nemo/gufo#Individual>
@@ -637,7 +638,7 @@ See the corresponding CCO object property for a definition and further details. 
                   rdfs:label "rappresenta"@it ,
                              "represents"@en ,
                              "représente"@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000054
@@ -656,7 +657,7 @@ Arp, R., Smith, B., & Spear, A. D. 2015. Building Ontologies with Basic Formal O
                              "concretizza"@it ,
                              "concrétise"@fr ;
                   rdfs:seeAlso "http://purl.obolibrary.org/obo/BFO_0000059" ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 _:genid11 rdf:type owl:Class ;
            owl:unionOf ( <http://purl.org/nemo/gufo#Event>
@@ -696,7 +697,7 @@ http://purl.obolibrary.org/obo/BFO_0000185"""@en ;
                              "ha una storia"@it ,
                              "has history"@en ;
                   rdfs:seeAlso "http://purl.obolibrary.org/obo/BFO_0000185" ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000056
@@ -718,7 +719,7 @@ Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainabili
                   rdfs:seeAlso """http://purl.obolibrary.org/obo/BFO_0000176 
 http://purl.obolibrary.org/obo/BFO_0000132
 http://purl.obolibrary.org/obo/BFO_0000050""" ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000057
@@ -742,7 +743,7 @@ Elle identifie un ensemble (endurant) c dont l’endurant b est une partie."""@f
                                   """b is endurant part of c = Def. for all times t, (b exists at t, implies b is endurant part of c at t & b and c are endurants).
 
 It identifies a whole (endurant) c of which the endurant b is a part."""@en ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource sco-u:SCO_0000057 ;
@@ -750,7 +751,7 @@ It identifies a whole (endurant) c of which the endurant b is a part."""@en ;
    owl:annotatedTarget """B est une partie endurante de c = Def. a chaque instant t (b existe à t, implique b est une partie endurante de c & b et c sont des endurants).
 
 Elle identifie un ensemble (endurant) c dont l’endurant b est une partie."""@fr ;
-   <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional>
+   AnnotationVocabulary:maturity AnnotationVocabulary:Provisional
  ] .
 
 [ rdf:type owl:Axiom ;
@@ -759,7 +760,7 @@ Elle identifie un ensemble (endurant) c dont l’endurant b est une partie."""@f
    owl:annotatedTarget """b is endurant part of c = Def. for all times t, (b exists at t, implies b is endurant part of c at t & b and c are endurants).
 
 It identifies a whole (endurant) c of which the endurant b is a part."""@en ;
-   <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional>
+   AnnotationVocabulary:maturity AnnotationVocabulary:Provisional
  ] .
 
 
@@ -775,7 +776,7 @@ See the corresponding RO object property for a definition and further details.  
                              "spatially disjoint from"@en ,
                              "spazialmente distinta da"@it ;
                   rdfs:seeAlso "http://purl.obolibrary.org/obo/RO_0002163" ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 #################################################################
@@ -899,9 +900,9 @@ CommonCoreOntologies:RepresentationalInformationContentEntity rdf:type owl:Class
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel> rdf:type owl:Class ;
-                                                                                              rdfs:label "maturity level"@en-us ;
-                                                                                              skos:definition "classifier used to specify the state of a resource in its development process"@en-us .
+AnnotationVocabulary:MaturityLevel rdf:type owl:Class ;
+                                   rdfs:label "maturity level"@en-us ;
+                                   skos:definition "classifier used to specify the state of a resource in its development process"@en-us .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000001
@@ -2191,7 +2192,7 @@ sco-u:SCO_0000058 rdf:type owl:Class ;
                   skos:definition "A situation of agency in which a system component is causally active in an interaction among system components or between system components and system environment components."@en ,
                                   "Una situazione di agenza in cui una componente di sistema è causalmente attiva in un' interazione tra le componenti di sistema o tra componenti di sistema e le componenti dell’ambiente del sistema."@it ,
                                   "Une situation d'agence dans laquelle une composante de système est causalement active en une interaction entre les composantes de système ou entre les composantes de système et les composantes de l’environnement de système."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000059
@@ -2398,25 +2399,25 @@ CommonCoreOntologies:RepresentationalInformationContentEntity rdf:type owl:Named
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> rdf:type owl:NamedIndividual ,
-                                                                                                     <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel> ;
-                                                                                            rdfs:label "provisional"@en-us ;
-                                                                                            skos:definition "construct or ontology development state in which content is subject to change and may change considerably"@en-us ;
-                                                                                            <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote> "IOF users should be aware that the resource is not dependable, but can be used for reference and for further work."@en-us .
+AnnotationVocabulary:Provisional rdf:type owl:NamedIndividual ,
+                                          AnnotationVocabulary:MaturityLevel ;
+                                 rdfs:label "provisional"@en-us ;
+                                 skos:definition "construct or ontology development state in which content is subject to change and may change considerably"@en-us ;
+                                 AnnotationVocabulary:explanatoryNote "IOF users should be aware that the resource is not dependable, but can be used for reference and for further work."@en-us .
 
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released
-<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> rdf:type owl:NamedIndividual ,
-                                                                                                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel> ;
-                                                                                         rdfs:label "released"@en-us ;
-                                                                                         skos:definition "construct or ontology development state in which the resource is stable, usable, and has been made available to external users"@en-us ;
-                                                                                         <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote> "Release notes will be provided for any changes concerning released content, and any revisions will be backward compatible with the prior version to the degree possible."@en-us .
+AnnotationVocabulary:Released rdf:type owl:NamedIndividual ,
+                                       AnnotationVocabulary:MaturityLevel ;
+                              rdfs:label "released"@en-us ;
+                              skos:definition "construct or ontology development state in which the resource is stable, usable, and has been made available to external users"@en-us ;
+                              AnnotationVocabulary:explanatoryNote "Release notes will be provided for any changes concerning released content, and any revisions will be backward compatible with the prior version to the degree possible."@en-us .
 
 
 ###  https://www.w3id.org/sco/situation_of_system_component_agency
-:situation_of_system_component_agency rdf:type owl:NamedIndividual ,
-                                               <http://purl.org/nemo/gufo#SituationType> ;
-                                      rdfs:label "situation of system component agency"@en .
+<https://www.w3id.org/sco/situation_of_system_component_agency> rdf:type owl:NamedIndividual ,
+                                                                         <http://purl.org/nemo/gufo#SituationType> ;
+                                                                rdfs:label "situation of system component agency"@en .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000001
@@ -7631,7 +7632,7 @@ http://purl.obolibrary.org/obo/INO_0000016""" ;
                   skos:definition "An event that has at least two objects (no system spatial regions) as participants that have an effect upon one another."@en ,
                                   "Un evento che ha almeno due oggetti (no regioni spaziali di sistema) come partecipanti, aventi un effetto l’una sull’altra."@it ,
                                   "Un événement qui a au moins deux objets (pas de régions spatiales de système) comme participants, ayant un effet l’une sur l’autre."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/INO_0000002" .
+                  AnnotationVocabulary:adaptedFrom "http://purl.obolibrary.org/obo/INO_0000002" .
 
 
 sco-u:SCO_0000002 rdfs:comment """Currently, we classify the development of systems as a gUFO event. Nevertheless, a more adequate representation may identify system developments as processes constituted by events. See Guarino & Guizzardi (2024) for insights and a deep analysis. We envision discussions with subject matter experts to deepen this representation. 
@@ -7651,8 +7652,8 @@ Related axioms must be revised accordingly.""" ;
                   skos:definition "A process whose specific outcome is the progression of a system over time from an initial condition to a later condition."@en ,
                                   "Un processo il cui specifico risultato è la progressione di un sistema nel tempo da una condizione iniziale a una condizione successiva."@it ,
                                   "Un processus dont le résultat spécifique est la progression d’un système dans le temps, depuis une condition initiale à une condition suivante."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/GO_0032502" ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:adaptedFrom "http://purl.obolibrary.org/obo/GO_0032502" ;
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000003 oboInOwl:hasRelatedSynonym "indicator information" ;
@@ -7666,7 +7667,7 @@ http://purl.unep.org/sdg/SDGIO_00000003""" ;
                   skos:definition "A representational information content entity that stands in a situation of generical dependence of indicator value on some indicator and is about, providing insights into, the complex system to which the indicator belongs."@en ,
                                   "Un contenu représentatif d’information qui se tient dans une situation de dépendance générique de la valeur de l'indicateur d’un indicateur et qui concerne, fournissant des indications/renseignements, sur le système complexe auquel l’indicateur appartient."@fr ,
                                   "Un contenuto informativo rappresentativo che sta in una situazione di dipendenza generica del valore dell'indicatore da un indicatore e riguarda, fornisce informazioni sul, sistema complesso a cui l'indicatore appartiene."@it ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000004 rdfs:label "contenu informatif de la perspective"@fr ,
@@ -7675,7 +7676,7 @@ sco-u:SCO_0000004 rdfs:label "contenu informatif de la perspective"@fr ,
                   skos:definition "An information content entity that stands in a situation of generical dependence of perspective information on some complex system component or complex system environment component and is about the perspective (that concretizes it) of that complex system component or complex system environment component."@en ,
                                   "Un contenu d’information qui se tient dans une situation de dépendance générique du contenu informatif de la perspective d’une composante de système complexe ou d’une composant d’environnement de système complexe et qui concerne la perspective (qui le concrétise) de cette composante de système complexe ou de cette composante environnement de système complexe."@fr ,
                                   "Un contenuto informativo che che sta in una situazione di dipendenza generica del contenuto informativo della prospettiva da una componente del sistema complesso o da una componente dell'ambiente del sistema complesso e riguarda la prospettiva (che lo concretizza) di tale componente del sistema complesso o dell’ambiente del sistema complesso."@it ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000005 rdfs:label "contenu informatif de la valeur"@fr ,
@@ -7684,7 +7685,7 @@ sco-u:SCO_0000005 rdfs:label "contenu informatif de la valeur"@fr ,
                   skos:definition "An information content entity that stands in a situation of generical dependence of worth information on a complex system or a complex system environment (or some part(s) of them) and is about the worth (that concretizes it) that some complex system component or complex system environment component recognizes that that complex system or complex system environment (or some part(s) of them) bearer."@en ,
                                   "Un contenu d’information qui se tient dans une situation de dépendance générique du contenu informatif de la valeur d’un système complexe ou de l’environnement de système complexe (ou une ou plus parties de ceux-ci) et qui concerne la valeur (qui le concrétise) qu’une composante de système complexe ou de son environnement reconnaît d’avoir à ce système complexe-là ou à ce-t-environnement de système complexe-là (ou une ou plus parties de celux-ci)."@fr ,
                                   "Un contenuto informativo che sta in una situazione di dipendenza generica del contenuto informativo del valore dal sistema complesso o dall'ambiente del sistema complesso (o una o più parti di essi) e riguarda il valore (che lo concretizza) che una componente del sistema complesso del suo ambiente riconosce di avere a quel sistema complesso o ambiente del sistema complesso (o una o più parti di essi)."@it ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000006 oboInOwl:hasExactSynonym "system context" ;
@@ -7700,7 +7701,7 @@ Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainabili
                   skos:definition "An object that surrounds and is distinct and disjoint from a system."@en ,
                                   "Un objet qui entourne et qui est distincte et disjointe d’un système."@fr ,
                                   "Un oggetto che circonda ed è distinta e disgiunta da un sistema."@it ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource sco-u:SCO_0000006 ;
@@ -7721,7 +7722,7 @@ sco-u:SCO_0000007 oboInOwl:hasRelatedSynonym "relation among system components, 
                   skos:definition "An interaction that occurs among at least two system components."@en ,
                                   "Une interaction qui se produit entre au moins deux composantes de système."@fr ,
                                   "Un’interazione che avviene tra almeno due componenti del sistema."@it ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000008 oboInOwl:hasRelatedSynonym "relation among system environment components, interconnection among system environment components"@en ;
@@ -7731,7 +7732,7 @@ sco-u:SCO_0000008 oboInOwl:hasRelatedSynonym "relation among system environment 
                   skos:definition "An interaction that occurs among at least two system environment components."@en ,
                                   "Une interaction qui se produit entre au moins deux composantes de l’environnement d’un système."@fr ,
                                   "Un’interazione che avviene tra almeno due componenti dell’ambiente di un sistema."@it ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000009 oboInOwl:hasRelatedSynonym "relation between system components and the system environment, interconnection between system components and the system environment" ;
@@ -7741,7 +7742,7 @@ sco-u:SCO_0000009 oboInOwl:hasRelatedSynonym "relation between system components
                   skos:definition "An interaction that occurs between at least one system component and one system environment component where the latter belongs to the system environment of the system to which the system component belongs."@en ,
                                   "Une interaction qui se produit entre au moins une composante d’un système et au moins une composante de l’environnement du système auquel la composante de système appartient."@fr ,
                                   "Un’interazione che avviene tra almeno una componente di un sistema e almeno un componente dell’ ambiente del sistema a cui la componente del sistema appartiene."@it ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000010 rdfs:label "complex system development"@en ,
@@ -7750,7 +7751,7 @@ sco-u:SCO_0000010 rdfs:label "complex system development"@en ,
                   skos:definition "Le développement d’un système complexe."@fr ,
                                   "Lo sviluppo di un sistema complesso."@it ,
                                   "The system development of a complex system."@en ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000011 rdfs:comment "As UFO does not address history, SCO-U adapts BFO representation regarding systems. See corresponding definitions and axioms that include references to them. We envision discussions with subject matter experts to deepen this representation towards a UFO compliant representation of hisotry."@en ,
@@ -7770,7 +7771,7 @@ We envision discussions with subject matter experts to identify adequate strateg
                   skos:definition "An event that is the sum of the totality of events taking place in the perdurant part of spacetime occupied by a system."@en ,
                                   "Un event oche è la somma degli eventi che avvengono nella parte perdurante di spazio-tempo occupata da un sistema."@it ,
                                   "Un événement qui est la somme des événements ayant lieu dans la partie perdurante de l’espace-temps occupée par un système."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000012 oboInOwl:hasExactSynonym "complex system context" ;
@@ -7780,7 +7781,7 @@ sco-u:SCO_0000012 oboInOwl:hasExactSynonym "complex system context" ;
                   skos:definition "A system environment that surrounds and is distinct and disjoint from a complex system."@en ,
                                   "Un ambiente del sistema che circonda ed è distinto e disgiunto da un sistema complesso."@it ,
                                   "Un environnement de système qui entourne et qui est distinct et disjoint d’un système complexe."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000013 oboInOwl:hasExactSynonym "system element" ;
@@ -7803,7 +7804,7 @@ Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainabili
                   skos:definition "An object that belongs to a system."@en ,
                                   "Un objet qui appartient à un système."@fr ,
                                   "Un oggetto che appartiene a un sistema."@it ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource sco-u:SCO_0000013 ;
@@ -7830,7 +7831,7 @@ Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainabili
                   skos:definition "An object that belongs to a system environment."@en ,
                                   "Un objet qui appartient à l’environnement d’un système."@fr ,
                                   "Un oggetto che appartiene all’ambiente di un sistema."@it ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource sco-u:SCO_0000014 ;
@@ -7856,7 +7857,7 @@ I2SV: https://i2insights.org/index/integration-and-implementation-sciences-vocab
                   skos:definition "A system whose system components interact dynamically and nonlinearly, causing the emergence of a collective nontrivial and self-organized behavior. No internal/external centralized controls are required."@en ,
                                   "Un sistema le cui componenti interagiscono dinamicamente e non linearmente, causando l’emergere di un comportamento collettivo, non banale e auto-organizzato. Non è richiesto nessun controllo centralizzato, né interno né esterno."@it ,
                                   "Un système dont les composantes interagissent dynamiquement et non linéairement, causant l’émergence d’un comportement collectif, non trivial et auto-organisé. Aucun contrôle interne ou externe centralisé n’est requis."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000016 rdfs:comment "SCO currently accounts for perspectives of complex system components and complex system environment components because the focus of this ontology is on complex systems. Future versions of this ontology may explore extending reference more broadly to systems." ;
@@ -7867,7 +7868,7 @@ sco-u:SCO_0000016 rdfs:comment "SCO currently accounts for perspectives of compl
                   skos:definition "A disposition whose realization leads the complex system component or the complex system environment component to (re)position itself within and regarding the complex system or complex system environment it belongs to (or a part of it) and possibly act accordingly."@en ,
                                   "Una disposizione la cui realizzazione porta la componente del sistema complesso o la componente dell’ambiente del sistema complesso a (ri)posizionarsi nel e rispetto al sistema complesso o all’ ambiente del sistema complesso a cui appartiene (o parte di esso) ed eventualmente ad agire di conseguenza."@it ,
                                   "Une disposition dont la réalisation conduit la composante de système complexe ou la composante de l’environnement du système complexe à se (re)positionner dans et par rapport au système complexe ou à l’environnement du système complexe auquel elle appartient (ou d’une partie de celui-ci) et, éventuellement, à agir en conséquence."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000017 rdfs:comment "We recommend including classes and individuals representing specific situations under which a complex system component is recognized as an indicator for the system to which it belongs, as needed."@en ,
@@ -7879,7 +7880,7 @@ sco-u:SCO_0000017 rdfs:comment "We recommend including classes and individuals r
                   skos:definition "A role whose realization leads the complex system component to be recognized as a carrier of an indicator value, by some complex system component or complex system environment component according to its/their perspective."@en ,
                                   "Un rôle dont la réalisation conduit la composante de système complexe à être reconnu comme porteuse d’une valeur de l’indicateur, par quelque composante de système complexe ou de son l’environnement, selon sa/leur propre perspective."@fr ,
                                   "un ruolo la cui realizzazione porta la componente del sistema complesso ad essere riconosciuto come portatore di un valore dell’indicatore, da parte di qualche componente del sistema complesso o del suo ambiente, secondo la propria prospettiva."@it ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000018 rdfs:comment "We recommend including classes and individuals representing specific situations under which a complex system component is recognized as a stakeholder, as needed."@en ;
@@ -7889,7 +7890,7 @@ sco-u:SCO_0000018 rdfs:comment "We recommend including classes and individuals r
                   skos:definition "A role whose realization leads the complex system component to be recognized as a bearer, in the belonging complex system, of at least one role (different from the role of stakeholder) and/or disposition (primarily a disposition to benefit/be damaged as being part of that complex system)."@en ,
                                   "Un ruolo la cui realizzazione porta la componente del sistema complesso ad essere riconosciuta come detentrice, nel sistema complesso a cui appartiene, di almeno un ruolo (diverso dal ruolo di stakeholder) e/o disposizione (in primo luogo una predisposizione a beneficiare/essere danneggiata in quanto parte di tale sistema complesso)."@it ,
                                   "Un rôle dont la réalisation conduit la composante du système complexe à être reconnue, dans le système complexe auquel elle appartient, comme porteuse d’au moins un rôle (différent du rôle de partie prenante) et/ou d’une disposition (principalement une disposition à bénéficier ou à être endommagé parce qu’elle fait partie de ce système complexe)."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000019 oboInOwl:hasRelatedSynonym "value" ;
@@ -7905,7 +7906,7 @@ http://humanbehaviourchange.org/ontology/BCIO_006063""" ,
                   skos:definition "A role whose realization leads the complex system or the complex system environment (or some part(s) of them) to be recognized to bearer relevance by some complex system component or complex system environment component according to its/their perspective."@en ,
                                   "Un ruolo la cui realizzazione porta il sistema complesso o l'ambiente del sistema complesso (o una o più delle parti di essi) ad essere riconosciuto come rilevante da parte di qualche componente del sistema complesso o del suo ambiente, secondo la propria prospettiva."@it ,
                                   "Un rôle dont la réalisation conduit le système complexe ou l’environnement de système complexe (ou une ou plus parties de ceux-ci) à être reconnu comme significatif par quelque composante de système complexe ou de son l’environnement, selon sa/leur propre perspective."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000020 oboInOwl:hasRelatedSynonym "relation between complex system components and complex system environment components, interconnection between complex system components and complex system environment components" ;
@@ -7915,7 +7916,7 @@ sco-u:SCO_0000020 oboInOwl:hasRelatedSynonym "relation between complex system co
                   skos:definition "An interaction that occurs between at least one complex system component and one complex system environment component where the latter belongs to the complex system environment of the complex system to which the complex system component belongs."@en ,
                                   "Une interaction qui se produit entre au moins une composante d’un système complexe et au moins une composante de l’environnement du système complexe auquel la composante de système complexe appartient."@fr ,
                                   "Un’interazione che avviene tra almeno una componente di un sistema complesso e almeno una componente dell’ambiente del sistema complesso a cui la componente del sistema complesso appartiene."@it ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000021 oboInOwl:hasRelatedSynonym "relation among complex system environment components, interconnection among complex system environment components"@en ;
@@ -7925,7 +7926,7 @@ sco-u:SCO_0000021 oboInOwl:hasRelatedSynonym "relation among complex system envi
                   skos:definition "An interaction that occurs among at least two complex system environment components."@en ,
                                   "Une interaction qui se produit entre au moins deux composantes de l’environnement d’un système complexe."@fr ,
                                   "Un’interazione che avviene tra almeno due componenti dell’ambiente di un sistema complesso."@it ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000022 oboInOwl:hasRelatedSynonym "relation among complex system components, interconnection among complex system components" ;
@@ -7935,7 +7936,7 @@ sco-u:SCO_0000022 oboInOwl:hasRelatedSynonym "relation among complex system comp
                   skos:definition "An interaction that occurs among at least two system components of a complex system."@en ,
                                   "Une interaction qui se produit entre au moins deux composantes de système d’un système complexe."@fr ,
                                   "Un’interazione che avviene tra almeno due componenti del sistema di un sistema complesso."@en ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000023 rdfs:label "complex system history"@en ,
@@ -7944,10 +7945,10 @@ sco-u:SCO_0000023 rdfs:label "complex system history"@en ,
                   skos:definition "La storia del sistema di un sistema complesso."@it ,
                                   "L’historique de système d’un système complexe."@fr ,
                                   "The system history of a complex system."@en ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
-sco-u:SCO_0000024 rdfs:comment <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> ,
+sco-u:SCO_0000024 rdfs:comment AnnotationVocabulary:Provisional ,
                                "As UFO does not address spatial regions and boundaries, SCO-U adapts BFO representation with regards to systems. See corresponding definitions and axioms that include reference to them. We envision discussions with subject matter experts to deepen this representation towards a UFO compliant representation of spatial regions and boundaries."@en ,
                                """We construct this definition on the basis of the definitions of the following BFO classes. It is provisional. 
 
@@ -7981,7 +7982,7 @@ We envision discussions with subject matter experts to identify adequate strateg
                   skos:definition "A three-dimensional immaterial object that is an endurant part of the spatial projection of a portion of spacetime at a given time of a system."@en ,
                                   "Un objet immatériel tridimensionnel qui est une partie de la projection spatiale d’une portion d’espace-temps à un moment donné d’un système."@fr ,
                                   "Un oggetto tridimensionale immateriale che è una parte endurante della proiezione spaziale di una porzione di spazio-tempo in un dato momento di un sistema."@it ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000026 oboInOwl:hasExactSynonym "complex system environment element" ,
@@ -7992,7 +7993,7 @@ sco-u:SCO_0000026 oboInOwl:hasExactSynonym "complex system environment element" 
                   skos:definition "A system evironment component that belongs to the system environment of a complex system."@en ,
                                   "Una componente dell'ambiente di sistema che appartiene all’ambiente di un sistema complesso."@it ,
                                   "Une composante de l'environnement de système qui appartient à l’environnement d’un système complexe."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000027 rdfs:comment """SCO-U representation of agency and interactions is compatible with UFO-C. Nevertheless, it relies on a less human interaction-focused modeling strategy and is more compact than that of UFO-C. This representation is adequate for the current SCO purposes. In addition, it also appears in line with the representation provided in SCO-B. We do not exclude possible future implementations to align more closely to UFO-C. Discussion with subject matter experts will be required.
@@ -8022,7 +8023,7 @@ Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software 
                   skos:definition "A system environment component that stands in a situation of system environment component agency and bearers a disposition to act."@en ,
                                   "Una componente dell’ambiente del sistema che si trova in una situazione di agenza della componente dell’ambiente del sistema e esibisce una disposizione ad agire."@it ,
                                   "Une composante de l’environnement de système qui se tient dans une situation d’agence (être un agent de l’environnement de système) de la composante de l'environnement de système et exhibe une disposition à agir."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000028 oboInOwl:hasExactSynonym "complex system element" ;
@@ -8033,7 +8034,7 @@ sco-u:SCO_0000028 oboInOwl:hasExactSynonym "complex system element" ;
                   skos:definition "A system component that belongs to a complex system."@en ,
                                   "Una componente del sistema che appartiene a un sistema complesso."@it ,
                                   "Une composante de système qui appartient à un système complexe."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000029 rdfs:comment """SCO-U representation of agency and interactions is compatible with UFO-C. Nevertheless, it relies on a less human interaction-focused modeling strategy and is more compact than that of UFO-C. This representation is adequate for the current SCO purposes. In addition, it also appears in line with the representation provided in SCO-B. We do not exclude possible future implementations to align more closely to UFO-C. Discussion with subject matter experts will be required.
@@ -8063,7 +8064,7 @@ Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software 
                   skos:definition "A system component that stands in a situation of system component agency and bearers a disposition to act."@en ,
                                   "Una componente di sistema che si trova in una situazione di agenza della componente di sistema e esibisce una disposizione ad agire."@it ,
                                   "Une composante de système qui se tient dans une situation d’agence (être un agent de système) de la composante du système et exhibe une disposition à agir."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000030 oboInOwl:hasExactSynonym "complex system stakeholder perspective, system stakeholder perspective" ;
@@ -8073,7 +8074,7 @@ sco-u:SCO_0000030 oboInOwl:hasExactSynonym "complex system stakeholder perspecti
                   skos:definition "A perspective that is bearered by a stakeholder."@en ,
                                   "Una prospettiva che è detenuta da una parte interessata (stakeholder)."@it ,
                                   "Une perspective qui est détenue par une partie prenante (stakeholder)."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000031 rdfs:label "complex system boundary"@en ,
@@ -8082,7 +8083,7 @@ sco-u:SCO_0000031 rdfs:label "complex system boundary"@en ,
                   skos:definition "A system boundary of a complex system."@en ,
                                   "Un confine del sistema di un sistema complesso."@it ,
                                   "Une frontière de système d’un système complexe."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000032 rdfs:label "complex system spatial region"@en ,
@@ -8091,7 +8092,7 @@ sco-u:SCO_0000032 rdfs:label "complex system spatial region"@en ,
                   skos:definition "A system spatial region of a complex system."@en ,
                                   "Una regione di spazio del sistema di un sistema complesso."@it ,
                                   "Une région d’espace de système d’un système complexe."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000033 rdfs:label "agent de l’environnement de système complexe"@fr ,
@@ -8100,7 +8101,7 @@ sco-u:SCO_0000033 rdfs:label "agent de l’environnement de système complexe"@f
                   skos:definition "A complex system environment component that stands in a situation of complex system environment component agency and bearers a disposition to act."@en ,
                                   "Una componente dell’ambiente del sistema complesso che si trova in una situazione di agenza della componente dell’ambiente del sistema complesso e esibisce una disposizione ad agire."@it ,
                                   "Une composante de l’environnement de système complexe qui se tient dans une situation d’agence (être un agent de l’environnement de système complexe) de la composante de l'environnement de système complexe et exhibe une disposition à agir."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000034 rdfs:label "agent de système complexe"@fr ,
@@ -8109,7 +8110,7 @@ sco-u:SCO_0000034 rdfs:label "agent de système complexe"@fr ,
                   skos:definition "A complex system component that stands in a situation of complex system component agency and bearers a disposition to act."@en ,
                                   "Una componente di sistema complesso che si trova in una situazione di agenza della componente di sistema complesso e esibisce una disposizione ad agire."@it ,
                                   "Une composante de système complexe qui se tient dans une situation d’agence (être un agent de système) de la composante du système complexe et exhibe une disposition à agir."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000035 oboInOwl:hasExactSynonym "complex system indicator"@en ;
@@ -8123,7 +8124,7 @@ sco-u:SCO_0000035 oboInOwl:hasExactSynonym "complex system indicator"@en ;
                   skos:definition "A complex system component with an indicator role."@en ,
                                   "Una componente del sistema complesso con un ruolo d’indicatore."@it ,
                                   "Une composante de système complexe ayant un rôle d’indicateur."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000036 oboInOwl:hasExactSynonym "complex system stakeholder, system stakeholder" ;
@@ -8133,7 +8134,7 @@ sco-u:SCO_0000036 oboInOwl:hasExactSynonym "complex system stakeholder, system s
                   skos:definition "A complex system component with a stakeholder role."@en ,
                                   "Una componente del sistema complesso con un ruolo di stakeholder."@it ,
                                   "Une composante du système complexe avec un rôle de partie prenante."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000038 rdfs:comment """This object property is intended to correspond to BFO ‘generically depends on’ object property within the context of UFO representation. 
@@ -8148,7 +8149,7 @@ Arp, R., Smith, B., & Spear, A. D. 2015. Building Ontologies with Basic Formal O
                              "dépend génériquement de"@fr ,
                              "generically depends on"@en ;
                   rdfs:seeAlso "http://purl.obolibrary.org/obo/BFO_0000084" ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000040 rdfs:label "contenu informatif de la perspective de partie prenante (stakeholder)"@fr ,
@@ -8157,14 +8158,14 @@ sco-u:SCO_0000040 rdfs:label "contenu informatif de la perspective de partie pre
                   skos:definition "A perspective information content entity of a stakeholder perspective."@en ,
                                   "Un contenu informatif de la perspective d’une perspective de partie prenante (stakeholder)."@fr ,
                                   "Un contenuto informativo della prospettiva di una prospettiva di parte interessata (stakeholder)."@it ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000041 rdfs:comment "Do not use this class directly. This class is constructed as a grouping for complex system properties, such as emergence and self-organization, in order to facilitate class retrieval and visualization." ;
                   rdfs:label "complex system property"@en ,
                              "proprietà del systema complesso"@it ;
                   skos:definition "propriété de système complexe"@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Released .
 
 
 sco-u:SCO_0000042 rdfs:comment """A more extensive representation of emergence is required. A possible starting point may be the work of Calhau et al. (2024).
@@ -8177,7 +8178,7 @@ Calhau, R. F., Prince Sales, T., Oliveira, Í., Kokkula, S., Ferreira Pires, L.,
                   skos:definition "A quality that inherits in a complex system by virtue of how the complex system behavior and properties at a macroscopic level are nontrivially envisaged from those at a more microscopic one."@en ,
                                   "Una qualità che il sistema complesso esibisce in virtù del fatto che il comportamento del sistema complesso e le sue proprietà a un livello macroscopico sono non-trivialmente predicibili da quelli a livello più microscopico."@it ,
                                   "Une qualité qu’un système complexe exhibe en vertu du fait que le comportement du système complexe et ses propriétés à un niveau macroscopique sont non-trivialement prédictibles à partir de ceux aux niveaux plus microscopiques."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000043 rdfs:comment "This class should be amended according to SCO implementations regarding system scales, levels, and change." ;
@@ -8187,7 +8188,7 @@ sco-u:SCO_0000043 rdfs:comment "This class should be amended according to SCO im
                   skos:definition "A quality that inherits in a complex system by virtue of how the complex system components spontaneously arrange, globally generating macroscopic and microscopic structures and behaviors, without any internal and/or external controls."@en ,
                                   "Una qualità che il sistema complesso esibisce in virtù del fatto che le componenti del sistema complesso si organizzino spontaneamente, generando globalmente strutture e comportamenti macroscopici e microscopici, senza alcun controllo interno e/o esterno."@it ,
                                   "Une qualité qu’un système complexe exhibe en vertu du fait que les composantes du système complexe s’organisent spontanément, générant globalement des structures et comportements macroscopiques et microscopiques, sans aucun contrôle interne et/ou externe."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000044 rdfs:comment "Time intervals (and possibly instants, to discuss) can be further specified using gUFO properties on necessity. We suggest doing so for subclasses that have been designed to address specific  (complex) system/system environment components."@en ,
@@ -8203,7 +8204,7 @@ Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainabili
                   skos:definition "A temporary parthood situation in which a system environment component is part of a system environment."@en ,
                                   "Una situazione temporale di appartenenza in cui una componente dell’ambiente del sistema è parte dell’ambiente del sistema."@it ,
                                   "Une situation d’appartenance temporelle dans laquelle une composante de l’environnement de système est une partie du système."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource sco-u:SCO_0000044 ;
@@ -8223,7 +8224,7 @@ sco-u:SCO_0000045 rdfs:label "complex system environment- complex system environ
                   skos:definition "A complex system environment- complex system environment component parthood situation in which a complex system environment component is part of a complex system environment."@en ,
                                   "Una situazione di appartenenza della componente dell’ambiente del sistema complesso all’ambiente del sistema complesso in cui una componente dell’ambiente del sistema complesso è parte dell’ambiente del sistema complesso."@it ,
                                   "Une situation d’ appartenance de la composante de l’environnement de système complexe à l’environnement de système complexe dans laquelle une composante de l’environnement de système complexe est une partie de l’environnement du système complexe."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000046 rdfs:comment "Time intervals (and possibly instants, to discuss) can be further specified using gUFO properties on necessity. We suggest doing so for subclasses that have been designed to address specific  (complex) system/system environment components."@en ,
@@ -8238,7 +8239,7 @@ Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainabili
                   skos:definition "A temporary parthood situation in which a system component is part of a system."@en ,
                                   "Una situazione temporale di appartenenza in cui una componente del sistema è parte del sistema."@it ,
                                   "Une situation d’ appartenance temporelle dans laquelle une composante de système est une partie du système."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource sco-u:SCO_0000046 ;
@@ -8258,7 +8259,7 @@ sco-u:SCO_0000047 rdfs:label "complex system-complex system component parthood s
                   skos:definition "A complex system-complex system component parthood situation in which a complex system component is part of a complex system."@en ,
                                   "Una situazione di appartenenza della componente del sistema complesso al sistema complesso in cui una componente del sistema complesso è parte del sistema complesso."@it ,
                                   "Une situation d’ appartenance de la composante de système au système dans laquelle une composante de système complexe est une partie du système complexe."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000048 rdfs:comment "Time intervals (and possibly instants, to discuss) can be further specified using gUFO properties on necessity. We suggest doing so for subclasses that have been designed to address specific indicator values."@en ;
@@ -8268,7 +8269,7 @@ sco-u:SCO_0000048 rdfs:comment "Time intervals (and possibly instants, to discus
                   skos:definition "A temporary relationship situation in which an indicator value stands in a relationship of generic dependence with at least an indicator."@en ,
                                   "Una situazione di relazione temporale in cui il valore di un indicatore è in relazione di dipendenza generica con almeno un indicatore."@it ,
                                   "Une situation de relation temporelle dans laquelle la valeur d’un indicateur est en relation de dépendance générique avec au moins un indicateur."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000049 rdfs:comment "Time intervals (and possibly instants, to discuss) can be further specified using gUFO properties on necessity. We suggest doing so for subclasses that have been designed to address specific perspective information content entities."@en ;
@@ -8279,7 +8280,7 @@ sco-u:SCO_0000049 rdfs:comment "Time intervals (and possibly instants, to discus
                                   "Time intervals (and possibly instants, to discuss) can be further specified using gUFO properties on necessity. We suggest doing so for subclasses that have been designed to address specific perspective information content entities."@en ,
                                   "Una situazione di relazione temporale in cui il contenuto informativo di una prospettiva è in relazione di dipendenza generica con almeno una componente del sistema complesso o un componente dell’ambiente di quel sistema complesso."@it ,
                                   "Une situation de relation temporelle dans laquelle le contenu informatif d’une perspective est en relation de dépendance générique avec au moins une composante du système complexe ou une composante de l’environnement de ce système complexe."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000050 rdfs:label "situation de dépendance générique du contenu informatif de la perspective de partie prenante"@fr ,
@@ -8288,7 +8289,7 @@ sco-u:SCO_0000050 rdfs:label "situation de dépendance générique du contenu in
                   skos:definition "A situation of generical dependence of perspective information in which a stakeholder perspective information content entity stands in a relationship of generic dependence with at least a stakeholder."@en ,
                                   "Una situazione di dipendenza generica del contenuto informativo di una prospettiva in cui il contenuto informativo di una prospettiva di uno stakeholder è in relazione di dipendenza generica con almeno uno stakeholder."@it ,
                                   "Une situation de dépendance générique du contenu informatif d’une perspective dans laquelle le contenu informatif d’une perspective d’une partie prenante est en relation de dépendance générique avec au moins une partie prenante."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000051 rdfs:comment "Time intervals (and possibly instants, to discuss) can be further specified using gUFO properties on necessity. We suggest doing so for subclasses that have been designed to address specific worth information."@en ;
@@ -8298,7 +8299,7 @@ sco-u:SCO_0000051 rdfs:comment "Time intervals (and possibly instants, to discus
                   skos:definition "A temporary relationship situation in which a worth information content entity, that is concretized by the value (worth) that some complex system component or complex system environment component recognizes to the complex system or complex system environment to which it belongs (or some part(s) of them), stands in a relationship of generic dependence with that complex system or complex system environment, (or some part(s) of them)."@en ,
                                   "Una situazione di relazione temporale in cui il contenuto informativo del valore, che è concretizzato dal valore che una componente del sistema complesso or dell’ambiente del sistema complesso riconosce di avere al sistema complesso o ambiente del sistema complesso a cui appartiene (o una o più parti di essi), è in relazione di dipendenza generica con quel sistema complesso o l’ambiente di quel sistema complesso (o una o più parti di essi)."@it ,
                                   "Une situation de relation temporelle dans laquelle le contenu informatif du valeur, qui est concrétisé par la valeur qu’une composante du système complexe ou de l’environnement du système complexe reconnaît d’avoir au système complexe ou à l’ environnement de système complexe auquel elle appartient (ou une ou plus parties de celux-ci), est en relation de dépendance générique avec ce système complexe-là ou à ce-t-environnement de système complexe-là (ou une ou plus parties de celux-ci)."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000059 rdfs:label "situation d’agence (être un agent de système) de la composante du système complexe"@fr ,
@@ -8307,7 +8308,7 @@ sco-u:SCO_0000059 rdfs:label "situation d’agence (être un agent de système) 
                   skos:definition "A situation in which a complex system component is causally active in an interaction among complex system components or between complex system components and complex system environment components."@en ,
                                   "Una situazione in cui una componente di sistema complesso è causalmente attiva in un' interazione tra componenti di sistema complesso o tra componenti di sistema complesso e le componenti dell’ambiente del sistema complesso."@it ,
                                   "Une situation dans laquelle une composante de système complexe est causalement active en une interaction entre les composantes de système complexe ou entre les composantes de système complexe et les composantes de l’environnement de système complexe."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000060 rdfs:comment "Time intervals (and possibly instants, to discuss) can be further specified using gUFO properties on necessity. We suggest doing so for subclasses that have been designed to address specific system and system environment agents."@en ;
@@ -8318,7 +8319,7 @@ sco-u:SCO_0000060 rdfs:comment "Time intervals (and possibly instants, to discus
                   skos:definition "A situation of agence in which a system environment component is causally active in an interaction among system environment components or between system components and system environment components."@en ,
                                   "Una situazione di agenza in cui una componente dell’ambiente del sistema è causalmente attiva in un' interazione tra componenti dell’ambiente del sistema o tra le componenti di sistema e le componenti dell’ambiente del sistema."@it ,
                                   "Une situation d'agence dans laquelle une composante de l’environnement de système est causalement active en une interaction entre les composantes de l’environnement de système ou entre les composantes de système et les composantes de l’environnement de système."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000061 rdfs:label "situation d’agence (être un agent de l’environnement de système complexe) de la composante de l'environnement de système complexe"@fr ,
@@ -8327,7 +8328,7 @@ sco-u:SCO_0000061 rdfs:label "situation d’agence (être un agent de l’enviro
                   skos:definition "A situation in which a complex system environment component is causally active in an interaction among complex system environment components or between complex system components and complex system environment components."@en ,
                                   "Una situazione in cui una componente dell’ambiente del sistema complesso è causalmente attiva in un' interazione tra componenti dell’ambiente del sistema complesso o tra le componenti del sistema complesso e le componenti dell’ambiente del sistema complesso."@it ,
                                   "Une situation dans laquelle une composante de l’environnement de système complexe est causalement active en une interaction entre les composantes de l’environnement de système complexe or entre les composantes de système complexe et les composantes de l’environnement de système complexe."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000062 rdfs:comment """SCO-U representation of agency and interactions is compatible with UFO-C. Nevertheless, it relies on a less human interaction-focused modeling strategy and is more compact than that of UFO-C. This representation is adequate for the current SCO purposes. In addition, it also appears in line with the representation provided in SCO-B. We do not exclude possible future implementations to align more closely to UFO-C. Discussion with subject matter experts will be required.
@@ -8357,7 +8358,7 @@ Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software 
                   skos:definition "A situation in which an object is causally active in an interaction."@en ,
                                   "Una situazione in cui un oggetto è causalmente attivo in una interazione."@it ,
                                   "Une situation dans laquelle un objet est causalement active en une interaction."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000063 rdfs:label "disposition to act"@en ,
@@ -8366,7 +8367,7 @@ sco-u:SCO_0000063 rdfs:label "disposition to act"@en ,
                   skos:definition "A disposition to participate in an interaction that inherits in a system or system environment agent, that stands in a situation of agency, and manifests respectively in an interaction among system components, an interaction among system environment components, or an interaction between system components and system environment components when the system or system environment agent acts in such an interaction."@en ,
                                   "Una disposizione a partecipare in un’interazione esibita da un agente di sistema o dell’ambiente del sistema che si trova in una situazione di agenza, e che si manifesta rispettivamente in un’interazione tra componenti di sistema, tra componenti dell’ambiente del sistema, o tra componenti di sistema e dell’ambiente di sistema quando l’agente di sistema o dell’ambiente del sistema agisce in tale interazione."@it ,
                                   "Une disposition à participer dans une interaction exhibée par un agent de système or de l’environnement de système qui se tient dans une situation d’agence (agir), et qui se manifeste respectivement dans une interaction entre les composantes de système, entre les composantes de l’environnement de système, ou entre les composantes de système et les composantes de l’environnement de système quand l’agent de système or de l’environnement de système acte dans telle interaction."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 sco-u:SCO_0000064 rdfs:label "disposition to participate in an interaction"@en ,
@@ -8375,7 +8376,7 @@ sco-u:SCO_0000064 rdfs:label "disposition to participate in an interaction"@en ,
                   skos:definition "A disposition that inherits in a system or system environment component and manifests respectively in an interaction among system components, an interaction among system environment components, or an interaction between system components and system environment components when the system or system environment component participates in such an interaction."@en ,
                                   "Una disposizione esibita da una componente di sistema o dell’ambiente del sistema e che si manifesta rispettivamente in un’interazione tra componenti di sistema, tra componenti dell’ambiente del sistema, o tra componenti di sistema e dell’ambiente di sistema quando la componente di sistema o dell’ambiente del sistema partecipa in tale interazione."@it ,
                                   "Une disposition exhibée par une composante de système or de l’environnement de système, et qui se manifeste respectivement dans une interaction entre les composantes de système, entre les composantes de l’environnement de système, ou entre les composantes de système et les composantes de l’environnement de système quand la composante de système or de l’environnement de système participe dans telle interaction."@fr ;
-                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+                  AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .
 
 
 ###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

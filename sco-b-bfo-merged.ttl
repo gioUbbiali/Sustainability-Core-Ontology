@@ -16,7 +16,7 @@
 @base <https://www.w3id.org/sco#> .
 
 <https://www.w3id.org/sco> rdf:type owl:Ontology ;
-                            owl:versionIRI <https://www.w3id.org/sco/sco-b#v1.0.1/sco-b> ;
+                            owl:versionIRI <https://www.w3id.org/sco/sco-b#v1.1.0/sco-b> ;
                             terms:creator "Giorgio A. Ubbiali" ;
                             terms:description "A temporal extension of Basic Formal Ontology implemented in the Web Ontology Language (OWL 2) with direct semantics."@en ,
                                               """SCO V1.1.0 aligns with two Top-Level Ontologies (TLOs), Basic Formal Ontology (BFO) and Unified Foundational Ontology (UFO). SCO V1.1.0 is comprised of two segments: SCO-B (B for BFO) and SCO-U (U for UFO). SCO-B aligns the SCO vocabulary with BFO (as SCO V1.0.0). SCO-U aligns the SCO vocabulary with gUFO (UFO implementation in the Web Ontology Language (OWL)). This file provides SCO-B segment.
@@ -31,10 +31,10 @@ https://nemo-ufes.github.io/gufo/"""@en-au ,
 3) The complexity underlying sustainability.
 SCO aims to play a pivotal role in harmonizing and integrating top-level and domain ontologies regarding sustainability."""@en ;
                             terms:license <https://creativecommons.org/licenses/by/4.0/> ;
-                            terms:title "BFO 2020" ,
-                                        "L'ontologia fondazionale della sostenibilità"@it ,
+                            terms:title "L'ontologia fondazionale della sostenibilità"@it ,
                                         "L'ontologie fondationnelle de la durabilité"@fr ,
-                                        "Sustainability Core Ontology (SCO)"@en ;
+                                        "Sustainability Core Ontology (SCO)"@en ,
+                                        "BFO 2020" ;
                             rdfs:seeAlso "Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr" ;
                             owl:priorVersion """SCO V1.0.1. constitutes the prior version of this resources.
 SCO V1.0.1. is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1"""@en ;

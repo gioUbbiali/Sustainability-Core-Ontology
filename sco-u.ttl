@@ -1,4 +1,3 @@
-@prefix : <https://www.w3id.org/sco/sco-u#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix bfo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .

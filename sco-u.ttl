@@ -2399,12 +2399,6 @@ AnnotationVocabulary:Released rdf:type owl:NamedIndividual ,
                               AnnotationVocabulary:explanatoryNote "Release notes will be provided for any changes concerning released content, and any revisions will be backward compatible with the prior version to the degree possible."@en-us .
 
 
-###  https://www.w3id.org/sco/situation_of_system_component_agency
-<https://www.w3id.org/sco/situation_of_system_component_agency> rdf:type owl:NamedIndividual ,
-                                                                         <http://purl.org/nemo/gufo#SituationType> ;
-                                                                rdfs:label "situation of system component agency"@en .
-
-
 ###  https://www.w3id.org/sco/sco-u#SCO_0000001
 sco-u:SCO_0000001 rdf:type owl:NamedIndividual ,
                            <http://purl.org/nemo/gufo#EventType> .

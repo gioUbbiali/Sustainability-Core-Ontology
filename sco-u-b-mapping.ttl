@@ -293,17 +293,20 @@ Documentation webpage: https://gioubbiali.github.io/Sustainability-Core-Ontology
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000003
 <https://www.w3id.org/sco/sco-u#SCO_0000003> rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                             <http://www.w3.org/2004/02/skos/core#closeMatch> <https://www.w3id.org/sco/sco-u#SCO_0000003> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000004
 <https://www.w3id.org/sco/sco-u#SCO_0000004> rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                             <http://www.w3.org/2004/02/skos/core#closeMatch> <https://www.w3id.org/sco#SCO_0000004> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000005
 <https://www.w3id.org/sco/sco-u#SCO_0000005> rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                             <http://www.w3.org/2004/02/skos/core#closeMatch> <https://www.w3id.org/sco#SCO_0000005> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000006
@@ -353,27 +356,32 @@ Documentation webpage: https://gioubbiali.github.io/Sustainability-Core-Ontology
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000015
 <https://www.w3id.org/sco/sco-u#SCO_0000015> rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                             <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.w3id.org/sco#SCO_0000015> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000016
 <https://www.w3id.org/sco/sco-u#SCO_0000016> rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                             <http://www.w3.org/2004/02/skos/core#closeMatch> <https://www.w3id.org/sco#SCO_0000016> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000017
 <https://www.w3id.org/sco/sco-u#SCO_0000017> rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                             <http://www.w3.org/2004/02/skos/core#closeMatch> <https://www.w3id.org/sco#SCO_0000017> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000018
 <https://www.w3id.org/sco/sco-u#SCO_0000018> rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                             <http://www.w3.org/2004/02/skos/core#closeMatch> <https://www.w3id.org/sco#SCO_0000018> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000019
 <https://www.w3id.org/sco/sco-u#SCO_0000019> rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                             <http://www.w3.org/2004/02/skos/core#closeMatch> <https://www.w3id.org/sco#SCO_0000019> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000020
@@ -428,7 +436,8 @@ Documentation webpage: https://gioubbiali.github.io/Sustainability-Core-Ontology
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000030
 <https://www.w3id.org/sco/sco-u#SCO_0000030> rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                             <http://www.w3.org/2004/02/skos/core#closeMatch> <https://www.w3id.org/sco#SCO_0000030> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000031
@@ -463,22 +472,26 @@ Documentation webpage: https://gioubbiali.github.io/Sustainability-Core-Ontology
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000040
 <https://www.w3id.org/sco/sco-u#SCO_0000040> rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                             <http://www.w3.org/2004/02/skos/core#closeMatch> <https://www.w3id.org/sco#SCO_0000040> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000041
 <https://www.w3id.org/sco/sco-u#SCO_0000041> rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                             <http://www.w3.org/2004/02/skos/core#closeMatch> <https://www.w3id.org/sco#SCO_0000041> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000042
 <https://www.w3id.org/sco/sco-u#SCO_0000042> rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                             <http://www.w3.org/2004/02/skos/core#closeMatch> <https://www.w3id.org/sco#SCO_0000042> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000043
 <https://www.w3id.org/sco/sco-u#SCO_0000043> rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                             <http://www.w3.org/2004/02/skos/core#closeMatch> <https://www.w3id.org/sco#SCO_0000043> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000044
@@ -553,12 +566,14 @@ Documentation webpage: https://gioubbiali.github.io/Sustainability-Core-Ontology
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000066
 <https://www.w3id.org/sco/sco-u#SCO_0000066> rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                             <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000067
 <https://www.w3id.org/sco/sco-u#SCO_0000067> rdf:type owl:NamedIndividual ,
-                                                      <http://www.w3.org/2004/02/skos/core#Concept> .
+                                                      <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                             <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000068

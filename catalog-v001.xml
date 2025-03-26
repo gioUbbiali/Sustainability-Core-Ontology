@@ -15,7 +15,9 @@
     <uri id="Imports Wizard Entry" name="http://gioUbbiali.github.io/sco/sco-u/2025-02-17/cover.imports.owl" uri="SCO/src/ontology/imports/SCO-U%20imports/COVER%20imports.owl"/>
     <uri id="User Entered Import Resolution" name="http://gioUbbiali.github.io/sco/sco-u/2025-02-17/cover.imports.owl" uri="SCO-U.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1742889345445" name="http://gioUbbiali.github.io/sco/sco-u/cover.imports.owl" uri="SCO/src/ontology/imports/SCO-U%20imports/COVER%20imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1742889345445" name="http://www.w3.org/2004/02/skos/core" uri="SCO/src/ontology/imports/SCO-U-B-mapping%20imports/skos.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1743005631593" name="http://gioUbbiali.github.io/sco/sco-u/cover.imports.owl" uri="SCO/src/ontology/imports/SCO-U%20imports/COVER%20imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1743005631593" name="http://www.w3.org/2004/02/skos/core" uri="SCO/src/ontology/imports/SCO-U-B-mapping%20imports/skos.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1743005631593" name="https://www.w3id.org/sco" uri="docs-sco-b/ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1743005631593" name="https://www.w3id.org/sco/sco-u" uri="docs-sco-u/ontology.owl"/>
     </group>
 </catalog>

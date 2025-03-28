@@ -31,7 +31,7 @@ SCO structured vocabulary spreadsheets are available in both Excel and CSV forma
 
 ### SCO V1.1.0.
 
-SCO V1.1.0. implements [SCO V1.0.1.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1) by establishing a ontology segment aligned to [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html). SCO V1.0.1. employes [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020) as the upper level ontology. 
+SCO V1.1.0. implements [SCO V1.0.1.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1) by establishing an additional ontology segment aligned to [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html). SCO V1.0.1. employes [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020) as the upper level ontology. 
 
 SCO V1.1.0. is comprised of two segments: SCO-B (B for BFO) and SCO-U (U for UFO). SCO-B aligns the SCO vocabulary with [BFO](https://github.com/BFO-ontology/BFO-2020). SCO-U aligns the SCO vocabulary with [gUFO (UFO implementation in OWL)](https://nemo-ufes.github.io/gufo/). SCO V1.1.0. also covers a [SKOS vocabulary](https://www.w3.org/2004/02/skos/)-based mapping between the two segments.
 

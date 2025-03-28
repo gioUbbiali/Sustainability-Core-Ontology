@@ -14,7 +14,7 @@ See also the SCO-B documentation webpage and SCO-U documentation webpage.
 
 ## Material
 
-Currently, this repository hosts the SCO Structured Vocabulary (SCO SV) and the current release of SCO, SCO V1.1.0. 
+To date, this repository hosts the SCO Structured Vocabulary (SCO SV) and the current release of SCO, SCO V1.1.0. 
 
 ### SCO SV
 

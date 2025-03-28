@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/2004/02/skos/core" uri="http://www.w3.org/2004/02/skos/core#"/>
     <uri id="User Entered Import Resolution" name="https://raw.githubusercontent.com/gioUbbiali/Sustainability-Core-Ontology/refs/heads/SCO-Alignment-to-UFO/SCO/src/ontology/imports/SCO-U%20imports/COVER%20imports.owl" uri="sco-u.ttl"/>
     <uri id="Imports Wizard Entry" name="https://www.w3id.org/sco/sco-u#v1.1.0/sco-u" uri="sco-u-ufo-merged.ttl"/>
     <uri id="Imports Wizard Entry" name="https://www.w3id.org/sco/sco-b#v1.0.1/sco-b" uri="sco-b.ttl"/>

@@ -49,10 +49,10 @@ In fact, these classes are non-sortal and are not specialized by any class of a 
 
 “Complex system property” and “information content entity” classes specialize “aspect” class appositely. The first aims to be a grouping for different system properties. The second requires further discussion as UFO does not address presentations of information (see comment to the class)."""@en ;
                                   rdfs:seeAlso "Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr" ,
-                                               """https://www.w3id.org/sco
+                                               """https://www.w3id.org/sco 
 https://www.w3id.org/sco/sco-u-b-mapping""" ;
                                   owl:priorVersion """SCO V1.0.1. constitutes the prior version of this resources.
-SCO V1.0.1. is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1"""@en ;
+SCO V1.0.1. is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1-revisions"""@en ;
                                   owl:versionInfo "Version 1.1.0. ; segment U."@en ,
                                                   "2025-03-19" ;
                                   skos:note "Currently, this resource includes labels and definitions in the following three natural languages: English, Italian, and French. In the next version of this resource, the creator intends to also encompass Italian and French translations of the remaining pieces of information as well as to cover other natural languages."@en ,

@@ -48,7 +48,9 @@ https://www.w3id.org/sco/sco-u#SCO_0000036
 In fact, these classes are non-sortal and are not specialized by any class of a specific kind. We do not regard this as problematic because SCO aims to provide a general high-level layer of representation to extend within more domain-focused ontologies. SCO-extending ontologies can specialize these classes with subclasses of specific kinds thereby easily addressing and resolving this concern.
 
 “Complex system property” and “information content entity” classes specialize “aspect” class appositely. The first aims to be a grouping for different system properties. The second requires further discussion as UFO does not address presentations of information (see comment to the class)."""@en ;
-                                  rdfs:seeAlso "Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr" ;
+                                  rdfs:seeAlso "Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr" ,
+                                               """https://www.w3id.org/sco
+https://www.w3id.org/sco/sco-u-b-mapping""" ;
                                   owl:priorVersion """SCO V1.0.1. constitutes the prior version of this resources.
 SCO V1.0.1. is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1"""@en ;
                                   owl:versionInfo "Version 1.1.0. ; segment U."@en ,
@@ -58,7 +60,7 @@ SCO V1.0.1. is available on GitHub at the following link: https://github.com/gio
 Documentation webpage: https://gioubbiali.github.io/Sustainability-Core-Ontology/"""@en ,
                                             "The current version of SCO does not cover classes and object properties accounting for systems granularity, scales, and levels. A deeper representation of system change and behaviors is equally required. These themes will be topics of inclusion in the next version of this resource."@en ,
                                             "The current version of this resource does not include semi-formal natural language definitions or First Order Logics definitions. In the next version of this resource, the creator intends to also include them."@en ,
-                                            "The most recent version of this file is available on GitHub at the following link: https://www.w3id.org/sco"@en .
+                                            "The most recent version of this file is available on GitHub at the following link: https://www.w3id.org/sco/sco-u"@en .
 
 #################################################################
 #    Annotation properties
@@ -782,6 +784,10 @@ See the corresponding RO object property for a definition and further details.  
 #################################################################
 #    Classes
 #################################################################
+
+###  https://purl.org/krdb-core/cover#Disposition
+<https://purl.org/krdb-core/cover#Disposition> rdf:type owl:Class .
+
 
 ###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel
 AnnotationVocabulary:MaturityLevel rdf:type owl:Class ;

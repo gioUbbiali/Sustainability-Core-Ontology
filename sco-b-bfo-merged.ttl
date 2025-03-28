@@ -34,7 +34,9 @@ SCO aims to play a pivotal role in harmonizing and integrating top-level and dom
                                         "L'ontologie fondationnelle de la durabilité"@fr ,
                                         "Sustainability Core Ontology (SCO)"@en ,
                                         "BFO 2020" ;
-                            rdfs:seeAlso "Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr" ;
+                            rdfs:seeAlso "Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr" ,
+                                         """https://www.w3id.org/sco-u
+https://www.w3id.org/sco/sco-u-b-mapping""" ;
                             owl:priorVersion """SCO V1.0.1. constitutes the prior version of this resources.
 SCO V1.0.1. is available on GitHub at the following link: https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1"""@en ;
                             owl:versionInfo "2025-03-18"@en ,
@@ -44,7 +46,7 @@ SCO V1.0.1. is available on GitHub at the following link: https://github.com/gio
 Documentation webpage: https://gioubbiali.github.io/Sustainability-Core-Ontology/"""@en ,
                                       "The current version of SCO does not cover classes and object properties accounting for systems granularity, scales, and levels. A deeper representation of system change and behaviors is equally required. These themes will be topics of inclusion in the next version of this resource."@en ,
                                       "The current version of this resource does not include semi-formal natural language definitions or First Order Logics definitions. In the next version of this resource, the creator intends to also include them."@en ,
-                                      "The most recent version of this file is available on GitHub at the following link: https://www.w3id.org/sco"@en .
+                                      "The most recent version of this file is available on GitHub at the following link: https://www.w3id.org/sco/sco-b-bfo-merged"@en .
 
 #################################################################
 #    Annotation properties

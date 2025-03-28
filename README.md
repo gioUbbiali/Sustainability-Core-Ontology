@@ -31,16 +31,15 @@ SCO structured vocabulary spreadsheets are available in both Excel and CSV forma
 
 ### SCO V1.1.0.
 
-SCO V1.1.0. implements [SCO V1.0.1.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1) by establishing an additional ontology segment aligned to [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html). SCO V1.0.1. employes [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020) as the upper level ontology. 
+SCO V1.1.0. implements [SCO V1.0.1.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1) by establishing an additional ontology segment aligned to [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html). SCO V1.0.1. only employes [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020) as the upper level ontology. 
 
-SCO V1.1.0. is comprised of two segments: SCO-B (B for BFO) and SCO-U (U for UFO). SCO-B aligns the SCO vocabulary with [BFO](https://github.com/BFO-ontology/BFO-2020). SCO-U aligns the SCO vocabulary with [gUFO (UFO implementation in OWL)](https://nemo-ufes.github.io/gufo/). SCO V1.1.0. also covers a [SKOS vocabulary](https://www.w3.org/2004/02/skos/)-based mapping between the two segments.
+SCO V1.1.0. is comprised of two segments: SCO-B (B for BFO) and SCO-U (U for UFO). SCO-B aligns the SCO vocabulary with [BFO](https://github.com/BFO-ontology/BFO-2020). SCO-U aligns the SCO vocabulary with [gUFO (UFO implementation in OWL)](https://nemo-ufes.github.io/gufo/). SCO V1.1.0. also includes a [SKOS vocabulary](https://www.w3.org/2004/02/skos/)-based mapping between the two segments.
 
 SCO V1.1.0. is formalized in [OWL](https://www.w3.org/TR/owl2-overview/) and covers three natural languages, English, French, and Italian. SCO V1.1.0. conforms to [OBO-Foundry principles](https://obofoundry.org/principles/fp-000-summary.html). SCO-B includes 80 classes, 84 object properties, and 2 individuals. SCO-U includes 197 classes, 151 object properties, and 106 individuals.
 
 SCO materials, including a protocol detailing the process followed to develop this ontology, can be found here:
 
-- SCO V1.0.1. release.
-- SCO V1.1.0. materials-total.
+- [SCO V1.0.1. release.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1-revisions)
 - SCO-B current release.
 - SCO-U current release.
 - Mapping between SCO-B and SCO-U.
@@ -53,10 +52,9 @@ SCO materials, including a protocol detailing the process followed to develop th
   
 The most recent version of SCO-B segment can always be found at https://w3id.org/sco. The most recent version of SCO-U segment can always be found at https://w3id.org/sco/sco-u. The most recent version of the mapping between SCO-U and SCO-B can always be found at https://w3id.org/sco/sco-u-b-mapping. SCO is also accessible on [Ontobee](https://ontobee.org/ontology/SCO), [AgroPortal](https://agroportal.lirmm.fr/ontologies/SCO), [BioPortal](https://bioportal.bioontology.org/ontologies/SCO_V1), and [IndustryPortal](https://industryportal.enit.fr/ontologies/SCO).
 
-### SCO - useful links
+### SCO - Useful Links
 
-- SCO V1.0.1.
-- SCO V1.0.1. - BFO merged.
+- [SCO V1.0.1.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1-revisions)
 - SCO V1.1.0. - SCO-B.
 - SCO V1.1.0. - SCO-B. BFO merged.
 - SCO V1.1.0. - SCO-U.

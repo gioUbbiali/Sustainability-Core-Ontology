@@ -9,12 +9,15 @@ This repository maintains the Sustainability Core Ontology (SCO). SCO is a middl
    
 SCO is designed to be the pivotal resource upon which to harmonize and integrate top-level and domain ontologies regarding sustainability. The ultimate goal is to establish a family of interoperable sustainability ontologies. Currently, SCO offers ontological representations that align with [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020) and [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html).
 
+See also the [SCO documentation webpage](https://gioubbiali.github.io/Sustainability-Core-Ontology/).
 
 See also the SCO-B documentation webpage and SCO-U documentation webpage.
 
 ## Material
 
+
 To date, this repository hosts the SCO Structured Vocabulary (SCO SV) and the current release of SCO, SCO V1.1.0. 
+
 
 ### SCO SV
 
@@ -29,6 +32,7 @@ The SV guidelines spreadsheet details the methodology followed for constructing 
 
 SCO structured vocabulary spreadsheets are available in both Excel and CSV formats. The SCO SV spreadsheet also contains the graphical representation (named Supplementary Fig. S1 The structured vocabulary of SCO) of SCO SV in JPG format.
 
+
 ### SCO V1.1.0.
 
 SCO V1.1.0. implements [SCO V1.0.1.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1) by establishing an additional ontology segment aligned to [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html). SCO V1.0.1. only employes [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020) as the upper level ontology. 
@@ -37,7 +41,9 @@ SCO V1.1.0. is comprised of two segments: SCO-B (B for BFO) and SCO-U (U for UFO
 
 SCO V1.1.0. is formalized in [OWL](https://www.w3.org/TR/owl2-overview/) and covers three natural languages, English, French, and Italian. SCO V1.1.0. conforms to [OBO-Foundry principles](https://obofoundry.org/principles/fp-000-summary.html). SCO-B includes 80 classes, 84 object properties, and 2 individuals. SCO-U includes 197 classes, 151 object properties, and 106 individuals.
 
-SCO materials, including a protocol detailing the process followed to develop this ontology, can be found here:
+
+SCO materials can be found here:
+
 
 - [SCO V1.0.1. release.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1-revisions)
 - SCO-B current release.

@@ -1,0 +1,2997 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>Sustainability Core Ontology (SCO)</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://www.w3id.org/sco","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://www.w3id.org/sco","name":"Sustainability Core Ontology (SCO)", "headline":"Document describing the ontology https://www.w3id.org/sco", "dateReleased":"2025-02-26", "version":"Version 1.0.1.", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Giorgio A. Ubbiali","url":"https://orcid.org/0000-0001-7872-1770"}], "contributor":[{"@type":"Person","name":"Giorgio A. Ubbiali","url":"https://orcid.org/0000-0001-7872-1770"},{"@type":"Person","name":"Andrea Borghini","url":"https://orcid.org/0000-0002-2239-1482"},{"@type":"Person","name":"Matthew Lange","url":"https://orcid.org/0000-0002-6148-7962"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> <a href="index-it.html"><b>it</b></a> <a href="index-fr.html"><b>fr</b></a> </div>
+<h1>Sustainability Core Ontology (SCO)</h1>
+<h2>Release: 2025-02-26</h2>
+
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="https://www.w3id.org/sco#v1.0.1">https://www.w3id.org/sco#v1.0.1</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="https://www.w3id.org/sco">https://www.w3id.org/sco</a></dd>
+<dt>Previous version:</dt>
+<dd><a href="https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0">https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.0</a></dd>
+<dt>Revision:</dt>
+<dd>Version 1.0.1.</dd>
+<dt>Authors:</dt>
+<dd><a href="https://orcid.org/0000-0001-7872-1770">Giorgio A. Ubbiali</a><a href="mailto:ga.ubbiali@gmail.com">&#9993;</a></dd>
+
+<dt>Contributors:</dt>
+<dd><a href="https://orcid.org/0000-0001-7872-1770">Giorgio A. Ubbiali</a>, UNIMI ; IC-FOODS<a href="mailto:ga.ubbiali@gmail.com">&#9993;</a></dd><dd><a href="https://orcid.org/0000-0002-2239-1482">Andrea Borghini</a>, UNIMI</dd><dd><a href="https://orcid.org/0000-0002-6148-7962">Matthew Lange</a>, IC-FOODS</dd>
+
+<dt>Imported Ontologies:</dt>
+<dd><a href="http://purl.obolibrary.org/obo/bfo.owl">bfo.owl</a></dd>
+
+<dt>See also:</dt>
+<dd><a href="https://doi.org/10.31219/osf.io/z8uqr">https://doi.org/10.31219/osf.io/z8uqr</a></dd>
+
+<dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
+</dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>Giorgio A. Ubbiali. Sustainability Core Ontology (SCO). Retrieved from:https://w3id.org/sco</dd>
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Released</span>
+</div>
+</div><div id="toc"></div>  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">Sustainability Core Ontology (SCO): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">The Sustainability Core Ontology (SCO) is a middle-level ontology, covering the terminology related to the three major theoretical challenges of sustainability:
+
+1) The polysemy of the term "sustainability".
+2) The relationship between sustainability and sustainable development.
+3) The complexity underlying sustainability.
+
+SCO is designed to be the pivotal resource upon which to harmonize and integrate ontologies regarding sustainability. The ultimate goal is to establish a family of interoperable sustainability ontologies. Currently, SCO employs Basic Formal Ontology (BFO) as the upper-level ontology. SCO envisions also aligning with other top-level ontologies in the near future.
+
+The current  Web Ontology Language (OWL) release of SCO is SCO V1.0.1.  SCO V1.0.1. supplies SCO V1.0.0., the first SCO OWL release, with permanent IRIs. SCO V1.0.1 does not introduce any additional changes to SCO V1.0.0. 
+SCO V1.0.1. covers three natural languages, English, French, and Italian. It encompasses 80 classes, 84 object properties, 65 annotation properties, and 2 individuals. SCO V1.0.1. conforms to OBO-Foundry principles.
+
+The most recent version of SCO can be always found at https://w3id.org/sco. SCO V1.0.1. is also accessible on Ontobee, AgroPortal, BioPortal, and IndustryPortal.
+</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Sustainability Core Ontology (SCO) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Sustainability Core Ontology (SCO).
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#SCO_0000015" title="https://www.w3id.org/sco#SCO_0000015">complex system</a></li>
+  <li><a href="#SCO_0000034" title="https://www.w3id.org/sco#SCO_0000034">complex system agent</a></li>
+  <li><a href="#SCO_0000031" title="https://www.w3id.org/sco#SCO_0000031">complex system boundary</a></li>
+  <li><a href="#SCO_0000028" title="https://www.w3id.org/sco#SCO_0000028">complex system component</a></li>
+  <li><a href="#SCO_0000010" title="https://www.w3id.org/sco#SCO_0000010">complex system development</a></li>
+  <li><a href="#SCO_0000012" title="https://www.w3id.org/sco#SCO_0000012">complex system environment</a></li>
+  <li><a href="#SCO_0000033" title="https://www.w3id.org/sco#SCO_0000033">complex system environment agent</a></li>
+  <li><a href="#SCO_0000026" title="https://www.w3id.org/sco#SCO_0000026">complex system environment component</a></li>
+  <li><a href="#SCO_0000023" title="https://www.w3id.org/sco#SCO_0000023">complex system history</a></li>
+  <li><a href="#SCO_0000041" title="https://www.w3id.org/sco#SCO_0000041">complex system property</a></li>
+  <li><a href="#SCO_0000032" title="https://www.w3id.org/sco#SCO_0000032">complex system spatial region</a></li>
+  <li><a href="#SCO_0000042" title="https://www.w3id.org/sco#SCO_0000042">emergence</a></li>
+  <li><a href="#SCO_0000035" title="https://www.w3id.org/sco#SCO_0000035">indicator</a></li>
+  <li><a href="#SCO_0000003" title="https://www.w3id.org/sco#SCO_0000003">indicator value</a></li>
+  <li><a href="#SCO_0000017" title="https://www.w3id.org/sco#SCO_0000017">indicator-role</a></li>
+  <li><a href="#http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity" title="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity">Information Content Entity</a></li>
+  <li><a href="#SCO_0000001" title="https://www.w3id.org/sco#SCO_0000001">interaction</a></li>
+  <li><a href="#SCO_0000022" title="https://www.w3id.org/sco#SCO_0000022">interaction among complex system components</a></li>
+  <li><a href="#SCO_0000021" title="https://www.w3id.org/sco#SCO_0000021">interaction among complex system environment components</a></li>
+  <li><a href="#SCO_0000007" title="https://www.w3id.org/sco#SCO_0000007">interaction among system components</a></li>
+  <li><a href="#SCO_0000008" title="https://www.w3id.org/sco#SCO_0000008">interaction among system environment components</a></li>
+  <li><a href="#SCO_0000020" title="https://www.w3id.org/sco#SCO_0000020">interaction between complex system components and complex system environment components</a></li>
+  <li><a href="#SCO_0000009" title="https://www.w3id.org/sco#SCO_0000009">interaction between system components and system environment components</a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel">maturity level</a></li>
+  <li><a href="#SCO_0000016" title="https://www.w3id.org/sco#SCO_0000016">perspective</a></li>
+  <li><a href="#SCO_0000004" title="https://www.w3id.org/sco#SCO_0000004">perspective information content entity</a></li>
+  <li><a href="#http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity" title="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity">Representational Information Content Entity</a></li>
+  <li><a href="#SCO_0000043" title="https://www.w3id.org/sco#SCO_0000043">self-organization</a></li>
+  <li><a href="#SCO_0000036" title="https://www.w3id.org/sco#SCO_0000036">stakeholder</a></li>
+  <li><a href="#SCO_0000030" title="https://www.w3id.org/sco#SCO_0000030">stakeholder perspective</a></li>
+  <li><a href="#SCO_0000040" title="https://www.w3id.org/sco#SCO_0000040">stakeholder perspective information content entity</a></li>
+  <li><a href="#SCO_0000018" title="https://www.w3id.org/sco#SCO_0000018">stakeholder-role</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0002577" title="http://purl.obolibrary.org/obo/RO_0002577">system</a></li>
+  <li><a href="#SCO_0000029" title="https://www.w3id.org/sco#SCO_0000029">system agent</a></li>
+  <li><a href="#SCO_0000024" title="https://www.w3id.org/sco#SCO_0000024">system boundary</a></li>
+  <li><a href="#SCO_0000013" title="https://www.w3id.org/sco#SCO_0000013">system component</a></li>
+  <li><a href="#SCO_0000002" title="https://www.w3id.org/sco#SCO_0000002">system development</a></li>
+  <li><a href="#SCO_0000006" title="https://www.w3id.org/sco#SCO_0000006">system environment</a></li>
+  <li><a href="#SCO_0000014" title="https://www.w3id.org/sco#SCO_0000014">system environment component</a></li>
+  <li><a href="#SCO_0000027" title="https://www.w3id.org/sco#SCO_0000027">system environnement agent</a></li>
+  <li><a href="#SCO_0000011" title="https://www.w3id.org/sco#SCO_0000011">system history</a></li>
+  <li><a href="#SCO_0000025" title="https://www.w3id.org/sco#SCO_0000025">system spatial region</a></li>
+  <li><a href="#SCO_0000005" title="https://www.w3id.org/sco#SCO_0000005">worth information content entity</a></li>
+  <li><a href="#SCO_0000019" title="https://www.w3id.org/sco#SCO_0000019">worth-role</a></li>
+ </ul>
+ <div class="entity" id="SCO_0000015">
+  <h3>complex system<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000015</p>
+  <div class="comment">
+   <span class="markdown">A system whose system components interact dynamically and nonlinearly, causing the emergence of a collective nontrivial and self-organized behavior. No internal/external centralized controls are required.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    Ubbiali, G. A., Borghini, A., &amp; Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#http://purl.obolibrary.org/obo/RO_0002577" title="http://purl.obolibrary.org/obo/RO_0002577">system</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#http://purl.obolibrary.org/obo/RO_0000086" title="http://purl.obolibrary.org/obo/RO_0000086">has quality</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SCO_0000042" title="https://www.w3id.org/sco#SCO_0000042">emergence</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SCO_0000043" title="https://www.w3id.org/sco#SCO_0000043">self-organization</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://purl.obolibrary.org/obo/RO_0002577" title="http://purl.obolibrary.org/obo/RO_0002577">system</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000012" title="https://www.w3id.org/sco#SCO_0000012">complex system environment</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000034">
+  <h3>complex system agent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000034</p>
+  <div class="comment">
+   <span class="markdown">A complex system component that is an agent in an interaction among complex system components or in an interaction between complex system components and complex system environment components.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#SCO_0000028" title="https://www.w3id.org/sco#SCO_0000028">complex system component</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#SCO_0000038" title="https://www.w3id.org/sco#SCO_0000038">agent in at time t</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SCO_0000020" title="https://www.w3id.org/sco#SCO_0000020">interaction between complex system components and complex system environment components</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SCO_0000022" title="https://www.w3id.org/sco#SCO_0000022">interaction among complex system components</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#SCO_0000038" title="https://www.w3id.org/sco#SCO_0000038">agent in at time t</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#SCO_0000020" title="https://www.w3id.org/sco#SCO_0000020">interaction between complex system components and complex system environment components</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SCO_0000022" title="https://www.w3id.org/sco#SCO_0000022">interaction among complex system components</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000029" title="https://www.w3id.org/sco#SCO_0000029">system agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000033" title="https://www.w3id.org/sco#SCO_0000033">complex system environment agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000031">
+  <h3>complex system boundary<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000031</p>
+  <div class="comment">
+   <span class="markdown">A system boundary of a complex system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#SCO_0000024" title="https://www.w3id.org/sco#SCO_0000024">system boundary</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="http://purl.obolibrary.org/obo/BFO_0000137" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000137">B F O 0000137</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SCO_0000015" title="https://www.w3id.org/sco#SCO_0000015">complex system</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000024" title="https://www.w3id.org/sco#SCO_0000024">system boundary</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000028">
+  <h3>complex system component<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000028</p>
+  <div class="comment">
+   <span class="markdown">A system component that belongs to a complex system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#SCO_0000013" title="https://www.w3id.org/sco#SCO_0000013">system component</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="http://purl.obolibrary.org/obo/BFO_0000176" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000176">B F O 0000176</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SCO_0000015" title="https://www.w3id.org/sco#SCO_0000015">complex system</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000013" title="https://www.w3id.org/sco#SCO_0000013">system component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000035" title="https://www.w3id.org/sco#SCO_0000035">indicator</a> <sup class="type-c" title="class">c</sup>, <a href="#SCO_0000036" title="https://www.w3id.org/sco#SCO_0000036">stakeholder</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000026" title="https://www.w3id.org/sco#SCO_0000026">complex system environment component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000010">
+  <h3>complex system development<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000010</p>
+  <div class="comment">
+   <span class="markdown">The system development of a complex system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000002" title="https://www.w3id.org/sco#SCO_0000002">system development</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000023" title="https://www.w3id.org/sco#SCO_0000023">complex system history</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000012">
+  <h3>complex system environment<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000012</p>
+  <div class="comment">
+   <span class="markdown">A system environment that surrounds and is distinct and disjoint from a complex system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000006" title="https://www.w3id.org/sco#SCO_0000006">system environment</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000015" title="https://www.w3id.org/sco#SCO_0000015">complex system</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000033">
+  <h3>complex system environment agent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000033</p>
+  <div class="comment">
+   <span class="markdown">A complex system environment component that is an agent in an interaction among complex system environment components or in an interaction between complex system components and complex system environment components.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#SCO_0000026" title="https://www.w3id.org/sco#SCO_0000026">complex system environment component</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#SCO_0000038" title="https://www.w3id.org/sco#SCO_0000038">agent in at time t</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SCO_0000020" title="https://www.w3id.org/sco#SCO_0000020">interaction between complex system components and complex system environment components</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SCO_0000021" title="https://www.w3id.org/sco#SCO_0000021">interaction among complex system environment components</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#SCO_0000038" title="https://www.w3id.org/sco#SCO_0000038">agent in at time t</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#SCO_0000020" title="https://www.w3id.org/sco#SCO_0000020">interaction between complex system components and complex system environment components</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SCO_0000021" title="https://www.w3id.org/sco#SCO_0000021">interaction among complex system environment components</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000027" title="https://www.w3id.org/sco#SCO_0000027">system environnement agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000034" title="https://www.w3id.org/sco#SCO_0000034">complex system agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000026">
+  <h3>complex system environment component<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000026</p>
+  <div class="comment">
+   <span class="markdown">A system evironment component that belongs to the system environment of a complex system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#SCO_0000014" title="https://www.w3id.org/sco#SCO_0000014">system environment component</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="http://purl.obolibrary.org/obo/BFO_0000176" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000176">B F O 0000176</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SCO_0000012" title="https://www.w3id.org/sco#SCO_0000012">complex system environment</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000014" title="https://www.w3id.org/sco#SCO_0000014">system environment component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000028" title="https://www.w3id.org/sco#SCO_0000028">complex system component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000023">
+  <h3>complex system history<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000023</p>
+  <div class="comment">
+   <span class="markdown">The system history of a complex system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#SCO_0000011" title="https://www.w3id.org/sco#SCO_0000011">system history</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="http://purl.obolibrary.org/obo/BFO_0000184" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000184">B F O 0000184</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SCO_0000015" title="https://www.w3id.org/sco#SCO_0000015">complex system</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="http://purl.obolibrary.org/obo/BFO_0000184" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000184">B F O 0000184</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#SCO_0000015" title="https://www.w3id.org/sco#SCO_0000015">complex system</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000011" title="https://www.w3id.org/sco#SCO_0000011">system history</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000010" title="https://www.w3id.org/sco#SCO_0000010">complex system development</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000041">
+  <h3>complex system property<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000041</p>
+  <div class="comment">
+   <span class="markdown">Do not use this class directly. This class is constructed as a grouping for complex system properties, such as emergence and self-organization, in order to facilitate class retrieval and visualization.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">propriété de système complexe</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000020" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000020">B F O 0000020</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000042" title="https://www.w3id.org/sco#SCO_0000042">emergence</a> <sup class="type-c" title="class">c</sup>, <a href="#SCO_0000043" title="https://www.w3id.org/sco#SCO_0000043">self-organization</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000032">
+  <h3>complex system spatial region<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000032</p>
+  <div class="comment">
+   <span class="markdown">A system spatial region of a complex system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000025" title="https://www.w3id.org/sco#SCO_0000025">system spatial region</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000042">
+  <h3>emergence<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000042</p>
+  <div class="comment">
+   <span class="markdown">This class should be amended according to SCO implementations regarding system scales, levels, and change.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">A quality that inherits in a complex system by virtue of how the complex system behavior and properties at a macroscopic level are nontrivially envisaged from those at a more microscopic one.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000041" title="https://www.w3id.org/sco#SCO_0000041">complex system property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000043" title="https://www.w3id.org/sco#SCO_0000043">self-organization</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000035">
+  <h3>indicator<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000035</p>
+  <div class="comment">
+   <span class="markdown">SCO indicator classes have been designed referring to the characterization of sustainable development indicators (SDGs indicators) proposed by SDGIO. we aimed to deepen this characterization and establish upper-level classes for SDGIO ones.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">A complex system component with an indicator role.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#SCO_0000028" title="https://www.w3id.org/sco#SCO_0000028">complex system component</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#http://purl.obolibrary.org/obo/RO_0000087" title="http://purl.obolibrary.org/obo/RO_0000087">has role</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SCO_0000017" title="https://www.w3id.org/sco#SCO_0000017">indicator-role</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000028" title="https://www.w3id.org/sco#SCO_0000028">complex system component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000003">
+  <h3>indicator value<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000003</p>
+  <div class="comment">
+   <span class="markdown">A representational information content entity that generically depends on some indicator and is about, providing insights into, the complex system to which the indicator belongs.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    genid79
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity" title="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity">Representational Information Content Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000017">
+  <h3>indicator-role<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000017</p>
+  <div class="comment">
+   <span class="markdown">To distinguish and account for indicators according to the perspectives of different complex systems (and environment) components, we suggest proceeding following the indications provided under the “according to the perspective” annotation property. In this case, regarding the subclasses to create, we recommend establishing axioms restricting to this class.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">A role whose realization leads the complex system component to be recognized as a carrier of an indicator value, by some complex system component or complex system environment component according to its/their perspective.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000023" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000023">B F O 0000023</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity">
+  <h3>Information Content Entity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000031" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000031">B F O 0000031</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#http://www.ontologyrepository.com/CommonCoreOntologies/is_about" title="http://www.ontologyrepository.com/CommonCoreOntologies/is_about">is about</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="http://purl.obolibrary.org/obo/BFO_0000001" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000001">B F O 0000001</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000031" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000031">B F O 0000031</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity" title="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity">Representational Information Content Entity</a> <sup class="type-c" title="class">c</sup>, <a href="#SCO_0000004" title="https://www.w3id.org/sco#SCO_0000004">perspective information content entity</a> <sup class="type-c" title="class">c</sup>, <a href="#SCO_0000005" title="https://www.w3id.org/sco#SCO_0000005">worth information content entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/is_about" title="http://www.ontologyrepository.com/CommonCoreOntologies/is_about">is about</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of" title="http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of">is subject of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000001">
+  <h3>interaction<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000001</p>
+  <div class="comment">
+   <span class="markdown">In the original definition, INO developers define this class with respect to interactors involved in the interaction process. INO includes the classes “interactor” and “interactor role” (see SeeAlso note). Here, we generalize this definition, excluding reference to interactors. In the context of SCO, we aim to provide users with an upper-level class that generally points to the involvement of material entities in an interaction process mutually influencing each other. We suggest not using this class directly but, instead, extending SCO-provided subclasses as needed. We wish users to classify interactions according to whether they occur among system components, among system environment components, or between system and system environment components. Original definition: “Interaction is a processual entity that has two or more participants (i.e., interactors) that have an effect upon one another.”</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">A process that has at least two material entities as participants that have an effect upon one another.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#SCO_0000007" title="https://www.w3id.org/sco#SCO_0000007">interaction among system components</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SCO_0000008" title="https://www.w3id.org/sco#SCO_0000008">interaction among system environment components</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SCO_0000009" title="https://www.w3id.org/sco#SCO_0000009">interaction between system components and system environment components</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000015" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000015">B F O 0000015</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000007" title="https://www.w3id.org/sco#SCO_0000007">interaction among system components</a> <sup class="type-c" title="class">c</sup>, <a href="#SCO_0000008" title="https://www.w3id.org/sco#SCO_0000008">interaction among system environment components</a> <sup class="type-c" title="class">c</sup>, <a href="#SCO_0000009" title="https://www.w3id.org/sco#SCO_0000009">interaction between system components and system environment components</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000022">
+  <h3>interaction among complex system components<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000022</p>
+  <div class="comment">
+   <span class="markdown">An interaction that occurs among at least two system components of a complex system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000007" title="https://www.w3id.org/sco#SCO_0000007">interaction among system components</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000020" title="https://www.w3id.org/sco#SCO_0000020">interaction between complex system components and complex system environment components</a> <sup class="type-c" title="class">c</sup>, <a href="#SCO_0000021" title="https://www.w3id.org/sco#SCO_0000021">interaction among complex system environment components</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000021">
+  <h3>interaction among complex system environment components<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000021</p>
+  <div class="comment">
+   <span class="markdown">An interaction that occurs among at least two complex system environment components.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000008" title="https://www.w3id.org/sco#SCO_0000008">interaction among system environment components</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000020" title="https://www.w3id.org/sco#SCO_0000020">interaction between complex system components and complex system environment components</a> <sup class="type-c" title="class">c</sup>, <a href="#SCO_0000022" title="https://www.w3id.org/sco#SCO_0000022">interaction among complex system components</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000007">
+  <h3>interaction among system components<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000007</p>
+  <div class="comment">
+   <span class="markdown">An interaction that occurs among at least two system components.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000001" title="https://www.w3id.org/sco#SCO_0000001">interaction</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000022" title="https://www.w3id.org/sco#SCO_0000022">interaction among complex system components</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000008" title="https://www.w3id.org/sco#SCO_0000008">interaction among system environment components</a> <sup class="type-c" title="class">c</sup>, <a href="#SCO_0000009" title="https://www.w3id.org/sco#SCO_0000009">interaction between system components and system environment components</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000008">
+  <h3>interaction among system environment components<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000008</p>
+  <div class="comment">
+   <span class="markdown">An interaction that occurs among at least two system environment components.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000001" title="https://www.w3id.org/sco#SCO_0000001">interaction</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000021" title="https://www.w3id.org/sco#SCO_0000021">interaction among complex system environment components</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000007" title="https://www.w3id.org/sco#SCO_0000007">interaction among system components</a> <sup class="type-c" title="class">c</sup>, <a href="#SCO_0000009" title="https://www.w3id.org/sco#SCO_0000009">interaction between system components and system environment components</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000020">
+  <h3>interaction between complex system components and complex system environment components<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000020</p>
+  <div class="comment">
+   <span class="markdown">An interaction that occurs between at least one complex system component and one complex system environment component where the latter belongs to the complex system environment of the complex system to which the complex system component belongs.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000009" title="https://www.w3id.org/sco#SCO_0000009">interaction between system components and system environment components</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000021" title="https://www.w3id.org/sco#SCO_0000021">interaction among complex system environment components</a> <sup class="type-c" title="class">c</sup>, <a href="#SCO_0000022" title="https://www.w3id.org/sco#SCO_0000022">interaction among complex system components</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000009">
+  <h3>interaction between system components and system environment components<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000009</p>
+  <div class="comment">
+   <span class="markdown">An interaction that occurs between at least one system component and one system environment component where the latter belongs to the system environment of the system to which the system component belongs.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000001" title="https://www.w3id.org/sco#SCO_0000001">interaction</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000020" title="https://www.w3id.org/sco#SCO_0000020">interaction between complex system components and complex system environment components</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000007" title="https://www.w3id.org/sco#SCO_0000007">interaction among system components</a> <sup class="type-c" title="class">c</sup>, <a href="#SCO_0000008" title="https://www.w3id.org/sco#SCO_0000008">interaction among system environment components</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel">
+  <h3>maturity level<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel</p>
+  <div class="comment">
+   <span class="markdown">classifier used to specify the state of a resource in its development process</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional">provisional</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released">released</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000016">
+  <h3>perspective<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000016</p>
+  <div class="comment">
+   <span class="markdown">SCO currently accounts for perspectives of complex system components and complex system environment components because the focus of this ontology is on complex systems. Future versions of this ontology may explore extending reference more broadly to systems.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">A disposition whose realization leads the complex system component or the complex system environment component to (re)position itself within and regarding the complex system or complex system environment it belongs to (or a part of it) and possibly act accordingly.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000016" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000016">B F O 0000016</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000030" title="https://www.w3id.org/sco#SCO_0000030">stakeholder perspective</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000004">
+  <h3>perspective information content entity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000004</p>
+  <div class="comment">
+   <span class="markdown">An information content entity that generically depends on some complex system component or complex system environment component and is about the perspective (that concretizes it) of that complex system component or complex system environment component.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity" title="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity">Information Content Entity</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#http://www.ontologyrepository.com/CommonCoreOntologies/is_about" title="http://www.ontologyrepository.com/CommonCoreOntologies/is_about">is about</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SCO_0000016" title="https://www.w3id.org/sco#SCO_0000016">perspective</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity" title="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity">Information Content Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000040" title="https://www.w3id.org/sco#SCO_0000040">stakeholder perspective information content entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity" title="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity">Representational Information Content Entity</a> <sup class="type-c" title="class">c</sup>, <a href="#SCO_0000005" title="https://www.w3id.org/sco#SCO_0000005">worth information content entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity">
+  <h3>Representational Information Content Entity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity" title="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity">Information Content Entity</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#http://www.ontologyrepository.com/CommonCoreOntologies/represents" title="http://www.ontologyrepository.com/CommonCoreOntologies/represents">represents</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="http://purl.obolibrary.org/obo/BFO_0000001" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000001">B F O 0000001</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity" title="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity">Information Content Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000003" title="https://www.w3id.org/sco#SCO_0000003">indicator value</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/represents" title="http://www.ontologyrepository.com/CommonCoreOntologies/represents">represents</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/represented_by" title="http://www.ontologyrepository.com/CommonCoreOntologies/represented_by">represented by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000004" title="https://www.w3id.org/sco#SCO_0000004">perspective information content entity</a> <sup class="type-c" title="class">c</sup>, <a href="#SCO_0000005" title="https://www.w3id.org/sco#SCO_0000005">worth information content entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000043">
+  <h3>self-organization<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000043</p>
+  <div class="comment">
+   <span class="markdown">This class should be amended according to SCO implementations regarding system scales, levels, and change.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">A quality that inherits in a complex system by virtue of how the complex system components spontaneously arrange, globally generating macroscopic and microscopic structures and behaviors, without any internal and/or external controls.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000041" title="https://www.w3id.org/sco#SCO_0000041">complex system property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000042" title="https://www.w3id.org/sco#SCO_0000042">emergence</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000036">
+  <h3>stakeholder<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000036</p>
+  <div class="comment">
+   <span class="markdown">A complex system component with a stakeholder role.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#SCO_0000028" title="https://www.w3id.org/sco#SCO_0000028">complex system component</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#http://purl.obolibrary.org/obo/RO_0000087" title="http://purl.obolibrary.org/obo/RO_0000087">has role</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SCO_0000018" title="https://www.w3id.org/sco#SCO_0000018">stakeholder-role</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000028" title="https://www.w3id.org/sco#SCO_0000028">complex system component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000030">
+  <h3>stakeholder perspective<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000030</p>
+  <div class="comment">
+   <span class="markdown">A perspective that is bearered by a stakeholder.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#SCO_0000016" title="https://www.w3id.org/sco#SCO_0000016">perspective</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#http://purl.obolibrary.org/obo/RO_0000092" title="http://purl.obolibrary.org/obo/RO_0000092">disposition of</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SCO_0000036" title="https://www.w3id.org/sco#SCO_0000036">stakeholder</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000016" title="https://www.w3id.org/sco#SCO_0000016">perspective</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000040">
+  <h3>stakeholder perspective information content entity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000040</p>
+  <div class="comment">
+   <span class="markdown">A perspective information content entity of a stakeholder perspective.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#SCO_0000004" title="https://www.w3id.org/sco#SCO_0000004">perspective information content entity</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#http://www.ontologyrepository.com/CommonCoreOntologies/is_about" title="http://www.ontologyrepository.com/CommonCoreOntologies/is_about">is about</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SCO_0000030" title="https://www.w3id.org/sco#SCO_0000030">stakeholder perspective</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000004" title="https://www.w3id.org/sco#SCO_0000004">perspective information content entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000018">
+  <h3>stakeholder-role<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000018</p>
+  <div class="comment">
+   <span class="markdown">A role whose realization leads the complex system component to be recognized as a bearer, in the belonging complex system, of at least one role (different from the role of stakeholder) and/or disposition (primarily a disposition to benefit/be damaged as being part of that complex system).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000023" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000023">B F O 0000023</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0002577">
+  <h3>system<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0002577</p>
+  <div class="comment">
+   <span class="markdown">A material entity consisting of multiple components that are causally integrated.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">SCO cretor comment: RO defines the class “system” as a subclass of the “material entity” class. Nevertheless, a system is a fiat object, e.g. an object that is “delimited” according to the perspective of the stakeholder (Landgrebe and Smith 2022, p. 117,118). System delimitation determines the boundaries of the systems, but the stakeholder, however, does not create the system through this delimitation process (Landgrebe and Smith 2022, p. 117,118). As this class is extensively reused among ontologies within the OBO-Foundry context, we maintain its current hierarchical position. However, we recommend a revision of this class. There are two possible strategies to consider: 1) to reclassify this class as a subclass of “fiat object part” one or 2) to create a dedicated “fiat object” class that will be a subclass of “material entity” and the superclass for the “system” one (and related subclasses). We leave the discussion open with the intention of engaging with subject matter experts, planning that these modifications may be included in the next release of this resource. As the environment of a system corresponds to what has not been delimited as part of such a system, these considerations correspondingly also apply to the class “system environment” (at least regarding the system-system environment boundaries).</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    http://www.jbiomedsem.com/content/4/1/43
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000040" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000040">B F O 0000040</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000015" title="https://www.w3id.org/sco#SCO_0000015">complex system</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000006" title="https://www.w3id.org/sco#SCO_0000006">system environment</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000029">
+  <h3>system agent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000029</p>
+  <div class="comment">
+   <span class="markdown">A system component that is an agent in an interaction among system components or in an interaction between system components and system environment components.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#SCO_0000013" title="https://www.w3id.org/sco#SCO_0000013">system component</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#SCO_0000038" title="https://www.w3id.org/sco#SCO_0000038">agent in at time t</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SCO_0000007" title="https://www.w3id.org/sco#SCO_0000007">interaction among system components</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SCO_0000009" title="https://www.w3id.org/sco#SCO_0000009">interaction between system components and system environment components</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#SCO_0000038" title="https://www.w3id.org/sco#SCO_0000038">agent in at time t</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#SCO_0000007" title="https://www.w3id.org/sco#SCO_0000007">interaction among system components</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SCO_0000009" title="https://www.w3id.org/sco#SCO_0000009">interaction between system components and system environment components</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000013" title="https://www.w3id.org/sco#SCO_0000013">system component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000034" title="https://www.w3id.org/sco#SCO_0000034">complex system agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000027" title="https://www.w3id.org/sco#SCO_0000027">system environnement agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000024">
+  <h3>system boundary<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000024</p>
+  <div class="comment">
+   <span class="markdown"></span>
+  </div>
+  <div class="comment">
+   <span class="markdown">A fiat surface of a system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000146" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000146">B F O 0000146</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="http://purl.obolibrary.org/obo/BFO_0000137" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000137">B F O 0000137</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#http://purl.obolibrary.org/obo/RO_0002577" title="http://purl.obolibrary.org/obo/RO_0002577">system</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000146" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000146">B F O 0000146</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000031" title="https://www.w3id.org/sco#SCO_0000031">complex system boundary</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000013">
+  <h3>system component<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000013</p>
+  <div class="comment">
+   <span class="markdown">A material entity that belongs to a system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000040" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000040">B F O 0000040</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="http://purl.obolibrary.org/obo/BFO_0000176" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000176">B F O 0000176</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#http://purl.obolibrary.org/obo/RO_0002577" title="http://purl.obolibrary.org/obo/RO_0002577">system</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000040" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000040">B F O 0000040</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000028" title="https://www.w3id.org/sco#SCO_0000028">complex system component</a> <sup class="type-c" title="class">c</sup>, <a href="#SCO_0000029" title="https://www.w3id.org/sco#SCO_0000029">system agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000014" title="https://www.w3id.org/sco#SCO_0000014">system environment component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000002">
+  <h3>system development<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000002</p>
+  <div class="comment">
+   <span class="markdown">This class aims to be the starting point for developing a representation of system change. Future SCO implementations will provide additional classes and object properties addressing system behaviors, system processes, system scales and levels, and related themes. Related axioms must be revised accordingly.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">A process whose specific outcome is the progression of a system over time from an initial condition to a later condition.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000015" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000015">B F O 0000015</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000010" title="https://www.w3id.org/sco#SCO_0000010">complex system development</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000011" title="https://www.w3id.org/sco#SCO_0000011">system history</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000006">
+  <h3>system environment<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000006</p>
+  <div class="comment">
+   <span class="markdown">See the comment under the "system" class.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">A material entity that surrounds and is distinct and disjoint from a system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000040" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000040">B F O 0000040</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000012" title="https://www.w3id.org/sco#SCO_0000012">complex system environment</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#http://purl.obolibrary.org/obo/RO_0002577" title="http://purl.obolibrary.org/obo/RO_0002577">system</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000014">
+  <h3>system environment component<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000014</p>
+  <div class="comment">
+   <span class="markdown">A material entity that belongs to a system environment.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000040" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000040">B F O 0000040</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="http://purl.obolibrary.org/obo/BFO_0000176" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000176">B F O 0000176</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SCO_0000006" title="https://www.w3id.org/sco#SCO_0000006">system environment</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000040" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000040">B F O 0000040</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000026" title="https://www.w3id.org/sco#SCO_0000026">complex system environment component</a> <sup class="type-c" title="class">c</sup>, <a href="#SCO_0000027" title="https://www.w3id.org/sco#SCO_0000027">system environnement agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000013" title="https://www.w3id.org/sco#SCO_0000013">system component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000027">
+  <h3>system environnement agent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000027</p>
+  <div class="comment">
+   <span class="markdown">A system environment component that is an agent in an interaction among system environment components or in an interaction between system components and system environment components.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#SCO_0000014" title="https://www.w3id.org/sco#SCO_0000014">system environment component</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#SCO_0000038" title="https://www.w3id.org/sco#SCO_0000038">agent in at time t</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SCO_0000008" title="https://www.w3id.org/sco#SCO_0000008">interaction among system environment components</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SCO_0000009" title="https://www.w3id.org/sco#SCO_0000009">interaction between system components and system environment components</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="#SCO_0000038" title="https://www.w3id.org/sco#SCO_0000038">agent in at time t</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#SCO_0000008" title="https://www.w3id.org/sco#SCO_0000008">interaction among system environment components</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SCO_0000009" title="https://www.w3id.org/sco#SCO_0000009">interaction between system components and system environment components</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000014" title="https://www.w3id.org/sco#SCO_0000014">system environment component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000033" title="https://www.w3id.org/sco#SCO_0000033">complex system environment agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000029" title="https://www.w3id.org/sco#SCO_0000029">system agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000011">
+  <h3>system history<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000011</p>
+  <div class="comment">
+   <span class="markdown">The history of a system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000182" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000182">B F O 0000182</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="http://purl.obolibrary.org/obo/BFO_0000184" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000184">B F O 0000184</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#http://purl.obolibrary.org/obo/RO_0002577" title="http://purl.obolibrary.org/obo/RO_0002577">system</a> <sup class="type-c" title="class">c</sup>) <span class="logic">and</span> (<a href="http://purl.obolibrary.org/obo/BFO_0000184" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000184">B F O 0000184</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#http://purl.obolibrary.org/obo/RO_0002577" title="http://purl.obolibrary.org/obo/RO_0002577">system</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000182" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000182">B F O 0000182</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000023" title="https://www.w3id.org/sco#SCO_0000023">complex system history</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#SCO_0000002" title="https://www.w3id.org/sco#SCO_0000002">system development</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000025">
+  <h3>system spatial region<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000025</p>
+  <div class="comment">
+   <span class="markdown">Future SCO implementations may consider including classes also covering spatial region for the system environment.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">A three-dimensional spatial region of a system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000028" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000028">B F O 0000028</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#SCO_0000032" title="https://www.w3id.org/sco#SCO_0000032">complex system spatial region</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000005">
+  <h3>worth information content entity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000005</p>
+  <div class="comment">
+   <span class="markdown">An information content entity that generically depends on a complex system or a complex system environment (or some part(s) of them) and is about the worth (that concretizes it) that some complex system component or complex system environment component recognizes that that complex system or complex system environment (or some part(s) of them) bearer.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity" title="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity">Information Content Entity</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="#http://www.ontologyrepository.com/CommonCoreOntologies/is_about" title="http://www.ontologyrepository.com/CommonCoreOntologies/is_about">is about</a> <sup class="type-op" title="object property">op</sup> <span class="logic">some</span> <a href="#SCO_0000019" title="https://www.w3id.org/sco#SCO_0000019">worth-role</a> <sup class="type-c" title="class">c</sup>)
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity" title="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity">Information Content Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity" title="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity">Representational Information Content Entity</a> <sup class="type-c" title="class">c</sup>, <a href="#SCO_0000004" title="https://www.w3id.org/sco#SCO_0000004">perspective information content entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SCO_0000019">
+  <h3>worth-role<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000019</p>
+  <div class="comment">
+   <span class="markdown">Due to the SCO focus on complex systems, the worth-role class have been designed referring specifically to complex systems. Nevertheless, future implementations may broaden the space of application to also systems. Implementations may equally deepen this representation, detailing and elucidating the distinction and connection between worth and value(s).</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">A role whose realization leads the complex system or the complex system environment (or some part(s) of them) to be recognized to bearer relevance by some complex system component or complex system environment component according to its/their perspective.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/BFO_0000023" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000023">B F O 0000023</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#SCO_0000038" title="https://www.w3id.org/sco#SCO_0000038">agent in at time t</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0000052" title="http://purl.obolibrary.org/obo/RO_0000052">characteristic of</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0002314" title="http://purl.obolibrary.org/obo/RO_0002314">characteristic of part of</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0002502" title="http://purl.obolibrary.org/obo/RO_0002502">depends on</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0000092" title="http://purl.obolibrary.org/obo/RO_0000092">disposition of</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0000079" title="http://purl.obolibrary.org/obo/RO_0000079">function of</a></li>
+  <li><a href="#SCO_0000037" title="https://www.w3id.org/sco#SCO_0000037">has agent at time t</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0000053" title="http://purl.obolibrary.org/obo/RO_0000053">has characteristic</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0000091" title="http://purl.obolibrary.org/obo/RO_0000091">has disposition</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0000085" title="http://purl.obolibrary.org/obo/RO_0000085">has function</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0000086" title="http://purl.obolibrary.org/obo/RO_0000086">has quality</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0000087" title="http://purl.obolibrary.org/obo/RO_0000087">has role</a></li>
+  <li><a href="#http://www.ontologyrepository.com/CommonCoreOntologies/is_about" title="http://www.ontologyrepository.com/CommonCoreOntologies/is_about">is about</a></li>
+  <li><a href="#http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of" title="http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of">is subject of</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0002323" title="http://purl.obolibrary.org/obo/RO_0002323">mereotopologically related to</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0000080" title="http://purl.obolibrary.org/obo/RO_0000080">quality of</a></li>
+  <li><a href="#http://www.ontologyrepository.com/CommonCoreOntologies/represented_by" title="http://www.ontologyrepository.com/CommonCoreOntologies/represented_by">represented by</a></li>
+  <li><a href="#http://www.ontologyrepository.com/CommonCoreOntologies/represents" title="http://www.ontologyrepository.com/CommonCoreOntologies/represents">represents</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0000081" title="http://purl.obolibrary.org/obo/RO_0000081">role of</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0002163" title="http://purl.obolibrary.org/obo/RO_0002163">spatially disjoint from</a></li>
+ </ul>
+ <div class="entity" id="SCO_0000038">
+  <h3>agent in at time t<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000038</p>
+  <div class="comment">
+   <span class="markdown">A primitive relation between a continuant x, a process y, and a time at which x is causally active in y.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://purl.obolibrary.org/obo/BFO_0000056" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000056">B F O 0000056</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://purl.obolibrary.org/obo/BFO_0000020" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000020">B F O 0000020</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="http://purl.obolibrary.org/obo/BFO_0000031" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000031">B F O 0000031</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> (<a href="http://purl.obolibrary.org/obo/BFO_0000004" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000004">B F O 0000004</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<span class="logic">not</span> (<a href="http://purl.obolibrary.org/obo/BFO_0000006" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000006">B F O 0000006</a> <sup class="type-c" title="class">c</sup>)))
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://purl.obolibrary.org/obo/BFO_0000015" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000015">B F O 0000015</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#SCO_0000037" title="https://www.w3id.org/sco#SCO_0000037">has agent at time t</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0000052">
+  <h3>characteristic of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0000052</p>
+  <div class="comment">
+   <span class="markdown">a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Note that this relation was previously called "inheres in", but was changed to be called "characteristic of" because BFO2 uses "inheres in" in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>this fragility is a characteristic of this vase</pre>
+   </dd>
+   <dd>
+    <pre>this red color is a characteristic of this apple</pre>
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0002314" title="http://purl.obolibrary.org/obo/RO_0002314">characteristic of part of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000092" title="http://purl.obolibrary.org/obo/RO_0000092">disposition of</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.obolibrary.org/obo/RO_0000079" title="http://purl.obolibrary.org/obo/RO_0000079">function of</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.obolibrary.org/obo/RO_0000080" title="http://purl.obolibrary.org/obo/RO_0000080">quality of</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.obolibrary.org/obo/RO_0000081" title="http://purl.obolibrary.org/obo/RO_0000081">role of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000053" title="http://purl.obolibrary.org/obo/RO_0000053">has characteristic</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0002314">
+  <h3>characteristic of part of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0002314</p>
+  <div class="comment">
+   <span class="markdown">q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="http://www.ncbi.nlm.nih.gov/pubmed/20064205">http://www.ncbi.nlm.nih.gov/pubmed/20064205</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0002502" title="http://purl.obolibrary.org/obo/RO_0002502">depends on</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000052" title="http://purl.obolibrary.org/obo/RO_0000052">characteristic of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0002502">
+  <h3>depends on<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0002502</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0002314" title="http://purl.obolibrary.org/obo/RO_0002314">characteristic of part of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0000092">
+  <h3>disposition of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0000092</p>
+  <div class="comment">
+   <span class="markdown">inverse of has disposition</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000052" title="http://purl.obolibrary.org/obo/RO_0000052">characteristic of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000091" title="http://purl.obolibrary.org/obo/RO_0000091">has disposition</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0000079">
+  <h3>function of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0000079</p>
+  <div class="comment">
+   <span class="markdown">a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>this catalysis function is a function of this enzyme</pre>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000052" title="http://purl.obolibrary.org/obo/RO_0000052">characteristic of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://purl.obolibrary.org/obo/BFO_0000034" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000034">B F O 0000034</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000085" title="http://purl.obolibrary.org/obo/RO_0000085">has function</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="SCO_0000037">
+  <h3>has agent at time t<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000037</p>
+  <div class="comment">
+   <span class="markdown">Common Core Ontologies (CC) provide corresponding properties for this and the “agent at time t” relations. See “see also” annotation”. As these relations apply specifically to the CCO “Agent” class and lack reference to time, the SCO creator decided to establish SCO's own versions of these relations, directly referring to the original source. See “adapted from” annotation.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">A primitive relation between a process x, a continuant y, and a time at which y is causally active in x.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://purl.obolibrary.org/obo/BFO_0000057" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000057">B F O 0000057</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://purl.obolibrary.org/obo/BFO_0000015" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000015">B F O 0000015</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://purl.obolibrary.org/obo/BFO_0000020" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000020">B F O 0000020</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="http://purl.obolibrary.org/obo/BFO_0000031" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000031">B F O 0000031</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> (<a href="http://purl.obolibrary.org/obo/BFO_0000004" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000004">B F O 0000004</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<span class="logic">not</span> (<a href="http://purl.obolibrary.org/obo/BFO_0000006" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000006">B F O 0000006</a> <sup class="type-c" title="class">c</sup>)))
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#SCO_0000038" title="https://www.w3id.org/sco#SCO_0000038">agent in at time t</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0000053">
+  <h3>has characteristic<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0000053</p>
+  <div class="comment">
+   <span class="markdown">Inverse of characteristic_of</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>this apple is bearer of this red color</pre>
+   </dd>
+   <dd>
+    <pre>this vase is bearer of this fragility</pre>
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> inverse functional</p>
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000091" title="http://purl.obolibrary.org/obo/RO_0000091">has disposition</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.obolibrary.org/obo/RO_0000085" title="http://purl.obolibrary.org/obo/RO_0000085">has function</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.obolibrary.org/obo/RO_0000086" title="http://purl.obolibrary.org/obo/RO_0000086">has quality</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.obolibrary.org/obo/RO_0000087" title="http://purl.obolibrary.org/obo/RO_0000087">has role</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://purl.obolibrary.org/obo/BFO_0000020" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000020">B F O 0000020</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000052" title="http://purl.obolibrary.org/obo/RO_0000052">characteristic of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0000091">
+  <h3>has disposition<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0000091</p>
+  <div class="comment">
+   <span class="markdown">a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000053" title="http://purl.obolibrary.org/obo/RO_0000053">has characteristic</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://purl.obolibrary.org/obo/BFO_0000004" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000004">B F O 0000004</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://purl.obolibrary.org/obo/BFO_0000016" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000016">B F O 0000016</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000092" title="http://purl.obolibrary.org/obo/RO_0000092">disposition of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0000085">
+  <h3>has function<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0000085</p>
+  <div class="comment">
+   <span class="markdown">a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>this enzyme has function this catalysis function (more colloquially: this enzyme has this catalysis function)</pre>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000053" title="http://purl.obolibrary.org/obo/RO_0000053">has characteristic</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://purl.obolibrary.org/obo/BFO_0000004" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000004">B F O 0000004</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://purl.obolibrary.org/obo/BFO_0000034" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000034">B F O 0000034</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000079" title="http://purl.obolibrary.org/obo/RO_0000079">function of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0000086">
+  <h3>has quality<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0000086</p>
+  <div class="comment">
+   <span class="markdown">a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>this apple has quality this red color</pre>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000053" title="http://purl.obolibrary.org/obo/RO_0000053">has characteristic</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://purl.obolibrary.org/obo/BFO_0000019" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000019">B F O 0000019</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000080" title="http://purl.obolibrary.org/obo/RO_0000080">quality of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0000087">
+  <h3>has role<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0000087</p>
+  <div class="comment">
+   <span class="markdown">a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>this person has role this investigator role (more colloquially: this person has this role of investigator)</pre>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000053" title="http://purl.obolibrary.org/obo/RO_0000053">has characteristic</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://purl.obolibrary.org/obo/BFO_0000004" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000004">B F O 0000004</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://purl.obolibrary.org/obo/BFO_0000023" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000023">B F O 0000023</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000081" title="http://purl.obolibrary.org/obo/RO_0000081">role of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.ontologyrepository.com/CommonCoreOntologies/is_about">
+  <h3>is about<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.ontologyrepository.com/CommonCoreOntologies/is_about</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/represents" title="http://www.ontologyrepository.com/CommonCoreOntologies/represents">represents</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity" title="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity">Information Content Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://purl.obolibrary.org/obo/BFO_0000001" target="_blank" title="http://purl.obolibrary.org/obo/BFO_0000001">B F O 0000001</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of" title="http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of">is subject of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of">
+  <h3>is subject of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/represented_by" title="http://www.ontologyrepository.com/CommonCoreOntologies/represented_by">represented by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity" title="http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity">Information Content Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/is_about" title="http://www.ontologyrepository.com/CommonCoreOntologies/is_about">is about</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0002323">
+  <h3>mereotopologically related to<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0002323</p>
+  <div class="comment">
+   <span class="markdown">A mereological relationship or a topological relationship</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0002163" title="http://purl.obolibrary.org/obo/RO_0002163">spatially disjoint from</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0000080">
+  <h3>quality of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0000080</p>
+  <div class="comment">
+   <span class="markdown">a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>this red color is a quality of this apple</pre>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000052" title="http://purl.obolibrary.org/obo/RO_0000052">characteristic of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000086" title="http://purl.obolibrary.org/obo/RO_0000086">has quality</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.ontologyrepository.com/CommonCoreOntologies/represented_by">
+  <h3>represented by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.ontologyrepository.com/CommonCoreOntologies/represented_by</p>
+  <div class="comment">
+   <span class="markdown">See notes for inverse property.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of" title="http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of">is subject of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity" title="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity">Representational Information Content Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/represents" title="http://www.ontologyrepository.com/CommonCoreOntologies/represents">represents</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.ontologyrepository.com/CommonCoreOntologies/represents">
+  <h3>represents<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.ontologyrepository.com/CommonCoreOntologies/represents</p>
+  <div class="comment">
+   <span class="markdown">Isomorphism between the carrier of x and the represented entity can be via a direct similarity relation, e.g., grooves in a vinyl record corresponding to sound waves, or linguistic convention, e.g., a court stenographer's transcription of spoken words, as well as others, such as encoding processes for images.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/is_about" title="http://www.ontologyrepository.com/CommonCoreOntologies/is_about">is about</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity" title="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity">Representational Information Content Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://www.ontologyrepository.com/CommonCoreOntologies/represented_by" title="http://www.ontologyrepository.com/CommonCoreOntologies/represented_by">represented by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0000081">
+  <h3>role of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0000081</p>
+  <div class="comment">
+   <span class="markdown">a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>this investigator role is a role of this person</pre>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000052" title="http://purl.obolibrary.org/obo/RO_0000052">characteristic of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0000087" title="http://purl.obolibrary.org/obo/RO_0000087">has role</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0002163">
+  <h3>spatially disjoint from<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0002163</p>
+  <div class="comment">
+   <span class="markdown">A is spatially_disjoint_from B if and only if they have no parts in common</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="http://www.ncbi.nlm.nih.gov/pubmed/22293552">http://www.ncbi.nlm.nih.gov/pubmed/22293552</a>
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Term status
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/IAO_0000125">http://purl.obolibrary.org/obo/IAO_0000125</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0002323" title="http://purl.obolibrary.org/obo/RO_0002323">mereotopologically related to</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+ <ul class="hlist">
+  <li><a href="#SCO_0000039" title="https://www.w3id.org/sco#SCO_0000039">according to the perspective</a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom">adapted from</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/IAO_0000118" title="http://purl.obolibrary.org/obo/IAO_0000118">alternative label</a></li>
+  <li><a href="#http://www.ontologyrepository.com/CommonCoreOntologies/alternative_label" title="http://www.ontologyrepository.com/CommonCoreOntologies/alternative_label"> <span>alternative label</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">contributor</a></li>
+  <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator"> <span>creator</span> </a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/IAO_0000232" title="http://purl.obolibrary.org/obo/IAO_0000232">curator note</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/IAO_0000115" title="http://purl.obolibrary.org/obo/IAO_0000115">definition</a></li>
+  <li><a href="#http://www.ontologyrepository.com/CommonCoreOntologies/definition" title="http://www.ontologyrepository.com/CommonCoreOntologies/definition"> <span>definition</span> </a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/IAO_0000119" title="http://purl.obolibrary.org/obo/IAO_0000119">definition source</a></li>
+  <li><a href="#http://www.ontologyrepository.com/CommonCoreOntologies/definition_source" title="http://www.ontologyrepository.com/CommonCoreOntologies/definition_source"> <span>definition source</span> </a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/directSource" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/directSource">direct source</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/IAO_0000116" title="http://purl.obolibrary.org/obo/IAO_0000116">editor note</a></li>
+  <li><a href="#http://www.geneontology.org/formats/oboInOwl#editor_note" title="http://www.geneontology.org/formats/oboInOwl#editor_note"> <span>editor note</span> </a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/IAO_0000111" title="http://purl.obolibrary.org/obo/IAO_0000111">editor preferred term</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/IAO_0000600" title="http://purl.obolibrary.org/obo/IAO_0000600">elucidation</a></li>
+  <li><a href="#http://www.ontologyrepository.com/CommonCoreOntologies/elucidation" title="http://www.ontologyrepository.com/CommonCoreOntologies/elucidation"> <span>elucidation</span> </a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/IAO_0000112" title="http://purl.obolibrary.org/obo/IAO_0000112">example of usage</a></li>
+  <li><a href="#http://www.ontologyrepository.com/CommonCoreOntologies/example_of_usage" title="http://www.ontologyrepository.com/CommonCoreOntologies/example_of_usage"> <span>example of usage</span> </a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/excerptedFrom" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/excerptedFrom">excerpted from</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/IAO_0000424" title="http://purl.obolibrary.org/obo/IAO_0000424">expand expression to</a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote">explanatory note</a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition">first order logic definition</a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom">first-order logic axiom</a></li>
+  <li><a href="#http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym" title="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">has broad synonym</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/IAO_0000114" title="http://purl.obolibrary.org/obo/IAO_0000114">has curation status</a></li>
+  <li><a href="#http://www.geneontology.org/formats/oboInOwl#hasDbXref" title="http://www.geneontology.org/formats/oboInOwl#hasDbXref"> <span>has Db Xref</span> </a></li>
+  <li><a href="#http://www.geneontology.org/formats/oboInOwl#hasDefinition" title="http://www.geneontology.org/formats/oboInOwl#hasDefinition"> <span>has Definition</span> </a></li>
+  <li><a href="#http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" title="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">has exact synonym</a></li>
+  <li><a href="#http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym" title="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">has narrow synonym</a></li>
+  <li><a href="#http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" title="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">has related synonym</a></li>
+  <li><a href="#http://www.geneontology.org/formats/oboInOwl#inSubset" title="http://www.geneontology.org/formats/oboInOwl#inSubset"> <span>in Subset</span> </a></li>
+  <li><a href="#http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology" title="http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology"> <span>is curated in ontology</span> </a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/isPrimitive" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/isPrimitive">is primitive</a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom">logic axiom</a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition">logic definition</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0002416" title="http://purl.obolibrary.org/obo/RO_0002416">logical macro assertion</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0002421" title="http://purl.obolibrary.org/obo/RO_0002421">logical macro assertion on a property</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0002422" title="http://purl.obolibrary.org/obo/RO_0002422">logical macro assertion on an object property</a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity">maturity</a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition">natural language definition</a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#note" title="http://www.w3.org/2004/02/skos/core#note"> <span>note</span> </a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale">primitive rationale</a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom">semi-formal natural language axiom</a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageDefinition" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageDefinition">semi-formal natural language definition</a></li>
+  <li><a href="#http://purl.org/dc/terms/source" title="http://purl.org/dc/terms/source">source</a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/subjectMatterExpertExplanation" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/subjectMatterExpertExplanation">subject matter expert explanation</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/RO_0001900" title="http://purl.obolibrary.org/obo/RO_0001900">temporal interpretation</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/IAO_0000117" title="http://purl.obolibrary.org/obo/IAO_0000117">term editor</a></li>
+  <li><a href="#http://purl.obolibrary.org/obo/IAO_0000233" title="http://purl.obolibrary.org/obo/IAO_0000233">term tracker item</a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote">usage note</a></li>
+ </ul>
+ <div class="entity" id="SCO_0000039">
+  <h3>according to the perspective<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://www.w3id.org/sco#SCO_0000039</p>
+  <div class="comment">
+   <span class="markdown">We envisage using this annotation property to highlight (indirectly) the grounding of certain entities on perspectives and characterize them according to the embraced perspective(s). Here, it is provided an explicative example. Let’s consider that two users, A and B, endorse two different perspectives on sustainability, perspective A and perspective B. These perspectives lead to considering different complex system components as stakeholders of the complex system of interest. (This is an explicative example. It could also be the case that there is just one single user who wants to characterize the same entity according to two perspectives on sustainability, or who wants to provide an additional characterization according to a different perspective than the one previously covered.) We suggest proceeding as follows. First, the class “perspective” can be instantiated with two “perspective” individuals, “perspective A” and “perspective B”. These “perspective” individuals will provide descriptions and other relevant information regarding users’ perspectives. Then, two subclasses, “stakeholder – A” and “stakeholder – B”, can be added to the class “stakeholder”. These classes could be created manually and further populated with further subclasses and/or individuals. Alternatively, they can be created by adding SPARQL query results to the ontology, directly as classes or as classes equivalent to some new classes manually created. Subclasses “stakeholder – A” and “stakeholder – B” will cover stakeholders according to the two different user perspectives. Finally, this annotation property can be used to annotate these two subclasses with the corresponding individual “perspective A” and “perspective B”. In proceeding as such, we can highlight the grounding of the role of stakeholder (entity) on perspective (entity) and provide stakeholder characterizations according to the two user perspectives. This procedure supports establishing indirectly the grounding of certain entities on perspectives. This procedure, however, ensures the possibility to also account for different characterizations of the same entity according to different perspectives, thereby assisting in clarifying and comparing those perspectives. Further, as a user may change perspective over time, this procedure can be performed whenever the perspective changes. New classes, covering time references, can be created and annotated with new perspectives. This will also assist in tracking users’ perspectives evolution over time. We contemplate the possible creation of an object property to directly model grounding on perspectives as part of future implementations of SCO.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#sco.owl/SCO_0000016" title="https://www.w3id.org/sco#sco.owl/SCO_0000016">sco.owl/ S C O 0000016</a> <sup class="type-ep" title="external property">ep</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom">
+  <h3>adapted from<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom</p>
+  <div class="comment">
+   <span class="markdown">source for the resource that was modified to create the subject resource</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.org/dc/terms/source" title="http://purl.org/dc/terms/source">source</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/IAO_0000118">
+  <h3>alternative label<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/IAO_0000118</p>
+  <div class="comment">
+   <span class="markdown">A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related).</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Term status
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/IAO_0000125">http://purl.obolibrary.org/obo/IAO_0000125</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym" title="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">has broad synonym</a> <sup class="type-ap" title="annotation property">ap</sup>, <a href="#http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" title="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">has exact synonym</a> <sup class="type-ap" title="annotation property">ap</sup>, <a href="#http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym" title="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">has narrow synonym</a> <sup class="type-ap" title="annotation property">ap</sup>, <a href="#http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym" title="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">has related synonym</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.ontologyrepository.com/CommonCoreOntologies/alternative_label">
+  <h3>alternative label<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.ontologyrepository.com/CommonCoreOntologies/alternative_label</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/contributor">
+  <h3>contributor<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/contributor</p>
+  <div class="comment">
+   <span class="markdown">entity responsible for making contributions to the resource</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/contributor">http://purl.org/dc/terms/contributor</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/creator">
+  <h3>creator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor">contributor</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/IAO_0000232">
+  <h3>curator note<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/IAO_0000232</p>
+  <div class="comment">
+   <span class="markdown">An administrative note of use for a curator but of no use for a user</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/iao.owl">http://purl.obolibrary.org/obo/iao.owl</a>
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Term status
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/IAO_0000122">http://purl.obolibrary.org/obo/IAO_0000122</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/IAO_0000115">
+  <h3>definition<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/IAO_0000115</p>
+  <div class="comment">
+   <span class="markdown">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/iao.owl">http://purl.obolibrary.org/obo/iao.owl</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Term status
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/IAO_0000122">http://purl.obolibrary.org/obo/IAO_0000122</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.ontologyrepository.com/CommonCoreOntologies/definition">
+  <h3>definition<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.ontologyrepository.com/CommonCoreOntologies/definition</p>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/IAO_0000119">
+  <h3>definition source<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/IAO_0000119</p>
+  <div class="comment">
+   <span class="markdown">Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w
+   </dd>
+   <dd>
+    GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Term status
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/IAO_0000122">http://purl.obolibrary.org/obo/IAO_0000122</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.ontologyrepository.com/CommonCoreOntologies/definition_source">
+  <h3>definition source<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.ontologyrepository.com/CommonCoreOntologies/definition_source</p>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/directSource">
+  <h3>direct source<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/directSource</p>
+  <div class="comment">
+   <span class="markdown">definitive source of the subject resource</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.org/dc/terms/source" title="http://purl.org/dc/terms/source">source</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/IAO_0000116">
+  <h3>editor note<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/IAO_0000116</p>
+  <div class="comment">
+   <span class="markdown">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    GROUP:OBI:&lt;http://purl.obofoundry.org/obo/obi&gt;
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Term status
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/IAO_0000122">http://purl.obolibrary.org/obo/IAO_0000122</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.geneontology.org/formats/oboInOwl#editor_note">
+  <h3>editor note<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.geneontology.org/formats/oboInOwl#editor_note</p>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/IAO_0000111">
+  <h3>editor preferred term<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/IAO_0000111</p>
+  <div class="comment">
+   <span class="markdown">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Term status
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/IAO_0000122">http://purl.obolibrary.org/obo/IAO_0000122</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/IAO_0000600">
+  <h3>elucidation<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/IAO_0000600</p>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    Person:Barry Smith
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.ontologyrepository.com/CommonCoreOntologies/elucidation">
+  <h3>elucidation<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.ontologyrepository.com/CommonCoreOntologies/elucidation</p>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/IAO_0000112">
+  <h3>example of usage<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/IAO_0000112</p>
+  <div class="comment">
+   <span class="markdown">A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Term status
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/IAO_0000122">http://purl.obolibrary.org/obo/IAO_0000122</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.ontologyrepository.com/CommonCoreOntologies/example_of_usage">
+  <h3>example of usage<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.ontologyrepository.com/CommonCoreOntologies/example_of_usage</p>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/excerptedFrom">
+  <h3>excerpted from<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/excerptedFrom</p>
+  <div class="comment">
+   <span class="markdown">source of a resource that was imported unmodified from an external ontology</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.org/dc/terms/source" title="http://purl.org/dc/terms/source">source</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/IAO_0000424">
+  <h3>expand expression to<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/IAO_0000424</p>
+  <div class="comment">
+   <span class="markdown">A macro expansion tag applied to an object property (or possibly a data property) which can be used by a macro-expansion engine to generate more complex expressions from simpler ones</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>ObjectProperty: RO_0002104
+Label: has plasma membrane part
+Annotations: IAO_0000424 "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.org/obo/owl/GO#GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)"
+</pre>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote">
+  <h3>explanatory note<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote</p>
+  <div class="comment">
+   <span class="markdown">note that provides additional explanatory information about a given notion or resource</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#note" target="_blank" title="http://www.w3.org/2004/02/skos/core#note">note</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition">
+  <h3>first order logic definition<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition</p>
+  <div class="comment">
+   <span class="markdown">logic definition that expresses the axioms of a class or an object property in first order logic</span>
+  </div>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>An example of a First Order Logic definition for 'Product' might be (again bearing in mind the natural language terms appearing should be regarded as symbols in the IOF signature):
+ - Continuant(x) ∧ ¬(SpecificallyDependentContinuant(x) ∨ Person(x) ∨ Organization(x)) ∧ ∃r (ProductRole(r) ∧ hasRole(x, r))</pre>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition">logic definition</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom">
+  <h3>first-order logic axiom<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom</p>
+  <div class="comment">
+   <span class="markdown">logic axiom annotation written in first order logic</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom">logic axiom</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+  <h3>has broad synonym<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym</p>
+  <div class="comment">
+   <span class="markdown">An alternative label for a class or property which has a more general meaning than the preferred name/primary label.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/IAO_0000118" title="http://purl.obolibrary.org/obo/IAO_0000118">alternative label</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/IAO_0000114">
+  <h3>has curation status<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/IAO_0000114</p>
+ </div>
+ <div class="entity" id="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+  <h3>has Db Xref<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.geneontology.org/formats/oboInOwl#hasDbXref</p>
+ </div>
+ <div class="entity" id="http://www.geneontology.org/formats/oboInOwl#hasDefinition">
+  <h3>has Definition<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.geneontology.org/formats/oboInOwl#hasDefinition</p>
+ </div>
+ <div class="entity" id="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+  <h3>has exact synonym<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.geneontology.org/formats/oboInOwl#hasExactSynonym</p>
+  <div class="comment">
+   <span class="markdown">An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/IAO_0000118" title="http://purl.obolibrary.org/obo/IAO_0000118">alternative label</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+  <h3>has narrow synonym<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym</p>
+  <div class="comment">
+   <span class="markdown">An alternative label for a class or property which has a more specific meaning than the preferred name/primary label.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/IAO_0000118" title="http://purl.obolibrary.org/obo/IAO_0000118">alternative label</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+  <h3>has related synonym<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym</p>
+  <div class="comment">
+   <span class="markdown">An alternative label for a class or property that has been used synonymously with the primary term name, but the usage is not strictly correct.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/IAO_0000118" title="http://purl.obolibrary.org/obo/IAO_0000118">alternative label</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.geneontology.org/formats/oboInOwl#inSubset">
+  <h3>in Subset<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.geneontology.org/formats/oboInOwl#inSubset</p>
+ </div>
+ <div class="entity" id="http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology">
+  <h3>is curated in ontology<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology</p>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/isPrimitive">
+  <h3>is primitive<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/isPrimitive</p>
+  <div class="comment">
+   <span class="markdown">boolean flag indicating that necessary and sufficient conditions are not provided</span>
+  </div>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom">
+  <h3>logic axiom<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom</p>
+  <div class="comment">
+   <span class="markdown">logical statements constraining the interpretation of the notion represented by the construct that do not provide necessary and sufficient conditions</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#note" target="_blank" title="http://www.w3.org/2004/02/skos/core#note">note</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicAxiom">first-order logic axiom</a> <sup class="type-ap" title="annotation property">ap</sup>, <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom">semi-formal natural language axiom</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition">
+  <h3>logic definition<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition</p>
+  <div class="comment">
+   <span class="markdown">definition in the form of a logical expression</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition">first order logic definition</a> <sup class="type-ap" title="annotation property">ap</sup>, <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageDefinition" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageDefinition">semi-formal natural language definition</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0002416">
+  <h3>logical macro assertion<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0002416</p>
+  <div class="comment">
+   <span class="markdown">An assertion that involves at least one OWL object that is intended to be expanded into one or more logical axioms. The logical expansion can yield axioms expressed using any formal logical system, including, but not limited to OWL2-DL.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0002421" title="http://purl.obolibrary.org/obo/RO_0002421">logical macro assertion on a property</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0002421">
+  <h3>logical macro assertion on a property<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0002421</p>
+  <div class="comment">
+   <span class="markdown">A logical macro assertion whose domain is an IRI for a property</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0002416" title="http://purl.obolibrary.org/obo/RO_0002416">logical macro assertion</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0002422" title="http://purl.obolibrary.org/obo/RO_0002422">logical macro assertion on an object property</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0002422">
+  <h3>logical macro assertion on an object property<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0002422</p>
+  <div class="comment">
+   <span class="markdown">Used to annotate object properties to describe a logical meta-property or characteristic of the object property.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0002421" title="http://purl.obolibrary.org/obo/RO_0002421">logical macro assertion on a property</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0001900" title="http://purl.obolibrary.org/obo/RO_0001900">temporal interpretation</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity">
+  <h3>maturity<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity</p>
+  <div class="comment">
+   <span class="markdown">annotation property used to indicate the development status of a resource</span>
+  </div>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition">
+  <h3>natural language definition<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition</p>
+  <div class="comment">
+   <span class="markdown">definition written in plain text for human understanding</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#note">
+  <h3>note<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#note</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote">explanatory note</a> <sup class="type-ap" title="annotation property">ap</sup>, <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom">logic axiom</a> <sup class="type-ap" title="annotation property">ap</sup>, <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale">primitive rationale</a> <sup class="type-ap" title="annotation property">ap</sup>, <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote">usage note</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale">
+  <h3>primitive rationale<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/primitiveRationale</p>
+  <div class="comment">
+   <span class="markdown">reason why necessary and sufficient conditions could not be provided</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#note" target="_blank" title="http://www.w3.org/2004/02/skos/core#note">note</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom">
+  <h3>semi-formal natural language axiom<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageAxiom</p>
+  <div class="comment">
+   <span class="markdown">logic axiom expressed in natural language</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicAxiom">logic axiom</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageDefinition">
+  <h3>semi-formal natural language definition<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageDefinition</p>
+  <div class="comment">
+   <span class="markdown">logic definition that expresses a first order logic definition or common logic definition in natural language</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/logicDefinition">logic definition</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/source">
+  <h3>source<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/source</p>
+  <div class="comment">
+   <span class="markdown">related resource from which the described resource is derived</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://purl.org/dc/terms/source">http://purl.org/dc/terms/source</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom">adapted from</a> <sup class="type-ap" title="annotation property">ap</sup>, <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/directSource" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/directSource">direct source</a> <sup class="type-ap" title="annotation property">ap</sup>, <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/excerptedFrom" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/excerptedFrom">excerpted from</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/subjectMatterExpertExplanation">
+  <h3>subject matter expert explanation<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/subjectMatterExpertExplanation</p>
+  <div class="comment">
+   <span class="markdown">definition of the term expressed in natural language that has the minimal usage of ontological terms and is intended to be a self-standing explanation</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/RO_0001900">
+  <h3>temporal interpretation<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/RO_0001900</p>
+  <div class="comment">
+   <span class="markdown">An assertion that holds between an OWL Object Property and a temporal interpretation that elucidates how OWL Class Axioms that use this property are to be interpreted in a temporal context.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#http://purl.obolibrary.org/obo/RO_0002422" title="http://purl.obolibrary.org/obo/RO_0002422">logical macro assertion on an object property</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/IAO_0000117">
+  <h3>term editor<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/IAO_0000117</p>
+  <div class="comment">
+   <span class="markdown">Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Term status
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/IAO_0000122">http://purl.obolibrary.org/obo/IAO_0000122</a>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.obolibrary.org/obo/IAO_0000233">
+  <h3>term tracker item<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/IAO_0000233</p>
+  <div class="comment">
+   <span class="markdown">An IRI or similar locator for a request or discussion of an ontology term.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">The 'tracker item' can associate a tracker with a specific ontology term.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Term status
+   </dt>
+   <dd>
+    <a href="http://purl.obolibrary.org/obo/IAO_0000125">http://purl.obolibrary.org/obo/IAO_0000125</a>
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/</pre>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote">
+  <h3>usage note<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/usageNote</p>
+  <div class="comment">
+   <span class="markdown">note that provides information about how a given notion or resource is used in the ontology's context</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#note" target="_blank" title="http://www.w3.org/2004/02/skos/core#note">note</a> <sup class="type-ap" title="annotation property">ap</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional">provisional</a></li>
+  <li><a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released">released</a></li>
+ </ul>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional">
+  <h3>provisional<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional</p>
+  <div class="comment">
+   <span class="markdown">construct or ontology development state in which content is subject to change and may change considerably</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel">maturity level</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"construct or ontology development state in which content is subject to change and may change considerably"@en-us</span>
+   </dd>
+   <dd>
+    <a href="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote" target="_blank" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote">explanatory note</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"IOF users should be aware that the resource is not dependable, but can be used for reference and for further work."@en-us</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released">
+  <h3>released<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released</p>
+  <div class="comment">
+   <span class="markdown">construct or ontology development state in which the resource is stable, usable, and has been made available to external users</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/MaturityLevel">maturity level</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"construct or ontology development state in which the resource is stable, usable, and has been made available to external users"@en-us</span>
+   </dd>
+   <dd>
+    <a href="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote" target="_blank" title="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote">explanatory note</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Release notes will be provided for any changes concerning released content, and any revisions will be backward compatible with the prior version to the degree possible."@en-us</span>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+<sup class="type-ep" title="External Properties">ep</sup>: External Properties
+</div>
+</div>
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

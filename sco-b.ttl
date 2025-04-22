@@ -34,7 +34,7 @@ SCO aims to play a pivotal role in harmonizing and integrating top-level and dom
                             terms:title "L'ontologia fondazionale della sostenibilità"@it ,
                                         "L'ontologie fondationnelle de la durabilité"@fr ,
                                         "Sustainability Core Ontology (SCO)"@en ;
-                            rdfs:seeAlso "Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr" ;
+                            rdfs:seeAlso "Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). Ontologies for Sustainability: Theoretical Challenges. https://doi.org/10.31219/osf.io/z8uqr" ,
                                          """https://www.w3id.org/sco/sco-u
 https://www.w3id.org/sco/sco-u-b-mapping""" ;
                             owl:priorVersion """SCO V1.0.1. constitutes the prior version of this resources.

@@ -59,7 +59,7 @@ The most recent version of SCO-B segment can always be found at https://w3id.org
 
 ### SCO - Useful Links
 
-- [SCO V1.0.1.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1-revisions)
+- [SCO V1.0.1.](https://w3id.org/sco)
 - [SCO V1.1.0. - SCO-B](https://w3id.org/sco/sco-b).
 - [SCO V1.1.0. - SCO-B. BFO merged](https://w3id.org/sco/sco-b-bfo-merged).
 - [SCO V1.1.0. - SCO-U](https://w3id.org/sco/sco-u).

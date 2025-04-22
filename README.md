@@ -9,9 +9,8 @@ This repository maintains the Sustainability Core Ontology (SCO). SCO is a middl
    
 SCO is designed to be the pivotal resource upon which to harmonize and integrate top-level and domain ontologies regarding sustainability. The ultimate goal is to establish a family of interoperable sustainability ontologies. Currently, SCO offers ontological representations that align with [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020) and [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html).
 
-See also the [SCO documentation webpage](https://gioubbiali.github.io/Sustainability-Core-Ontology/).
 
-See also the SCO-B documentation webpage and SCO-U documentation webpage.
+See also the [SCO-B documentation webpage](https://w3id.org/sco/docs) and [SCO-U documentation webpage](https://w3id.org/sco/sco-u/docs).
 
 ## Material
 
@@ -56,18 +55,18 @@ SCO materials can be found here:
 
 [SCO materials](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO) have been organized considering a possible future migration of this repo to the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
   
-The most recent version of SCO-B segment can always be found at https://w3id.org/sco. The most recent version of SCO-U segment can always be found at https://w3id.org/sco/sco-u. The most recent version of the mapping between SCO-U and SCO-B can always be found at https://w3id.org/sco/sco-u-b-mapping. SCO is also accessible on [Ontobee](https://ontobee.org/ontology/SCO), [AgroPortal](https://agroportal.lirmm.fr/ontologies/SCO), [BioPortal](https://bioportal.bioontology.org/ontologies/SCO_V1), and [IndustryPortal](https://industryportal.enit.fr/ontologies/SCO).
+The most recent version of SCO-B segment can always be found at https://w3id.org/sco/sco-b. The most recent version of SCO-U segment can always be found at https://w3id.org/sco/sco-u. The most recent version of the mapping between SCO-U and SCO-B can always be found at https://w3id.org/sco/sco-u-b-mapping. SCO is also accessible on [Ontobee](https://ontobee.org/ontology/SCO), [AgroPortal](https://agroportal.lirmm.fr/ontologies/SCO), [BioPortal](https://bioportal.bioontology.org/ontologies/SCO_V1), and [IndustryPortal](https://industryportal.enit.fr/ontologies/SCO).
 
 ### SCO - Useful Links
 
-- [SCO V1.0.1.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1-revisions)
-- SCO V1.1.0. - SCO-B.
-- SCO V1.1.0. - SCO-B. BFO merged.
-- SCO V1.1.0. - SCO-U.
-- SCO V1.1.0. - SCO-U. UFO merged.
-- SCO V1.1.0. - mapping between SCO-U and SCO-B.
-- SCO V1.1.0. SCO-B - documentation webpage.
-- SCO V1.1.0. SCO-U - documentation webpage.
+- [SCO V1.0.1.](https://w3id.org/sco)
+- [SCO V1.1.0. - SCO-B](https://w3id.org/sco/sco-b).
+- [SCO V1.1.0. - SCO-B. BFO merged](https://w3id.org/sco/sco-b-bfo-merged).
+- [SCO V1.1.0. - SCO-U](https://w3id.org/sco/sco-u).
+- [SCO V1.1.0. - SCO-U. UFO merged](https://w3id.org/sco/sco-ufo-merged).
+- [SCO V1.1.0. - mapping between SCO-U and SCO-B](https://w3id.org/sco/sco-u-b-mapping).
+- [SCO V1.1.0. SCO-B - documentation webpage](https://w3id.org/sco/sco-b/docs).
+- [SCO V1.1.0. SCO-U - documentation webpage](https://w3id.org/sco/sco-u/docs).
 
 
 ##  SCO Developer   

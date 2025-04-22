@@ -11,7 +11,7 @@ SCO is designed to be the pivotal resource upon which to harmonize and integrate
 
 See also the [SCO documentation webpage](https://gioubbiali.github.io/Sustainability-Core-Ontology/).
 
-See also the SCO-B documentation webpage and SCO-U documentation webpage.
+See also the [SCO-B documentation webpage](https://w3id.org/sco/docs) and [SCO-U documentation webpage](https://w3id.org/sco/sco-u/docs).
 
 ## Material
 

@@ -45,13 +45,13 @@ SCO materials can be found here:
 
 
 - [SCO V1.0.1. release.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/releases/tag/v1.0.1-revisions)
-- SCO-B current release.
-- SCO-U current release.
-- Mapping between SCO-B and SCO-U.
-- SCO V1.1.0.- final draft versions prior to release.
-- SCO V1.1.0. imports.
-- SCO materials.
-- SCO V1.1.0. development protocol.
+- [SCO-B current release](https://github.com/gioUbbiali/Sustainability-Core-Ontology/blob/main/sco-b.ttl).
+- [SCO-U current release](https://github.com/gioUbbiali/Sustainability-Core-Ontology/blob/main/sco-u.ttl).
+- [Mapping between SCO-B and SCO-U](https://github.com/gioUbbiali/Sustainability-Core-Ontology/blob/main/sco-u-b-mapping.ttl).
+- [SCO V1.1.0.- final draft versions prior to release](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO%20material/src/ontology).
+- [SCO V1.1.0. imports](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO%20material/src/ontology/imports).
+- [SCO materials](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO%20material).
+- [SCO V1.1.0. development protocol](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO%20material/SCO%20development%20protocol).
 
 [SCO materials](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO) have been organized considering a possible future migration of this repo to the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
   

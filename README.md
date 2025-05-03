@@ -53,7 +53,6 @@ SCO materials can be found here:
 - [SCO materials](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO%20material).
 - [SCO V1.1.0. development protocol](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO%20material/SCO%20development%20protocol).
 
-[SCO materials](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO) have been organized considering a possible future migration of this repo to the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
   
 The most recent version of SCO-B segment can always be found at https://w3id.org/sco/sco-b. The most recent version of SCO-U segment can always be found at https://w3id.org/sco/sco-u. The most recent version of the mapping between SCO-U and SCO-B can always be found at https://w3id.org/sco/sco-u-b-mapping. SCO is also accessible on [Ontobee](https://ontobee.org/ontology/SCO), [AgroPortal](https://agroportal.lirmm.fr/ontologies/SCO), [BioPortal](https://bioportal.bioontology.org/ontologies/SCO_V1), and [IndustryPortal](https://industryportal.enit.fr/ontologies/SCO).
 

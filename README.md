@@ -14,8 +14,7 @@ See also the [SCO-B documentation webpage](https://w3id.org/sco/docs) and [SCO-U
 
 ## Material
 
-
-To date, this repository hosts the SCO Structured Vocabulary (SCO SV) and the current release of SCO, SCO V1.1.0. 
+To date, this repository hosts the work-in-progress implementations of SCO concerning complex systems architectures and behaviours. Implementations leverage the [System Core Ontology](https://ris.utwente.nl/ws/portalfiles/portal/357715466/a_system_core_ontology_for_capability_emergence_modeling_2023.pdf).
 
 
 ### SCO SV

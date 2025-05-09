@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.org/nemo/gufo#/1.0.0" uri="https://nemo-ufes.github.io/gufo/gufo.ttl#/1.0."/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl" uri="https://raw.githubusercontent.com/BFO-ontology/BFO-2020/release-2024-01-29/src/owl/profiles/temporal%20extensions/temporalized%20relations/owl/bfo-temporalized-relations.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl" uri="https://raw.githubusercontent.com/BFO-ontology/BFO/master/releases/2.0/bfo.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.w3.org/2004/02/skos/core" uri="http://www.w3.org/2004/02/skos/core#"/>

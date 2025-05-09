@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl" uri="https://raw.githubusercontent.com/BFO-ontology/BFO-2020/release-2024-01-29/src/owl/profiles/temporal%20extensions/temporalized%20relations/owl/bfo-temporalized-relations.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl" uri="https://raw.githubusercontent.com/BFO-ontology/BFO/master/releases/2.0/bfo.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.w3.org/2004/02/skos/core" uri="http://www.w3.org/2004/02/skos/core#"/>
     <uri id="User Entered Import Resolution" name="https://raw.githubusercontent.com/gioUbbiali/Sustainability-Core-Ontology/refs/heads/SCO-Alignment-to-UFO/SCO/src/ontology/imports/SCO-U%20imports/COVER%20imports.owl" uri="sco-u.ttl"/>
     <uri id="Imports Wizard Entry" name="https://www.w3id.org/sco/sco-u#v1.1.0/sco-u" uri="sco-u-ufo-merged.ttl"/>
@@ -17,15 +19,15 @@
     <uri id="Imports Wizard Entry" name="http://gioUbbiali.github.io/sco/sco-u/2025-02-17/cover.imports.owl" uri="SCO/src/ontology/imports/SCO-U%20imports/COVER%20imports.owl"/>
     <uri id="User Entered Import Resolution" name="http://gioUbbiali.github.io/sco/sco-u/2025-02-17/cover.imports.owl" uri="SCO-U.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1745301771789" name="http://gioUbbiali.github.io/sco/iof&amp;cco.general.imports.owl" uri="SCO%20material/src/ontology/imports/SCO%20V1.0.0%20imports/iof&amp;cco-general-imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1745301771789" name="http://gioUbbiali.github.io/sco/sco-u/cover.imports.owl" uri="SCO%20material/src/ontology/imports/SCO-U%20imports/COVER%20imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1745301771789" name="http://gioUbbiali.github.io/sco/sco.owl" uri="SCO%20material/SCO%20V1.0.0..owl"/>
-        <uri id="Automatically generated entry, Timestamp=1745301771789" name="http://purl.obolibrary.org/obo/bfo/" uri="SCO%20material/src/ontology/imports/SCO%20V1.0.0%20imports/bfo-core.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1745301771789" name="http://purl.obolibrary.org/obo/sco/imports/OBOFoundry_general_import.ofn" uri="SCO%20material/src/ontology/imports/SCO%20V1.0.0%20imports/obofoundry-general-import.ofn"/>
-        <uri id="Automatically generated entry, Timestamp=1745301771789" name="http://purl.obolibrary.org/obo/sco/imports/iao_import.ofn" uri="SCO%20material/src/ontology/imports/SCO%20V1.0.0%20imports/iao-import.ofn"/>
-        <uri id="Automatically generated entry, Timestamp=1745301771789" name="http://purl.obolibrary.org/obo/sco/imports/ro_import.ofn" uri="SCO%20material/src/ontology/imports/SCO%20V1.0.0%20imports/ro-import.ofn"/>
-        <uri id="Automatically generated entry, Timestamp=1745301771789" name="http://www.w3.org/2004/02/skos/core" uri="SCO%20material/src/ontology/imports/SCO-U-B-mapping%20imports/skos.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1745301771789" name="https://www.w3id.org/sco" uri="docs/docs-sco-b/ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1745301771789" name="https://www.w3id.org/sco/sco-u" uri="docs/docs-sco-u/ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1746624477205" name="http://gioUbbiali.github.io/sco/iof&amp;cco.general.imports.owl" uri="SCO%20material/src/ontology/imports/SCO%20V1.0.0%20imports/iof&amp;cco-general-imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1746624477205" name="http://gioUbbiali.github.io/sco/sco-u/cover.imports.owl" uri="SCO%20material/src/ontology/imports/SCO-U%20imports/COVER%20imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1746624477205" name="http://gioUbbiali.github.io/sco/sco.owl" uri="SCO%20material/SCO%20V1.0.0..owl"/>
+        <uri id="Automatically generated entry, Timestamp=1746624477205" name="http://purl.obolibrary.org/obo/bfo/" uri="SCO%20material/src/ontology/imports/SCO%20V1.0.0%20imports/bfo-core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1746624477205" name="http://purl.obolibrary.org/obo/sco/imports/OBOFoundry_general_import.ofn" uri="SCO%20material/src/ontology/imports/SCO%20V1.0.0%20imports/obofoundry-general-import.ofn"/>
+        <uri id="Automatically generated entry, Timestamp=1746624477205" name="http://purl.obolibrary.org/obo/sco/imports/iao_import.ofn" uri="SCO%20material/src/ontology/imports/SCO%20V1.0.0%20imports/iao-import.ofn"/>
+        <uri id="Automatically generated entry, Timestamp=1746624477205" name="http://purl.obolibrary.org/obo/sco/imports/ro_import.ofn" uri="SCO%20material/src/ontology/imports/SCO%20V1.0.0%20imports/ro-import.ofn"/>
+        <uri id="Automatically generated entry, Timestamp=1746624477205" name="http://www.w3.org/2004/02/skos/core" uri="SCO%20material/src/ontology/imports/SCO-U-B-mapping%20imports/skos.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1746624477205" name="https://www.w3id.org/sco" uri="docs/docs-sco-b/ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1746624477205" name="https://www.w3id.org/sco/sco-u" uri="docs/docs-sco-u/ontology.owl"/>
     </group>
 </catalog>

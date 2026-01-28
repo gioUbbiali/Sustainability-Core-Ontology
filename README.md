@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository maintains the Sustainability Core Ontology (SCO). SCO is a middle-level ontology, covering the terminology related to the three major theoretical challenges of sustainability [Ubbiali *et al.* (2024)](https://doi.org/10.31219/osf.io/z8uqr ):
+This repository maintains the Sustainability Core Ontology (SCO). SCO is a middle-level ontology, covering the terminology related to the three major theoretical challenges of sustainability [Ubbiali *et al.* (2026)](https://doi.org/10.1002/sd.70562):
 1) The polysemy of the term "sustainability".
 2) The relationship between sustainability and sustainable development.
 3) The complexity underlying sustainability.
@@ -20,8 +20,7 @@ To date, this repository hosts the SCO Structured Vocabulary (SCO SV) and the cu
 
 ### SCO SV
 
-The SCO SV is an initial (non-exhaustive) ontological resource providing some essential terms and relations to include in SCO. This resource has been developed as Annex 2 of [Ubbiali *et al.* (2024)](https://doi.org/10.31219/osf.io/z8uqr).
-
+The SCO SV is an initial (non-exhaustive) ontological resource providing some essential terms and relations to include in SCO. This resource has been developed as Annex 2 of [Ubbiali *et al.* (2026)](https://doi.org/10.1002/sd.70562).
 The SCO SV includes two spreadsheets: 
 
 - [The SCO SV guidelines.](https://github.com/gioUbbiali/Sustainability-Core-Ontology/tree/main/SCO%20SV%20guidelines)
@@ -108,9 +107,9 @@ Giorgio A. Ubbiali - Giorgio.Ubbiali@unimi.it
 
 ## Publications and Documentation
 
-- Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). *Ontologies for Sustainability: Theoretical Challenges*. https://doi.org/10.31219/osf.io/z8uqr 
-
 - Ubbiali, G. A. (2025). *Designing Foundational Strategies for Developing a Family of Food Systems Sustainability Ontologies*. PhD Thesis, UNIMI. https://air.unimi.it/handle/2434/1161515
+  
+- Ubbiali, G. A., Lange, M. C., & Borghini, A. (2026). Ontologies for Sustainability: Theoretical Challenges. *Sustainable Development*, sd.70562. https://doi.org/10.1002/sd.70562; Preprint available at doi:10.31219/osf.io/z8uqr
 
 
 

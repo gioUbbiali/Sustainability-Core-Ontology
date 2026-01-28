@@ -107,9 +107,11 @@ Giorgio A. Ubbiali - Giorgio.Ubbiali@unimi.it
 
 ## Publications and Documentation
 
-- Ubbiali, G. A. (2025). *Designing Foundational Strategies for Developing a Family of Food Systems Sustainability Ontologies*. PhD Thesis, UNIMI. https://air.unimi.it/handle/2434/1161515
-  
 - Ubbiali, G. A., Lange, M. C., & Borghini, A. (2026). Ontologies for Sustainability: Theoretical Challenges. *Sustainable Development*, sd.70562. https://doi.org/10.1002/sd.70562; Preprint available at https://doi:10.31219/osf.io/z8uqr
+  
+- - Ubbiali, G. A. (2025). *Designing Foundational Strategies for Developing a Family of Food Systems Sustainability Ontologies*. PhD Thesis, UNIMI. https://air.unimi.it/handle/2434/1161515
+  
+
 
 
 

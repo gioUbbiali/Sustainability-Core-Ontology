@@ -1780,7 +1780,7 @@ The aim is to align SCO and CCO “agent” classes in order to have a shared th
                 rdfs:seeAlso "comments to https://www.w3id.org/sco/sco-u#SCO_0000027 and https://www.w3id.org/sco/sco-u#SCO_0000029"@en ,
                              """http://www.ontologyrepository.com/CommonCoreOntologies/agent_in 
 http://www.ontologyrepository.com/CommonCoreOntologies/has_agent""" ;
-                skos:definition "A primitive relation between a process x, a continuant y, and a time at which y is causally active in x."@en ,
+                skos:definition "A primitive relation between a process x, a continuant y, and a time t at which y is causally active in x."@en ,
                                 "Una relazione primitiva tra un processo x, un continuante y e un tempo t a cui y è causalmente attivo in x."@it ,
                                 "Une relation primitive entre un processus x, un continuant y et un temps t auquel y est causalement actif en x."@fr ;
                 AnnotationVocabulary:adaptedFrom "https://doi.org/10.1186/gb-2005-6-5-r46" ;
@@ -1815,7 +1815,7 @@ Guizzardi, G., de Almeida Falbo, R., & Guizzardi, R. (2008). Grounding software 
                            "agente in al tempo t"@it ;
                 rdfs:seeAlso "comments to https://www.w3id.org/sco/sco-u#SCO_0000027 and https://www.w3id.org/sco/sco-u#SCO_0000029"@en ,
                              "See information under the inverse \"has agent at t\" property." ;
-                skos:definition "A primitive relation between a continuant x, a process y, and a time at which x is causally active in y."@en ,
+                skos:definition "A primitive relation between a continuant x, a process y, and a time t at which x is causally active in y."@en ,
                                 "Una relazione primitiva tra un continuante x, un processo y e un tempo t a cui x è causalmente attivo in y."@it ,
                                 "Une relation primitive entre un continuant x, un processus y et un temps t auquel x est causalement actif en y."@fr ;
                 AnnotationVocabulary:maturity AnnotationVocabulary:Provisional .

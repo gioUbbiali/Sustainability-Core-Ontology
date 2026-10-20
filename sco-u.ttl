@@ -1192,13 +1192,6 @@ sco-u:SCO_0000013 rdf:type owl:Class ;
                                       ] ;
                   rdfs:subClassOf <http://purl.org/nemo/gufo#Object> ,
                                   [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Object>
-                                                         [ rdf:type owl:Class ;
-                                                           owl:complementOf sco-u:SCO_0000014
-                                                         ]
-                                                       ) ;
-                                    rdf:type owl:Class
-                                  ] ,
-                                  [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Object>
                                                          [ rdf:type owl:Restriction ;
                                                            owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#inheresIn>
                                                                           ] ;
@@ -1237,13 +1230,6 @@ sco-u:SCO_0000014 rdf:type owl:Class ;
                                         rdf:type owl:Class
                                       ] ;
                   rdfs:subClassOf <http://purl.org/nemo/gufo#Object> ,
-                                  [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Object>
-                                                         [ rdf:type owl:Class ;
-                                                           owl:complementOf sco-u:SCO_0000013
-                                                         ]
-                                                       ) ;
-                                    rdf:type owl:Class
-                                  ] ,
                                   [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Object>
                                                          [ rdf:type owl:Restriction ;
                                                            owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#inheresIn>

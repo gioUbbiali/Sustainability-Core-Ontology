@@ -3034,14 +3034,7 @@ sco:SCO_0000013 rdf:type owl:Class ;
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf bfo:BFO_0000040 ,
-                                [ owl:intersectionOf ( bfo:BFO_0000040
-                                                       [ rdf:type owl:Class ;
-                                                         owl:complementOf sco:SCO_0000014
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
+                rdfs:subClassOf bfo:BFO_0000040 ;
                 owl:disjointWith sco:SCO_0000014 ;
                 oboInOwl:hasExactSynonym "system element" ;
                 oboInOwl:hasRelatedSynonym "system variable" ;
@@ -3087,14 +3080,7 @@ sco:SCO_0000014 rdf:type owl:Class ;
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf bfo:BFO_0000040 ,
-                                [ owl:intersectionOf ( bfo:BFO_0000040
-                                                       [ rdf:type owl:Class ;
-                                                         owl:complementOf sco:SCO_0000013
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
+                rdfs:subClassOf bfo:BFO_0000040 ;
                 oboInOwl:hasExactSynonym "system environment element" ;
                 oboInOwl:hasRelatedSynonym "system environment variable" ;
                 rdfs:comment """We envision discussions with subject matter experts regarding whether the current SCO representation of system-system component (and related environment) parthood is suitable or whether a proper parthood-based representation is more adequate. Insights for discussion may be found in Calhau et al. (2024) and Ubbiali et al. (2024).

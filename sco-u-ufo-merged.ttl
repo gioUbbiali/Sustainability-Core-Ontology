@@ -2592,13 +2592,6 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"""@en
                                  ] ;
              rdfs:subClassOf <http://purl.org/nemo/gufo#Object> ,
                              [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Object>
-                                                    [ rdf:type owl:Class ;
-                                                      owl:complementOf :SCO_0000014
-                                                    ]
-                                                  ) ;
-                               rdf:type owl:Class
-                             ] ,
-                             [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Object>
                                                     [ rdf:type owl:Restriction ;
                                                       owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#inheresIn>
                                                                      ] ;
@@ -2637,13 +2630,6 @@ http://www.ontologyrepository.com/CommonCoreOntologies/is_a_measurement_of"""@en
                                    rdf:type owl:Class
                                  ] ;
              rdfs:subClassOf <http://purl.org/nemo/gufo#Object> ,
-                             [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Object>
-                                                    [ rdf:type owl:Class ;
-                                                      owl:complementOf :SCO_0000013
-                                                    ]
-                                                  ) ;
-                               rdf:type owl:Class
-                             ] ,
                              [ owl:intersectionOf ( <http://purl.org/nemo/gufo#Object>
                                                     [ rdf:type owl:Restriction ;
                                                       owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#inheresIn>
